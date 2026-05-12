@@ -1,5 +1,12 @@
+'use client';
+
 import AuthForm from "@/components/AuthForm";
+import { GuestRoute } from "@/components/ProtectedRoute";
 
 export default function LoginPage() {
-  return <AuthForm mode="login" />;
+  return (
+    <GuestRoute>
+      <AuthForm mode="login" />
+    </GuestRoute>
+  );
 }

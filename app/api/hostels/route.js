@@ -19,7 +19,7 @@ export async function POST(req) {
     const price = formData.get('price');
     const hostelType = formData.get('hostelType');
     const phone = formData.get('phone');
-    const capacity = formData.get('capacity');
+    const capacity = JSON.parse(formData.get('capacity') || '[]');
     const ownerId = formData.get('ownerId');
     const amenities = JSON.parse(formData.get('amenities') || '[]');
 

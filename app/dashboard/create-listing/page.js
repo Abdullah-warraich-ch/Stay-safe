@@ -6,7 +6,6 @@ import { useRouter } from 'next/navigation';
 import { useMutation } from '@tanstack/react-query';
 import { ProtectedRoute } from '@/components/ProtectedRoute';
 import toast from 'react-hot-toast';
-import Link from 'next/link';
 import { cities } from '@/data/citiesData';
 import { citiesData } from '@/data/citiesData';
 import {
@@ -16,6 +15,8 @@ import {
   WashingMachine, ShieldCheck, Zap, Droplets, BookOpen,
   Lock, Cigarette, PawPrint, CookingPot, Bed, Footprints
 } from 'lucide-react';
+
+import { FaMale, FaFemale } from "react-icons/fa";
 
 const AMENITIES = [
   { id: 'wifi', label: 'Wi-Fi', icon: Wifi },
@@ -66,6 +67,9 @@ function CreateListingContent() {
   const [imageFiles, setImageFiles] = useState([]);
   const [imagePreviews, setImagePreviews] = useState([]);
   const [availableAreas, setAvailableAreas] = useState([]);
+  const [hostelType, setHostelType] = useState("boys");
+  const [howManySeaters, setHowManySeaters] = useState(["1-Seater", "2-Seater", "3-Seater", "4-Seater", "5-Seater"]);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -117,9 +121,9 @@ function CreateListingContent() {
       data.append('area', formData.area);
       data.append('address', formData.address);
       data.append('price', formData.price);
-      data.append('hostelType', formData.hostelType);
+      data.append('hostelType', hostelType);
       data.append('phone', formData.phone);
-      data.append('capacity', formData.capacity);
+      data.append('capacity', JSON.stringify(howManySeaters));
       data.append('ownerId', user.id);
       data.append('amenities', JSON.stringify(selectedAmenities));
 
@@ -138,7 +142,7 @@ function CreateListingContent() {
     },
     onSuccess: () => {
       toast.success('Hostel listed successfully!');
-      setTimeout(() => router.push('/dashboard'), 1500);
+      router.push('/dashboard');
     },
     onError: (err) => {
       toast.error(err.message);
@@ -194,11 +198,26 @@ function CreateListingContent() {
               </div>
               <div className="space-y-1.5">
                 <label className={labelClass}>Hostel Type</label>
-                <select name="hostelType" className={inputClass} onChange={handleChange} value={formData.hostelType}>
-                  <option value="boys">Boys Hostel</option>
-                  <option value="girls">Girls Hostel</option>
-                  <option value="co-ed">Co-Ed</option>
-                </select>
+                <div className='flex gap-3'>
+                  <button
+                    type="button"
+                    onClick={() => setHostelType("boys")}
+                    className={`flex-1 py-2 px-4 rounded-lg border transition-all ${hostelType === "boys" ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
+                      }`}
+                  >
+                    <FaMale className="inline mr-2" size={18} />
+                    Boys
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setHostelType("girls")}
+                    className={`flex-1 py-2 px-4 rounded-lg border transition-all ${hostelType === "girls" ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
+                      }`}
+                  >
+                    <FaFemale className="inline mr-2" size={18} />
+                    Girls
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -222,19 +241,68 @@ function CreateListingContent() {
                   <input name="price" type="number" placeholder="8,000" className={`${inputClass}`} onChange={handleChange} required />
                 </div>
               </div>
-              <div className="space-y-1.5">
-                <label className={labelClass}>Capacity (beds)</label>
-                <div className="relative">
-                  <Users size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
-                  <input name="capacity" type="number" placeholder="20" className={`${inputClass} pl-10`} onChange={handleChange} />
-                </div>
-              </div>
+
               <div className="space-y-1.5">
                 <label className={labelClass}>Contact Number</label>
                 <div className="relative">
                   <Phone size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
                   <input name="phone" type="tel" placeholder="+92 300 1234567" className={`${inputClass} pl-10`} onChange={handleChange} required />
                 </div>
+              </div>
+            </div>
+            <div className="space-y-1.5">
+              <label className={labelClass}>Room Type (beds)</label>
+              <div className="flex gap-3">
+                {/* <Users size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
+                  <input name="capacity" type="number" placeholder="20" className={`${inputClass} pl-10`} onChange={handleChange} /> */}
+                <button
+                  type="button"
+                  onClick={() => setHowManySeaters((prev) => prev.length === 5 ? [] : ["1-Seater", "2-Seater", "3-Seater", "4-Seater", "5-Seater"])}
+                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.length === 5 ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
+                    }`}
+                >
+                  All
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setHowManySeaters((prev) => !prev.includes("1-Seater") ? [...prev, "1-Seater"] : prev.filter((item) => item !== "1-Seater"))}
+                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.includes("1-Seater") ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
+                    }`}
+                >
+                  1-Seater
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setHowManySeaters((prev) => !prev.includes("2-Seater") ? [...prev, "2-Seater"] : prev.filter((item) => item !== "2-Seater"))}
+                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.includes("2-Seater") ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
+                    }`}
+                >
+                  2-Seater
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setHowManySeaters((prev) => !prev.includes("3-Seater") ? [...prev, "3-Seater"] : prev.filter((item) => item !== "3-Seater"))}
+                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.includes("3-Seater") ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
+                    }`}
+                >
+                  3-Seater
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setHowManySeaters((prev) => !prev.includes("4-Seater") ? [...prev, "4-Seater"] : prev.filter((item) => item !== "4-Seater"))}
+                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.includes("4-Seater") ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
+                    }`}
+                >
+                  4-Seater
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setHowManySeaters((prev) => !prev.includes("5-Seater") ? [...prev, "5-Seater"] : prev.filter((item) => item !== "5-Seater"))}
+                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.includes("5-Seater") ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
+                    }`}
+                >
+                  5-Seater
+                </button>
               </div>
             </div>
           </div>
@@ -377,7 +445,7 @@ function CreateListingContent() {
             </button>
           </div>
         </form>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }

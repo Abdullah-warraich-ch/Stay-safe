@@ -43,7 +43,9 @@ export default function Nav() {
                         </div>
 
                         <div className="hidden md:flex items-center gap-2">
-                            <Button variant='ghost' size="sm">Login</Button>
+                            <Link href="/login">
+                                <Button variant='ghost' size="sm">Login</Button>
+                            </Link>
                             <Link href="/signup">
                                 <Button size="sm" variant='primary'>Sign Up</Button>
                             </Link>
@@ -99,7 +101,9 @@ export default function Nav() {
                                 <Link href="/signup" onClick={() => setIsMenuOpen(false)}>
                                     <Button variant='primary' className="w-full justify-center py-4 text-base">Sign Up</Button>
                                 </Link>
-                                <Button variant='ghost' className="w-full justify-center py-3 text-slate-600">Login</Button>
+                                <Link href="/login" onClick={() => setIsMenuOpen(false)}>
+                                    <Button variant='ghost' className="w-full justify-center py-3 text-slate-600">Login</Button>
+                                </Link>
                             </div>
                         </div>
 

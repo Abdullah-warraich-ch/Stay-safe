@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import { cities, citiesData } from "../data/citiesData";
-import { SlidersHorizontal, BedDouble, Bath, Wind, Wifi, Zap } from "lucide-react";
+import { SlidersHorizontal, BedDouble, Bath, Wind, Wifi, Zap, Building2, MapPin } from "lucide-react";
+import SearchableSelect from "./SearchableSelect";
 
 export default function FilterSystem() {
   const [gender, setGender] = useState("All");
@@ -24,45 +25,22 @@ export default function FilterSystem() {
     }
   };
 
-  // Custom Dropdown States
-  const [cityOpen, setCityOpen] = useState(false);
-  const [areaOpen, setAreaOpen] = useState(false);
-  const [areaSearch, setAreaSearch] = useState("");
-
   const [seater, setSeater] = useState("");
   const [attachedBath, setAttachedBath] = useState("");
   const [acType, setAcType] = useState("");
   const [wifi, setWifi] = useState("");
   const [backupLight, setBackupLight] = useState("");
 
-  const cityRef = useRef(null);
-  const areaRef = useRef(null);
+  const activeFilterCount = [seater, attachedBath, acType, wifi, backupLight].filter(Boolean).length;
 
-  // Close dropdowns when clicking outside
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (cityRef.current && !cityRef.current.contains(event.target))
-        setCityOpen(false);
-      if (areaRef.current && !areaRef.current.contains(event.target)) {
-        setAreaOpen(false);
-        setAreaSearch("");
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  const handleClick = (gender) => {
-    setGender(gender);
+  const handleCityChange = (e) => {
+    setSelectedCity(e.target.value);
+    setSelectedArea("");
   };
 
-  const availableAreas = selectedCity
-    ? citiesData[selectedCity].filter((area) =>
-      area.toLowerCase().includes(areaSearch.toLowerCase()),
-    )
-    : [];
-
-  const activeFilterCount = [seater, attachedBath, acType, wifi, backupLight].filter(Boolean).length;
+  const handleAreaChange = (e) => {
+    setSelectedArea(e.target.value);
+  };
 
   return (
     <div className="flex flex-col items-center w-full max-w-4xl px-4 md:px-0">
@@ -81,150 +59,34 @@ export default function FilterSystem() {
 
       {/* search div */}
       <div
-        className={`flex flex-col bg-white p-2 shadow-2xl shadow-slate-200/60 border border-slate-100 w-full relative mt-8 md:mt-5 overflow-hidden ${filterRounded ? "rounded-3xl" : "rounded-3xl md:rounded-full"}`}
+        className={`flex flex-col bg-white p-2 shadow-2xl shadow-slate-200/60 border border-slate-100 w-full relative mt-8 md:mt-5 ${filterRounded ? "rounded-3xl" : "rounded-3xl md:rounded-full"}`}
       >
         <div className="flex flex-col md:flex-row md:items-center">
           {/* 1. City Selection */}
-          <div
-            className="flex-1 px-6 border-b md:border-b-0 md:border-r border-slate-100 relative"
-            ref={cityRef}
-          >
-            <button
-              onClick={() => {
-                setCityOpen(!cityOpen);
-                setAreaOpen(false);
-              }}
-              className="w-full flex items-center justify-between py-4 cursor-pointer group"
-            >
-              <span
-                className={`text-[15px] font-semibold ${selectedCity ? "text-slate-800" : "text-slate-400"}`}
-              >
-                {selectedCity || "Choose City"}
-              </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={`text-slate-400 transition-transform duration-300 ${cityOpen ? "rotate-180 text-secondary" : ""}`}
-              >
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
-
-            {cityOpen && (
-              <div className="absolute top-full md:top-[110%] left-0 w-full bg-white rounded-2xl shadow-2xl border border-slate-100 overflow-hidden z-50 animate-in fade-in zoom-in-95 duration-200">
-                <div className="max-h-60 overflow-y-auto custom-scrollbar p-2">
-                  {cities.map((city) => (
-                    <button
-                      key={city}
-                      onClick={() => {
-                        setSelectedCity(city);
-                        setSelectedArea("");
-                        setCityOpen(false);
-                      }}
-                      className={`w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-colors ${selectedCity === city ? "bg-secondary text-white" : "hover:bg-slate-50 text-slate-700"}`}
-                    >
-                      {city}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
+          <div className="flex-1 md:border-r border-slate-100">
+            <SearchableSelect
+              name="city"
+              value={selectedCity}
+              onChange={handleCityChange}
+              options={cities}
+              placeholder="Choose City"
+              icon={Building2}
+              className="border-none !space-y-0"
+            />
           </div>
 
           {/* 2. Area Selection */}
-          <div
-            className="flex-[1.5] px-6 border-b md:border-b-0 md:border-r border-slate-100 relative"
-            ref={areaRef}
-          >
-            <button
-              onClick={() => {
-                if (selectedCity) {
-                  setAreaOpen(!areaOpen);
-                  setCityOpen(false);
-                }
-              }}
-              className={`w-full flex items-center justify-between py-4 cursor-pointer group ${!selectedCity && "opacity-40 cursor-not-allowed"}`}
-            >
-              <span
-                className={`text-[15px] font-semibold truncate max-w-45 ${selectedArea ? "text-slate-800" : "text-slate-400"}`}
-              >
-                {selectedArea || "Select Area"}
-              </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={`text-slate-400 transition-transform duration-300 ${areaOpen ? "rotate-180 text-secondary" : ""}`}
-              >
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
-
-            {areaOpen && (
-              <div className="absolute top-full md:top-[110%] left-0 w-full min-w-70 bg-white rounded-2xl shadow-2xl border border-slate-100 overflow-hidden z-50 animate-in fade-in zoom-in-95 duration-200">
-                <div className="p-3 border-b border-slate-100">
-                  <div className="relative">
-                    <input
-                      type="text"
-                      placeholder="Search area..."
-                      value={areaSearch}
-                      onChange={(e) => setAreaSearch(e.target.value)}
-                      className="w-full bg-slate-50 text-sm font-medium px-10 py-2.5 rounded-xl outline-none focus:ring-1 focus:ring-secondary/20 border border-transparent focus:border-secondary/20 transition-all"
-                      autoFocus
-                    />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"
-                    >
-                      <circle cx="11" cy="11" r="8" />
-                      <path d="m21 21-4.3-4.3" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="max-h-80 overflow-y-auto custom-scrollbar p-2">
-                  {availableAreas.length > 0 ? (
-                    availableAreas.map((area) => (
-                      <button
-                        key={area}
-                        onClick={() => {
-                          setSelectedArea(area);
-                          setAreaOpen(false);
-                          setAreaSearch("");
-                        }}
-                        className={`w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors mb-0.5 ${selectedArea === area ? "bg-secondary text-white" : "hover:bg-slate-50 text-slate-700"}`}
-                      >
-                        {area}
-                      </button>
-                    ))
-                  ) : (
-                    <div className="py-8 text-center text-slate-400 text-sm font-medium">
-                      No areas found
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
+          <div className="flex-[1.5] md:border-r border-slate-100">
+            <SearchableSelect
+              name="area"
+              value={selectedArea}
+              onChange={handleAreaChange}
+              options={selectedCity ? citiesData[selectedCity] : []}
+              placeholder="Select Area"
+              icon={MapPin}
+              disabled={!selectedCity}
+              className="border-none !space-y-0"
+            />
           </div>
 
           {/* 3. Verified Toggle & Filter */}

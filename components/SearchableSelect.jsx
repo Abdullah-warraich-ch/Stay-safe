@@ -43,12 +43,12 @@ export default function SearchableSelect({
     setSearchTerm("");
   };
 
-  const inputClass = "w-full bg-white border border-slate-200 rounded-xl py-3 pl-11 pr-10 outline-none text-slate-800 text-[14px] placeholder:text-slate-400 focus:ring-2 focus:ring-secondary/20 focus:border-secondary/40 transition-all duration-200 cursor-pointer disabled:bg-slate-50 disabled:cursor-not-allowed";
+  const defaultInputClass = "w-full bg-white border border-slate-200 rounded-xl py-3 pl-11 pr-10 outline-none text-slate-800 text-[14px] placeholder:text-slate-400 focus:ring-2 focus:ring-secondary/20 focus:border-secondary/40 transition-all duration-200 cursor-pointer disabled:bg-slate-50 disabled:cursor-not-allowed";
   const labelClass = "text-[13px] font-semibold text-slate-600 ml-0.5 tracking-wide";
   const iconClass = "absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 transition-colors duration-200";
 
   return (
-    <div className={`space-y-1.5 relative ${className}`} ref={containerRef}>
+    <div className={`space-y-1.5 relative ${className.includes('space-y-0') ? '' : 'space-y-1.5'}`} ref={containerRef}>
       {label && <label className={labelClass}>{label}</label>}
       
       <div className="relative group">
@@ -56,7 +56,7 @@ export default function SearchableSelect({
         
         <div
           onClick={() => !disabled && setIsOpen(!isOpen)}
-          className={`${inputClass} ${isOpen ? 'ring-2 ring-secondary/20 border-secondary/40' : ''} flex items-center`}
+          className={`${defaultInputClass} ${className} ${isOpen && !className.includes('border-none') ? 'ring-2 ring-secondary/20 border-secondary/40' : ''} flex items-center`}
         >
           {value ? (
             <span className="text-slate-800">{value}</span>

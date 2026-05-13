@@ -22,6 +22,8 @@ export async function POST(req) {
     const capacity = JSON.parse(formData.get('capacity') || '[]');
     const ownerId = formData.get('ownerId');
     const amenities = JSON.parse(formData.get('amenities') || '[]');
+    const mess = JSON.parse(formData.get('mess') || '{"available":false,"price":0,"compulsory":false}');
+    const location = JSON.parse(formData.get('location') || '{"lat":null,"lng":null}');
 
     // Get all image files
     const imageFiles = formData.getAll('images');
@@ -71,6 +73,11 @@ export async function POST(req) {
       });
     }
 
+    // Derive display price from minimum room price
+    const displayPrice = capacity.length > 0 
+      ? Math.min(...capacity.map(c => c.price)) 
+      : (Number(price) || 0);
+
     // Create hostel
     const hostel = await Hostel.create({
       name,
@@ -78,10 +85,12 @@ export async function POST(req) {
       city,
       area,
       address,
-      price: Number(price),
+      price: displayPrice,
       hostelType,
       phone,
-      capacity: Number(capacity) || 0,
+      capacity,
+      mess,
+      location,
       amenities,
       images: uploadedImages,
       owner: ownerId,

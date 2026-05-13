@@ -1,10 +1,12 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useRouter } from 'next/navigation';
+import dynamic from 'next/dynamic';
 import { useMutation } from '@tanstack/react-query';
 import { ProtectedRoute } from '@/components/ProtectedRoute';
+import SearchableSelect from '@/components/SearchableSelect';
 import toast from 'react-hot-toast';
 import { cities } from '@/data/citiesData';
 import { citiesData } from '@/data/citiesData';
@@ -17,6 +19,11 @@ import {
 } from 'lucide-react';
 
 import { FaMale, FaFemale } from "react-icons/fa";
+
+const LocationPicker = dynamic(() => import('@/components/LocationPicker'), {
+  ssr: false,
+  loading: () => <div className="h-[300px] w-full bg-slate-100 animate-pulse rounded-xl flex items-center justify-center text-slate-400">Loading Map...</div>
+});
 
 const AMENITIES = [
   { id: 'wifi', label: 'Wi-Fi', icon: Wifi },
@@ -58,17 +65,30 @@ function CreateListingContent() {
     city: '',
     area: '',
     address: '',
-    price: '',
     hostelType: 'boys',
     phone: '',
     capacity: '',
   });
+  const [location, setLocation] = useState({ lat: null, lng: null });
+  const [isLocating, setIsLocating] = useState(false);
+  const [mess, setMess] = useState({
+    available: false,
+    price: '',
+    compulsory: false
+  });
   const [selectedAmenities, setSelectedAmenities] = useState([]);
   const [imageFiles, setImageFiles] = useState([]);
   const [imagePreviews, setImagePreviews] = useState([]);
+  const [allCities, setAllCities] = useState(cities);
   const [availableAreas, setAvailableAreas] = useState([]);
   const [hostelType, setHostelType] = useState("boys");
-  const [howManySeaters, setHowManySeaters] = useState(["1-Seater", "2-Seater", "3-Seater", "4-Seater", "5-Seater"]);
+  const [howManySeaters, setHowManySeaters] = useState([
+    { seater: "1-Seater", price: "", active: false },
+    { seater: "2-Seater", price: "", active: false },
+    { seater: "3-Seater", price: "", active: false },
+    { seater: "4-Seater", price: "", active: false },
+    { seater: "5-Seater", price: "", active: false },
+  ]);
 
 
   const handleChange = (e) => {
@@ -81,6 +101,27 @@ function CreateListingContent() {
       setFormData(prev => ({ ...prev, city: value, area: '' }));
     }
   };
+
+  const handleLocationChange = (latlng) => {
+    const { lat, lng } = latlng;
+    setLocation({ lat, lng });
+  };
+
+  // Get location on mount without explicit confirm prompt
+  useEffect(() => {
+    const getLocation = () => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((pos) => {
+          const newPos = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+          setLocation(newPos);
+        }, (err) => {
+          console.log("Geolocation permission denied or error.");
+        });
+      }
+    };
+    
+    getLocation();
+  }, []);
 
   const toggleAmenity = (amenityId) => {
     setSelectedAmenities(prev =>
@@ -123,7 +164,17 @@ function CreateListingContent() {
       data.append('price', formData.price);
       data.append('hostelType', hostelType);
       data.append('phone', formData.phone);
-      data.append('capacity', JSON.stringify(howManySeaters));
+      const activeSeaters = howManySeaters.filter(s => s.active).map(s => ({
+        seater: s.seater,
+        price: Number(s.price)
+      }));
+
+      data.append('capacity', JSON.stringify(activeSeaters));
+      data.append('mess', JSON.stringify({
+        ...mess,
+        price: Number(mess.price) || 0
+      }));
+      data.append('location', JSON.stringify(location));
       data.append('ownerId', user.id);
       data.append('amenities', JSON.stringify(selectedAmenities));
 
@@ -153,6 +204,10 @@ function CreateListingContent() {
     e.preventDefault();
     if (imageFiles.length < 2) {
       toast.error('Please upload at least 2 images');
+      return;
+    }
+    if (!location.lat || !location.lng) {
+      toast.error('Please pin your hostel location on the map');
       return;
     }
     createMutation.mutate();
@@ -233,15 +288,7 @@ function CreateListingContent() {
               />
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-              <div className="space-y-1.5">
-                <label className={labelClass}>Monthly Price (PKR)</label>
-                <div className="">
-                  {/* <DollarSign size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" /> */}
-                  <input name="price" type="number" placeholder="8,000" className={`${inputClass}`} onChange={handleChange} required />
-                </div>
-              </div>
-
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div className="space-y-1.5">
                 <label className={labelClass}>Contact Number</label>
                 <div className="relative">
@@ -250,84 +297,161 @@ function CreateListingContent() {
                 </div>
               </div>
             </div>
+
             <div className="space-y-1.5">
               <label className={labelClass}>Room Type (beds)</label>
-              <div className="flex gap-3">
-                {/* <Users size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
-                  <input name="capacity" type="number" placeholder="20" className={`${inputClass} pl-10`} onChange={handleChange} /> */}
-                <button
-                  type="button"
-                  onClick={() => setHowManySeaters((prev) => prev.length === 5 ? [] : ["1-Seater", "2-Seater", "3-Seater", "4-Seater", "5-Seater"])}
-                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.length === 5 ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
-                    }`}
-                >
-                  All
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setHowManySeaters((prev) => !prev.includes("1-Seater") ? [...prev, "1-Seater"] : prev.filter((item) => item !== "1-Seater"))}
-                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.includes("1-Seater") ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
-                    }`}
-                >
-                  1-Seater
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setHowManySeaters((prev) => !prev.includes("2-Seater") ? [...prev, "2-Seater"] : prev.filter((item) => item !== "2-Seater"))}
-                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.includes("2-Seater") ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
-                    }`}
-                >
-                  2-Seater
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setHowManySeaters((prev) => !prev.includes("3-Seater") ? [...prev, "3-Seater"] : prev.filter((item) => item !== "3-Seater"))}
-                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.includes("3-Seater") ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
-                    }`}
-                >
-                  3-Seater
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setHowManySeaters((prev) => !prev.includes("4-Seater") ? [...prev, "4-Seater"] : prev.filter((item) => item !== "4-Seater"))}
-                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.includes("4-Seater") ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
-                    }`}
-                >
-                  4-Seater
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setHowManySeaters((prev) => !prev.includes("5-Seater") ? [...prev, "5-Seater"] : prev.filter((item) => item !== "5-Seater"))}
-                  className={`flex-1 py-2 px-4 rounded-lg border transition-all ${howManySeaters.includes("5-Seater") ? "border-secondary bg-secondary/10 text-secondary" : "border-slate-200 bg-white text-slate-700"
-                    }`}
-                >
-                  5-Seater
-                </button>
+              <div className="space-y-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+                  {howManySeaters.map((item, index) => (
+                    <button
+                      key={item.seater}
+                      type="button"
+                      onClick={() => {
+                        const newSeaters = [...howManySeaters];
+                        newSeaters[index].active = !newSeaters[index].active;
+                        setHowManySeaters(newSeaters);
+                      }}
+                      className={`py-2.5 px-4 rounded-xl border text-[13px] font-semibold transition-all duration-200 ${item.active
+                        ? "border-secondary bg-secondary/10 text-secondary"
+                        : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
+                        }`}
+                    >
+                      {item.seater}
+                    </button>
+                  ))}
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-2">
+                  {howManySeaters.filter(s => s.active).map((item, index) => (
+                    <div key={item.seater} className="relative group animate-in fade-in slide-in-from-top-2 duration-300">
+                      <label className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1 block">
+                        {item.seater} Price
+                      </label>
+                      <div className="relative">
+                        <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 font-medium text-[13px]">Rs.</div>
+                        <input
+                          type="number"
+                          placeholder="0.00"
+                          value={item.price}
+                          onChange={(e) => {
+                            const newSeaters = [...howManySeaters];
+                            const targetIdx = howManySeaters.findIndex(s => s.seater === item.seater);
+                            newSeaters[targetIdx].price = e.target.value;
+                            setHowManySeaters(newSeaters);
+                          }}
+                          className={`${inputClass} pl-10 h-11`}
+                          required
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {howManySeaters.filter(s => s.active).length === 0 && (
+                  <p className="text-[12px] text-slate-400 italic">Please select at least one room type.</p>
+                )}
+              </div>
+            </div>
+
+            {/* ── Mess Details ── */}
+            <div className="pt-4 border-t border-slate-100">
+              <h3 className="text-[14px] font-bold text-slate-800 flex items-center gap-2 mb-4">
+                <Utensils size={18} className="text-secondary" /> Mess Information
+              </h3>
+
+              <div className="space-y-5">
+                <div className="flex items-center justify-between p-4 rounded-xl border border-slate-100 bg-slate-50/50">
+                  <div>
+                    <p className="text-[14px] font-bold text-slate-800">Mess Available</p>
+                    <p className="text-[12px] text-slate-500">Check this if your hostel provides food/mess services.</p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setMess(prev => ({ ...prev, available: !prev.available }))}
+                    className={`relative w-11 h-6 rounded-full transition-all duration-300 ${mess.available ? 'bg-secondary' : 'bg-slate-200'}`}
+                  >
+                    <div className={`absolute top-1 left-1 w-4 h-4 bg-white rounded-full transition-transform duration-300 ${mess.available ? 'translate-x-5' : ''}`} />
+                  </button>
+                </div>
+
+                {mess.available && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 animate-in fade-in slide-in-from-top-2">
+                    <div className="space-y-1.5">
+                      <label className={labelClass}>Mess Price (Monthly)</label>
+                      <div className="relative">
+                        <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 font-medium text-[13px]">Rs.</div>
+                        <input
+                          type="number"
+                          placeholder="4,000"
+                          value={mess.price}
+                          onChange={(e) => setMess(prev => ({ ...prev, price: e.target.value }))}
+                          className={`${inputClass} pl-10`}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="space-y-1.5">
+                      <label className={labelClass}>Is Mess Compulsory?</label>
+                      <div className="flex gap-3">
+                        <button
+                          type="button"
+                          onClick={() => setMess(prev => ({ ...prev, compulsory: true }))}
+                          className={`flex-1 py-2.5 rounded-xl border text-[13px] font-semibold transition-all ${mess.compulsory ? 'border-secondary bg-secondary/10 text-secondary' : 'border-slate-200 bg-white text-slate-600'}`}
+                        >
+                          Yes, Compulsory
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setMess(prev => ({ ...prev, compulsory: false }))}
+                          className={`flex-1 py-2.5 rounded-xl border text-[13px] font-semibold transition-all ${!mess.compulsory ? 'border-secondary bg-secondary/10 text-secondary' : 'border-slate-200 bg-white text-slate-600'}`}
+                        >
+                          Optional
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
 
           {/* ── Section: Location ── */}
           <div className="bg-white rounded-2xl border border-slate-100 p-6 space-y-5">
-            <h3 className="text-[15px] font-bold text-slate-800 flex items-center gap-2">
-              <MapPin size={18} className="text-secondary" /> Location
-            </h3>
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center justify-between">
+                <h3 className="text-[15px] font-bold text-slate-800 flex items-center gap-2">
+                  <MapPin size={18} className="text-secondary" /> Pin Hostel Location
+                </h3>
+                <p className="text-[11px] text-slate-400 font-medium italic">Drag marker to your hostel's exact location</p>
+              </div>
+
+              <LocationPicker
+                selectedLocation={location}
+                onLocationChange={handleLocationChange}
+              />
+            </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <div className="space-y-1.5">
-                <label className={labelClass}>City</label>
-                <select name="city" className={inputClass} onChange={handleChange} value={formData.city} required>
-                  <option value="">Select City</option>
-                  {cities.map(c => <option key={c} value={c}>{c}</option>)}
-                </select>
-              </div>
-              <div className="space-y-1.5">
-                <label className={labelClass}>Area</label>
-                <select name="area" className={inputClass} onChange={handleChange} value={formData.area} required disabled={!formData.city}>
-                  <option value="">Select Area</option>
-                  {availableAreas.map(a => <option key={a} value={a}>{a}</option>)}
-                </select>
-              </div>
+              <SearchableSelect
+                label="City"
+                name="city"
+                value={formData.city}
+                onChange={handleChange}
+                options={allCities}
+                placeholder="Select City"
+                icon={Building2}
+                required
+              />
+              <SearchableSelect
+                label="Area"
+                name="area"
+                value={formData.area}
+                onChange={handleChange}
+                options={availableAreas}
+                placeholder="Select Area"
+                icon={MapPin}
+                required
+                disabled={!formData.city}
+              />
             </div>
 
             <div className="space-y-1.5">

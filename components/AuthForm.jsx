@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { X, User, Mail, Phone, Lock, Eye, EyeOff, ShieldCheck, Star, Loader2, ArrowRight, MapPin, School, CheckCircle2 } from 'lucide-react';
+import SearchableSelect from './SearchableSelect';
 import { useRouter } from 'next/navigation';
 import { useMutation } from '@tanstack/react-query';
 import Link from 'next/link';
@@ -16,9 +17,7 @@ export default function AuthForm({ mode = 'signup' }) {
 
   const [role, setRole] = useState('student');
   const [showPassword, setShowPassword] = useState(false);
-  const [citySuggestions, setCitySuggestions] = useState([]);
-  const [showCitySuggestions, setShowCitySuggestions] = useState(false);
-  const cityRef = useRef(null);
+
 
   const [formData, setFormData] = useState({
     name: '',
@@ -30,39 +29,14 @@ export default function AuthForm({ mode = 'signup' }) {
     confirmPassword: ''
   });
 
-  // Handle outside click for city suggestions
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (cityRef.current && !cityRef.current.contains(event.target)) {
-        setShowCitySuggestions(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-
-    if (name === 'city') {
-      if (value.trim()) {
-        const filtered = cities.filter(c =>
-          c.toLowerCase().includes(value.toLowerCase())
-        );
-        setCitySuggestions(filtered);
-        setShowCitySuggestions(true);
-      } else {
-        setCitySuggestions([]);
-        setShowCitySuggestions(false);
-      }
-    }
   };
 
-  const handleCitySelect = (cityName) => {
-    setFormData({ ...formData, city: cityName });
-    setShowCitySuggestions(false);
-  };
+
 
   // Mutation for Auth (Login or Signup)
   const authMutation = useMutation({
@@ -245,48 +219,17 @@ export default function AuthForm({ mode = 'signup' }) {
                       required
                     />
                   </div>
-                </div>
-
-                {/* City Input with Autocomplete */}
-                <div className="space-y-1.5 relative" ref={cityRef}>
-                  <label className={labelClass}>City</label>
-                  <div className="relative group">
-                    <MapPin className={iconClass} size={16} />
-                    <input
-                      type="text"
-                      name="city"
-                      value={formData.city}
-                      placeholder="Type to search..."
-                      autoComplete="off"
-                      className={inputClass}
-                      onChange={handleChange}
-                      onFocus={() => formData.city && setShowCitySuggestions(true)}
-                      required
-                    />
-                    {cities.includes(formData.city) && (
-                      <CheckCircle2 size={15} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-green-500" />
-                    )}
-
-                    {/* Suggestions Dropdown */}
-                    {showCitySuggestions && citySuggestions.length > 0 && (
-                      <div className="absolute z-50 left-0 right-0 top-full mt-1.5 bg-white border border-slate-200 rounded-xl shadow-lg overflow-hidden ss-zoom-in">
-                        <div className="max-h-[180px] overflow-y-auto custom-scrollbar">
-                          {citySuggestions.map((cityName) => (
-                            <button
-                              key={cityName}
-                              type="button"
-                              onClick={() => handleCitySelect(cityName)}
-                              className="w-full text-left px-4 py-2.5 text-[13px] text-slate-700 hover:bg-secondary/5 hover:text-secondary transition-colors flex items-center justify-between group"
-                            >
-                              {cityName}
-                              <ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
-                            </button>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
+                          {/* City Input with Searchable Select */}
+                <SearchableSelect
+                  label="City"
+                  name="city"
+                  value={formData.city}
+                  onChange={handleChange}
+                  options={cities}
+                  placeholder="Select your city..."
+                  icon={MapPin}
+                  required
+                />        </div>
               </div>
             )}
 

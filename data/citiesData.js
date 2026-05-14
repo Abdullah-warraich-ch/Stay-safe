@@ -1,6 +1,6 @@
 export const citiesData = {
   'Lahore': [
-    'Sukh Chain Society', 'Bahria Town', 'EME DHA Society', 'PASCO Housing Society',
+    'Sukh Chain Society', 'Defence Road', 'Bahria Town', 'EME DHA Society', 'PASCO Housing Society',
     'Eden Canal Villas', 'Eden Homes', 'Fransisi Town', 'Doctors Society',
     'Thokar Niaz Baig', 'Sarshar Town', 'Awan Town', 'Canal Breeze',
     'Allama Iqbal Town', 'Saidpur', 'Sabzazar', 'Samanabad', 'Ichhra',
@@ -30,7 +30,7 @@ export const citiesData = {
     'Mayo Hospital', 'Gawal Mandi', 'Lakshmi Chowk', 'Punjab University Old Campus',
     'Qila Gujarsing', 'Wapda House', 'Jail Road', 'Mazang', 'Ganga Ram Hospital',
     'Race Course Park Surrounding Area', 'Gor', 'Gulberg 1', 'Gulberg 2',
-    'Gulberg 3', 'Firozpur Road', 'Askari Colony', 'Gulbahar Colony',
+    'Gulberg 3', 'Firozpur Road', 'bobhtian chowk', 'Askari Colony', 'Gulbahar Colony',
     'Madina Colony', 'Walton Road', 'Ghazi Road', 'Chungi Amer Sadhu',
     'Awan Market', 'Nishtar Colony', 'Youhna Bad', 'Abdalian Housing Society',
     'Bedian Road', 'Alfalah Town', 'Chararrd Village', 'Cavalry Ground',
@@ -69,9 +69,77 @@ export const citiesData = {
     'Valencia Town Block K1', 'Valencia Town Block L', 'Valencia Town Block P1',
     'Barkat Market'
   ].sort(),
-  'Karachi': ['Clifton', 'DHA', 'Gulshan-e-Iqbal', 'North Nazimabad', 'Bahria Town'],
-  'Islamabad': ['F-6', 'F-7', 'F-8', 'F-10', 'G-11', 'I-8'],
-  'Rawalpindi': ['Saddar', 'Bahria Town', 'Satellite Town', 'Westridge']
+  'Karachi': [
+    'Clifton', 'DHA Phase 1', 'DHA Phase 2', 'DHA Phase 3', 'DHA Phase 4', 'DHA Phase 5',
+    'DHA Phase 6', 'DHA Phase 7', 'DHA Phase 8', 'Gulshan-e-Iqbal', 'North Nazimabad',
+    'Bahria Town Karachi', 'Gulistan-e-Johar', 'Federal B Area', 'PECHS', 'Saddar',
+    'Malir', 'Korangi', 'Landhi', 'Orangi Town', 'Lyari', 'Surjani Town', 'Garden East',
+    'Garden West', 'Nazimabad', 'Liaquatabad', 'Shah Faisal Colony', 'Model Colony',
+    'Saadi Town', 'Scheme 33', 'Askari 1', 'Askari 2', 'Askari 3', 'Askari 4', 'Askari 5',
+    'Jinnah Avenue', 'Shahra-e-Faisal', 'Tariq Road', 'Bahadurabad', 'KDA Scheme 1',
+    'Defence View', 'Navy Housing Scheme', 'Mehmoodabad', 'Manzoor Colony', 'Akhtar Colony',
+    'Azam Basti', 'Jacob Lines', 'Lines Area', 'Soldier Bazaar', 'Amil Colony',
+    'Bihar Colony', 'Baldia Town', 'Ittihad Town', 'Kemari', 'SITE Area', 'Manora'
+  ].sort(),
+  'Islamabad': [
+    'F-6', 'F-7', 'F-8', 'F-10', 'F-11', 'G-6', 'G-7', 'G-8', 'G-9', 'G-10', 'G-11',
+    'G-13', 'G-14', 'G-15', 'H-13', 'I-8', 'I-9', 'I-10', 'E-7', 'E-11', 'D-12',
+    'Bahria Town Phase 1', 'Bahria Town Phase 2', 'Bahria Town Phase 3',
+    'Bahria Town Phase 4', 'Bahria Town Phase 5', 'Bahria Town Phase 6',
+    'Bahria Town Phase 7', 'Bahria Town Phase 8', 'Bahria Enclave', 'DHA Phase 1',
+    'DHA Phase 2', 'DHA Phase 3', 'DHA Phase 4', 'DHA Phase 5', 'DHA Valley',
+    'Gulberg Greens', 'Gulberg Residencia', 'Bani Gala', 'Bara Kahu', 'Soan Garden',
+    'PWD Housing Society', 'Korang Town', 'Naval Anchorage', 'Pakistan Town',
+    'Zaraj Housing Society', 'Multi Gardens (B-17)', 'CBR Town', 'Police Foundation',
+    'Swan Garden', 'River Garden', 'Judicial Town', 'Faisal Town'
+  ].sort(),
+  'Rawalpindi': [
+    'Saddar', 'Bahria Town Phase 1-6', 'Bahria Town Phase 7-8', 'Satellite Town',
+    'Westridge 1', 'Westridge 2', 'Westridge 3', 'Chaklala Scheme 1', 'Chaklala Scheme 2',
+    'Chaklala Scheme 3', 'Askari 1', 'Askari 2', 'Askari 3', 'Askari 4', 'Askari 5',
+    'Askari 6', 'Askari 7', 'Askari 8', 'Askari 9', 'Askari 10', 'Askari 11', 'Askari 12',
+    'Askari 13', 'Askari 14', 'Adiala Road', 'PWD', 'Gulrez 1', 'Gulrez 2', 'Gulrez 3',
+    'Gulrez 4', 'Morgah', 'Lalazar', 'Tench Bhata', 'Shamsabad', 'Muslim Town',
+    'Double Road', 'Committee Chowk', 'Raja Bazar', 'Commercial Market', 'Tulsa Road',
+    'Range Road', 'Peshawar Road', '6th Road', 'Saidpur Road', 'Dhoke Hassu',
+    'Dhoke Khabba', 'Pirwadhai', 'Khayaban-e-Sir Syed', 'Gulshan-e-Abad', 'Kuri Road'
+  ].sort()
+};
+
+export const universitiesData = {
+  'Lahore': [
+    'University of Engineering and Technology (UET) (Lahore)', 'University of the Punjab (PU) (Lahore)',
+    'LUMS (Lahore)', 'FC College (Lahore)', 'University of Central Punjab (UCP) (Lahore)', 'FAST-NUCES (Lahore)',
+    'Information Technology University (ITU) (Lahore)', 'University of Management and Technology (UMT) (Lahore)',
+    'COMSATS University (Lahore)', 'Superior University (Lahore)', 'Beaconhouse National University (BNU) (Lahore)',
+    'National College of Arts (NCA) (Lahore)', 'UVAS (Lahore)', 'King Edward Medical University (Lahore)',
+    'Allama Iqbal Medical College (Lahore)', 'Government College University (GCU) (Lahore)',
+    'Lahore School of Economics (LSE) (Lahore)', 'University of Lahore (UOL) (Lahore)',
+    'Minhaj University (Lahore)', 'University of South Asia (Lahore)', 'Lahore College for Women University (LCWU) (Lahore)'
+  ].sort(),
+  'Karachi': [
+    'University of Karachi (Karachi)', 'NED University of Engineering and Technology (Karachi)',
+    'Institute of Business Administration (IBA) (Karachi)', 'Aga Khan University (Karachi)',
+    'Dow University of Health Sciences (Karachi)', 'SZABIST (Karachi)', 'Habib University (Karachi)',
+    'FAST-NUCES (Karachi)', 'Sir Syed University of Engineering and Technology (SSUET) (Karachi)',
+    'Hamdard University (Karachi)', 'Baqai Medical University (Karachi)', 'IQRA University (Karachi)',
+    'Dawood University of Engineering and Technology (Karachi)', 'Jinnah University for Women (Karachi)',
+    'PAF-KIET (Karachi)', 'Bahria University Karachi (Karachi)', 'Indus University (Karachi)'
+  ].sort(),
+  'Islamabad': [
+    'National University of Sciences and Technology (NUST) (Islamabad)', 'Quaid-i-Azam University (QAU) (Islamabad)',
+    'International Islamic University (IIUI) (Islamabad)', 'Bahria University (Islamabad)', 'Air University (Islamabad)',
+    'FAST-NUCES (Islamabad)', 'COMSATS University (Islamabad)', 'Riphah International University (Islamabad)',
+    'National Defence University (NDU) (Islamabad)', 'Shifa Tameer-e-Millat University (Islamabad)',
+    'National University of Modern Languages (NUML) (Islamabad)', 'PIEAS (Islamabad)', 'Allama Iqbal Open University (AIOU) (Islamabad)',
+    'Muslim Youth University (Islamabad)', 'Foundation University Islamabad (Islamabad)'
+  ].sort(),
+  'Rawalpindi': [
+    'Fatima Jinnah Women University (Rawalpindi)', 'Rawalpindi Medical University (Rawalpindi)',
+    'Pir Mehr Ali Shah Arid Agriculture University (Rawalpindi)', 'Foundation University Rawalpindi (Rawalpindi)',
+    'Riphah International University (RWP) (Rawalpindi)', 'National University of Medical Sciences (NUMS) (Rawalpindi)',
+    'Army Medical College (Rawalpindi)', 'Rawalpindi College of Commerce (Rawalpindi)', 'Government Viqar-un-Nisa College (Rawalpindi)'
+  ].sort()
 };
 
 export const cities = ["Lahore", "Karachi", "Islamabad", "Rawalpindi"]

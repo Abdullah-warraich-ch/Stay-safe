@@ -22,8 +22,9 @@ export async function POST(req) {
     const capacity = JSON.parse(formData.get('capacity') || '[]');
     const ownerId = formData.get('ownerId');
     const amenities = JSON.parse(formData.get('amenities') || '[]');
+    const nearbyUniversities = JSON.parse(formData.get('nearbyUniversities') || '[]');
     const mess = JSON.parse(formData.get('mess') || '{"available":false,"price":0,"compulsory":false}');
-    const location = JSON.parse(formData.get('location') || '{"lat":null,"lng":null}');
+
 
     // Get all image files
     const imageFiles = formData.getAll('images');
@@ -56,7 +57,8 @@ export async function POST(req) {
             folder: 'stay-safe/hostels',
             resource_type: 'image',
             transformation: [
-              { width: 1200, height: 800, crop: 'limit', quality: 'auto' }
+              { width: 1200, height: 800, crop: 'limit', quality: 'auto', fetch_format: 'auto' },
+              { overlay: { font_family: "Roboto", font_size: 100, font_weight: "bold", text: "Stay Safe" }, color: "white", opacity: 20, gravity: "center" }
             ]
           },
           (error, result) => {
@@ -90,7 +92,7 @@ export async function POST(req) {
       phone,
       capacity,
       mess,
-      location,
+      nearbyUniversities,
       amenities,
       images: uploadedImages,
       owner: ownerId,

@@ -5,6 +5,7 @@ import { useAuth } from '@/context/AuthContext';
 import { Layout, Plus, Building2, User, ShieldCheck, Heart, Settings } from 'lucide-react';
 import { ProtectedRoute } from '@/components/ProtectedRoute';
 import Nav from '@/components/Nav';
+import MyHostels from '@/components/MyHostels';
 import Link from 'next/link';
 
 export default function DashboardPage() {
@@ -60,7 +61,7 @@ function DashboardContent() {
                 </div>
 
                 {/* Quick Actions */}
-                <div className="bg-white rounded-2xl border border-slate-100 p-6">
+                <div className="bg-white rounded-2xl border border-slate-100 p-6 mb-8">
                     <h3 className="text-[15px] font-bold text-slate-800 mb-4">Quick Actions</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         <Link
@@ -107,6 +108,9 @@ function DashboardContent() {
                         </div>
                     </div>
                 </div>
+
+                {/* My Hostels List */}
+                <MyHostels ownerId={user.id} />
 
                 {/* Mobile FAB */}
                 <Link

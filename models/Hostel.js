@@ -23,10 +23,7 @@ const hostelSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Full address is required'],
   },
-  location: {
-    lat: { type: Number },
-    lng: { type: Number }
-  },
+
   price: {
     type: Number,
     // required: [true, 'Monthly price is required'],
@@ -61,7 +58,10 @@ const hostelSchema = new mongoose.Schema({
     seater: { type: String },
     price: { type: Number }
   }],
-  isVerified: {
+  nearbyUniversities: [{
+    type: String,
+  }],
+  verified: {
     type: Boolean,
     default: false,
   },

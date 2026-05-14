@@ -3,27 +3,23 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useRouter } from 'next/navigation';
-import dynamic from 'next/dynamic';
 import { useMutation } from '@tanstack/react-query';
 import { ProtectedRoute } from '@/components/ProtectedRoute';
 import SearchableSelect from '@/components/SearchableSelect';
 import toast from 'react-hot-toast';
-import { cities } from '@/data/citiesData';
+import { cities, universitiesData } from '@/data/citiesData';
 import { citiesData } from '@/data/citiesData';
 import {
   ArrowLeft, Upload, X, ImagePlus, Loader2, MapPin,
   Building2, Phone, Users, DollarSign, FileText, Home,
   Wifi, Car, ShowerHead, Utensils, Wind, Tv, Dumbbell,
   WashingMachine, ShieldCheck, Zap, Droplets, BookOpen,
-  Lock, Cigarette, PawPrint, CookingPot, Bed, Footprints
+  Lock, Cigarette, PawPrint, CookingPot, Bed, Footprints, School
 } from 'lucide-react';
 
 import { FaMale, FaFemale } from "react-icons/fa";
 
-const LocationPicker = dynamic(() => import('@/components/LocationPicker'), {
-  ssr: false,
-  loading: () => <div className="h-[300px] w-full bg-slate-100 animate-pulse rounded-xl flex items-center justify-center text-slate-400">Loading Map...</div>
-});
+
 
 const AMENITIES = [
   { id: 'wifi', label: 'Wi-Fi', icon: Wifi },
@@ -69,18 +65,19 @@ function CreateListingContent() {
     phone: '',
     capacity: '',
   });
-  const [location, setLocation] = useState({ lat: null, lng: null });
-  const [isLocating, setIsLocating] = useState(false);
+
   const [mess, setMess] = useState({
     available: false,
     price: '',
     compulsory: false
   });
   const [selectedAmenities, setSelectedAmenities] = useState([]);
+  const [selectedUniversities, setSelectedUniversities] = useState([]);
   const [imageFiles, setImageFiles] = useState([]);
   const [imagePreviews, setImagePreviews] = useState([]);
   const [allCities, setAllCities] = useState(cities);
   const [availableAreas, setAvailableAreas] = useState([]);
+  const [availableUniversities, setAvailableUniversities] = useState([]);
   const [hostelType, setHostelType] = useState("boys");
   const [howManySeaters, setHowManySeaters] = useState([
     { seater: "1-Seater", price: "", active: false },
@@ -95,39 +92,36 @@ function CreateListingContent() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // When city changes, update available areas
-    if (name === 'city' && citiesData[value]) {
-      setAvailableAreas(citiesData[value]);
+    // When city changes, update available areas and universities
+    if (name === 'city') {
+      if (citiesData[value]) {
+        setAvailableAreas(citiesData[value]);
+      }
+      if (universitiesData[value]) {
+        setAvailableUniversities(universitiesData[value]);
+      }
       setFormData(prev => ({ ...prev, city: value, area: '' }));
+      setSelectedUniversities([]); // Reset selected universities on city change
     }
   };
 
-  const handleLocationChange = (latlng) => {
-    const { lat, lng } = latlng;
-    setLocation({ lat, lng });
-  };
 
-  // Get location on mount without explicit confirm prompt
-  useEffect(() => {
-    const getLocation = () => {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition((pos) => {
-          const newPos = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-          setLocation(newPos);
-        }, (err) => {
-          console.log("Geolocation permission denied or error.");
-        });
-      }
-    };
-    
-    getLocation();
-  }, []);
+
+
 
   const toggleAmenity = (amenityId) => {
     setSelectedAmenities(prev =>
       prev.includes(amenityId)
         ? prev.filter(a => a !== amenityId)
         : [...prev, amenityId]
+    );
+  };
+
+  const toggleUniversity = (uniName) => {
+    setSelectedUniversities(prev =>
+      prev.includes(uniName)
+        ? prev.filter(u => u !== uniName)
+        : [...prev, uniName]
     );
   };
 
@@ -174,9 +168,10 @@ function CreateListingContent() {
         ...mess,
         price: Number(mess.price) || 0
       }));
-      data.append('location', JSON.stringify(location));
+
       data.append('ownerId', user.id);
       data.append('amenities', JSON.stringify(selectedAmenities));
+      data.append('nearbyUniversities', JSON.stringify(selectedUniversities));
 
       imageFiles.forEach(file => {
         data.append('images', file);
@@ -206,10 +201,7 @@ function CreateListingContent() {
       toast.error('Please upload at least 2 images');
       return;
     }
-    if (!location.lat || !location.lng) {
-      toast.error('Please pin your hostel location on the map');
-      return;
-    }
+
     createMutation.mutate();
   };
 
@@ -416,18 +408,10 @@ function CreateListingContent() {
 
           {/* ── Section: Location ── */}
           <div className="bg-white rounded-2xl border border-slate-100 p-6 space-y-5">
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center justify-between">
-                <h3 className="text-[15px] font-bold text-slate-800 flex items-center gap-2">
-                  <MapPin size={18} className="text-secondary" /> Pin Hostel Location
-                </h3>
-                <p className="text-[11px] text-slate-400 font-medium italic">Drag marker to your hostel's exact location</p>
-              </div>
-
-              <LocationPicker
-                selectedLocation={location}
-                onLocationChange={handleLocationChange}
-              />
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-[15px] font-bold text-slate-800 flex items-center gap-2">
+                <MapPin size={18} className="text-secondary" /> Location Details
+              </h3>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -458,6 +442,59 @@ function CreateListingContent() {
               <label className={labelClass}>Full Address</label>
               <input name="address" placeholder="House #, Street, Block..." className={inputClass} onChange={handleChange} required />
             </div>
+          </div>
+
+          {/* ── Section: Universities ── */}
+          <div className="bg-white rounded-2xl border border-slate-100 p-6 space-y-5">
+            <h3 className="text-[15px] font-bold text-slate-800 flex items-center gap-2">
+              <School size={18} className="text-secondary" /> Nearby Universities
+            </h3>
+            <p className="text-[13px] text-slate-500 -mt-2">Select the universities closest to your hostel to help students find you.</p>
+
+            {formData.city ? (
+              <div className="space-y-4">
+                <div className="flex flex-wrap gap-2 min-h-[46px] p-2 bg-slate-50 rounded-xl border border-slate-100">
+                  {selectedUniversities.length > 0 ? (
+                    selectedUniversities.map(uni => (
+                      <span key={uni} className="flex items-center gap-1.5 px-3 py-1.5 bg-secondary text-white rounded-lg text-[12px] font-semibold animate-in zoom-in duration-200">
+                        {uni}
+                        <button type="button" onClick={() => toggleUniversity(uni)} className="hover:bg-white/20 rounded-full p-0.5 transition-colors">
+                          <X size={12} />
+                        </button>
+                      </span>
+                    ))
+                  ) : (
+                    <span className="text-slate-400 text-[13px] px-2 py-1.5">No universities selected yet...</span>
+                  )}
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 max-h-[200px] overflow-y-auto custom-scrollbar pr-2">
+                  {availableUniversities.map(uni => {
+                    const isSelected = selectedUniversities.includes(uni);
+                    return (
+                      <button
+                        key={uni}
+                        type="button"
+                        onClick={() => toggleUniversity(uni)}
+                        className={`flex items-center text-left px-4 py-2.5 rounded-xl border text-[12px] transition-all duration-200 ${isSelected
+                          ? 'bg-secondary/10 border-secondary/30 text-secondary font-bold'
+                          : 'bg-white border-slate-100 text-slate-600 hover:border-slate-200 hover:bg-slate-50'
+                          }`}
+                      >
+                        {uni}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            ) : (
+              <div className="p-8 border border-dashed border-slate-200 rounded-2xl flex flex-col items-center justify-center text-center bg-slate-50/50">
+                <div className="p-3 bg-white rounded-full shadow-sm mb-3">
+                  <MapPin size={20} className="text-slate-400" />
+                </div>
+                <p className="text-[13px] font-medium text-slate-500">Please select a city first to see available universities.</p>
+              </div>
+            )}
           </div>
 
           {/* ── Section: Images ── */}

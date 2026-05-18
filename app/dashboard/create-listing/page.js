@@ -14,7 +14,7 @@ import {
   Building2, Phone, Users, DollarSign, FileText, Home,
   Wifi, Car, ShowerHead, Utensils, Wind, Tv, Dumbbell,
   WashingMachine, ShieldCheck, Zap, Droplets, BookOpen,
-  Lock, Cigarette, PawPrint, CookingPot, Bed, Footprints, School
+  Lock, Cigarette, PawPrint, CookingPot, Bed, Footprints, School, Tag
 } from 'lucide-react';
 
 import { FaMale, FaFemale } from "react-icons/fa";
@@ -86,6 +86,60 @@ function CreateListingContent() {
     { seater: "4-Seater", price: "", active: false },
     { seater: "5-Seater", price: "", active: false },
   ]);
+  const [tags, setTags] = useState([]);
+  const [tagInput, setTagInput] = useState('');
+
+  const handleAddTag = (tagText) => {
+    const trimmed = tagText.trim();
+    if (trimmed && !tags.includes(trimmed)) {
+      if (tags.length >= 8) {
+        toast.error('Maximum 8 tags allowed');
+        return;
+      }
+      setTags(prev => [...prev, trimmed]);
+    }
+  };
+
+  const handleRemoveTag = (tagToRemove) => {
+    setTags(prev => prev.filter(t => t !== tagToRemove));
+  };
+
+  const handleTagInputKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (tagInput.trim()) {
+        handleAddTag(tagInput);
+        setTagInput('');
+      }
+    }
+  };
+
+  const getSuggestedTags = () => {
+    const suggestions = [];
+    const typeLabel = hostelType === 'boys' ? 'Boys' : 'Girls';
+
+    if (formData.city) {
+      suggestions.push(`Hostel in ${formData.city}`);
+      suggestions.push(`Best Hostel in ${formData.city}`);
+    }
+
+    if (formData.area) {
+      suggestions.push(`Hostel near ${formData.area}`);
+      suggestions.push(`${typeLabel} Hostel near ${formData.area}`);
+      suggestions.push(`Cheap Hostel in ${formData.area}`);
+      suggestions.push(`Luxury Hostel in ${formData.area}`);
+    }
+
+    if (selectedUniversities && selectedUniversities.length > 0) {
+      selectedUniversities.forEach(uni => {
+        const uniName = uni.split('(')[0].trim();
+        suggestions.push(`Hostel near ${uniName}`);
+        suggestions.push(`${typeLabel} Hostel near ${uniName}`);
+      });
+    }
+
+    return suggestions.filter(s => !tags.includes(s));
+  };
 
 
   const handleChange = (e) => {
@@ -172,6 +226,7 @@ function CreateListingContent() {
       data.append('ownerId', user.id);
       data.append('amenities', JSON.stringify(selectedAmenities));
       data.append('nearbyUniversities', JSON.stringify(selectedUniversities));
+      data.append('tags', JSON.stringify(tags));
 
       imageFiles.forEach(file => {
         data.append('images', file);
@@ -495,6 +550,84 @@ function CreateListingContent() {
                 <p className="text-[13px] font-medium text-slate-500">Please select a city first to see available universities.</p>
               </div>
             )}
+          </div>
+
+          {/* ── Section: Search Tags ── */}
+          <div className="bg-white rounded-2xl border border-slate-100 p-6 space-y-5">
+            <div className="flex items-center justify-between">
+              <h3 className="text-[15px] font-bold text-slate-800 flex items-center gap-2">
+                <Tag size={18} className="text-secondary" /> Search Tags & Keywords
+              </h3>
+              <span className="text-[12px] text-slate-400 font-medium">
+                {tags.length}/8 tags added
+              </span>
+            </div>
+            <p className="text-[13px] text-slate-500 -mt-2">
+              Add keywords or phrases that make your hostel easier to find. Students can search using these terms (e.g., "Boys Hostel near barkat market").
+            </p>
+
+            <div className="space-y-4">
+              {/* Tag Input Field */}
+              <div className="flex gap-2">
+                <div className="relative flex-1">
+                  <input
+                    type="text"
+                    value={tagInput}
+                    onChange={(e) => setTagInput(e.target.value)}
+                    onKeyDown={handleTagInputKeyDown}
+                    placeholder="Type a custom tag and press Enter"
+                    className={inputClass}
+                  />
+                </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (tagInput.trim()) {
+                      handleAddTag(tagInput);
+                      setTagInput('');
+                    }
+                  }}
+                  className="px-5 py-3 rounded-xl bg-slate-900 text-white text-[13px] font-bold hover:bg-slate-800 transition-colors cursor-pointer"
+                >
+                  Add
+                </button>
+              </div>
+
+              {/* Added Tags Display */}
+              <div className="flex flex-wrap gap-2 min-h-[46px] p-2.5 bg-slate-50 rounded-xl border border-slate-100 animate-in fade-in duration-300">
+                {tags.length > 0 ? (
+                  tags.map(tag => (
+                    <span key={tag} className="flex items-center gap-1.5 px-3 py-1.5 bg-secondary text-white rounded-lg text-[12px] font-semibold animate-in zoom-in duration-200">
+                      #{tag}
+                      <button type="button" onClick={() => handleRemoveTag(tag)} className="hover:bg-white/20 rounded-full p-0.5 transition-colors cursor-pointer">
+                        <X size={12} />
+                      </button>
+                    </span>
+                  ))
+                ) : (
+                  <span className="text-slate-400 text-[13px] px-2 py-1.5">No tags added yet. Try the smart suggestions below or type your own!</span>
+                )}
+              </div>
+
+              {/* Smart Suggestions */}
+              {getSuggestedTags().length > 0 && (
+                <div className="space-y-2 pt-2 border-t border-slate-50">
+                  <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Smart Suggestions</h4>
+                  <div className="flex flex-wrap gap-2 max-h-[120px] overflow-y-auto pr-1">
+                    {getSuggestedTags().slice(0, 10).map(suggestion => (
+                      <button
+                        key={suggestion}
+                        type="button"
+                        onClick={() => handleAddTag(suggestion)}
+                        className="flex items-center gap-1 px-3 py-1.5 bg-white border border-slate-100 hover:border-secondary/30 hover:bg-secondary/5 text-slate-600 hover:text-secondary rounded-lg text-[11px] font-semibold transition-all duration-200 cursor-pointer"
+                      >
+                        + #{suggestion}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* ── Section: Images ── */}

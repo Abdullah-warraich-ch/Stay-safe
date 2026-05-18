@@ -24,6 +24,7 @@ export async function POST(req) {
     const amenities = JSON.parse(formData.get('amenities') || '[]');
     const nearbyUniversities = JSON.parse(formData.get('nearbyUniversities') || '[]');
     const mess = JSON.parse(formData.get('mess') || '{"available":false,"price":0,"compulsory":false}');
+    const tags = JSON.parse(formData.get('tags') || '[]');
 
 
     // Get all image files
@@ -94,6 +95,7 @@ export async function POST(req) {
       mess,
       nearbyUniversities,
       amenities,
+      tags,
       images: uploadedImages,
       owner: ownerId,
     });

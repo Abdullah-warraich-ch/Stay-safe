@@ -61,6 +61,9 @@ const hostelSchema = new mongoose.Schema({
   nearbyUniversities: [{
     type: String,
   }],
+  tags: [{
+    type: String,
+  }],
   verified: {
     type: Boolean,
     default: false,

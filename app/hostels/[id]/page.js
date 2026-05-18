@@ -154,6 +154,16 @@ export default function HostelDetailPage() {
                     </span>
                 ))}
               </div>
+
+              {hostel.tags && hostel.tags.length > 0 && (
+                <div className="flex flex-wrap gap-2 pt-1 animate-in fade-in slide-in-from-top-1 duration-300">
+                  {hostel.tags.map((tag, idx) => (
+                    <span key={idx} className="px-3 py-1 bg-secondary/10 text-secondary text-[11px] font-bold rounded-xl border border-secondary/20">
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Description */}

@@ -50,7 +50,7 @@ export default function FilterSystem() {
     if (selectedCity) params.set("city", selectedCity);
     if (selectedArea) params.set("area", selectedArea);
     if (isVerified) params.set("isVerified", "true");
-    if (seater) params.set("seater", seater);
+    if (seater) params.set("seater", seater + "-Seater");
     if (attachedBath) params.set("attachedBath", attachedBath);
     if (acType) params.set("acType", acType);
     if (wifi) params.set("wifi", wifi);
@@ -153,7 +153,7 @@ export default function FilterSystem() {
 
           {/* 5. Search Button */}
           <div className="p-2 md:p-0">
-            <button 
+            <button
               onClick={handleSearch}
               className="w-full md:w-auto bg-secondary hover:brightness-110 text-white p-4.5 rounded-2xl md:rounded-full shadow-lg shadow-secondary/25 transition-all duration-300 active:scale-95 cursor-pointer flex items-center justify-center gap-2 md:gap-0"
             >

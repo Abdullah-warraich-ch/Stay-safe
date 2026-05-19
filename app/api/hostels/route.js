@@ -126,7 +126,7 @@ export async function GET(req) {
     await connectDB();
     const query = {}
     const url = new URL(req.url);
-    if (url.searchParams.get("gender")) query.gender = url.searchParams.get("gender");
+    if (url.searchParams.get("gender")) query.hostelType = url.searchParams.get("gender");
     if (url.searchParams.get("city")) query.city = url.searchParams.get("city");
     if (url.searchParams.get("area")) query.area = url.searchParams.get("area");
     if (url.searchParams.get("isVerified")) query.isVerified = url.searchParams.get("isVerified");
@@ -134,8 +134,9 @@ export async function GET(req) {
     if (url.searchParams.get("wifi")) query.wifi = url.searchParams.get("wifi");
     if (url.searchParams.get("backupLight")) query.backupLight = url.searchParams.get("backupLight");
     if (url.searchParams.get("attachedBath")) query.attachedBath = url.searchParams.get("attachedBath");
-    if (url.searchParams.get("seater")) query.seater = url.searchParams.get("seater");
+    if (url.searchParams.get("seater")) query.capacity = { $elemMatch: { seater: url.searchParams.get("seater") } };
 
+    console.log(query, "query");
     const hostels = await Hostel.find(query);
     return NextResponse.json(
       { success: true, data: hostels },

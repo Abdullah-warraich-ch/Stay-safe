@@ -4,6 +4,7 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { MapPin, Users, Star, Loader2, Plus, Building2, CheckCircle2, Clock } from 'lucide-react';
 import Link from 'next/link';
+import HostelCard from './hostelCard';
 
 export default function MyHostels({ ownerId }) {
     const { data, isLoading, error } = useQuery({
@@ -63,78 +64,9 @@ export default function MyHostels({ ownerId }) {
                 </Link>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 {data.map((hostel) => (
-                    <Link href={`/hostels/${hostel._id}`} key={hostel._id} className="group bg-white rounded-2xl border border-slate-100 overflow-hidden hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col cursor-pointer">
-                        {/* Image Header */}
-                        <div className="relative aspect-[4/3] overflow-hidden">
-                            <img
-                                src={hostel.images?.[0]?.url || 'https://via.placeholder.com/400x300?text=No+Image'}
-                                alt={hostel.name}
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                            <div className="absolute top-3 left-3 flex gap-2">
-                                {hostel.verified && (
-                                    <span className="px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider shadow-sm flex items-center gap-1.5 bg-green-500 text-white animate-in zoom-in duration-300">
-                                        <CheckCircle2 size={12} /> Verified
-                                    </span>
-                                )}
-                                <span className="px-2.5 py-1 bg-white/90 backdrop-blur-sm rounded-lg text-slate-800 text-[10px] font-bold uppercase tracking-wider shadow-sm">
-                                    {hostel.hostelType}
-                                </span>
-                            </div>
-                            <div className="absolute bottom-3 right-3">
-                                <div className="bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-xl shadow-sm">
-                                    <p className="text-[14px] font-extrabold text-secondary">
-                                        Rs. {hostel.price?.toLocaleString()}<span className="text-[10px] text-slate-400 font-bold">/mo</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Content */}
-                        <div className="p-5 flex-1 flex flex-col">
-                            <div className="mb-3">
-                                <h4 className="text-[16px] font-bold text-slate-900 group-hover:text-secondary transition-colors line-clamp-1">
-                                    {hostel.name}
-                                </h4>
-                                <div className="flex items-center gap-1 text-slate-400 mt-1">
-                                    <MapPin size={12} />
-                                    <p className="text-[12px] font-medium truncate">{hostel.area}, {hostel.city}</p>
-                                </div>
-                            </div>
-
-                            <div className="grid grid-cols-2 gap-3 mb-4 py-3 border-y border-slate-50">
-                                <div className="flex items-center gap-2">
-                                    <div className="w-7 h-7 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400">
-                                        <Users size={14} />
-                                    </div>
-                                    <div>
-                                        <p className="text-[10px] text-slate-400 font-bold uppercase tracking-tighter leading-none">Capacity</p>
-                                        <p className="text-[12px] font-bold text-slate-700">{hostel.capacity?.length || 0} Types</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <div className="w-7 h-7 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400">
-                                        <Star size={14} />
-                                    </div>
-                                    <div>
-                                        <p className="text-[10px] text-slate-400 font-bold uppercase tracking-tighter leading-none">Amenities</p>
-                                        <p className="text-[12px] font-bold text-slate-700">{hostel.amenities?.length || 0} Added</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="mt-auto flex gap-2 pt-1">
-                                <button className="flex-1 py-2 rounded-xl border border-slate-200 text-slate-600 text-[12px] font-bold hover:bg-slate-50 transition-all cursor-pointer">
-                                    Edit Details
-                                </button>
-                                <button className="px-3 py-2 rounded-xl bg-slate-900 text-white text-[12px] font-bold hover:bg-slate-800 transition-all cursor-pointer">
-                                    Stats
-                                </button>
-                            </div>
-                        </div>
-                    </Link>
+                    <HostelCard hostel={hostel} key={hostel._id} />
                 ))}
             </div>
         </div>

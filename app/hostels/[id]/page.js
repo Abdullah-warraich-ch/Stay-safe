@@ -9,10 +9,10 @@ import {
   MapPin, Phone, Users, ShieldCheck, Wifi, Car, Wind, Tv,
   WashingMachine, Dumbbell, CookingPot, Utensils, Droplets,
   Zap, BookOpen, Lock, Cigarette, PawPrint, Bed, Footprints,
-  ShowerHead, ArrowLeft, Heart, Share2, Info, Loader2,
-  CheckCircle2, Building2, User, Star
+  ShowerHead, Heart, Share2, Loader2,
+  BadgeCheck, Building2, Star
 } from 'lucide-react';
-import { FaMale, FaFemale, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 const AMENITY_ICONS = {
   wifi: Wifi,
@@ -50,161 +50,227 @@ export default function HostelDetailPage() {
     }
   });
 
+  const [isCtaVisible, setIsCtaVisible] = useState(false);
+  const ctaRef = React.useRef(null);
+
+  React.useEffect(() => {
+    if (!hostel) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsCtaVisible(entry.isIntersecting);
+      },
+      {
+        root: null,
+        threshold: 0.05,
+      }
+    );
+
+    const currentRef = ctaRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, [hostel]);
+
   if (isLoading) return (
-    <div className="min-h-screen flex items-center justify-center bg-white">
-      <Loader2 className="animate-spin text-secondary" size={40} />
+    <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <Loader2 className="animate-spin text-slate-400" size={32} />
     </div>
   );
 
   if (error) return (
-    <div className="min-h-screen flex items-center justify-center bg-white px-6 text-center">
-      <div>
-        <h2 className="text-2xl font-bold text-slate-900 mb-4">Error loading hostel</h2>
-        <p className="text-slate-500 mb-6">{error.message}</p>
-        <button onClick={() => router.back()} className="px-6 py-2 bg-secondary text-white rounded-xl font-bold">Go Back</button>
+    <div className="min-h-screen flex items-center justify-center bg-slate-50 px-6 text-center">
+      <div className="max-w-md p-8 bg-white border border-slate-100 rounded-2xl shadow-sm">
+        <h2 className="text-xl font-semibold text-slate-900 mb-2">Error Loading Property</h2>
+        <p className="text-slate-505 text-sm mb-6">{error.message}</p>
+        <button onClick={() => router.back()} className="px-6 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-sm font-semibold transition-all">Go Back</button>
       </div>
     </div>
   );
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-slate-50/50">
       <Nav />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8">
-        
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+          {/* Mobile Floating CTA Bar */}
+          <div 
+            className={`lg:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-100 px-4 z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 ease-in-out ${
+              isCtaVisible ? 'translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'
+            }`}
+            style={{ paddingBottom: 'calc(1rem + env(safe-area-inset-bottom, 0px))', paddingTop: '1rem' }}
+          >
+            <div className="flex gap-2 max-w-lg mx-auto w-full">
+              <a 
+                href={`tel:${hostel.phone}`} 
+                className="flex-1 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer"
+              >
+                <Phone size={14} /> Call Owner
+              </a>
+              <a 
+                href={`https://wa.me/${hostel.phone.replace(/[^0-9]/g, '')}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex-1 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 text-xs font-semibold flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.98] cursor-pointer"
+              >
+                <FaWhatsapp size={15} className="text-emerald-500" /> WhatsApp Owner
+              </a>
+            </div>
+          </div>
+
           {/* ─── LEFT COLUMN: Gallery & Info ─── */}
-          <div className="lg:col-span-8 space-y-10">
-            
+          <div className="lg:col-span-8 space-y-8">
+
             {/* Gallery */}
             <div className="space-y-4">
-              <div className="relative aspect-[4/3] rounded-[32px] overflow-hidden bg-slate-100 border border-slate-50 shadow-sm group">
-                <img 
-                  src={hostel.images[activeImage]?.url} 
+              <div className="relative aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/60 shadow-sm group">
+                <img
+                  src={hostel.images[activeImage]?.url}
                   alt={hostel.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-750 group-hover:scale-[1.01]"
                 />
-                
-                {/* Floating Actions on Image */}
-                <div className="absolute top-6 left-6 flex gap-2">
-                  {hostel.verified && (
-                    <div className="px-4 py-2 bg-green-500 text-white rounded-2xl text-[11px] font-black uppercase tracking-widest flex items-center gap-2 shadow-lg shadow-green-500/20">
-                      <CheckCircle2 size={14} /> Verified
-                    </div>
-                  )}
-                  <div className="px-4 py-2 bg-white/90 backdrop-blur-md rounded-2xl text-slate-900 text-[11px] font-black uppercase tracking-widest shadow-sm">
+
+                {/* Floating Type Badge */}
+                <div className="absolute top-4 left-4 flex gap-2">
+                  <div className="px-3 py-1.5 bg-slate-900/90 backdrop-blur-md rounded-lg text-white text-[10px] font-semibold uppercase tracking-wider shadow-sm">
                     {hostel.hostelType} Only
                   </div>
                 </div>
 
-                <div className="absolute top-6 right-6">
-                  <button className="p-3 rounded-full bg-white/90 backdrop-blur-md text-slate-400 hover:text-red-500 hover:bg-white shadow-lg transition-all cursor-pointer">
-                    <Heart size={20} />
+                <div className="absolute top-4 right-4">
+                  <button className="p-2.5 rounded-full bg-white/95 backdrop-blur-md text-slate-400 hover:text-rose-500 hover:bg-white shadow-sm hover:shadow transition-all cursor-pointer">
+                    <Heart size={18} />
                   </button>
                 </div>
               </div>
 
-              {/* Small Thumbnails on Bottom */}
-              <div className="flex gap-3 overflow-x-auto pb-2 custom-scrollbar">
-                {hostel.images.map((img, idx) => (
-                  <button 
-                    key={idx}
-                    onClick={() => setActiveImage(idx)}
-                    className={`relative w-20 h-20 shrink-0 rounded-2xl overflow-hidden border-2 transition-all ${
-                      activeImage === idx ? 'border-secondary scale-95' : 'border-transparent opacity-60 hover:opacity-100'
-                    }`}
-                  >
-                    <img src={img.url} className="w-full h-full object-cover" />
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Basic Info */}
-            <div className="space-y-6">
-              <div className="space-y-4">
-                <div className="flex flex-wrap items-center justify-between gap-4">
-                  <h1 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight flex-1">{hostel.name}</h1>
-                  <button className="p-3 rounded-2xl border border-slate-100 text-slate-400 hover:text-secondary hover:bg-secondary/5 transition-all flex items-center gap-2 text-[14px] font-bold">
-                    <Share2 size={18} /> <span className="hidden sm:inline">Share</span>
-                  </button>
-                </div>
-                <div className="flex items-center gap-2 text-slate-500 font-medium text-[16px]">
-                  <div className="w-8 h-8 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
-                    <MapPin size={16} />
-                  </div>
-                  {hostel.area}, {hostel.city}
-                </div>
-              </div>
-
-              {/* Price Row for Mobile/Tablet (Visible if sidebar not sticky) */}
-              <div className="lg:hidden p-6 bg-slate-50 rounded-3xl border border-slate-100 flex items-center justify-between">
-                <div>
-                    <p className="text-[11px] font-bold text-slate-400 uppercase">Starting From</p>
-                    <p className="text-2xl font-black text-secondary">Rs. {hostel.price?.toLocaleString()}</p>
-                </div>
-                <button className="px-6 py-3 bg-secondary text-white rounded-xl font-bold shadow-lg shadow-secondary/20">Call Owner</button>
-              </div>
-
-              <div className="flex flex-wrap gap-2">
-                {hostel.nearbyUniversities?.map((uni, idx) => (
-                    <span key={idx} className="px-3 py-1.5 bg-slate-50 text-slate-600 text-[11px] font-bold rounded-xl border border-slate-100">
-                        Near {uni.split('(')[0].trim()}
-                    </span>
-                ))}
-              </div>
-
-              {hostel.tags && hostel.tags.length > 0 && (
-                <div className="flex flex-wrap gap-2 pt-1 animate-in fade-in slide-in-from-top-1 duration-300">
-                  {hostel.tags.map((tag, idx) => (
-                    <span key={idx} className="px-3 py-1 bg-secondary/10 text-secondary text-[11px] font-bold rounded-xl border border-secondary/20">
-                      #{tag}
-                    </span>
+              {/* Thumbnails Row */}
+              {hostel.images.length > 1 && (
+                <div className="flex gap-2 overflow-x-auto pb-2 custom-scrollbar">
+                  {hostel.images.map((img, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setActiveImage(idx)}
+                      className={`relative w-16 h-16 shrink-0 rounded-xl overflow-hidden border-2 transition-all duration-200 ${activeImage === idx
+                        ? 'border-slate-800 scale-95 shadow-sm'
+                        : 'border-transparent opacity-60 hover:opacity-100 hover:scale-95'
+                        }`}
+                    >
+                      <img src={img.url} className="w-full h-full object-cover" />
+                    </button>
                   ))}
                 </div>
               )}
             </div>
 
-            {/* Description */}
-            <div className="space-y-4 pt-4 border-t border-slate-50">
-                <h3 className="text-lg font-black text-slate-900 uppercase tracking-wider">The Space</h3>
-                <p className="text-slate-500 leading-relaxed text-[16px] whitespace-pre-wrap font-medium">
-                    {hostel.description}
-                </p>
-            </div>
+            {/* Basic Info */}
+            <div className="bg-white rounded-2xl border border-slate-100 p-6 sm:p-8 space-y-6">
+              <div className="space-y-4">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="space-y-2 flex-1">
+                    <div className="flex items-center flex-wrap gap-2">
+                      <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-tight">
+                        {hostel.name}
+                      </h1>
+                      {hostel.verified && (
+                        <BadgeCheck className="text-white fill-[#1877F2] w-6 h-6 shrink-0 align-middle" title="Verified Property" />
+                      )}
+                    </div>
 
-            {/* Pricing Details */}
-            <div className="space-y-6">
-                <h3 className="text-lg font-black text-slate-900 uppercase tracking-wider">Room Options</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {hostel.capacity?.map((item, idx) => (
-                        <div key={idx} className="p-5 rounded-3xl border border-slate-100 bg-white hover:border-secondary/20 transition-all group">
-                            <div className="flex justify-between items-center">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-secondary/10 group-hover:text-secondary transition-all">
-                                        <Bed size={20} />
-                                    </div>
-                                    <span className="font-bold text-slate-800">{item.seater}</span>
-                                </div>
-                                <span className="font-black text-slate-900">Rs. {item.price?.toLocaleString()}</span>
-                            </div>
-                        </div>
-                    ))}
+                    <div className="flex items-center gap-1.5 text-slate-500 text-sm">
+                      <MapPin size={15} className="text-slate-400 shrink-0" />
+                      <span>{hostel.area}, {hostel.city}</span>
+                    </div>
+                  </div>
+
+                  <button className="p-2.5 rounded-xl border border-slate-200 text-slate-500 hover:text-slate-900 hover:bg-slate-50 transition-all flex items-center gap-2 text-xs font-semibold cursor-pointer">
+                    <Share2 size={15} />
+                    <span className="hidden sm:inline">Share</span>
+                  </button>
                 </div>
+
+                {/* Universities tags */}
+                {hostel.nearbyUniversities && hostel.nearbyUniversities.length > 0 && (
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    {hostel.nearbyUniversities.map((uni, idx) => (
+                      <span key={idx} className="px-2.5 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-[11px] font-medium rounded-lg">
+                        Near {uni.split('(')[0].trim()}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {/* Tags list */}
+                {hostel.tags && hostel.tags.length > 0 && (
+                  <div className="flex flex-wrap gap-2 pt-1">
+                    {hostel.tags.map((tag, idx) => (
+                      <span key={idx} className="text-xs text-slate-400 font-medium">
+                        #{tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Description */}
+              <div className="space-y-3 pt-6 border-t border-slate-100">
+                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest">About this space</h3>
+                <p className="text-slate-600 leading-relaxed text-sm whitespace-pre-wrap font-normal">
+                  {hostel.description}
+                </p>
+              </div>
             </div>
 
-            {/* Amenities Grid */}
-            <div className="space-y-6 pt-4">
-              <h3 className="text-lg font-black text-slate-900 uppercase tracking-wider">Amenities</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {/* Room Options */}
+            <div className="bg-white rounded-2xl border border-slate-100 p-6 sm:p-8 space-y-6">
+              <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+                <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Available Room Types</h3>
+                <span className="text-xs font-semibold text-slate-400">{hostel.capacity?.length} Seater Options</span>
+              </div>
+
+              <div className="divide-y divide-slate-100">
+                {hostel.capacity?.map((item, idx) => (
+                  <div key={idx} className="py-4 first:pt-0 last:pb-0 flex items-center justify-between group">
+                    <div className="flex items-center gap-3">
+                      <div className="w-9 h-9 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-slate-100 transition-colors">
+                        <Bed size={16} />
+                      </div>
+                      <div>
+                        <span className="font-semibold text-slate-800 text-sm">{item.seater}</span>
+                        <p className="text-[11px] text-slate-400 font-medium">Monthly occupancy rent</p>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <span className="font-bold text-slate-900 text-sm sm:text-base">Rs. {item.price?.toLocaleString()}</span>
+                      <p className="text-[9px] text-slate-400 font-bold uppercase tracking-tight">Per Month</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Amenities List */}
+            <div className="bg-white rounded-2xl border border-slate-100 p-6 sm:p-8 space-y-6">
+              <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider pb-3 border-b border-slate-100">Amenities & Facilities</h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-6">
                 {hostel.amenities?.map((id) => {
                   const Icon = AMENITY_ICONS[id] || Building2;
                   const label = id.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
                   return (
-                    <div key={id} className="flex flex-col items-center justify-center p-4 rounded-2xl bg-slate-50/50 border border-slate-50 group hover:bg-white hover:border-slate-100 hover:shadow-sm transition-all text-center gap-2">
-                      <Icon className="text-slate-400 group-hover:text-secondary transition-colors" size={24} />
-                      <span className="text-[11px] font-bold text-slate-500 uppercase tracking-tighter">{label}</span>
+                    <div key={id} className="flex items-center gap-3 py-0.5">
+                      <div className="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center text-slate-500">
+                        <Icon size={15} />
+                      </div>
+                      <span className="text-sm font-medium text-slate-600">{label}</span>
                     </div>
                   );
                 })}
@@ -213,121 +279,122 @@ export default function HostelDetailPage() {
 
             {/* Mess Section */}
             {hostel.mess?.available && (
-                <div className="p-8 rounded-[32px] bg-slate-900 text-white flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
-                    <Utensils size={120} className="absolute -right-10 -bottom-10 text-white/5" />
-                    <div className="shrink-0 w-20 h-20 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center">
-                        <Utensils size={32} className="text-secondary" />
-                    </div>
-                    <div className="flex-1 text-center md:text-left">
-                        <h4 className="text-xl font-black mb-2">Monthly Mess Service</h4>
-                        <p className="text-white/60 text-[14px] mb-4">
-                            Enjoy fresh, home-style meals served daily. {hostel.mess.compulsory ? 'Mandatory for all residents.' : 'Opt-in as per your need.'}
-                        </p>
-                        <div className="flex flex-wrap justify-center md:justify-start gap-4">
-                            <div className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-[15px] font-bold">
-                                Rs. {hostel.mess.price?.toLocaleString()}/mo
-                            </div>
-                            <div className="px-4 py-2 rounded-xl bg-secondary/20 text-secondary text-[12px] font-black uppercase tracking-widest flex items-center">
-                                {hostel.mess.compulsory ? 'Compulsory' : 'Optional'}
-                            </div>
-                        </div>
-                    </div>
+              <div className="bg-white rounded-2xl border border-slate-100 p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-600">
+                    <Utensils size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-900 text-sm">Monthly Mess Service</h4>
+                    <p className="text-xs text-slate-500 max-w-md leading-relaxed mt-0.5">
+                      Freshly prepared meals served daily. {hostel.mess.compulsory ? 'Compulsory requirement for all residents.' : 'Optional/opt-in service.'}
+                    </p>
+                  </div>
                 </div>
+
+                <div className="flex items-center gap-3 shrink-0 self-stretch sm:self-auto justify-between sm:justify-start">
+                  <span className="text-xs font-semibold text-slate-400">
+                    {hostel.mess.compulsory ? 'Compulsory' : 'Optional'}
+                  </span>
+                  <div className="px-3.5 py-1.5 rounded-xl bg-slate-900 text-white text-xs font-bold shadow-sm">
+                    Rs. {hostel.mess.price?.toLocaleString()}/mo
+                  </div>
+                </div>
+              </div>
             )}
           </div>
 
           {/* ─── RIGHT COLUMN: Sticky Sidebar ─── */}
           <div className="lg:col-span-4 relative">
             <div className="sticky top-28 space-y-6">
-              
-              {/* Contact & Booking Card */}
-              <div className="bg-white rounded-[32px] border border-slate-100 shadow-2xl shadow-slate-200/40 p-6 space-y-6">
-                
-                <div className="flex items-center justify-between px-2">
+
+              {/* Price & Contact Card */}
+              <div className=" bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-6">
+                <div>
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Starting From</p>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+                    Rs. {hostel.price?.toLocaleString()} <span className="text-xs text-slate-400 font-semibold tracking-normal">/mo</span>
+                  </h3>
+                </div>
+
+                <div className="pt-5 border-t border-slate-100 space-y-4">
+                  {/* Host info */}
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-slate-50 border border-slate-200/50 flex items-center justify-center text-slate-600 text-sm font-semibold select-none">
+                      {hostel.owner?.name?.charAt(0).toUpperCase()}
+                    </div>
                     <div>
-                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Monthly Rent</p>
-                        <h3 className="text-2xl font-black text-slate-900 tracking-tighter">
-                            Rs. {hostel.price?.toLocaleString()} <span className="text-[12px] text-slate-400 font-bold tracking-normal">/mo</span>
-                        </h3>
+                      <p className="text-sm font-semibold text-slate-900 leading-none">{hostel.owner?.name}</p>
+                      <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">Property Host</p>
                     </div>
-                    <div className="w-10 h-10 bg-green-50 text-green-500 rounded-xl flex items-center justify-center">
-                        <ShieldCheck size={20} />
+                  </div>
+
+                  {/* Highlights Grid */}
+                  <div className="grid grid-cols-2 gap-2 pt-2">
+                    <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex flex-col items-center justify-center text-center gap-1">
+                      <Users size={14} className="text-slate-500" />
+                      <span className="text-[10px] font-semibold text-slate-600">{hostel.capacity?.length} Types</span>
                     </div>
+                    <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex flex-col items-center justify-center text-center gap-1">
+                      <Star size={14} className="text-amber-500 fill-amber-500" />
+                      <span className="text-[10px] font-semibold text-slate-600">4.8 Rating</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Call & WhatsApp CTA Buttons */}
+                <div ref={ctaRef} className="flex gap-2 pt-2">
+                  <a
+                    href={`tel:${hostel.phone}`}
+                    className="flex-1 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer"
+                  >
+                    <Phone size={14} /> Call Owner
+                  </a>
+                  <a
+                    href={`https://wa.me/${hostel.phone.replace(/[^0-9]/g, '')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 text-xs font-semibold flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.98] cursor-pointer"
+                  >
+                    <FaWhatsapp size={15} className="text-emerald-500" /> WhatsApp Owner
+                  </a>
+                </div>
+
+                <div className="text-center pt-2">
+                  <p className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Listing ID: {hostel._id?.slice(-8).toUpperCase()}</p>
+                </div>
+              </div>
+
+              {/* Safety Tips Card */}
+              <div className="bg-amber-50/40 border border-amber-100/60 rounded-2xl p-6 space-y-4 relative overflow-hidden">
+                <div className="flex items-center gap-2">
+                  <ShieldCheck size={18} className="text-amber-600" />
+                  <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Stay Safe Tips</h4>
                 </div>
 
                 <div className="space-y-3">
-                    <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white text-lg font-black">
-                            {hostel.owner?.name?.charAt(0)}
-                        </div>
-                        <div>
-                            <p className="text-[12px] font-black text-slate-900">{hostel.owner?.name}</p>
-                            <p className="text-[10px] text-slate-400 font-bold uppercase tracking-tight">Hostel Owner</p>
-                        </div>
+                  {[
+                    { title: "Visit Personally", desc: "Never pay advance rent before visiting the hostel." },
+                    { title: "Verify Facilities", desc: "Check if all promised amenities are actually available." },
+                    { title: "Payment Proof", desc: "Always take a receipt for every payment." }
+                  ].map((tip, i) => (
+                    <div key={i} className="flex gap-2">
+                      <div className="text-amber-600/80 font-bold text-xs">0{i + 1}</div>
+                      <div>
+                        <h5 className="text-xs font-semibold text-slate-800 mb-0.5">{tip.title}</h5>
+                        <p className="text-[11px] text-slate-500 leading-relaxed font-normal">{tip.desc}</p>
+                      </div>
                     </div>
-                    
-                    <div className="flex gap-2">
-                        <div className="flex-1 p-3 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center justify-center gap-1">
-                            <Users size={16} className="text-secondary" />
-                            <span className="text-[11px] font-bold text-slate-800">{hostel.capacity?.length} Types</span>
-                        </div>
-                        <div className="flex-1 p-3 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center justify-center gap-1">
-                            <Star size={16} className="text-amber-500" />
-                            <span className="text-[11px] font-bold text-slate-800">4.8 Rating</span>
-                        </div>
-                    </div>
+                  ))}
                 </div>
 
-                {/* Parallel Buttons */}
-                <div className="flex gap-2">
-                    <a href={`tel:${hostel.phone}`} className="flex-1 py-3.5 rounded-2xl bg-slate-900 text-white text-[13px] font-black flex items-center justify-center gap-2 hover:brightness-110 transition-all active:scale-[0.95] shadow-lg shadow-slate-900/10 cursor-pointer">
-                        <Phone size={16} /> Call
-                    </a>
-                    <a href={`https://wa.me/${hostel.phone.replace(/[^0-9]/g, '')}`} target="_blank" className="flex-1 py-3.5 rounded-2xl bg-green-500 text-white text-[13px] font-black flex items-center justify-center gap-2 hover:brightness-110 transition-all active:scale-[0.95] shadow-lg shadow-green-500/10 cursor-pointer">
-                        <FaWhatsapp size={18} /> WhatsApp
-                    </a>
-                </div>
-
-                <div className="text-center">
-                    <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Listing ID: {hostel._id?.slice(-8).toUpperCase()}</p>
+                <div className="pt-3 border-t border-amber-200/30">
+                  <p className="text-[10px] text-slate-400 font-medium">
+                    Report listing if suspicious. <span className="text-rose-500 font-semibold cursor-pointer hover:underline">Report Now</span>
+                  </p>
                 </div>
               </div>
 
-              {/* Enhanced Stay Safe Tips Card */}
-              <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-[32px] p-8 space-y-6 relative overflow-hidden shadow-xl">
-                <div className="absolute -right-8 -bottom-8 text-white/5 rotate-12">
-                    <ShieldCheck size={160} />
-                </div>
-                
-                <div className="flex items-center gap-3 relative z-10">
-                    <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary">
-                        <ShieldCheck size={20} />
-                    </div>
-                    <h4 className="text-lg font-black text-white">Stay Safe Tips</h4>
-                </div>
-                
-                <div className="space-y-5 relative z-10">
-                    {[
-                        { title: "Visit Personally", desc: "Never pay advance rent before visiting the hostel." },
-                        { title: "Verify Facilities", desc: "Check if all promised amenities are actually available." },
-                        { title: "Payment Proof", desc: "Always take a receipt for every payment." }
-                    ].map((tip, i) => (
-                        <div key={i} className="flex gap-4 group">
-                            <div className="text-secondary font-black text-xl opacity-50 group-hover:opacity-100 transition-opacity">0{i+1}</div>
-                            <div>
-                                <h5 className="text-[13px] font-bold text-white mb-0.5">{tip.title}</h5>
-                                <p className="text-[11px] text-white/50 leading-relaxed font-medium">{tip.desc}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                <div className="pt-4 mt-2 border-t border-white/5 relative z-10">
-                    <p className="text-[10px] text-white/40 font-medium italic">
-                        Report this listing if it seems suspicious. <span className="text-secondary font-bold cursor-pointer hover:underline">Report Now</span>
-                    </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

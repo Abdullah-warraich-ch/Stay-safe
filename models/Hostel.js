@@ -68,6 +68,26 @@ const hostelSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  wifi: {
+    type: String,
+    enum: ['Yes', 'No'],
+    default: 'No',
+  },
+  acType: {
+    type: String,
+    enum: ['AC', 'Non-AC'],
+    default: 'Non-AC',
+  },
+  attachedBath: {
+    type: String,
+    enum: ['Yes', 'No'],
+    default: 'No',
+  },
+  backupLight: {
+    type: String,
+    enum: ['Yes', 'No'],
+    default: 'No',
+  },
 }, { timestamps: true });
 
 const Hostel = mongoose.models.Hostel || mongoose.model('Hostel', hostelSchema);

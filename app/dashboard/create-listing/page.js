@@ -58,6 +58,9 @@ function CreateListingContent() {
   ]);
   const [tags, setTags] = useState([]);
   const [tagInput, setTagInput] = useState('');
+  const [backupLight, setBackupLight] = useState('No');
+  const [acType, setAcType] = useState('Non-AC');
+  const [attachedBath, setAttachedBath] = useState('No');
 
   // ── Handlers ──
   const handleChange = (e) => {
@@ -155,6 +158,10 @@ function CreateListingContent() {
       data.append('amenities', JSON.stringify(selectedAmenities));
       data.append('nearbyUniversities', JSON.stringify(selectedUniversities));
       data.append('tags', JSON.stringify(tags));
+      data.append('backupLight', backupLight);
+      data.append('wifi', selectedAmenities.includes('wifi') ? 'Yes' : 'No');
+      data.append('acType', acType);
+      data.append('attachedBath', attachedBath);
       imageFiles.forEach(f => data.append('images', f));
       const res = await fetch('/api/hostels', { method: 'POST', body: data });
       const result = await res.json();
@@ -276,6 +283,9 @@ function CreateListingContent() {
               selectedAmenities={selectedAmenities} toggleAmenity={toggleAmenity}
               formData={formData} hostelType={hostelType} howManySeaters={howManySeaters}
               mess={mess} imageFiles={imageFiles} selectedUniversities={selectedUniversities} tags={tags}
+              backupLight={backupLight} setBackupLight={setBackupLight}
+              acType={acType} setAcType={setAcType}
+              attachedBath={attachedBath} setAttachedBath={setAttachedBath}
             />
           )}
         </div>

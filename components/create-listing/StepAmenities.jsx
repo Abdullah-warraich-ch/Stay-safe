@@ -29,7 +29,8 @@ const AMENITIES = [
 
 export default function StepAmenities({
   selectedAmenities, toggleAmenity,
-  formData, hostelType, howManySeaters, mess, imageFiles, selectedUniversities, tags
+  formData, hostelType, howManySeaters, mess, imageFiles, selectedUniversities, tags,
+  backupLight, setBackupLight, acType, setAcType, attachedBath, setAttachedBath
 }) {
   const activeSeaters = howManySeaters.filter(s => s.active);
   const minPrice = activeSeaters.length > 0 ? Math.min(...activeSeaters.map(s => Number(s.price) || 0)) : 0;
@@ -82,6 +83,120 @@ export default function StepAmenities({
               </button>
             );
           })}
+        </div>
+      </div>
+
+      {/* ─── Backup Light ─── */}
+      <div className="space-y-5 pt-6 border-t border-slate-100">
+        <div className="flex items-center gap-3 pb-2">
+          <div className="w-9 h-9 rounded-xl bg-amber-500/10 flex items-center justify-center">
+            <Zap size={18} className="text-amber-500" />
+          </div>
+          <div>
+            <h4 className="text-[15px] font-bold text-slate-900">Backup Light</h4>
+            <p className="text-[11px] text-slate-400">Does your hostel have backup power/generator?</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3">
+          {[
+            { val: 'Yes', label: 'Yes, Backup Light Available' },
+            { val: 'No', label: 'No Backup Power' },
+          ].map(({ val, label }) => (
+            <button
+              key={val}
+              type="button"
+              onClick={() => setBackupLight(val)}
+              className={`relative p-4 rounded-2xl border-2 font-bold transition-all duration-300 cursor-pointer text-center text-[13px] ${
+                backupLight === val
+                  ? 'border-secondary bg-secondary/5 text-secondary shadow-md shadow-secondary/10'
+                  : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200 hover:bg-white'
+              }`}
+            >
+              {label}
+              {backupLight === val && (
+                <div className="absolute top-2 right-2 w-5 h-5 bg-secondary rounded-full flex items-center justify-center animate-in zoom-in duration-200">
+                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </div>
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* ─── Air Conditioning ─── */}
+      <div className="space-y-5 pt-6 border-t border-slate-100">
+        <div className="flex items-center gap-3 pb-2">
+          <div className="w-9 h-9 rounded-xl bg-blue-500/10 flex items-center justify-center">
+            <Wind size={18} className="text-blue-500" />
+          </div>
+          <div>
+            <h4 className="text-[15px] font-bold text-slate-900">Air Conditioning</h4>
+            <p className="text-[11px] text-slate-400">Do you offer AC rooms?</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3">
+          {[
+            { val: 'AC', label: 'AC Rooms Available' },
+            { val: 'Non-AC', label: 'Non-AC Only' },
+          ].map(({ val, label }) => (
+            <button
+              key={val}
+              type="button"
+              onClick={() => setAcType(val)}
+              className={`relative p-4 rounded-2xl border-2 font-bold transition-all duration-300 cursor-pointer text-center text-[13px] ${
+                acType === val
+                  ? 'border-secondary bg-secondary/5 text-secondary shadow-md shadow-secondary/10'
+                  : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200 hover:bg-white'
+              }`}
+            >
+              {label}
+              {acType === val && (
+                <div className="absolute top-2 right-2 w-5 h-5 bg-secondary rounded-full flex items-center justify-center animate-in zoom-in duration-200">
+                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </div>
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* ─── Attached Bath ─── */}
+      <div className="space-y-5 pt-6 border-t border-slate-100">
+        <div className="flex items-center gap-3 pb-2">
+          <div className="w-9 h-9 rounded-xl bg-teal-500/10 flex items-center justify-center">
+            <ShowerHead size={18} className="text-teal-500" />
+          </div>
+          <div>
+            <h4 className="text-[15px] font-bold text-slate-900">Attached Bath</h4>
+            <p className="text-[11px] text-slate-400">Are rooms equipped with attached washrooms?</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3">
+          {[
+            { val: 'Yes', label: 'Yes, Attached Bath' },
+            { val: 'No', label: 'No / Common Bath' },
+          ].map(({ val, label }) => (
+            <button
+              key={val}
+              type="button"
+              onClick={() => setAttachedBath(val)}
+              className={`relative p-4 rounded-2xl border-2 font-bold transition-all duration-300 cursor-pointer text-center text-[13px] ${
+                attachedBath === val
+                  ? 'border-secondary bg-secondary/5 text-secondary shadow-md shadow-secondary/10'
+                  : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200 hover:bg-white'
+              }`}
+            >
+              {label}
+              {attachedBath === val && (
+                <div className="absolute top-2 right-2 w-5 h-5 bg-secondary rounded-full flex items-center justify-center animate-in zoom-in duration-200">
+                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </div>
+              )}
+            </button>
+          ))}
         </div>
       </div>
 
@@ -145,6 +260,24 @@ export default function StepAmenities({
               <Utensils size={13} className="text-slate-400" />
               <span className="text-slate-600 font-medium">
                 {mess.available ? `Mess: Rs. ${mess.price || '0'}/mo (${mess.compulsory ? 'Compulsory' : 'Optional'})` : 'No mess service'}
+              </span>
+            </div>
+            <div className="flex items-center gap-2 text-[13px]">
+              <Zap size={13} className="text-slate-400" />
+              <span className="text-slate-600 font-medium">
+                Backup Light: {backupLight === 'Yes' ? 'Available' : 'Not Available'}
+              </span>
+            </div>
+            <div className="flex items-center gap-2 text-[13px]">
+              <Wind size={13} className="text-slate-400" />
+              <span className="text-slate-600 font-medium">
+                Air Conditioning: {acType === 'AC' ? 'AC Rooms' : 'Non-AC Only'}
+              </span>
+            </div>
+            <div className="flex items-center gap-2 text-[13px]">
+              <ShowerHead size={13} className="text-slate-400" />
+              <span className="text-slate-600 font-medium">
+                Washroom: {attachedBath === 'Yes' ? 'Attached Bath' : 'Common Bath'}
               </span>
             </div>
 

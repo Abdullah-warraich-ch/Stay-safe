@@ -1,11 +1,13 @@
 'use client';
 
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from 'next/navigation';
 import { cities, citiesData } from "../data/citiesData";
 import { SlidersHorizontal, BedDouble, Bath, Wind, Wifi, Zap, Building2, MapPin } from "lucide-react";
 import SearchableSelect from "./SearchableSelect";
 
 export default function FilterSystem() {
+  const router = useRouter();
   const [gender, setGender] = useState("All");
   const [selectedCity, setSelectedCity] = useState("");
   const [selectedArea, setSelectedArea] = useState("");
@@ -42,6 +44,21 @@ export default function FilterSystem() {
     setSelectedArea(e.target.value);
   };
 
+  const handleSearch = () => {
+    const params = new URLSearchParams();
+    if (gender && gender !== "All") params.set("gender", gender.toLowerCase());
+    if (selectedCity) params.set("city", selectedCity);
+    if (selectedArea) params.set("area", selectedArea);
+    if (isVerified) params.set("isVerified", "true");
+    if (seater) params.set("seater", seater);
+    if (attachedBath) params.set("attachedBath", attachedBath);
+    if (acType) params.set("acType", acType);
+    if (wifi) params.set("wifi", wifi);
+    if (backupLight) params.set("backupLight", backupLight);
+
+    router.push(`/hostels?${params.toString()}`);
+  };
+
   return (
     <div className="flex flex-col items-center w-full max-w-4xl px-4 md:px-0">
       {/* Gender Switcher */}
@@ -49,7 +66,7 @@ export default function FilterSystem() {
         {["Boys", "Girls", "All"].map((item) => (
           <button
             key={item}
-            onClick={() => handleClick(item)}
+            onClick={() => setGender(item)}
             className={`px-6 md:px-10 py-2.5 md:py-3 text-xs md:text-sm font-semibold tracking-wide text-black rounded-full transition-all duration-300 cursor-pointer ${gender === item ? "bg-black text-white shadow-lg" : "hover:bg-slate-50"}`}
           >
             {item}
@@ -136,7 +153,10 @@ export default function FilterSystem() {
 
           {/* 5. Search Button */}
           <div className="p-2 md:p-0">
-            <button className="w-full md:w-auto bg-secondary hover:brightness-110 text-white p-4.5 rounded-2xl md:rounded-full shadow-lg shadow-secondary/25 transition-all duration-300 active:scale-95 cursor-pointer flex items-center justify-center gap-2 md:gap-0">
+            <button 
+              onClick={handleSearch}
+              className="w-full md:w-auto bg-secondary hover:brightness-110 text-white p-4.5 rounded-2xl md:rounded-full shadow-lg shadow-secondary/25 transition-all duration-300 active:scale-95 cursor-pointer flex items-center justify-center gap-2 md:gap-0"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

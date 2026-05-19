@@ -25,6 +25,10 @@ export async function POST(req) {
     const nearbyUniversities = JSON.parse(formData.get('nearbyUniversities') || '[]');
     const mess = JSON.parse(formData.get('mess') || '{"available":false,"price":0,"compulsory":false}');
     const tags = JSON.parse(formData.get('tags') || '[]');
+    const backupLight = formData.get('backupLight') || 'No';
+    const wifi = formData.get('wifi') || 'No';
+    const acType = formData.get('acType') || 'Non-AC';
+    const attachedBath = formData.get('attachedBath') || 'No';
 
 
     // Get all image files
@@ -77,8 +81,8 @@ export async function POST(req) {
     }
 
     // Derive display price from minimum room price
-    const displayPrice = capacity.length > 0 
-      ? Math.min(...capacity.map(c => c.price)) 
+    const displayPrice = capacity.length > 0
+      ? Math.min(...capacity.map(c => c.price))
       : (Number(price) || 0);
 
     // Create hostel
@@ -98,11 +102,44 @@ export async function POST(req) {
       tags,
       images: uploadedImages,
       owner: ownerId,
+      backupLight,
+      wifi,
+      acType,
+      attachedBath,
     });
 
     return NextResponse.json(
       { success: true, data: hostel },
       { status: 201 }
+    );
+  } catch (error) {
+    console.error('Hostel creation error:', error);
+    return NextResponse.json(
+      { success: false, error: error.message || 'Server error' },
+      { status: 500 }
+    );
+  }
+}
+
+export async function GET(req) {
+  try {
+    await connectDB();
+    const query = {}
+    const url = new URL(req.url);
+    if (url.searchParams.get("gender")) query.gender = url.searchParams.get("gender");
+    if (url.searchParams.get("city")) query.city = url.searchParams.get("city");
+    if (url.searchParams.get("area")) query.area = url.searchParams.get("area");
+    if (url.searchParams.get("isVerified")) query.isVerified = url.searchParams.get("isVerified");
+    if (url.searchParams.get("acType")) query.acType = url.searchParams.get("acType");
+    if (url.searchParams.get("wifi")) query.wifi = url.searchParams.get("wifi");
+    if (url.searchParams.get("backupLight")) query.backupLight = url.searchParams.get("backupLight");
+    if (url.searchParams.get("attachedBath")) query.attachedBath = url.searchParams.get("attachedBath");
+    if (url.searchParams.get("seater")) query.seater = url.searchParams.get("seater");
+
+    const hostels = await Hostel.find(query);
+    return NextResponse.json(
+      { success: true, data: hostels },
+      { status: 200 }
     );
   } catch (error) {
     console.error('Hostel creation error:', error);

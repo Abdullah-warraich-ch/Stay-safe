@@ -1,26 +1,15 @@
 
 import Nav from '@/components/Nav';
-import Footer from '@/components/Footer';
-import {
-    SlidersHorizontal, MapPin, Building2, Users, BedDouble,
-    Bath, Wind, Wifi, Zap, ShieldCheck
-} from 'lucide-react';
+import { fetchHostels } from '@/utils/https';
 import HostelCard from '@/components/hostelCard';
 
 export default async function HostelsPage({ searchParams }) {
     const resolvedParams = await searchParams;
 
     const params = new URLSearchParams(resolvedParams);
-    console.log(params.toString(), "params");
+    const data = await fetchHostels(params.toString());
 
-    const res = await fetch(`http://localhost:3000/api/hostels?${params.toString()}`, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    });
-    const data = await res.json();
-    console.log(data);
+
 
 
 

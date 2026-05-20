@@ -26,3 +26,32 @@ export async function GET(req, { params }) {
     );
   }
 }
+
+export async function DELETE(req, { params }) {
+  try {
+    await connectDB();
+    const { id } = await params;
+
+    const hostel = await Hostel.findByIdAndDelete(id);
+
+    if (!hostel) {
+      return NextResponse.json(
+        { success: false, error: 'Hostel not found' },
+        { status: 404 }
+      );
+    }
+
+    return NextResponse.json({
+      success: true,
+      data: hostel,
+      message: 'Hostel deleted successfully',
+    });
+  } catch (error) {
+    console.error('Delete hostel error:', error);
+    return NextResponse.json(
+      { success: false, error: 'Failed to delete hostel' },
+      { status: 500 }
+    );
+  }
+}
+

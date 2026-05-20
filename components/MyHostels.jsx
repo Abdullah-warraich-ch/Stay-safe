@@ -5,6 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 import { MapPin, Users, Star, Loader2, Plus, Building2, CheckCircle2, Clock } from 'lucide-react';
 import Link from 'next/link';
 import HostelCard from './hostelCard';
+import { useAuth } from '@/context/AuthContext';
 
 export default function MyHostels({ ownerId }) {
     const { data, isLoading, error } = useQuery({
@@ -17,6 +18,8 @@ export default function MyHostels({ ownerId }) {
         },
         enabled: !!ownerId
     });
+    const { user } = useAuth();
+    console.log(user.id, ownerId);
 
     if (isLoading) {
         return (
@@ -66,7 +69,7 @@ export default function MyHostels({ ownerId }) {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 {data.map((hostel) => (
-                    <HostelCard hostel={hostel} key={hostel._id} />
+                    <HostelCard hostel={hostel} key={hostel._id} showDeleteButton={hostel.owner === user.id} />
                 ))}
             </div>
         </div>

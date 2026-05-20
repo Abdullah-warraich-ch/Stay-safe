@@ -1,20 +1,25 @@
 'use client';
-
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from 'next/navigation';
+import { useAuth } from "../context/AuthContext";
 import { cities, citiesData } from "../data/citiesData";
 import { SlidersHorizontal, BedDouble, Bath, Wind, Wifi, Zap, Building2, MapPin } from "lucide-react";
 import SearchableSelect from "./SearchableSelect";
 
 export default function FilterSystem() {
+  const { currentCity } = useAuth();
   const router = useRouter();
   const [gender, setGender] = useState("All");
-  const [selectedCity, setSelectedCity] = useState("");
+  const [selectedCity, setSelectedCity] = useState(currentCity);
   const [selectedArea, setSelectedArea] = useState("");
   const [isVerified, setIsVerified] = useState(false);
   const [detailedFilterOpen, setDetailedFilterOpen] = useState(false);
   const [filterRounded, setFilterRounded] = useState(false); // lags on close
-
+  useEffect(() => {
+    if (currentCity && !selectedCity) {
+      setSelectedCity(currentCity);
+    }
+  }, [currentCity, selectedCity]);
   const toggleFilter = () => {
     if (!detailedFilterOpen) {
       // Opening: change border-radius & open panel immediately
@@ -89,6 +94,7 @@ export default function FilterSystem() {
               placeholder="Choose City"
               icon={Building2}
               className="border-none !space-y-0"
+              defaultValue={currentCity}
             />
           </div>
 

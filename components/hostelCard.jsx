@@ -1,10 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { Star, Heart } from "lucide-react";
+import { Star, Heart, Trash } from "lucide-react";
 import Image from "next/image";
+import { deleteHostel } from "@/utils/https";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 
-export default function HostelCard({ hostel }) {
+export default function HostelCard({ hostel, showDeleteButton }) {
+    const queryClient = useQueryClient();
+    const deleteMutation = useMutation({
+        mutationFn: (id) => deleteHostel(id),
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: ['my-hostels'] });
+        },
+    });
     const renderTypeIcon = (type) => {
         if (type === 'boys') {
             return (
@@ -43,12 +52,23 @@ export default function HostelCard({ hostel }) {
                 />
 
                 {/* Heart Button */}
-                <button
-                    className="absolute top-3 right-3 transition-transform active:scale-90 z-10"
-                    onClick={(e) => { e.preventDefault(); }}
-                >
-                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'rgba(0, 0, 0, 0.5)', height: '24px', width: '24px', stroke: 'var(--linaria-theme_palette-bg-primary)', strokeWidth: '2', overflow: 'visible' }}><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-6.94c-2.87 0-5.4 1.5-6.69 3.86l-.31.57-.31-.57A7.4 7.4 0 0 0 9 4.06 6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>
-                </button>
+                {showDeleteButton ? (
+                    <button
+                        className="absolute top-3 right-3 transition-all active:scale-90 z-10 bg-white/90 hover:bg-red-500 hover:text-white text-red-500 p-1.5 rounded-full backdrop-blur-md shadow-sm border border-black/5"
+                        onClick={(e) => { e.preventDefault(); deleteMutation.mutate(hostel._id); }}
+                    >
+                        <Trash size={18} strokeWidth={2.5} />
+                    </button>
+                ) : (
+                    <button
+                        className="absolute top-3 right-3 transition-transform active:scale-90 z-10"
+                        onClick={(e) => { e.preventDefault(); }}
+                    >
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'rgba(0, 0, 0, 0.5)', height: '24px', width: '24px', stroke: 'var(--linaria-theme_palette-bg-primary)', strokeWidth: '2', overflow: 'visible' }}><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-6.94c-2.87 0-5.4 1.5-6.69 3.86l-.31.57-.31-.57A7.4 7.4 0 0 0 9 4.06 6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>
+                    </button>
+                )}
+
+
 
                 {/* Optional Tag (like Guest Favorite) */}
                 {hostel.verified && (

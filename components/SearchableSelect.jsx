@@ -14,7 +14,8 @@ export default function SearchableSelect({
   required = false,
   error = "",
   disabled = false,
-  className = ""
+  className = "",
+  defaultValue = "",
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -50,10 +51,10 @@ export default function SearchableSelect({
   return (
     <div className={`space-y-1.5 relative ${className.includes('space-y-0') ? '' : 'space-y-1.5'}`} ref={containerRef}>
       {label && <label className={labelClass}>{label}</label>}
-      
+
       <div className="relative group">
         {Icon && <Icon className={`${iconClass} ${isOpen ? 'text-secondary' : ''}`} size={16} />}
-        
+
         <div
           onClick={() => !disabled && setIsOpen(!isOpen)}
           className={`${defaultInputClass} ${className} ${isOpen && !className.includes('border-none') ? 'ring-2 ring-secondary/20 border-secondary/40' : ''} flex items-center`}
@@ -63,14 +64,14 @@ export default function SearchableSelect({
           ) : (
             <span className="text-slate-400">{placeholder}</span>
           )}
-          
+
           {options.includes(value) && !isOpen && (
             <CheckCircle2 size={15} className="absolute right-10 top-1/2 -translate-y-1/2 text-green-500" />
           )}
-          
-          <ChevronDown 
-            size={16} 
-            className={`absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180 text-secondary' : ''}`} 
+
+          <ChevronDown
+            size={16}
+            className={`absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180 text-secondary' : ''}`}
           />
         </div>
 
@@ -85,7 +86,6 @@ export default function SearchableSelect({
                   autoFocus
                   type="text"
                   placeholder="Search..."
-                  value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="w-full bg-white border border-slate-200 rounded-lg py-1.5 pl-8 pr-3 text-[13px] outline-none focus:border-secondary/40 transition-all"
                 />
@@ -101,8 +101,8 @@ export default function SearchableSelect({
                     type="button"
                     onClick={() => handleSelect(option)}
                     className={`w-full text-left px-4 py-2.5 text-[13px] transition-colors flex items-center justify-between group
-                      ${value === option 
-                        ? 'bg-secondary/10 text-secondary font-semibold' 
+                      ${value === option
+                        ? 'bg-secondary/10 text-secondary font-semibold'
                         : 'text-slate-700 hover:bg-secondary/5 hover:text-secondary'}`}
                   >
                     {option}
@@ -122,7 +122,7 @@ export default function SearchableSelect({
           </div>
         )}
       </div>
-      
+
       {error && <p className="text-[11px] text-red-500 font-medium ml-1">{error}</p>}
     </div>
   );

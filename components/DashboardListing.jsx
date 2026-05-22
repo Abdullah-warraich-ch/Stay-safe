@@ -5,6 +5,8 @@ import { fetchHostels } from "@/utils/https";
 import { useAuth } from "@/context/AuthContext";
 import HostelCard from "./hostelCard";
 import CardSkeleton from "./cardSkeleton";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function DashboardListing() {
     const { currentCity } = useAuth();
@@ -33,9 +35,12 @@ export default function DashboardListing() {
     return (
         <div className="px-12 py-12 bg-white">
 
-            <h1 className="font-bold text-2xl mb-6">
-                {currentCity ? `Popular Hostels in ${currentCity}` : "Popular Hostels"}
-            </h1>
+            <Link href={currentCity ? `/hostels?city=${currentCity}` : "/hostels"}>
+                <h1 className="font-bold text-2xl mb-6 flex gap-4 group cursor-pointer items-center">
+                    {currentCity ? `Popular Hostels in ${currentCity}` : "Popular Hostels"}
+                    <ArrowRight size={24} className="group-hover:translate-x-1 transition-all" />
+                </h1>
+            </Link>
             <div className="flex gap-4 overflow-x-auto scrollbar-hide">
                 {loading ? (
                     [...Array(5)].map((_, i) => (

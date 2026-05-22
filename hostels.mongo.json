@@ -1,0 +1,3066 @@
+[
+  {
+    "name": "Brothers Boys Hostel",
+    "description": "Brothers Boys Hostel is a boys hostel located in Ali Block, Lahore.",
+    "city": "Lahore",
+    "area": "Ali Block",
+    "address": "Garden, St 1 Jewankhana Ali, Block, Ali Block Town, Lahore, 54000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH-ybBCPvJWokE41QKKyraPSOEG3bCzXuiSePtz6gH739VzR-OnSmH1m4jzN47DK1i9zKOzKt1Ubb5NwOrOig7yQcbXpEsCC9D9U8zB3CZi-Hg3_FbN7B4muWR-97p_InqwqLGEj0KJOl8a=w408-h612-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH-ybBCPvJWokE41QKKyraPSOEG3bCzXuiSePtz6gH739VzR-OnSmH1m4jzN47DK1i9zKOzKt1Ubb5NwOrOig7yQcbXpEsCC9D9U8zB3CZi-Hg3_FbN7B4muWR-97p_InqwqLGEj0KJOl8a=w224-h336-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE-1F-pYu5ORnRskoQgp6IkIbUqOsmiD5XJhAsQ7T4s2IYJkXDSk9nRtlqg43vx-EZDYXe3hEhJgAvLYHkAMBE0dUiRMKl-9QXz5CxGvaBnG5V2jqx6gJPrRWy9Nqc2rrVhqswF_A=w224-h298-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHQwxYB1vYTAbVYfzN6qyD-4wvIHKRG7N3XKUvQV_-zdWNhLxDokPfnMcn1qbb1Ez8ko60q2XbIyBEB0KrGXsun1cJ4fiJ3TtB9H5nUsUbPEtkLhB-qZD954ZwE1xoUnXqpmDDf=w224-h501-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEPKWqSHi4uHlDwmbAZsgHu-CZ6CCAKocAy7o_Ggr9tkolSSjSMLvC07MLYyhI8rdf7QJjSBSIm0LyOwqnRaWZN_j6UXfAxort1AHBw-8jauIrym1gm2CBwLe2aPKJEkfztBBDT=w224-h298-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEJUx0-dFonFPDIGDdR6EDOlaQGtuOryw8SJbUk42totwWhai9wbHzb5QJEzgNBE_tpdwY00nTv1Ld2bq9GlyJv8XlGt7ENFwtiH9JrE5oOmdu23ubOiE7U_HNSAQXkjRG4sQYIaQ=w224-h298-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUvRJM_78a9CTdRY7Vz2XsY0VV0v1gX5eeSNYTjVOgeZ46QkDOL=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/brothers-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWDFTZPdSz5POtZObqaEA1rxLFvtKY0C0PQ2RE9pA-18Q-L3VE=w36-h36-p-rp-mo-ba3-br100",
+        "publicId": "google-maps/brothers-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 332 9759496",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Ali Block",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Decent group of Boys Hostel",
+    "description": "Decent group of Boys Hostel is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "G83F+C2G, Jevan Hana Ali Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFrLJcasRAP81lPwfCUU1JeKbr29UBxhlrf6wMAHl6Z5SUFv7wZK4HrXJFSnFNfwxiaNoDrnEdNy1PQFg3OFHfpdzeiUQ8_IFDaYuAb_oK1vNmZjLhOisaFOP2RnAJsSk0HUpPF=w408-h544-k-no",
+        "publicId": "google-maps/decent-group-of-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFrLJcasRAP81lPwfCUU1JeKbr29UBxhlrf6wMAHl6Z5SUFv7wZK4HrXJFSnFNfwxiaNoDrnEdNy1PQFg3OFHfpdzeiUQ8_IFDaYuAb_oK1vNmZjLhOisaFOP2RnAJsSk0HUpPF=w224-h298-k-no",
+        "publicId": "google-maps/decent-group-of-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF0b2C7xAGF4fM8ifcuFFVyaNfbjHZc59IxloKcjNOklbwe8estNVXmDMkKTA3jghZgc2lFFT5UwQFVW-GCbNZj6jzsyqik2XVApLZBaeWD2FpPQoeNyHTQDJ8X-9NNYd7yi9M=w224-h298-k-no",
+        "publicId": "google-maps/decent-group-of-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAETcol8r1UdTWgpOTSDbDKgvYqAR0vT0exbSMqwpxTPuHLxetF2We0LlrAIjrxO1-edbhl7NdUPyUmPkaE8_WuWMxmN_gyp5HFdaywS8Oj-Skxenen_zgC8Fy4LgkbLz2ALl3a8dw=w224-h298-k-no",
+        "publicId": "google-maps/decent-group-of-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjU8GLvs5jYAWYDWSXiDxwhd9FaO8qcy6kmDKU_VpSrQgZ59KfqI=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/decent-group-of-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjW2lR451g_XUbfifee6kvuUCQYJfC4aCkM_ux1vQ7G2VwTarNa5FA=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/decent-group-of-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjX6qcxl8gNZHG7WpfQ8Q0Wsgc291kCgihBy8KfUSk8TPaT9y2JZJA=w36-h36-p-rp-mo-ba4-br100",
+        "publicId": "google-maps/decent-group-of-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF02vygp1ThCIgfNe5cnPKPDYSGwsL3mAfnCMhJE0Rk4V55sdMjR6X9gpRMNGWtb9ygHeydFN4ZJ-ZOxbq1dkIC6w0tdvJfE_trT-iKtiGqWlPTW-Ser1vrGysb_LI9J_RlRpvPSw=w156-h114-p-k-no",
+        "publicId": "google-maps/decent-group-of-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 307 8612082",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Reyan Boys Hostels",
+    "description": "Reyan Boys Hostels is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "G83C+XM3, Jevan Hana Garden Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGiHKSGDzCeFWcgnciN99hWEVV4NPk5DP_vtINVvwIFZGBPA-9nTCBSYJQ1Qim5O9kqRC4yAjZZGPDyNadI1wqH2fth9ugEMPsqXl06sC85Npe2NH3xEf9mFBpl0na1wofwz9khZVlTtSFB=w408-h408-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGiHKSGDzCeFWcgnciN99hWEVV4NPk5DP_vtINVvwIFZGBPA-9nTCBSYJQ1Qim5O9kqRC4yAjZZGPDyNadI1wqH2fth9ugEMPsqXl06sC85Npe2NH3xEf9mFBpl0na1wofwz9khZVlTtSFB=w298-h298-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHWPaL2Gdt3V1hRPMo7ZZyovy_Jdx-WZ_jEJAeDOxXQ9vBzQu_GcEeqz1yLnInffBzbViShwTisXhfB28oCDyNsZO0AxkPrgiKSYmfNgG28UInz6-BoOxLjJoHFaimjkuBdLYPF=w224-h497-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHXsYqfKVY0m43YIVo8T7wHxBeIXqhnGk0sfSlPnp34PaAQpNicsMyccKD0rNTlDtJnBFXITCfteZ-HzUUBHjjR-3FJJopq0yHag5w_SLZ3MmE-_xxwR-Te2gkTffnD0f-j2jpQ3Ho5dTCt=w224-h395-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG5AXRD0ALqilptYaOZn3v3LyZKHnBamFzC4IVToQc1dQF_EfFf-DslG_iGryDtgqnMaqbuErk4d2SWgqPbLu-UuTR9FqtmgY4yusqMu4AruOZBFz4omeGruLM5ePFJne_psJjxLSa1W22q=w224-h298-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEIlTNfqGxd5awPy0Oo2Owh73P55TMIY8DsTPBOk403b2C-ETZ75cn-ufVNCzo3NZufHrb7dU7GLEIFQ-1nm2633u-SqG3dSDz6CHgZe7laOAtD7rOvQ_vhqKss2k0ahx9sn1cu=w529-h298-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXjP5vR9NLeWpS0pbs93Q9vI6nf6DrmnmL2mVlghqBcAu3lf6An=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/reyan-boys-hostels-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUImAc4pyXGzRyGjicpmK6rA8aB_YFU3j1t7Tk92foCo_lu3rlkPQ=w36-h36-p-rp-mo-ba3-br100",
+        "publicId": "google-maps/reyan-boys-hostels-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 313 0302030",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Ahmad Boys Hostel Garden Town Lahore",
+    "description": "Ahmad Boys Hostel Garden Town Lahore is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "G83F+MVC, Ali Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHWu0IqtgSHtTs0JYqMfCQ9O0otatE9LcB2zZl0xN4GWjcj7yWdTn1nqV8xCAFu2_5tcS0oTPIcof8UyytxXlMCfqVl5s90tzEdpzd_EBrdtV9L0QHUtkT9MYz-7-YAfkXynAfmtA=w408-h725-k-no",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHWu0IqtgSHtTs0JYqMfCQ9O0otatE9LcB2zZl0xN4GWjcj7yWdTn1nqV8xCAFu2_5tcS0oTPIcof8UyytxXlMCfqVl5s90tzEdpzd_EBrdtV9L0QHUtkT9MYz-7-YAfkXynAfmtA=w224-h398-k-no",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHinUq2NtHH3cpIvbj2jAbMnSNFaHma0ZOrUQ46--hL68qUfQ6lNdmOrBJoJ8CBUVlcoWNTsAp0RMuHphtVFkidUhpJ_eWRNMnGVTf7EtAk5UNrYHHReAG7lDMPi5W2EjjdWhF3=w224-h398-k-no",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUjZkgYJbaWq4AWsL4kZMCoberSacK9GJ2AVgO_XSjXEPZqNxzn=w36-h36-p-rp-mo-ba5-br100",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWjtdyW0f6BJigf3XLUFE9OiicKL6YELvzsaj_CEPG48rvFJVK4=w36-h36-p-rp-mo-ba3-br100",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXm0c9SSxzkeOfdptXIfJmG5z-XSpAs7n-wBnsg6Ik_BTmbH0vh=w36-h36-p-rp-mo-ba2-br100",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF02vygp1ThCIgfNe5cnPKPDYSGwsL3mAfnCMhJE0Rk4V55sdMjR6X9gpRMNGWtb9ygHeydFN4ZJ-ZOxbq1dkIC6w0tdvJfE_trT-iKtiGqWlPTW-Ser1vrGysb_LI9J_RlRpvPSw=w156-h114-p-k-no",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEW71mtdVRcJzBdkdyJwDmpWX3ymOJ9cHdbptxpVmKmue20Y7Eq9O6ySCVgbxjI0BWlEzG_jHfzRtJ9sCt23GPtY8H04BwdfyWUAVwYVyWoEwX1Qb7no04QCx9ViqgJAaH2wJRD_g=w156-h114-p-k-no",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 325 8049602",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "United boys hostel",
+    "description": "United boys hostel is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "G83C+R77, Mubarak St, Jevan Hana Ali Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEOEENWozXXKo8m4FP37kxER2CISz4w7HIF1QEIVmLNOLicS4pecMnBcDeRShMoKV-A3IHHofWv3NLF2f-y9EDNBMaQxXJ-dZU12uha1RM9NQ98MixUdNbRcv4Th9BRM9u-qBUk=w408-h544-k-no",
+        "publicId": "google-maps/united-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEOEENWozXXKo8m4FP37kxER2CISz4w7HIF1QEIVmLNOLicS4pecMnBcDeRShMoKV-A3IHHofWv3NLF2f-y9EDNBMaQxXJ-dZU12uha1RM9NQ98MixUdNbRcv4Th9BRM9u-qBUk=w224-h298-k-no",
+        "publicId": "google-maps/united-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEqQ85aOmXUAF41NsAsG6WnuYFYTMGPQjJuOOLgYAdxPulMy5DXPZ-niLOJIpCDlwgW4hQiP9dfCq1EX5Sxh4YqZh9WIAoOzj8NCs8eMMNnQBb_kAWsyybds-3DpcgBY9OLj2AoQezVIGb1=w224-h398-k-no",
+        "publicId": "google-maps/united-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFIPe9UVhnM5OifqQSV_0n2nsiTtVuoQSEbadr2gdmGc-br006_eCHcfM7lfxNWu9PApVHqlKh4LSahGC9Weswyou38AlsvYKc_YuwV3m4kzSXCnaef0-Vot_pgt0M5MOWFUMCyOQ=w397-h298-k-no",
+        "publicId": "google-maps/united-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocJb8LPJxz0HPHdn86lWEFVLqtPkSVl3LAyddgo-MMMjm9FTQQ=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/united-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVrNFleO_-Sv0lNFrQFCGw4EQIzXMBMuKIUpxfuob_v7T4c2AQT=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/united-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocKyxcQBoV7hPjG4bKMEElzmCd0Dk3X2RlRepe6UD5ZpkRbQKQ=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/united-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_rWjYskFtwtR7HPQ1_QL-ukvGMo113tvLlD7Sc_1sIKdoTct_56Ki-2xRgD4x79oynQ86N0SRBKgmd9V0EqJhii0oCmP9JW7XMVE5WsHnmX1W6KQcYeou5kRwDVjauNY6H5HF4w=w156-h114-p-k-no",
+        "publicId": "google-maps/united-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 302 0944441",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Sawera boys Hostel",
+    "description": "Sawera boys Hostel is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "BABA LAKHA CHOWK, Jevan Hana Ali Block Garden Town, Lahore, 54000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEB3xKnouelL75x_ooL95V-ip0wVW2MXPK4AY_2gWJHgh6GDYanC9BKdWsW2seUBTI-W2z1V1gqdaMGLYUEZl1cy6iZpDKbwXFY_-JKe5H6KKgFKJdlmTF4kyfs0wxU1-fIuct2Gw=w408-h544-k-no",
+        "publicId": "google-maps/sawera-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEB3xKnouelL75x_ooL95V-ip0wVW2MXPK4AY_2gWJHgh6GDYanC9BKdWsW2seUBTI-W2z1V1gqdaMGLYUEZl1cy6iZpDKbwXFY_-JKe5H6KKgFKJdlmTF4kyfs0wxU1-fIuct2Gw=w224-h298-k-no",
+        "publicId": "google-maps/sawera-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHMa6E9aCXoLuLscyxqbext2-D6f43JGiiiNnKnqHEJpkK76Fzn5M9q1Dgta1EC31bf72laZWmyWYk652eQKvPmYPwfO19fzGs6ktSJ-MbwZU7Prca3zPBqn1aSre0aRSNupfIj7A=w224-h398-k-no",
+        "publicId": "google-maps/sawera-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHY11J8Vwrgf9yfROGNTBsR0Ihel2V7Ss9p6LMOnC0J0opIhhdn9lvQIOomoMPN9e8Ent38RaWbVGaLiA4JRSnECvmWdP8WUYs_Ce-0Cjz4DhMX8xP1vXB68bXl51YwQBbXafTYoQ=w224-h395-k-no",
+        "publicId": "google-maps/sawera-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF1JmRrxyDFblBV7cv5wvmfWnLJpGk-ltfN3U5IAwW-vLwTi3W6bTAQ3f9a6KNgeknimLnjw3Zk3RP3LGuxaREvz8bvF3LW5ZLZ67nitA1dw3AwLNHDPVx9PQ7yGVvYhvtVa30=w224-h398-k-no",
+        "publicId": "google-maps/sawera-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAENsGWPoNLa_VR2RddDHp6Os33mskfJcMcvxInPHW9FLvxjSCyawbl1Gg31a1h6L1jiIY3xvSz_-O8g1YhBWRVU2tlRo4Mz-7Z6DxeNM958jyZ8NLPTBULNAcsHi9jjK1HOCgVt=w224-h395-k-no",
+        "publicId": "google-maps/sawera-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocI5YI7aWXI_H7Rpu2QWAn0h1C2J-7wDiJfMbxg-sWSudn8bSg=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/sawera-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocLSVmD0jhPvFX2M33-_rz18KLeHXhQMW39woNK5PIDrjZ2RR0g=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/sawera-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 306 2583376",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Zain Abdullah boys Hostel Lahore",
+    "description": "Zain Abdullah boys Hostel Lahore is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "Main bazar jevan hana. House no 5jeevan, Street, Ali Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEIAqMGI9241eeRUTl52WVCoyD5GVP8ycf4IAkcHHsM9ZiSYa_0YTlPBPe-aolByIr4HEPl1kyCUgKD5HUDWxKXfxDGZ-g0qBO5WtVDKkxClUZagdUsAmAjdpv0nVWWWmcfYxdaXA=w408-h725-k-no",
+        "publicId": "google-maps/zain-abdullah-boys-hostel-lahore-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEIAqMGI9241eeRUTl52WVCoyD5GVP8ycf4IAkcHHsM9ZiSYa_0YTlPBPe-aolByIr4HEPl1kyCUgKD5HUDWxKXfxDGZ-g0qBO5WtVDKkxClUZagdUsAmAjdpv0nVWWWmcfYxdaXA=w224-h398-k-no",
+        "publicId": "google-maps/zain-abdullah-boys-hostel-lahore-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGM-2jPbwqYXKehv9s4NBBznFy8XNjbPt53PlF3F6qsctdHj5K2eNdGMNvuS_x5O3NMktIW_RitoMSZ49C0_TxPNeG_D56Sm85tueVD0lZ0EA2GhQy_l-mYjZm2lbT0HaknOubaWcUkWkw=w224-h298-k-no",
+        "publicId": "google-maps/zain-abdullah-boys-hostel-lahore-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocLhskOsG5ESZehZfSXPw6BsmMODjTCzYPgvu-JH4PtTXqaOsCk=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/zain-abdullah-boys-hostel-lahore-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVj7KC4vY-khggvKeftGSu1cJO2Y2X1MFJkYwCgYSS0HBVv0pI=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/zain-abdullah-boys-hostel-lahore-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocLcwdeza93opmAkKYVWa8dJ3s_KDp1PaxybTCkEaD7EOLWXEg=w36-h36-p-rp-mo-ba3-br100",
+        "publicId": "google-maps/zain-abdullah-boys-hostel-lahore-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH-ybBCPvJWokE41QKKyraPSOEG3bCzXuiSePtz6gH739VzR-OnSmH1m4jzN47DK1i9zKOzKt1Ubb5NwOrOig7yQcbXpEsCC9D9U8zB3CZi-Hg3_FbN7B4muWR-97p_InqwqLGEj0KJOl8a=w156-h114-p-k-no",
+        "publicId": "google-maps/zain-abdullah-boys-hostel-lahore-7"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 304 6417120",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Saad boys hostel",
+    "description": "Saad boys hostel is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "Mubarak St, near rose palace hotel, Jevan Hana Ali Block Garden Town, Lahore, 05309, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHaQXue-u-9OQNyjPQYZfvnPs0F9y04EsIGQPa_6mWM9TzTCHye-ldS1pJIZs6X3Lascoxy32Ts5xf0kmmTHRUIS4m5KUQUOnrNsjQEiMV2A4Zjlo6E26Iz5yGqwfc3lt0lUtzKm9_TzHow=w408-h725-k-no",
+        "publicId": "google-maps/saad-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHaQXue-u-9OQNyjPQYZfvnPs0F9y04EsIGQPa_6mWM9TzTCHye-ldS1pJIZs6X3Lascoxy32Ts5xf0kmmTHRUIS4m5KUQUOnrNsjQEiMV2A4Zjlo6E26Iz5yGqwfc3lt0lUtzKm9_TzHow=w224-h398-k-no",
+        "publicId": "google-maps/saad-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFtoqTtbO7pNbJ6WSRW3NZ6BKzxH4e86pLoTysU2uXDm_e9XN_0dem7p9cWbjx-9jyHo33VLFiN7GhhU1Gl9IpTK-8MPG9rcpk3I5xoOO6GylabG_4zFeckxonCh7B5k0JkxHrk9-H_es9K=w224-h298-k-no",
+        "publicId": "google-maps/saad-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWdc8rSubZ-PY2WYZ1elcgIb8l-7WEVDDgu1uRsDy5gQXVEU2Q=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/saad-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocIb5qUFcC5wVV7S6Ozk6xfVtEl5Lw5WiOIgXzx9yeRZ1xJaGg=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/saad-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWuCR6MWdDZyM6UpETGyCIaNGy_-J-x53wn5pRQMnvMdJQN6hKH=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/saad-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF02vygp1ThCIgfNe5cnPKPDYSGwsL3mAfnCMhJE0Rk4V55sdMjR6X9gpRMNGWtb9ygHeydFN4ZJ-ZOxbq1dkIC6w0tdvJfE_trT-iKtiGqWlPTW-Ser1vrGysb_LI9J_RlRpvPSw=w156-h114-p-k-no",
+        "publicId": "google-maps/saad-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHtdX8cxDZI5kYxgKgSPLLJdmUhVNUbiYLGV3Y5J2RgDSo7f-SGdPZJtRzbdvmB1O4i0Xzddg3m6atiX1z-j_8MMWKel5yvnzkzLcpZertHqBYhWS_vSVJ2sRQnt2IRNzvabiceaxpQjEfA=w156-h114-p-k-no",
+        "publicId": "google-maps/saad-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 340 4668183",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Boys Hostel No. 4",
+    "description": "Boys Hostel No. 4 is a boys hostel located in Quaid-i-Azam Campus, Lahore.",
+    "city": "Lahore",
+    "area": "Quaid-i-Azam Campus",
+    "address": "Quaid-i-Azam Campus, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGfE-RyF_Qryzmev8ap6x4OXnCAGKV6o_BATNslEq29GoTh05CFCyycDbZ16y9OqGkwF5otaEHGPkvaPR6j0kWScnAt6ALluyeZKrB5U1oZtB_GdSE6tliZa9Lnb_VHKjZGHSYc=w408-h306-k-no",
+        "publicId": "google-maps/boys-hostel-no-4-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGfE-RyF_Qryzmev8ap6x4OXnCAGKV6o_BATNslEq29GoTh05CFCyycDbZ16y9OqGkwF5otaEHGPkvaPR6j0kWScnAt6ALluyeZKrB5U1oZtB_GdSE6tliZa9Lnb_VHKjZGHSYc=w397-h298-k-no",
+        "publicId": "google-maps/boys-hostel-no-4-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHMdI_To763YZbzqwwdXSHxkXHAX247aFlUIuzrtcYdGrkLXmBxyTLxmDqGmCFR7T3nAKb3VkZZ6mmWpy5ZN3i3TGgNBYR7As8BxHqratCk_VOTEC0PCp03pcyMIFv1pvDm1imofXaENDI=w224-h298-k-no",
+        "publicId": "google-maps/boys-hostel-no-4-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH_XzY-La1LaMIzzyDccxdsfCXIbd_HsjNXImFDQBDv2FiguV-OyMXOniYVkHEmSZESV7K7fIcDgGY-KwWgw_XGmL7iwI8b2J6TXW634rkyP1J1bxatkhq-zGe4OduKkwd3cLns=w224-h398-k-no",
+        "publicId": "google-maps/boys-hostel-no-4-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEMzK3MVS-BE-iDrls-ufYF-boIKjaCwnCuu6e331xSkc0mlaocH4IDQGsVc3xEwM0gLdpNYqqQYyESQ9pzdJo2OsW9jPeAyZ0pmn6Vn5hUAjQGCfAQYhWOfkkCuzd8SpXfnpSVoA=w224-h298-k-no",
+        "publicId": "google-maps/boys-hostel-no-4-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGvoTst2OpYrEI3smKd60Wu9lMHgwNpQw9Air0U1vUMPbG-JUTP7n4cfuzkmrZ34oNgV6pVCKo-I1vrHh-9ikQbzQGcNAPS--GP1o-yypmfCCzyahuhiGbni5Adkv1xRqWWnZcpFg=w529-h298-k-no",
+        "publicId": "google-maps/boys-hostel-no-4-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHfcriQkB5y_lIt5v3Gad3DDlB5u0og4A7K-3xbZiVPKlhIRqfFQjDxrEy78M1EaQlxRr-ZbVeOPQWxUmZd6RVyFH9rWmpr0sk0LT4-1L0sJwUlTiv3XtSEMQMcV3zgKL9jS-tg=w224-h398-k-no",
+        "publicId": "google-maps/boys-hostel-no-4-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq6w8Cip7UYXvi4nsuNIaeZmLbJLNTn0sGxbHzw0q97zTRIoZMueVUqgsGQtC941qFZ9zkXm11_Rh-c8X27KvnWePkr5OCdvuPN8Yiv2_qMgksghJiXTMNFRdCH6sgYp3HLDlFMw=w529-h298-k-no",
+        "publicId": "google-maps/boys-hostel-no-4-8"
+      }
+    ],
+    "owner": "",
+    "phone": "Not available",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Quaid-i-Azam Campus",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Makkah Hostel for Boys",
+    "description": "Makkah Hostel for Boys is a boys hostel located in Muslim Town, Lahore.",
+    "city": "Lahore",
+    "area": "Muslim Town",
+    "address": "Bukhari street, Wahdat Rd, near allied bank, Muslim Town, Lahore, 54000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEdDPBvBo7nk4RxdxzS_Swzssg62rWZ0EGBAe4z48SAxY8I81TKl3JFkP3V8vGmWWG8ZV9LWLkQWP_Wj280ILVE5jVpSgsClzaQuoLUQ63qvtgaC3kiCY0BXq8f2aiC3Ax07g=w426-h240-k-no",
+        "publicId": "google-maps/makkah-hostel-for-boys-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEdDPBvBo7nk4RxdxzS_Swzssg62rWZ0EGBAe4z48SAxY8I81TKl3JFkP3V8vGmWWG8ZV9LWLkQWP_Wj280ILVE5jVpSgsClzaQuoLUQ63qvtgaC3kiCY0BXq8f2aiC3Ax07g=w529-h298-k-no",
+        "publicId": "google-maps/makkah-hostel-for-boys-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGDnJkoUD4IGnOX2aLZJnKb6UM6lLn_svW6ohK8YX2kYBe7R3awESH7B6xWoMhAGptJjicT4KzNzIpsOD-VZ0nI1gjbwSpBUmr3dl4xzdey59zWJ2G001cUqiwUM2fDYJb_pRUw_Yyc7LLy=w224-h298-k-no",
+        "publicId": "google-maps/makkah-hostel-for-boys-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFE9qTbNPuyomHCe5OESwRUfbFZDN-1mOm_thY1ETwDXuCPpMo5X6SsJGgHSkSX5YtrX5j_QI-nD3n3Wd2KBys2n8JChT4c2Q-gVulRbsDdsa1mxx-i5v4xnOJWH10aQ934YYt3Uukb8EAR=w224-h298-k-no",
+        "publicId": "google-maps/makkah-hostel-for-boys-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEYv9jS60v-nyarKmF-CJXXrUCpA5N6m74R4Is7aeSKZhcEyXAwXmaPP4ZG-2RKVAu0wjb3Ki-bvGIwciJISBaZlOGmAqAqH5D8kHM2W2O0hAFT9Pz_Jbfb8yAa4vjOmabuF7eO=w224-h298-k-no",
+        "publicId": "google-maps/makkah-hostel-for-boys-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGIJH6Rt3AJNtbuY7t_VavIETuLGfEzunTPAPQasra4Rxk4PQn5cMNp8LuZALcC-ZUwoBdfe1hD9NKCJ9ScPRQs0vhAUd2c-98sk8Tkd7pcFflOYSC129vOS2tDGPa_wovnpK9k=w397-h298-k-no",
+        "publicId": "google-maps/makkah-hostel-for-boys-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHY10UlDhdcuwPdpOjv46e3YiKQaT4uZEiwWYxa3Yta8c64tAhXPyvlh1xgS0xP0x2ukMZcMKXcMFdAeX-OljvD7jh8PmIwpaoOsIb8Lgt4GvuZmBO7c4_HFBLBtb10vzcsnO8D=w224-h398-k-no",
+        "publicId": "google-maps/makkah-hostel-for-boys-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFfVtnzdkSo0rwu3w1rECUzRcVDxGtQlLBU3gfeVW1cdPvX6afi7lclUDOj7sCS_rQ7Eq-055MdW8-cfezte3BLdyCQvMsA2dyzENDm6AGzNdpOVElAN5nhnJ3WRwn8rAULtKjxBDOZu6Tj=w397-h298-k-no",
+        "publicId": "google-maps/makkah-hostel-for-boys-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 324 4444150",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Muslim Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Salamat Boys Hostel",
+    "description": "Salamat Boys Hostel is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "Plot 36, Ali Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG3uClXfTQlYqe03QsK1_Z2lrQ7BZetqjnwdnP0nsiBtNErH2uL1Y2dr1EkrkxO6dMgSoPBnW2XH867H7PfrdAiegI8Q4vjlorp86oYgdZFnNt0ZneK3iPojkbn6EF6n6jGxTpAfM0nqvTJ=w408-h306-k-no",
+        "publicId": "google-maps/salamat-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG3uClXfTQlYqe03QsK1_Z2lrQ7BZetqjnwdnP0nsiBtNErH2uL1Y2dr1EkrkxO6dMgSoPBnW2XH867H7PfrdAiegI8Q4vjlorp86oYgdZFnNt0ZneK3iPojkbn6EF6n6jGxTpAfM0nqvTJ=w397-h298-k-no",
+        "publicId": "google-maps/salamat-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFFaKFPVNcMVwvcfE5ljj_ppfPvNjqeTpCuunK9VPwkOCZtTh9943Mwe5w6K5ME_hoiD0r09Q2oZv2juEa_SSfPdBEaMul50lXD0VK5FJ7RAXqbF9EiX9yFUwSHw3Bg9gvPnC4BCwaBJxc=w224-h298-k-no",
+        "publicId": "google-maps/salamat-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE1PEztdAj2Bq3CYtSVmb4TgXohBoWElxeOan9jTmX725CLAa0vjxISINFxL5THyuV53tb7xxbrq8VTaBbbKpMbaLwGrpythjb6DlKV1k_MAt2XAv7P_Zi4eF_K9wIoraUDie2t=w224-h298-k-no",
+        "publicId": "google-maps/salamat-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUXBbg9ZF-ICAwQLSdcMqrQypnBEOA17RetPFXlPD5YnsJ3QR1l=w36-h36-p-rp-mo-ba3-br100",
+        "publicId": "google-maps/salamat-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUmX0wBNOD4olgBvSB5kv17hyKd-QeTpMb9Dsg-L4ZpaW998Xxy=w36-h36-p-rp-mo-ba4-br100",
+        "publicId": "google-maps/salamat-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocKCTP8vebqh8keweyMzJdbyOfv5LzFy8uZJ6DiXRAzex5mFL5g=w36-h36-p-rp-mo-ba2-br100",
+        "publicId": "google-maps/salamat-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHWu0IqtgSHtTs0JYqMfCQ9O0otatE9LcB2zZl0xN4GWjcj7yWdTn1nqV8xCAFu2_5tcS0oTPIcof8UyytxXlMCfqVl5s90tzEdpzd_EBrdtV9L0QHUtkT9MYz-7-YAfkXynAfmtA=w156-h114-p-k-no",
+        "publicId": "google-maps/salamat-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "Not available",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Ahmed VIP Boys Hostel",
+    "description": "Ahmed VIP Boys Hostel is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "G83F+V2M, Shah Shakoor St, Jevan Hana Ali Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4PF44WEh-3F5JHv6KpfBKB7vakPg7IOTbWt8nBOliVAf_zttXiLlgmB5gfHM-a4gbG8u5ileWDR3BaC6T6r-TxPi6tqypBgGXJjxmBmT30fkeHMyDUDHv9pHGl-ZZfvRxsuUK=w408-h306-k-no",
+        "publicId": "google-maps/ahmed-vip-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4PF44WEh-3F5JHv6KpfBKB7vakPg7IOTbWt8nBOliVAf_zttXiLlgmB5gfHM-a4gbG8u5ileWDR3BaC6T6r-TxPi6tqypBgGXJjxmBmT30fkeHMyDUDHv9pHGl-ZZfvRxsuUK=w397-h298-k-no",
+        "publicId": "google-maps/ahmed-vip-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFlWtz2r4HqkDkHMrRlZKPPG7cP_xXDssX_XqghmuqLHlAJc1sCDmJ2xt0RCYet6KAAsIvsyazp3lbmMXyK-Q1hH1UGFpTml6562D4eD60Tq2QLrl6u87-vDF_jhwgvu7F_ATs=w397-h298-k-no",
+        "publicId": "google-maps/ahmed-vip-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFhNbMYRrRooXYKp1w0wUOEdIscQGl3yQ-S68hk6BefXsgbZqBz-27LL_A7yZPH58NGL3by_PFsSqqdxZ88KLTLUbvGSpTKAtjhb30w_93t_jMigNxL8YfuDpsMSsZJQOk91VY=w224-h398-k-no",
+        "publicId": "google-maps/ahmed-vip-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGudygkk62Ufk36qB411MBPEJrVX41fMPylU3ZvXG8kzmvxoqC7IsrFgSOmU5LOAwFjWChFsLheGVKfFa_VlIRFz0wYeiRJFgj9WmPLWM42xOj3WFoMDbk-ucQkkCMBTzf-htZszQ=w397-h298-k-no",
+        "publicId": "google-maps/ahmed-vip-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocKDMMu7Ualz1PE8VmvI7ZjJMkYx4XHxLw0T6AzhWBdOloB6=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/ahmed-vip-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVKSsvudlTiYX9JLmEr9HCmDNE9biHFONJH0jgmn6hYDT8ee50L=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/ahmed-vip-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocKl-6fYHZwsFFv8UxyfuSFjuTZhISYCUy2iLxKu0gy28Z-nlw=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/ahmed-vip-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 340 4401087",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "PU Boys Hostel",
+    "description": "PU Boys Hostel is a boys hostel located in Quaid-i-Azam Campus, Lahore.",
+    "city": "Lahore",
+    "area": "Quaid-i-Azam Campus",
+    "address": "Quaid-i-Azam Campus, Lahore, 54590, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGUMFb7elQSlDL61g1-cHVNh3frU8QAA9l6YvrhU0i159TY7ONh-3Y3MtPw6K01CXuRHkoMTcOE6Gr65MkfOzG0Jex6tkRrkTWELjRnwZ_0nMUW3ufwaKZj3HqshLi6uZ5Jkp_o=w408-h306-k-no",
+        "publicId": "google-maps/pu-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGUMFb7elQSlDL61g1-cHVNh3frU8QAA9l6YvrhU0i159TY7ONh-3Y3MtPw6K01CXuRHkoMTcOE6Gr65MkfOzG0Jex6tkRrkTWELjRnwZ_0nMUW3ufwaKZj3HqshLi6uZ5Jkp_o=w397-h298-k-no",
+        "publicId": "google-maps/pu-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFEgeWWD2xtZcHgGgcmGE0f7t46E9tiYnngD6M1hH6_WZm9VQ5sF_OV4edivBqNfw3fZRbw9idi-S3bc0UheSepUHAsgUMeqNrkUi6b4W7V9kbI1Qj_wTokOHVQXJrTMTqNRws3=w224-h398-k-no",
+        "publicId": "google-maps/pu-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEIdnIWNe2ZDd7LA8JIVHHClCsJwaNruOhXMtwwAA45sfT6PRkDAqVsq2BFLIYb_0FHkVnFvIIdb_fZao9p7OX5_0Dp3l3ihATDlLhbw04UEK7HkzpDpwHi8Fy0Z7rdw4Coi12H=w224-h398-k-no",
+        "publicId": "google-maps/pu-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHj5IMQp9s3YNfhTLDiDJh__giCN5VqtMYV3CCMNGV5tW2r4B2Lr5IDhWaFaJc41KtH_1HGhIW0PdDyYblgsdjlRfJHHgkcKFL62JdCx_X1Bfeb0SPYnGCT14JrkxPzo2QbnS4MTg=w397-h298-k-no",
+        "publicId": "google-maps/pu-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHdEOTehiXgWVNi52uxeVin5dNKAHfBl4DgtL7sjFlMDKZ5pyPlViQPI5HTEGDkrN_yV4pzCeuKYWySrzyYFwMJWQdBYxW9QMeBcjwfIqL9rKrtTMgMvIMv2UKn42Cy-jc6llgDxg=w529-h298-k-no",
+        "publicId": "google-maps/pu-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXcyuXnRsFlMQ0wPCMkhHfUiPuJz9dEgQepsbbrWH3bx27x2_AF=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/pu-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVfm-BBinMGkc5qChI_sXegFaCMG9Oktrp5Pxq8kpoNfKzaAdmFFw=w36-h36-p-rp-mo-ba4-br100",
+        "publicId": "google-maps/pu-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "Not available",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Quaid-i-Azam Campus",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "X-Pose Boys Hostel",
+    "description": "X-Pose Boys Hostel is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "82, Aurangzeb Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVYG3oE5woI5Jla7jI7YsVaJdplEx_tjqDwsBQMM2OaBO1oSXe6=w36-h36-p-rp-mo-ba2-br100",
+        "publicId": "google-maps/x-pose-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXPFXhu6bxJHF_ygODWWLc6PuVtCteiPPWNBlXN0M1ifGGiyGK1=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/x-pose-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXPV1FGq4c2DiKB5N-G3y3d4A78Bt4Ul-3hWLQ9DyHQW2lk-EESbQ=w36-h36-p-rp-mo-ba4-br100",
+        "publicId": "google-maps/x-pose-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF02vygp1ThCIgfNe5cnPKPDYSGwsL3mAfnCMhJE0Rk4V55sdMjR6X9gpRMNGWtb9ygHeydFN4ZJ-ZOxbq1dkIC6w0tdvJfE_trT-iKtiGqWlPTW-Ser1vrGysb_LI9J_RlRpvPSw=w156-h114-p-k-no",
+        "publicId": "google-maps/x-pose-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHWu0IqtgSHtTs0JYqMfCQ9O0otatE9LcB2zZl0xN4GWjcj7yWdTn1nqV8xCAFu2_5tcS0oTPIcof8UyytxXlMCfqVl5s90tzEdpzd_EBrdtV9L0QHUtkT9MYz-7-YAfkXynAfmtA=w156-h114-p-k-no",
+        "publicId": "google-maps/x-pose-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEbvjrUEYVF_y-hho99sxkx8OSGZxiDj7U7CqH6UqtFf6JORb3r0rSBLomR8rwUjY0n_PnR4W9kbRtykEWhdwNzAHVS476T-H7VhgJj3tUD9lkoDv9bhuW_EekvLUWkvyvRYdrXZA=w156-h114-p-k-no",
+        "publicId": "google-maps/x-pose-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHaQXue-u-9OQNyjPQYZfvnPs0F9y04EsIGQPa_6mWM9TzTCHye-ldS1pJIZs6X3Lascoxy32Ts5xf0kmmTHRUIS4m5KUQUOnrNsjQEiMV2A4Zjlo6E26Iz5yGqwfc3lt0lUtzKm9_TzHow=w156-h114-p-k-no",
+        "publicId": "google-maps/x-pose-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG3YwuoII5edg_TCK9Q3S6AdGu7bNgzWNuolRBSRJ8D3v8sEvtKaFOtlXETyQxkace_oPjrzDvkutUmyPzBysafGV-97ePJXt53LrmuMjOu-uebuKRwVzLTKe-DHjwzq01bZHHf=w156-h114-p-k-no",
+        "publicId": "google-maps/x-pose-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 300 4278582",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Syed Boys Hostel",
+    "description": "Syed Boys Hostel is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "firdoos market al raheem plaza al kareem phase1, Garden Block Garden Town, 32200, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEKN7K5mO4SV-_7spfnfnIJaA7uV_4p77D7qZt1yfPRgjSTSPfFuOZa8YY0EQzoV4D2QGCn8u-FZnepYkFx-miJQaXeT3mLwdb8WZtCoSo_6BeuYjXqTpCeCSpAX4MLbMlhSu5I=w408-h544-k-no",
+        "publicId": "google-maps/syed-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEKN7K5mO4SV-_7spfnfnIJaA7uV_4p77D7qZt1yfPRgjSTSPfFuOZa8YY0EQzoV4D2QGCn8u-FZnepYkFx-miJQaXeT3mLwdb8WZtCoSo_6BeuYjXqTpCeCSpAX4MLbMlhSu5I=w224-h298-k-no",
+        "publicId": "google-maps/syed-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVBIOC6POY-GfiobKTdfEIEufLikTYwHXzc9HMBylfsDPFiw9uk=w36-h36-p-rp-mo-ba3-br100",
+        "publicId": "google-maps/syed-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXWXG0UT-Gf6vLmKlw3M1FWextm0jYkhFhqryc5r8ej6LgKvdchNg=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/syed-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocJLi_9FuHU50jHMC2v0YPUP4fNHRz4dvCV6Ug9GPwnNguwy7cw=w36-h36-p-rp-mo-ba4-br100",
+        "publicId": "google-maps/syed-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFrLJcasRAP81lPwfCUU1JeKbr29UBxhlrf6wMAHl6Z5SUFv7wZK4HrXJFSnFNfwxiaNoDrnEdNy1PQFg3OFHfpdzeiUQ8_IFDaYuAb_oK1vNmZjLhOisaFOP2RnAJsSk0HUpPF=w156-h114-p-k-no",
+        "publicId": "google-maps/syed-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2BOGCVAfwqnsKYQB2m46irh6o4aiz2OXG8rsivpukM1XpIEF2E79wDvJpV-DuzYdfQk1tIcrcOVOlUkwfJz_H2CkPKeaoqGCf6Q9I5ZEU2qiRRy3c6qCO0L4yWEl8JeoF971d=w156-h114-p-k-no",
+        "publicId": "google-maps/syed-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGiHKSGDzCeFWcgnciN99hWEVV4NPk5DP_vtINVvwIFZGBPA-9nTCBSYJQ1Qim5O9kqRC4yAjZZGPDyNadI1wqH2fth9ugEMPsqXl06sC85Npe2NH3xEf9mFBpl0na1wofwz9khZVlTtSFB=w156-h114-p-k-no",
+        "publicId": "google-maps/syed-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 334 6738007",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Model town Malik Hostel(boys)",
+    "description": "Model town Malik Hostel(boys) is a boys hostel located in Model Town, Lahore.",
+    "city": "Lahore",
+    "area": "Model Town",
+    "address": "House No, Malik House, 51, Block E Model Town, Lahore, 54700, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGSvzBd2Whq2s8qMS4NBpxJ65GB9YKkccCq2SlgH07kTMSJsefMA17EGKk8oR6wRM9OlcLkUty8SNBZnfOAXf0_o4LXqpbJ9y2UrL4Smjs3RkpphGXMoqLEzkWcwz7RVVRdZN8=w408-h543-k-no",
+        "publicId": "google-maps/model-town-malik-hostel-boys-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGSvzBd2Whq2s8qMS4NBpxJ65GB9YKkccCq2SlgH07kTMSJsefMA17EGKk8oR6wRM9OlcLkUty8SNBZnfOAXf0_o4LXqpbJ9y2UrL4Smjs3RkpphGXMoqLEzkWcwz7RVVRdZN8=w224-h298-k-no",
+        "publicId": "google-maps/model-town-malik-hostel-boys-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFtj-zgVt3Smw1GhODLMY2zMph9v1CgMu6z-j1X1RRhal4rkrJu-xBmBUsSibPU3ngDMKJEVIHzqn9zmq2DNrHazwBr49HST5rhCkum6yE-hy13vvu8XI0JW1GPxuo2uA58v-Vv=w803-h298-k-no",
+        "publicId": "google-maps/model-town-malik-hostel-boys-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFBPJYjh-ucMsN-Wcqto7XuUlzUexWQdJrUg3EB03jdpRisGVk6Y5-hdqMyOGMlWD8DGYgmrdahSAnoxSjwo5cPix8FBb24jmVyGWer4MKUHvyi-sIznZML2lwAVsUrZHt85gZp=w298-h298-k-no",
+        "publicId": "google-maps/model-town-malik-hostel-boys-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEV3jGygfbwP10Y2qYQgR8QRmCgA2E_HYfrVlFLEzM7MjbYD1VYm7bwuU0iH5LFRbu_ksOYUY9v7PNi5bYZAHE8NbMi67KLVE4G7Sw8LHi0-ePDHGco4Jxe24dqVoEJr0xS_GGL=w224-h398-k-no",
+        "publicId": "google-maps/model-town-malik-hostel-boys-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFOBPb8KsDEu8F4rlkzVVXucblgxFwxtlPfkRqCSFqMR2x8QWe7Je_n4bXoeSlKcqulZpO-QxzXpm179AqFnUB4Klj4SpFnOuYy05Qv-NodnyxGmELNzJg5qav-qSJu-o579NDI=w397-h298-k-no",
+        "publicId": "google-maps/model-town-malik-hostel-boys-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEV3iAFDQvAH0hdwVfHD_3mgp5ay3Jk6z-_tmZAlONHIdIL1SHbF9ygXF1YZ6YC5PKkhGEMjbVHcz2kHbxQPQgwHAIZaNbuAldCyi3UBdoTpGeV709D29zLCPDTXNwlhOI5QMWoLw=w224-h298-k-no",
+        "publicId": "google-maps/model-town-malik-hostel-boys-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHPn4spxKf9A9-gQxhayBw1S-RXqlX7-G1S41pQ9kg54v0NyfJYV9d7p56PH1T1K83N8CxlLg9VPOvueEyaN8skzbPS803hswLtKM4uiQ0LlAt4lL0px7cvArcNyqLxP1Zuhp8C=w397-h298-k-no",
+        "publicId": "google-maps/model-town-malik-hostel-boys-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 333 4249977",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Model Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Continental Boys Hostel Johar Town Lahore",
+    "description": "Continental Boys Hostel Johar Town Lahore is a boys hostel located in Johar Town, Lahore.",
+    "city": "Lahore",
+    "area": "Johar Town",
+    "address": "House # 714, Block D, Haidri Chowk, Johar Town Main Revenue Road, PIA Main Boulevard, near Hakim Chowk, near Bin-Zafar Grocery store, Block A Revenue Employees Cooperative Housing Society, Lahore, 54000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHgFo-M4nEbMHAREIhSUWIJJemM6WY6FfnMXEW1JjLiVR3n7PWYixgFWzFIVf-tGonB7w1WBsJGMfd-BxT4bL9ZY2_DiXaImD5GKsCmY96YFswPObEkAdbanvOrvN4JPtDSdfZC=w408-h262-k-no",
+        "publicId": "google-maps/continental-boys-hostel-johar-town-lahore-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFFc2ejxhqprOUYoiwImdUUDaLi9taKl2XK52s-idA5SOEAjn82rL9WWFmczePl5RTNVfGBA7mk84VIUQnHmES7_V7jfDBLwYeRoIcBCExjpxwpjWEdNNecQx4nLICT-iBH5bCx=w156-h114-p-k-no",
+        "publicId": "google-maps/continental-boys-hostel-johar-town-lahore-2"
+      },
+      {
+        "url": "https://lh4.googleusercontent.com/proxy/m-mPLQHPnFDoCL5Xs8r0eKZy4bTgR9cCzzhyux61Y_VQoTMSyeVSsXNPdN3U5mNZ5FSnwfobYrD56YV4WkkUt2MSnD5u4aMFjDg_dPVu_MDGSfnmRCxPMoKsb50pMP2l7FWO0ib32oiaIDP-rpSXMY7GUUa4bBs=w156-h114-p-k-no",
+        "publicId": "google-maps/continental-boys-hostel-johar-town-lahore-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG3HzRPEH7cVmCmZVkm_V6qs8fdMpZ1NVC8hr7WKqOKgzKiKGz3KXOvQbCOIVo5aqa1kx1THPfyn5_sbzrtMKcDGz4TkKVUENsF1a6Gih_R99KTIprUiyJhxh3OGtTx7Lj1F8g96WA6D7U=w156-h114-p-k-no",
+        "publicId": "google-maps/continental-boys-hostel-johar-town-lahore-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHcooPz3JN3bGx2P4g4cHojwMOmLQRFLA2h98mN7nV2CKhtgU83D259o7rDPSaZvhpiJ0vg74Nr1Waw3_CIFDE3QD0xzXAt56PRa4x2zHPFVaFtIKuvm82IgaUOAW1ZWvnyxElH=w156-h114-p-k-no",
+        "publicId": "google-maps/continental-boys-hostel-johar-town-lahore-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHsth-WnKsrswkOTPQqfVG1jqAnDgNdgfQRM1CbfVH87yizWvz5wQ1lmLRp1JTgF8OzAmmL9qkGtyRuNLNBa0XQT7biKssRtpCulC8yiYncXd4mcLY5Z4dmE0q2N7Zv5qDqke-dSQ=w156-h114-p-k-no",
+        "publicId": "google-maps/continental-boys-hostel-johar-town-lahore-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGDdNimbR3h9kLpkSk0uViWZdv_6IFWeTb5yRJ6U8RhsgXhtFhuyJeXy7jBvkMWjHqFrHQQhO1kDuryzN-Y8ripxFJ_KVqaeFUpT3JpwYpPgrXBuy5xv7xGqEW46mlmkKrctwcl=w156-h114-p-k-no",
+        "publicId": "google-maps/continental-boys-hostel-johar-town-lahore-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFZnt_M0bkaMK2jv2_6fkTWI3NsHn1xfpUVoTuSIGNy_NVoKMFO-awGqMj3j8BQlC_entpU9YRd79NjH5bJxEGPqCAB13nUH7AMufo05EjCbr1QeRZWC9upj8w71a0Qg9Y-FcijgmE85OWl=w156-h114-p-k-no",
+        "publicId": "google-maps/continental-boys-hostel-johar-town-lahore-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 42 35197984",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Johar Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Elite Hostel For Boys",
+    "description": "Elite Hostel For Boys is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "152, Tariq Block Garden Town, Lahore, 54700, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEW71mtdVRcJzBdkdyJwDmpWX3ymOJ9cHdbptxpVmKmue20Y7Eq9O6ySCVgbxjI0BWlEzG_jHfzRtJ9sCt23GPtY8H04BwdfyWUAVwYVyWoEwX1Qb7no04QCx9ViqgJAaH2wJRD_g=w408-h305-k-no",
+        "publicId": "google-maps/elite-hostel-for-boys-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEW71mtdVRcJzBdkdyJwDmpWX3ymOJ9cHdbptxpVmKmue20Y7Eq9O6ySCVgbxjI0BWlEzG_jHfzRtJ9sCt23GPtY8H04BwdfyWUAVwYVyWoEwX1Qb7no04QCx9ViqgJAaH2wJRD_g=w398-h298-k-no",
+        "publicId": "google-maps/elite-hostel-for-boys-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHuxVkl1xVwG3kYYBrm56V9ZkFYS6BVGQdHCxq1axgUJufOxxz5-07AgcV9Hq2va33PFEYYgltERienvi7t3LkihNDdNjVXxb2ulzHdERbBff84B_kSMy7iT2eQiH0ejIbIZg_g=w298-h298-k-no",
+        "publicId": "google-maps/elite-hostel-for-boys-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGn0JYoPVdY--G1bFRWsa4vx0uZR9MU4BlzYfzIf_tR9VCUHPyuFPz3-Qe_Ng9xCuwPMFB644xrF250ADAi5fe4ml8MV2hs9sYpzNHhUz07MzYym-m6ah6KMaRqsC-8uylPze-y=w224-h407-k-no",
+        "publicId": "google-maps/elite-hostel-for-boys-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG703fc3MAIKUsoQAmGULHAPkU70eIwBUSnXQ_GXVrnPRZehC2EAk6sakdl18ISZE0ja05znq4fyr1yWW6GyXiFEi7O-eCOO1lebCYezsrufRfsd5F915DGMh1Haf0uD9DbVy-R=w530-h298-k-no",
+        "publicId": "google-maps/elite-hostel-for-boys-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF5wLWKHOmq8RMPkjrL1t_PU9LLa2G97EwJxmWgcwdKQXpgN_qX33KOSgxNXqAmfdKoRecgFeiP4WARxo16yFXSbB4wLdpjlY9GvQpMWd5XyU1j0ZDszfNXpAJBntgFK5t3bWnK=w397-h298-k-no",
+        "publicId": "google-maps/elite-hostel-for-boys-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocJDsQXvFTwso2KTHUBrWZ3sMFEWQHos27lMzVMscyd5c-qtUA=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/elite-hostel-for-boys-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWAafZLIdHOBJMbumhFSL-fbbF0KABVthybRZl1z389em_tC8mv=w36-h36-p-rp-mo-ba5-br100",
+        "publicId": "google-maps/elite-hostel-for-boys-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 300 0855437",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Green Girls Hostel",
+    "description": "Green Girls Hostel is a girls hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "House # 141, New, Ali Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHv0oNgmPwmjWrYvJAhLYD-9bJJfXIHUtjCCK1yNVVX4mzg_OYnYauoRdYg36a_OL3LWxXoaLZqHLyxK-XGut0G2BA2awTohYsmo7ZRy2nStYC2oHwymLK1f_sD2gBm1EXGWcEX=w408-h306-k-no",
+        "publicId": "google-maps/green-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHv0oNgmPwmjWrYvJAhLYD-9bJJfXIHUtjCCK1yNVVX4mzg_OYnYauoRdYg36a_OL3LWxXoaLZqHLyxK-XGut0G2BA2awTohYsmo7ZRy2nStYC2oHwymLK1f_sD2gBm1EXGWcEX=w397-h298-k-no",
+        "publicId": "google-maps/green-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEwPNhi8KWMH8z6QKYF0-_GHgVCLVukpPhnfC7zTQ4jPcf8hsvsN_I69uR3eN9lzag43euIV1aUVyRVcPArAFVPviKnYlw34h5A9U4DQaMjSwLrjYumyD3ikhNj51nTE2D-fL8MnQ=w224-h397-k-no",
+        "publicId": "google-maps/green-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEanNrHNGtWlZfOOkD2J9bnt4f7rH8v-h-FCjOiKJAD6KCjYUb8g5pVenggG9g2-0cHUeHISlsc-7g4v9iR0RPNmpINsnrCmv0r5bOkbX0PRcQoNb2FUvyckfuR5MAyrqhdstIafR7eWeLP=w224-h398-k-no",
+        "publicId": "google-maps/green-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFNyW-140lNeFt4_I08bqR1FXeG4Hm4i6eFu1UE9axxVG3LZhWN0feCkRZzfF_WoMQSFLjDbZfKoWCOTkwsIjf5I2lxAxSaDIXhCXGAOIk-dxBAKyx0HS5JhUuGuP1AzMXtHWe4qg=w224-h298-k-no",
+        "publicId": "google-maps/green-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHr13jRywa9NYeMkDXfwUTI7aKccKQA_KiTWA7TbTsOkIN9hYSHZu45Q6ql1aWDG0rr6gv2Z2253zKFedm5BTmTvrKtMTa6YxWR_B_0SnMvRR-iCqdnsx4R2LNkU93OTvQwgC_cyDp3nBvc=w224-h298-k-no",
+        "publicId": "google-maps/green-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocLCqBIFa85BSxk1odcfVZcjgI4AstzOj85VqX4T-dIOZTnjYA=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/green-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVYYF1jFcBqEsgNew3acd-Hy9rda2dUpyz3QWKmhe80-RSeygml=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/green-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 300 8828186",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Shes Hostel",
+    "description": "Shes Hostel is a girls hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "35 New, Ahmed Block Ali Block Garden Town, Lahore, 54000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHYA9hKoIFnMUTOKQPfOLKWWH3SAuOc_zEQ8wtBNgVkFiHhYpMbhUnW10CkPECP2CQ-N15Yt9slhgIB9JdepZubL22xspoZwIefYXrtJvfLcAB-FsCsjqgqrSUfgtTxgqoiWxgX=w408-h544-k-no",
+        "publicId": "google-maps/shes-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHmcAT3mTMjdXRRh-C7l4owKeZjfb9l9kh4kTIEfw-EorXgG-uoScyvf0S5sXXQ5dfhuxdqIeQSRTT2m47wSvXfD126nHyBjD2UFsQ_JUJW5150IZUmhLS1pMNw_fdFk3asCmDmFw=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAELWV-2-QgvuMbYPYKQbU4DxXBVgYdK07V74k1bVNx4luICMX3ubw52e8_E4vmJXQQJFCe0qxjNV3X0gRRff61PqF8GaqWSfnXncmJE0_6TlNdvxnshFui02Ll02eB-KRVvYfA=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFz5LCsF_j0Dk7XYyVemMLacAAX1ERKytEPQaR6jk2yjovZIjXbFoPYOvGGTjVHlIhad6pHE7pT6RLCxYoSsHgsMhD_vLnXDo8twm5gCr2oI_xSN5ZOl2p2sjznPZxGpIVxZTdU6PwCBFA=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGm6xPWdNAt6Hf_D4XRU8PnDueW5p8NCjnxjFprUaNCCD3fbO8umov8we1HnlSqX0TEDGJDPorl5v0G6giOtX6T1MTlrJkuhnmjHdDUftlk0VTKtndp06SaeqrSQfBhGZLm_zDJwQ=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEFXZvb4OIN9Ssbb9rBA5eX7gQBeg7hQEN_IiZSCYex8oDJvr1uoC3ePSFCTgZinXc4c6iX1QWvu7na7F3jK8GC5cwLZAsC2lTFSMQWv-353mvGLNIkn575cYxcj6d9ioRlfIdC=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHGobnDpKqo6LvUA-SLfmb5XKgAcLg1Vj2wGG1u8mIoGELma7hKA8gswX6WzpihxjvGkaZvhmGyk5WGFfZ8OGLZ-RdLRVk0V8r0ywr9IcH53GbGX-N3w5W0S1POR7pRvV2IwvG4=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHGCDneRVqiCUik8nj-gZqfrNaY3S2ku571Z6_EL5c_kK7-DFIQLyhGtlfL8upBXAZt4MkRSKQVuqADlrLWwjIvcKmgDc0EaVSruYuHYJ0W81IdYDDXbrB4KDYZsxkS5dgqeMWTCw=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 304 0000009",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Aashiana Girls Hostel",
+    "description": "Aashiana Girls Hostel is a girls hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "147, Ali Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGTyObjRns8MXFgPJb7MLQ7wtSEELS78y7By4xZgZwiOQPTUIvukTWvagEAVeFVbIM9sGeTiWlrh73RVNlbG65V_WPoWK1rGh4jq0yDLJyJAXU5mee0LXxixHAHUmLFojq0awSGFKZhesdP=w408-h544-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGTyObjRns8MXFgPJb7MLQ7wtSEELS78y7By4xZgZwiOQPTUIvukTWvagEAVeFVbIM9sGeTiWlrh73RVNlbG65V_WPoWK1rGh4jq0yDLJyJAXU5mee0LXxixHAHUmLFojq0awSGFKZhesdP=w224-h298-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHGyQqApFJSbrPRWvvdDhOQTIlF52m8qcISk59YnROwNc39PgDUiWjom8UJ5E2yMktM3wusT03UcR-PEdzRy_pUZqnio4syxsTRYlEwnV7MQ6ULizNUv5-VdtanqQoeoelHJ9GDPg=w529-h298-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGWwC3Ia5FEvnrN4vzTfDLLyuuyvyrN1Ik6bGSJIBgXnS93QkPQH6v-doTLz2SzJIn3IsKLCBNGroMcd44uK1hlhr7xUkbhlLAejNEbT87cDe_sVDvZ0qcVxMQmVoTo1oLNyjNM1EfZ6OY=w224-h298-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG6mRPJNI0y7cE7-HEs6GocD0TuUArkPwe-bpI7WdjgHACxIdAIIt8jQpVlxzidsbXxE--Te1yrER9lp6fx-Mo_n2YUribEFqWgW2cwngPOIJtA2LTZAuPiO5SXWoq3tlxiv8Tnzg=w224-h298-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXohxxBXcY5dxFCkIwfUBtj_ZRi6-Qluz0c_ufcS4hUo7gtpQzx=w36-h36-p-rp-mo-ba4-br100",
+        "publicId": "google-maps/aashiana-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjX7l4x_M2O-2cdWR48i85Ol9rlv9fwunsrvPOY3DUq40WfZ2dpE=w36-h36-p-rp-mo-ba3-br100",
+        "publicId": "google-maps/aashiana-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjW_CcYFsdLkO5XbeobXhjOnsexKtkOuCo07L5LQf8j3sQv4zUtt-w=w36-h36-p-rp-mo-ba2-br100",
+        "publicId": "google-maps/aashiana-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 300 8467089",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Rafay Girls Hostel",
+    "description": "Rafay Girls Hostel is a girls hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "Plot 138-A, Jevan Hana Garden Block New garden Town, Lahore, 54000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGpUcJqYbb4zhU7i531xYyT3etGkV8EA5UCpwJN1bQ_jfm169JAuWNNQG-wO2sdOElauz53Knoa4lcPAjul4FAoHE8xCutuwoOHb1CuLbIVOjhD1wkBN1KKkV00iRRXCV3l8e5U=w533-h240-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGpUcJqYbb4zhU7i531xYyT3etGkV8EA5UCpwJN1bQ_jfm169JAuWNNQG-wO2sdOElauz53Knoa4lcPAjul4FAoHE8xCutuwoOHb1CuLbIVOjhD1wkBN1KKkV00iRRXCV3l8e5U=w662-h298-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFiQxVrdiiJ_D43CLzeApIAo4GNo_qEPcYnhC09HalElObn4RD5SPk1T0Tbnf5jFL-yUejLqZhmIHjoT-Mf_i7xFf7R13gY30Dr5k7Ai6kDy4svd-ZTDyGtMvpX265EM5ao7F1qxA=w400-h298-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF9p-xBk5wbiDKknA87Yr48iAxJcRVUoH7PJ0Y1VnKrZIUlIXqSTKEbXqPryj0214cgjdzQBMJObZgROkJrNKeyIosQUC1Ak991IO7oxmUN4ce0R0OgXRYkQss6tDOSPS2mutyByDsY9o4=w224-h298-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHj3LGU9HznjjT9z7lqTJaXWtPFpwcqEL-KjauV2F-RU2F-4r0P95GATq-aJOZ8r2k7uOi4NchF3rHlKYp-tw41FbZwOxaPv-FMhIDw2xw40TwHcRoH3rHH3uWKHuetpLXELA3_=w224-h497-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVEs6AcEQuYeScStb9p7BgBDNZV0EkvEbPpLSmSTLXcrOu50HZvZQ=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/rafay-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVFdUaCtZtj7h42e9oJ-90GFyapGjrZwpkrW2QsfZ97aDmvedWM=w36-h36-p-rp-mo-ba2-br100",
+        "publicId": "google-maps/rafay-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocIi4myR-KTmCBBFNkKn_BaZAVg6lsJNM6tWgyo-zhUTjyuqDA=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/rafay-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 301 4639910",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Garden Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Bee's House Girls Hostel",
+    "description": "Bee's House Girls Hostel is a girls hostel located in Muslim Town, Lahore.",
+    "city": "Lahore",
+    "area": "Muslim Town",
+    "address": "Canal heights، 10faiz road Wahdat Rd, Commercial Area Muslim Town, Lahore, 54000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEr_RYDblCjJumJkOPR2FJQvqaHddMQZbv5mtMW8R4QNHj8qC5ygk10_lf6Wktf78byMMWWCLIeeE1R86X4joshOD9uvIIBSi8thGzfscc3C_wgpUDhMHMuqdmeqggmrBUM0gvv=w408-h306-k-no",
+        "publicId": "google-maps/bee-s-house-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEr_RYDblCjJumJkOPR2FJQvqaHddMQZbv5mtMW8R4QNHj8qC5ygk10_lf6Wktf78byMMWWCLIeeE1R86X4joshOD9uvIIBSi8thGzfscc3C_wgpUDhMHMuqdmeqggmrBUM0gvv=w397-h298-k-no",
+        "publicId": "google-maps/bee-s-house-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHV6oOLBmnl0YN-PBE8LKNLoddeAX-PMq9pDFCEIUkF1S08cGkxhdGqOq-MvL4H30e5lFKpK3Ko4edGsQjXHPiOkYPr72OLE0uk8rSwPiRN5wDlsUyhBynMCeXCGmTyWwf6h20=w397-h298-k-no",
+        "publicId": "google-maps/bee-s-house-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFddTFrUPcTS13DelfzVna2_Fdc5AuGWo-clUKbL5AEnQ3q0Satb2vzf-clf1XW75ix2BDd-SzIyOTMOSBZH35iM5Z-4i0RzleJDHIMEca7PQw-ge3BKC6OW-0dlhYqL6yZWur9=w397-h298-k-no",
+        "publicId": "google-maps/bee-s-house-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH8bAlQCz7APrV55r8WE_z6UITsLsxTsjvFPiu1Tk5ZUF6YBejozlSSO3ybUVbh4WZEBqVNZCDnsfNdN-I-6g-d3BWf5j_WgjFdS6Y14TXh8RQgeYJo7f3R8GkHtId-MlgxXBlw=w224-h298-k-no",
+        "publicId": "google-maps/bee-s-house-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGs-tseuMPox7Xo74PxodpjeiYgfZVx1hKzhqVgnviMMD9FZEwnRYFtLkOazPpPoRDgWnVKr7qRlDgV6d58sD3qUuXDH_xyfOx7uIvziK0HPVjDJl88t_ZnN9EzrnNFwBXTYyw=w224-h298-k-no",
+        "publicId": "google-maps/bee-s-house-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWqJhdQD28MvgU28NZMh6SaxJ25EySeI2FR3kcEYNCT0Z6cepQJuA=w36-h36-p-rp-mo-ba3-br100",
+        "publicId": "google-maps/bee-s-house-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocIJ6Sw9Jgq69nzvcWHZRj8S4qzusmK4TSnyOmzlJVhfUXcpBw=w36-h36-p-rp-mo-ba3-br100",
+        "publicId": "google-maps/bee-s-house-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 306 4444909",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Muslim Town",
+      "Lahore"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Islamabad Girls Hostel",
+    "description": "Islamabad Girls Hostel is a girls hostel located in House 15, Islamabad.",
+    "city": "Islamabad",
+    "area": "House 15",
+    "address": "House 15, Main Neelam Rd, G-9/3 G 9/3 G-9, Islamabad, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFMOXy5wa627XaQlfqTVOquCGFAwNjhH8ucFTtatDPhy-5YLgXA_vMcc-6Fbl-vhgjN9M9F54Gk0X6H-b5k_8GhM2SNV9TPKefRLAitTEIBwrBKg8aH-NtTIc4ppOYMCqP4QMnYr4IkfXA=w408-h543-k-no",
+        "publicId": "google-maps/islamabad-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFMOXy5wa627XaQlfqTVOquCGFAwNjhH8ucFTtatDPhy-5YLgXA_vMcc-6Fbl-vhgjN9M9F54Gk0X6H-b5k_8GhM2SNV9TPKefRLAitTEIBwrBKg8aH-NtTIc4ppOYMCqP4QMnYr4IkfXA=w224-h298-k-no",
+        "publicId": "google-maps/islamabad-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1SwIs28TMCKWVQdTAqEEuGDvLv7exTmnhhzdupdk7qAMe8oZ_mGdsCgwPZX8PUYeQVfc7aH6qyI1YJblKYoZc4L5gzmveV0kU8911Paanq7UZyE1GJJJJXpWdXKmazU0KsCVXIQ=w224-h395-k-no",
+        "publicId": "google-maps/islamabad-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF8L--UYTQ1tpNVEWyjvg7Q1cyUNJPh2DEW9b0TWZhaRF1gUGZN3b52w6TN68nU2DLzKZ9eacD89FCj2TLAgYWLgo24rCBKERaNi667qF8xWOl_iT1P1Vf28oXXgdZ_OL0bZCPodg=w224-h298-k-no",
+        "publicId": "google-maps/islamabad-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFSHapcTYVWB0OzqXYz_VALGBMIcA6Kt0yEJVNCeFrnohhGz5XdhWFRW4rb9JQSetYmDp4TzvljPfoMUIB8iD7aZtspmWLVXH5rs7ShZ-B1-Na8nXDZ5EuN-8M8zxsKmoz2WUJeaA=w224-h497-k-no",
+        "publicId": "google-maps/islamabad-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFygjgioFCNUDw8MaOLB0GetGEWY0gQt4Eh0b7CJ0tSjqwvJN3p763o5GP9RuDOF2FXcTNi5v68FIGYvhRrzhG8_fr3WwuZOn9zDnhbrVUbkM0ksiGIFXnoXEGjoXYOgbaTHr4AkA=w224-h398-k-no",
+        "publicId": "google-maps/islamabad-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHW5bztoRf6vj8Jsv0G18IPeBy-Yho_sDBVCL8YG2FUzVxO-W6Ncg3f7dUIwHBmr2MJD6EQt5rOf3aRmn51hikd61FmQjYg-r0rP-zIi6uZasNZH2zczsFrSwFyTAG0VHnRkqw=w224-h398-k-no",
+        "publicId": "google-maps/islamabad-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF91R9duoerx7f36EfauNqjZnJbn0vR2yKW4ip4Uk8W44GuebyVlyaFAnbtZt_HkrMXBtj-SJwCsFk8L6eMSUuWFjK9yDDHv7QAWQN9JhtdBTg56mkWQfRKgagxP6SC4gggMZphXg=w224-h395-k-no",
+        "publicId": "google-maps/islamabad-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 310 9777710",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "House 15",
+      "Islamabad"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Girls Hostels luxury islamabad",
+    "description": "Girls Hostels luxury islamabad is a girls hostel located in House#8-C Street No. 13, Islamabad.",
+    "city": "Islamabad",
+    "area": "House#8-C Street No. 13",
+    "address": "House#8-C Street No. 13, F-8/3 F 8/3 F-8, Islamabad, 44000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGc9MQwh6X51Kv5ue6woXFOefD0u_aTo-YRUBsswAUxN0Od5FmUMt4wxsKf1ev1VUrUDESKQBCsBGPcq1SgoxmEW_E11014cz_QF6GvQZVX0Njy0J5t_4LMnAuMjzqsU0QKr1W9=w408-h306-k-no",
+        "publicId": "google-maps/girls-hostels-luxury-islamabad-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGc9MQwh6X51Kv5ue6woXFOefD0u_aTo-YRUBsswAUxN0Od5FmUMt4wxsKf1ev1VUrUDESKQBCsBGPcq1SgoxmEW_E11014cz_QF6GvQZVX0Njy0J5t_4LMnAuMjzqsU0QKr1W9=w397-h298-k-no",
+        "publicId": "google-maps/girls-hostels-luxury-islamabad-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEAIa0H1h5kxmU4EGhImdIUNCDn_qvuI8_zEmtqLmR6F-zOB-_39find1kcdNuH4Rxg9P0HOWbWV_bp1NAUb_dXwsDlbp75Dcnrf-l1Z3zaJw6buV714mqS1RuB2fVEKDARlKKHAg=w224-h298-k-no",
+        "publicId": "google-maps/girls-hostels-luxury-islamabad-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG-TtAIBTf2b2a2rGFUTqRUpb_FZffMjLjOOSWUaM1Vq59usI-m6IOQZg1sRYv5zodoXgZuedUQRl2g0Y44M0bvvVWuOvsnr0w2Zc-h17ZI8VspRXQmT7nPIpUy20zk9jVHCiT6=w224-h398-k-no",
+        "publicId": "google-maps/girls-hostels-luxury-islamabad-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF1-RQxWcsVoMkboD9iYPsqbtFLWzaGloWenuNShUuhIIAGn94W2Nem97pSk-cHXZSr33CqZBtJ1a6ERQnqC6NX2I-_bxiGcXGTvDzdn9wZwPZ_IiKRLUqbzrdHZX1D-XzULlie3Q=w528-h298-k-no",
+        "publicId": "google-maps/girls-hostels-luxury-islamabad-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHNciOCVGpaoFZbl67kW_hcBxcr9xvlSx4dyeQRVXKKKlJV_M6swqcq1zR2ZsMkWX5v3OpGA0X7wZdbo3av0ph5ktFayQpZz_TD3zDThgknsEoCXZcZTIEXZjUCnugCFPJn41Mf=w397-h298-k-no",
+        "publicId": "google-maps/girls-hostels-luxury-islamabad-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGyHhKjSLCl8MYl7-mLwweu47pqlZ2Z47cAtpbDLb-WjGrdtwQXtcoUVtFJqL-UJbVmAdO1x5CL8Jlkhcq82yLgXJ7tEJ503BsQbG3sCyBKKeE9T-meUl1LyU8iHh_RFk28rXqdFmltytCG=w270-h298-k-no",
+        "publicId": "google-maps/girls-hostels-luxury-islamabad-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocLDAt95lZ-2gS5Rd-7q1xjx55rJNBKb4JaFqPC7TY04VQnGs2IF=w36-h36-p-rp-mo-ba12-br100",
+        "publicId": "google-maps/girls-hostels-luxury-islamabad-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 336 4448889",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "House#8-C Street No. 13",
+      "Islamabad"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Musarrat Girls Hostel Hostel city Islamabad",
+    "description": "Musarrat Girls Hostel Hostel city Islamabad is a girls hostel located in Lane 10, Islamabad.",
+    "city": "Islamabad",
+    "area": "Lane 10",
+    "address": "Lane 10, street, 5b Royal Avenue, Chatta Bakhtawar, Islamabad, 45550, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG13IyGS-pupQXQ-DQ_l_qtwLU4diNeA_hOkr09aYQyBZiWuRWyQZtsRB07L7tUhdymi4Ox-dSF-hzR8i7wO547dXjHZmD6LrAAZIlua0FuE8EBcElgBl0YJ244T512b6iGLph4cA=w426-h240-k-no",
+        "publicId": "google-maps/musarrat-girls-hostel-hostel-city-islamabad-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG13IyGS-pupQXQ-DQ_l_qtwLU4diNeA_hOkr09aYQyBZiWuRWyQZtsRB07L7tUhdymi4Ox-dSF-hzR8i7wO547dXjHZmD6LrAAZIlua0FuE8EBcElgBl0YJ244T512b6iGLph4cA=w529-h298-k-no",
+        "publicId": "google-maps/musarrat-girls-hostel-hostel-city-islamabad-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHeEWlwGK7GCVeb1QEEE6PulGHZU8wB-cJEl4mUevo87IlvmPgzMQ8Ozs53HIBUgfdwzoZdE2ywjyTrJbWVJUNCqZbKwyahUAX9uK4W648BQ0QlnuPODqp-9gFC9eZ3c8lw7Ynu=w224-h298-k-no",
+        "publicId": "google-maps/musarrat-girls-hostel-hostel-city-islamabad-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHjYSPRES2CkITYsrDmV2Dqf8CNMScUnlq3zXK5vE1jWhf8xtO1wfk6FkNc04oECbPPfFCwCqRGAeqapMQeQNu-V-5DIFeBKpaTKWldQnI3Usq1abgooHzt1P-Vv6pvIyl3Tz4GQjcUxlQa=w224-h398-k-no",
+        "publicId": "google-maps/musarrat-girls-hostel-hostel-city-islamabad-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE7RuoDLudzPHfojo8N8LSGuYe5XfAb4x6YarzrGU38YLpB2_PIqWM8XP74XV7rAUQzuwEJ9yTUlkJAxW0XOVSybVFTeIFP0fz7Ob4Te2X1Nm0hqXjdtEdxNG5nnD_JjBp61lAFwQ=w224-h298-k-no",
+        "publicId": "google-maps/musarrat-girls-hostel-hostel-city-islamabad-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH0Rr2R436Cba2jt_xaolM1TUeR2OaGZmEH3Qh1Gc_kV9b9orct1o0AYMuA4HqQ9LlAG8mIyffmvdbVQN6fhMF6EZuUXwN4s6o_U19eFFHr0xpQkBHPb1H9xZ_qyHPFVHaC6Io=w563-h298-k-no",
+        "publicId": "google-maps/musarrat-girls-hostel-hostel-city-islamabad-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHXGx97YtVsewEUuLRZJuWzb4oV2kUe-Oh8XAPxZPDmrhuTlb14EtzwyGcpToE_NbJNIHLmtDScgEkmcQIpwxKgn2N_KsPavmDEk5bFd8AZvpKpzud2-2tKhYC4631_yO1mz2TL=w662-h298-k-no",
+        "publicId": "google-maps/musarrat-girls-hostel-hostel-city-islamabad-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWSm6m5IFILsNkrTVXYS0hizng9i264yogfRbIMsONgVDBJoYc=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/musarrat-girls-hostel-hostel-city-islamabad-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 335 4244445",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Lane 10",
+      "Islamabad"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Blue Inn Girls Hostel Islamabad",
+    "description": "Blue Inn Girls Hostel Islamabad is a girls hostel located in House no 588, Islamabad.",
+    "city": "Islamabad",
+    "area": "House no 588",
+    "address": "House no 588 ,Main, 3 Ibn-e-Sina Rd, G 9/3 G-9, Islamabad, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHl6_kiHxMoYpefkBYWzml9XGyP3NxVIExz28uHI-cykUi-5dtDLuENrF5T--ejyY-xJCcrhcyfNeGKXHMVzGtYyRSOt2JSkrRyFKvqn3iHp1xsLEyv_71_ynG2F4436cc4H0ie=w408-h306-k-no",
+        "publicId": "google-maps/blue-inn-girls-hostel-islamabad-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHl6_kiHxMoYpefkBYWzml9XGyP3NxVIExz28uHI-cykUi-5dtDLuENrF5T--ejyY-xJCcrhcyfNeGKXHMVzGtYyRSOt2JSkrRyFKvqn3iHp1xsLEyv_71_ynG2F4436cc4H0ie=w397-h298-k-no",
+        "publicId": "google-maps/blue-inn-girls-hostel-islamabad-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHg7u_3RMRiV_W5WaBLmAiZylSUNwhdatakQixFVw8h4fUUtbQyTpG5PVe4sVUxOYD9OtLAKlEQ8K46YgxviwNZoZwiHqeD_joeg7stXV5T19K3VtDXvEgIuCd7PYuZ3cxNzuEGqjYKD6Kk=w275-h298-k-no",
+        "publicId": "google-maps/blue-inn-girls-hostel-islamabad-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE4m8RuBIM1ufKIqZ6Sk1lEn9X5kkKuKlibE446_u7aXu8cR5SiCzkUTMl03B8qAFQb7MyhBEeOb2nyHKCIbO7Ig004NPPi6pOBC-maFrgyDzIpgshSUxgEkzRA9zBP504IVYzA=w224-h298-k-no",
+        "publicId": "google-maps/blue-inn-girls-hostel-islamabad-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF-DutvuQVW2D9Y5-HiADhstELYhnxL1MmSN3aEz_GK83geKIleJO04M4jNaKtBD18F0d-rA_fuC4EgmsOG0-lGJIKW5LSZMBeSfCiRuiHbyE8LACVHu7SW95oUy1kLOFAbG0Uu=w224-h298-k-no",
+        "publicId": "google-maps/blue-inn-girls-hostel-islamabad-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAETV0eUquW_yFKrxIB_hkeRgEAl4t1RTFcEiy2f92R_vpRMJkOBK7FTI0tY7iSn8Jbdb39nO4pCY6PAIr82r3Q1nu0MRE2JmPGMvl95PJCZfroTKyajMZnvqJ072MF0VXbFCY9emQVP9EAr=w224-h298-k-no",
+        "publicId": "google-maps/blue-inn-girls-hostel-islamabad-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjV7sBxH_-sSpKrjafD71Csrx5dq3XMBU8Qoe2LkGmkA_EEHf4w=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/blue-inn-girls-hostel-islamabad-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocLPq_AdVX7Z4qvAHtk9BBC5N2cVXbiMozfSes9xG49MgIPwQQ=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/blue-inn-girls-hostel-islamabad-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 345 6978506",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "House no 588",
+      "Islamabad"
+    ],
+    "verified": false
+  },
+  {
+    "name": "SGA Working Women Hostel",
+    "description": "SGA Working Women Hostel is a girls hostel located in Street 1, Islamabad.",
+    "city": "Islamabad",
+    "area": "Street 1",
+    "address": "Street 1, H-8/1 H 8/1 H-8, Islamabad, 44000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHyAFh1vL1c_MVKrpFR2iOf6lvjRejOZMlNL8_XFlWgWnydUkiS5ChfcNET9GO5tjp0HrIumBKLCPUEOmovfXkcpERkzKnpXpE4c6jB_6QRcYJiNVPvKCOg27LWVwSxVBzWRt4=w397-h298-k-no",
+        "publicId": "google-maps/sga-working-women-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpUI7EKyNC8DkdCY7A2LWB3R3LY3U6PZIMrf_z2rvXhO9cwaoS7TAwiPq0D-ROVHLilKIJamSD7XdMogpN0-NtQkn6CCowMvQg5BySqaW9j7A4SKXEtdfRi97xrNzY5mZ6J_CbiIdvfFK5=w224-h398-k-no",
+        "publicId": "google-maps/sga-working-women-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFzz76Iu4JP71_DoAXYUPM1VD7RMNJF1b_J28TJJQhNKzphrvyWhDC-sNYC2WMEdlV0n3GznPf-FPzwHy-_X_EYVf2Rj0GiBms_-ERCxKZXyp3I87b5ef1bsrBODbab11ZhXoWq=w397-h298-k-no",
+        "publicId": "google-maps/sga-working-women-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXFolow0iCmsD9AGK1tQdCWEONR-MUSw_GHA6shjOh0R23lzwiYVg=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/sga-working-women-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVJXriiLtaxlRWQ10c8ELebXzKrILYgqFo3YJtL_yyxzvWwonI=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/sga-working-women-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWEUDDQJ5L4A1XyZWKHrh4RpgUw8EvlUTZsPGJO2Frg65x7UMDb=w36-h36-p-rp-mo-ba12-br100",
+        "publicId": "google-maps/sga-working-women-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFMOXy5wa627XaQlfqTVOquCGFAwNjhH8ucFTtatDPhy-5YLgXA_vMcc-6Fbl-vhgjN9M9F54Gk0X6H-b5k_8GhM2SNV9TPKefRLAitTEIBwrBKg8aH-NtTIc4ppOYMCqP4QMnYr4IkfXA=w156-h114-p-k-no",
+        "publicId": "google-maps/sga-working-women-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHh8hA9oT2er8_LUCQV5B-RQEO6jn5N-jbJQChnEQPRu0V_QXrKGpDsiE94tn6SWxYUlME-Arg8Hmpryz-qU8nqHKpTDGnar78KZLDF1gNky5RviK4uD7NW-XKlbe2eWHVD8qI3OQ=w156-h114-p-k-no",
+        "publicId": "google-maps/sga-working-women-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 304 5726528",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Street 1",
+      "Islamabad"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Girls Hostel",
+    "description": "Girls Hostel is a girls hostel located in Adyala, Rawalpindi.",
+    "city": "Rawalpindi",
+    "area": "Adyala",
+    "address": "Adyala, H 4, Nadir st, rd, Adyala, 46000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGQg6tohFLF1GxktQBF82l5lgIsF6D83tCm_F2BrL9dfsy3ioBxqBN3lA8-1_7Nbd7ceQAokrhM2cxmHY6N7VnczqsEY9Tmuj-Sy-jMOsQ5irtOYnxNj--dnvxVm9MWUvsgtcyU=w408-h271-k-no",
+        "publicId": "google-maps/girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGQg6tohFLF1GxktQBF82l5lgIsF6D83tCm_F2BrL9dfsy3ioBxqBN3lA8-1_7Nbd7ceQAokrhM2cxmHY6N7VnczqsEY9Tmuj-Sy-jMOsQ5irtOYnxNj--dnvxVm9MWUvsgtcyU=w447-h298-k-no",
+        "publicId": "google-maps/girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYKHFetv3lsr0ZVUhr4geSmkQ8L18JT_pqP6AF4iyGkdMxmf8OSFDeVWCcu77aBw17-M7aRidwilQw8sXSNYtmaykkyaSKNjSrynmuT3FXCWLAisg4jCYdspxsjQN5lovOF9oR=w224-h497-k-no",
+        "publicId": "google-maps/girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFALs9b-HB_hpe0kpn8bnIEuJY4_5J520TkqkY1adYFuLt2x3UYpAc_mtYHn1nOhDZZvtcS82iMCpYYHt7_I66Icp4lu_B3J7-vg9xanFmDbAlJt__afG9v_K0-dBHeRd3Fy9j53Q=w528-h298-k-no",
+        "publicId": "google-maps/girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocIsiZX4kidyTDXyh_RoVetB_hAyHWSZ1cchJGj7LNFWVSdD4g=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUqvKfYiAbxae1eP71yoVUJFj-6X_phldb_dy-nxfK3gfXVBsaC=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocJEhgzxOw0mQ-UxJyd71S8qMxT8fBmwo2cfuUmrQlzr93lf=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEy2uOykzwJG48e128ZSVL6J92WfVhIGFruUnyX1yYnAY2m6v3R7C9pb_kTI6C9fLzdyyp9J0Ilgdm6g7wSg3coB5Cdm3x1Hu7U3_FK82ZizujVc9eVbYyBb6fmGtbjVIApr3hP=w156-h114-p-k-no",
+        "publicId": "google-maps/girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 312 5325428",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Adyala",
+      "Rawalpindi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Rawalpindi Girls Hostel",
+    "description": "Rawalpindi Girls Hostel is a girls hostel located in street 1, Rawalpindi.",
+    "city": "Rawalpindi",
+    "area": "street 1",
+    "address": "street 1, Satellite, B-Block Block B town, Rawalpindi, 43600, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAElw-oQzwTlKQ9EhCoWE0vcPYMK6vCyDUvGYXDth22L15oFtR4frzncuXQ0Pk7tqYkAJSaAXcYO8SyS4RfKJ6cTf5AeD4Dl_sbC4RL5PVaPf7vcSY2RtSFE0tFjW6KIh0vrdT_Ce-KgEdyp=w408-h306-k-no",
+        "publicId": "google-maps/rawalpindi-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAElw-oQzwTlKQ9EhCoWE0vcPYMK6vCyDUvGYXDth22L15oFtR4frzncuXQ0Pk7tqYkAJSaAXcYO8SyS4RfKJ6cTf5AeD4Dl_sbC4RL5PVaPf7vcSY2RtSFE0tFjW6KIh0vrdT_Ce-KgEdyp=w397-h298-k-no",
+        "publicId": "google-maps/rawalpindi-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF1gut42XbAUCXeICvNNC2MzjCPSpfgaMpljagIlsCKmOkRdOVPNZtjGnYPELtozl9Huu9r-fAaemBlh-tUxKdQB9txhc_6kQHpx60YO1oBWs09aXR7FZe0G9HIltsdtlxGk9a90h_BQnc=w273-h298-k-no",
+        "publicId": "google-maps/rawalpindi-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH8rsvt6Kl0RZKE5iH_vOQ70AMgA3LiIPt15IsGIAHDflibK-IjnbdRwyGiq92NDiOTdl9WiopDWrVNVCTv56SF1es_N0uLsFNuFcbWOfpbbVeOJYPKc4HET5_C2EW0vzY4-Bns-aPnMxxm=w224-h398-k-no",
+        "publicId": "google-maps/rawalpindi-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFm_6hCPR1sD49a81tMu28Fzp9GpPFYw9s1l8lGVGPK4s_rOy4hBRggWJTvw1I7F4njX5oSsUF2gzxgooepWXY8mdXgbvXgjm7v-v3EipNP2MQfdRE5cs4y1cQHaRsvLquDelpHqoCP_7Y=w397-h298-k-no",
+        "publicId": "google-maps/rawalpindi-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHUWIyax-ibV1B2j0-rI6kSpdJ4LVHoCMUPCqxMn4quG6PV92whYMHSfvNMK-e1QpD3IzuSD9WXhCI2ED75z8SAbi4x41ZD0GZhmxhESvIZP6FVqAUCKgrVbZ7E0znU6f0GZI_u=w397-h298-k-no",
+        "publicId": "google-maps/rawalpindi-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHTrhQWyRPNTUQjuQ34D7ghJQD2_GFGkYXgduRPi3mDqs1fANeLWPjA4lAarKL8xjB1zyOSMaq5m6CZlXmBZTMzqLNkB8J3sKDBluU1XNXMsQfJG8EZKUQpd-BoxJKc2NhvZRjk=w645-h298-k-no",
+        "publicId": "google-maps/rawalpindi-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGyGshQV6ZSeQ1Sb8_MtnrSkhmjqre-Ewq4R6OezVOse2n3SZD-pucRtHhnZj3Am80IqT-fdZnU8roaAG9T4T6rCX-TScDZi0R9T786Fe-PPd0zX4fSsmiKL4KI4tZrv22_73gqknriP-vt=w224-h298-k-no",
+        "publicId": "google-maps/rawalpindi-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 306 0556521",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "street 1",
+      "Rawalpindi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Zainab Girls Hostel Satellite Town Rawalpindi",
+    "description": "Zainab Girls Hostel Satellite Town Rawalpindi is a girls hostel located in Dhok Paracha Block A Satellite Town, Rawalpindi.",
+    "city": "Rawalpindi",
+    "area": "Dhok Paracha Block A Satellite Town",
+    "address": "Dhok Paracha Block A Satellite Town, Rawalpindi, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFso0pZbQSKq0wXZMoqcevnB7LmYbbX5GOu1BCWM9U6CfM2fcZsppRfPM4DXR2nYGF6mGw_oB7ZRnBiN-bDj3hNye8q88yOJBkGYIis_MNs14x9C5rmTO0b48ts9aBXlfVC2Zc=w408-h419-k-no",
+        "publicId": "google-maps/zainab-girls-hostel-satellite-town-rawalpindi-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFso0pZbQSKq0wXZMoqcevnB7LmYbbX5GOu1BCWM9U6CfM2fcZsppRfPM4DXR2nYGF6mGw_oB7ZRnBiN-bDj3hNye8q88yOJBkGYIis_MNs14x9C5rmTO0b48ts9aBXlfVC2Zc=w289-h298-k-no",
+        "publicId": "google-maps/zainab-girls-hostel-satellite-town-rawalpindi-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHKRDgeIHdlYtybz1S55InQ0uOeOB1IFI6ggiDNGvR1wmCNydIFPgFo25BawKtClrhSDsxyY9EmIfEGlZx_Hbe8AksHUWwHda3weOhn-7avIayuoWxAeopqfdxq9yyAtz0I31U=w232-h298-k-no",
+        "publicId": "google-maps/zainab-girls-hostel-satellite-town-rawalpindi-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH-ahufG7mNa_0aS1mni_yvlmWKvYdFvQtkw6Ulqvk16FSH9E2qGyUMdn_Wk9TTOXn-6JMUx32VXpj3dtlZfLknmyMOm8NKF82oitbqh57_sUHgL3XVHrgxzTjcmAcsmKawB9N5=w224-h398-k-no",
+        "publicId": "google-maps/zainab-girls-hostel-satellite-town-rawalpindi-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHNXKgwgkChzpgbN3f6K_wuULKxcAUMZZzjsJ5BRX_6Ye34AhbKn3k747LmNRBCnI6G50jgmm-yfFPOa7nlMUagQghiccLOGEfoYN4MZCLrFwBPTYai6-dW3HZe0SvvpmS3Z7h8=w397-h298-k-no",
+        "publicId": "google-maps/zainab-girls-hostel-satellite-town-rawalpindi-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2AsB-FyKKxlkx2pRgjRIZM8borCO5NKtn-Yu6eM3CQyhezW57rvaF5ubCPFEQ4wtpBcsjvU7czTVxOimgF4Rd6XpwZLGmrjVTTaHdCWi1s_xeJLYjxccfUV1IG7dkERw0s3jw4A=w224-h298-k-no",
+        "publicId": "google-maps/zainab-girls-hostel-satellite-town-rawalpindi-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGB-1kxrpV4RL1iyMghAIb859uDwCNUV4Y7b1DCx8CJQ4BcGoLYUt0WdHruWQSR2deBCiBfhbeJeLR02GdA0syWDBoeNUeANKY8xwNfzunhWlg7hQle2FTIQFuglawmrtFARKpk=w397-h298-k-no",
+        "publicId": "google-maps/zainab-girls-hostel-satellite-town-rawalpindi-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEabsYs781mbEXpvjx0jJfanSPhnqKYE9h73ht7U3aXOlezbt6ClXQO3pzYq6g4J5aP5sCmouoAHgvAJo7oWOBbEaT6A6j9OFRtoyb8Y-acTqDTc3yU3V3Tvd9B8UZ5umKUSBFy=w224-h398-k-no",
+        "publicId": "google-maps/zainab-girls-hostel-satellite-town-rawalpindi-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 333 6791152",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Dhok Paracha Block A Satellite Town",
+      "Rawalpindi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Hostel in Rawalpindi",
+    "description": "Hostel in Rawalpindi is a girls hostel located in Office 201, Rawalpindi.",
+    "city": "Rawalpindi",
+    "area": "Office 201",
+    "address": "Office 201, 2nd floor, upper Faisal Bank, Saidpur Rd, Block D Satellite Town, Rawalpindi, 46300, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHPAH_g6RHkGzTslXpuQL3Dpsn8UC06pSg8VWDE-W-PKAU8I8b0EsWr50SYY8W_H29DipWO8Ju_1jE57d9U8G6CDRbEC4DvVi5keVpGef66VvZ8uQTXLsr4oieeQT4o556Htiw=w408-h305-k-no",
+        "publicId": "google-maps/hostel-in-rawalpindi-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHPAH_g6RHkGzTslXpuQL3Dpsn8UC06pSg8VWDE-W-PKAU8I8b0EsWr50SYY8W_H29DipWO8Ju_1jE57d9U8G6CDRbEC4DvVi5keVpGef66VvZ8uQTXLsr4oieeQT4o556Htiw=w398-h298-k-no",
+        "publicId": "google-maps/hostel-in-rawalpindi-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFHYn0MOstsylNpQyJ63xo5QXd-ZOkJeUlY1GWWJTmRVZwX7Cjqa1Y6QHKYJ7_56uJ8qIV37KVgLtcnv71mSe3AVDZnv_F3MHFytCYeKfh2RJEomQGybg49IczWHlmbLWwyuSJKvw=w886-h298-k-no",
+        "publicId": "google-maps/hostel-in-rawalpindi-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGu75rOyboEiMrg_FGLiIzOEeGs_X3sQFLKZGasJzCNeGhaSfvArqFILWfyedGKk2RyiPY4Zm7f_igY8H14rOl5qNyjp1OYNtZn2A8LyIOVQ6xGQJRmwnm1M6rrV0nOtWOgdOMHVw=w397-h298-k-no",
+        "publicId": "google-maps/hostel-in-rawalpindi-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG5hI1MlEziRtIEoRf3AkGoaKj64xBXRn5JkquxnQYZ26mSlwrB_d35ibfDkneZytPk6ReuxjviSo1mV5zpEt7bBRNTVTXpGvAA0ubRekQsFDW_N3e-V0-BUI2YcCbeb524ubbBSg=w398-h298-k-no",
+        "publicId": "google-maps/hostel-in-rawalpindi-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGJpxEA0OyjdkmOowjtFqWnwBYGkX4dS6xHIoLicFgYS7MyUv84pzhzXzE5eWMfyOadEaP78360LmuD5c7zXKUaRxO0W3AbbBJ48Lbf-sF6lwcIRaPaLqpvf5XHjnNJbmGIcMumwA=w397-h298-k-no",
+        "publicId": "google-maps/hostel-in-rawalpindi-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFdw-sM1xUanhEGYoqbE0rel0IZ3n7B7-aWs5fr5Hsk_8dygf-GHpcITt3ezSLewkMUuHXekryn3RQHPx14mHzcUGt9UjAX5HlJa9pzJJF7hhsGFIeV_q1Lo9-IE2kUHgKV2m4qfA=w398-h298-k-no",
+        "publicId": "google-maps/hostel-in-rawalpindi-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUdlD2VWtJLRv5rsVfzCWPvisbyqOSyNJ04tds8GIA-q0YaCzTd=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/hostel-in-rawalpindi-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 309 1493341",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Office 201",
+      "Rawalpindi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Elite girls hostel (A-block)",
+    "description": "Elite girls hostel (A-block) is a girls hostel located in 65-A, Rawalpindi.",
+    "city": "Rawalpindi",
+    "area": "65-A",
+    "address": "65-A, 2, A Block Block A Satellite Town, Rehmanabad, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEdRneO-5kcJUuuL1bxmQayBJnOztx5gVxY-l2CEpr4dLCaf0CaPaWLStJuWQ4EObFKdnzyPc7SVSn1XRpg6rdRC82jqcwAgNi8Z_MR5uSZJBAGeFMTlbeFThADhMYUt85LHNa_=w408-h725-k-no",
+        "publicId": "google-maps/elite-girls-hostel-a-block-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEdRneO-5kcJUuuL1bxmQayBJnOztx5gVxY-l2CEpr4dLCaf0CaPaWLStJuWQ4EObFKdnzyPc7SVSn1XRpg6rdRC82jqcwAgNi8Z_MR5uSZJBAGeFMTlbeFThADhMYUt85LHNa_=w224-h398-k-no",
+        "publicId": "google-maps/elite-girls-hostel-a-block-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG79rBDFCHAwG2nTlAEDPfh7sPIMbwMKdmNCIM9_LpAiNwBK0pJEPBYdrPbVzX5XYxMtJeTj2QbzqOfgJCVUbZ8zlhmWE9gOxno50uNhkA4Sj1MjQlLYZekJ-CiRbH1nr4O2Jcc=w224-h298-k-no",
+        "publicId": "google-maps/elite-girls-hostel-a-block-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE8k1C12Z_uDIwRwH60h3TYRJuipolnno18s1Gp5Wkr_ICvuAmDEdMT3LoidWSVDNb2caM4fA5u1TvYkN6RGfJraHdR5rGb-rtNFDnfLAoL9vk7lSYKa2XFEBwdNUBtzsxYdeOE=w399-h298-k-no",
+        "publicId": "google-maps/elite-girls-hostel-a-block-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEQgsLGeMvfbW1JdgHkqKldkOvH0jroNHaZDcP5Fs74wkoJP5-YOamVBOnf4dZzi15u3BQ8RQtxycvU9PmGtYv_33XVsisNUVURIBwd2-RndnNImVMFN7YA2masdH3j42cHIyM=w224-h298-k-no",
+        "publicId": "google-maps/elite-girls-hostel-a-block-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocLu7jgbRmU8JxK2wRP-IgkJ-QodSZjAbV_9NY0a0IGsw9Z8Sg=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/elite-girls-hostel-a-block-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocIdqPYnzMcg5fzDP5uigSvV6SZD9lWBB6jGShFXiC10H1TrCg=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/elite-girls-hostel-a-block-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocJjRKWfM9RYN4ESVFObuobTtOg_VLNCtMjItotpSH8RDSiEug=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/elite-girls-hostel-a-block-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 334 5889749",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "65-A",
+      "Rawalpindi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "The United girls hostel Gulshan block 6",
+    "description": "The United girls hostel Gulshan block 6 is a girls hostel located in House B-63, Karachi.",
+    "city": "Karachi",
+    "area": "House B-63",
+    "address": "House B-63, Shah Faisal Masjid Rd, Block 6 Gulshan-e-Iqbal, Karachi, 75290, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF74PtTjFxOLJodyRwpejYsnnYCW5Jl7GJ3o1Jo6JmQ863kjGmgIJMI69KkCJR5rhTt1YcK09AHGF-cWHVjqT8m6aINvluYuA6LAV4cBnIt66oZMnNm2mQrXGEWAP-GpCpTekIAOg=w426-h240-k-no",
+        "publicId": "google-maps/the-united-girls-hostel-gulshan-block-6-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHsotmA1PHPSAUVNYOuRnNNUTODksiDFK2Gly2J_4lRIifuynoqj3yyIgaqjGN-NmXsRuNoTFJmVILKjx4wR36TUEzMYDOjwqpfXWPfnSnKDc09aJ6uRTT6Jd5vElLw2RATFeoJxg=w156-h114-p-k-no",
+        "publicId": "google-maps/the-united-girls-hostel-gulshan-block-6-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEsscQPema7sUyl-ZgOrswPcp6WkaGFuTDwSItDQJw_T1fXrFR8hDBODLw84IeXdmZxL2f2_BCQeGpdCXy0S-qFgAVdIZH8fdZN5G5MWKYOEo6otxrhySqqNUd_3thBZl9JcZuW7w=w156-h114-p-k-no",
+        "publicId": "google-maps/the-united-girls-hostel-gulshan-block-6-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2trF8kvNGZl_LoScbhSlrqShIiJOUqKMfFyUak6BYp03_zbIumMVE2k1U8F1v5QLd1IqqhLzxe0vCm6q-Zjgz37ct2HJfFaeUAFZ0xaFUm0kEDQd_ltB5js4YAfYcKj1bXfvQ6w=w156-h114-p-k-no",
+        "publicId": "google-maps/the-united-girls-hostel-gulshan-block-6-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH32yEdmqdqChrZ-ajZBUXCGQA9ZZjAIsn6M_9Xq5pbyZpVDiAx8LlDaoCsN_vgHO4DPAZlNf1QaGO8H_9ayVD78Y_wk-GtfeD3QVsx_7BmZPodElkGPokPCH_WFKDoM5SAqFfkSa5WSiwc=w156-h114-p-k-no",
+        "publicId": "google-maps/the-united-girls-hostel-gulshan-block-6-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFgd7p-7WctsdRzzcgS4OM4SK832vbEFj8gd8_iMpNJsIIOU70VCkO1NNryxyUMH--kPx0eiYGWRZAmlRldJvXmDmv4TkdrH_VE1B-XWJ3DMCeH6jm0zfCEsXAOdPBTfAr6WJKI=w156-h114-p-k-no",
+        "publicId": "google-maps/the-united-girls-hostel-gulshan-block-6-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF74PtTjFxOLJodyRwpejYsnnYCW5Jl7GJ3o1Jo6JmQ863kjGmgIJMI69KkCJR5rhTt1YcK09AHGF-cWHVjqT8m6aINvluYuA6LAV4cBnIt66oZMnNm2mQrXGEWAP-GpCpTekIAOg=w529-h298-k-no",
+        "publicId": "google-maps/the-united-girls-hostel-gulshan-block-6-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHIwrbX0aKqCn5CN_HvbiqWAoj2OYk73_S3XGk5RtamjcIW9SYvX4jxTQWeCmzG-09zvGY0vvuB8--WqqX866DvInS1e2BjlZ1WabKnKIHKCIfb9bgsf0pvvl8EWvbsqVF9QnWe=w446-h298-k-no",
+        "publicId": "google-maps/the-united-girls-hostel-gulshan-block-6-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 315 2470554",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "House B-63",
+      "Karachi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Imperial Girls Hostel. امپیریل ہاسٹل برائے طالبات",
+    "description": "Imperial Girls Hostel. امپیریل ہاسٹل برائے طالبات is a girls hostel located in Plot 254 D, Karachi.",
+    "city": "Karachi",
+    "area": "Plot 254 D",
+    "address": "Plot 254 D, Shahra-e-Faisal, Block 6 P.E.C.H.S., Karachi, 75400, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGNi_mEj8PFXPIqoSg3wdQWNvFrtGYHIX17fLjPuI3FOmI1xKLy9Em9_xV9VfiZStp06gFg9E6pQhNPhBbqSsYEf9FVuhA1JH1-WqbIb-hz7-eiKbPDF9t1QF6nG8AKFb9DGOlrag=w408-h305-k-no",
+        "publicId": "google-maps/imperial-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGNi_mEj8PFXPIqoSg3wdQWNvFrtGYHIX17fLjPuI3FOmI1xKLy9Em9_xV9VfiZStp06gFg9E6pQhNPhBbqSsYEf9FVuhA1JH1-WqbIb-hz7-eiKbPDF9t1QF6nG8AKFb9DGOlrag=w398-h298-k-no",
+        "publicId": "google-maps/imperial-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAESveXWnbOeqHrOdO04y6Nftdq5Vz5Iw8HCqpULy0ru-tUSvgJrBKk1LkPd_F0V9kKjqTLyExCS6IXGfjGWCXhlIMtyGPnTcm61CqigAo-oL70F5iiOJiLDsFMi7SbSl2gPp7wyYg=w397-h298-k-no",
+        "publicId": "google-maps/imperial-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGZDuOhBI1WoP0fiXHZ4YLdpRLNVXT0ILvc9jiME4ZIkRyjRkVbgds-wBXaxEfFCIbEKZ1VC8FKuunLWP7uSN4kLdOgxcD1Dt9BPmrWyZBTT8lAaDjuxx4rfwdOQXOAzXurZUKZ=w224-h395-k-no",
+        "publicId": "google-maps/imperial-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFxC9lQdfpcExbJlKF_1a6l6edGlven22IkjREQ32sSR6hMSlekD9V6jyNHLeNwrmHVNFnBkNC8n5tmPLF2dWmlLs6w_hatQqbaA_XR77SlFR8U_wE6VY_v_sSSBXNqKY0tSy-AT1fTVPnu=w224-h398-k-no",
+        "publicId": "google-maps/imperial-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocKNFXdhnsc3DFfclYFnvGTy7JQHojwJv9a5RCLUpWtglnYT1g=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/imperial-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocKfPmfAM0qgqlslYUJBObs3rz_lRjedxNVOv-WMZs857Ka0jQ=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/imperial-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocLBPpS8Cl15hK43G4r1GIf87vR2gTG3WggaYukJK_0W_hRtsQ=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/imperial-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 330 2085223",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Plot 254 D",
+      "Karachi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Iffat girls university hostel Hostel karachi",
+    "description": "Iffat girls university hostel Hostel karachi is a girls hostel located in Plot C, Karachi.",
+    "city": "Karachi",
+    "area": "Plot C",
+    "address": "Plot C, 225, Block 6 Gulshan-e-Iqbal, Karachi, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHX4_-xCIlri-mnXahL1ORrm_OwLkUe0FmQMT60K0ez95nM_LgAfhykDGZ3RTkeCDgUq7NwONP4CQILGJ5oZMrVq-nDru3ulW9nhhpFWowiFU9VvRx5MC1SsXFMyIFbe_5J4JzwbNn5mzs1=w408-h725-k-no",
+        "publicId": "google-maps/iffat-girls-university-hostel-hostel-karachi-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHX4_-xCIlri-mnXahL1ORrm_OwLkUe0FmQMT60K0ez95nM_LgAfhykDGZ3RTkeCDgUq7NwONP4CQILGJ5oZMrVq-nDru3ulW9nhhpFWowiFU9VvRx5MC1SsXFMyIFbe_5J4JzwbNn5mzs1=w224-h398-k-no",
+        "publicId": "google-maps/iffat-girls-university-hostel-hostel-karachi-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEetby8kFKvIYld51NuGt421GRl4d-UgD9NCUGTQVfgSu6H9DUnQ9SOsBZdfU5B8I_8qK9YlXTiFwylGTgbNjvwyZHuNLoOvZPLaEJdZJJ0ow3bU2-GI3SOrIcD-t997RO91WPkg4zayiFO=w397-h298-k-no",
+        "publicId": "google-maps/iffat-girls-university-hostel-hostel-karachi-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEoUQ9zFy1wsfrUKgJVqABFGB9DFTP4qTHBnCT9dHiGM8TAe8F_VAQD_LRZgBXHo9EHVKIW5Vl0bCIQovJuvfBuZUG9mIXmb0ea7uq8O-4IfrEzcT-FlTOePGWuX1dJN5CJOsjctZoeMQQt=w224-h398-k-no",
+        "publicId": "google-maps/iffat-girls-university-hostel-hostel-karachi-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocK8b2fIHh1ELhQiQ0kkleEj7FHiGjUX2oZt7qVWpEJb34SjSQ=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/iffat-girls-university-hostel-hostel-karachi-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocITBUSfwwgLsTYJ1DfcOrHSyI_5vjj0q0o9Ure1RR9uPMALXw=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/iffat-girls-university-hostel-hostel-karachi-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocIHinCRmjx4XVTn_i67yiAE_B1036aMUXisWxhUMLvd-5ZDDw=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/iffat-girls-university-hostel-hostel-karachi-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF74PtTjFxOLJodyRwpejYsnnYCW5Jl7GJ3o1Jo6JmQ863kjGmgIJMI69KkCJR5rhTt1YcK09AHGF-cWHVjqT8m6aINvluYuA6LAV4cBnIt66oZMnNm2mQrXGEWAP-GpCpTekIAOg=w156-h114-p-k-no",
+        "publicId": "google-maps/iffat-girls-university-hostel-hostel-karachi-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 301 1164496",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Plot C",
+      "Karachi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Abiha's Girls Hostel",
+    "description": "Abiha's Girls Hostel is a girls hostel located in Building N, Karachi.",
+    "city": "Karachi",
+    "area": "Building N",
+    "address": "Building N, 5, N 6, near Defence View Society Road, Phase 3 Defence View Housing Society, Karachi, 75500, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAET02dVKZdr-EcELHky96C4PFM_kS5R0fbLCvT5EiG3MQfF4Sm5ceCiIiTV_QPYwpOYY2h1VebaX4Z-lFzo8MQoxypnKDR2QeYhfiaR4fHUMsNVqpLAo2tYrZyRwq2P0cfirTnD=w493-h240-k-no",
+        "publicId": "google-maps/abiha-s-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAET02dVKZdr-EcELHky96C4PFM_kS5R0fbLCvT5EiG3MQfF4Sm5ceCiIiTV_QPYwpOYY2h1VebaX4Z-lFzo8MQoxypnKDR2QeYhfiaR4fHUMsNVqpLAo2tYrZyRwq2P0cfirTnD=w613-h298-k-no",
+        "publicId": "google-maps/abiha-s-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF7fwkajUc2zXxa1gEiWWioAvim4ZwM_bDs-cgmDSirkDnYP7qxRkVtUrGYrKNK1Tu2E3L7JIGgOPrWpEoJHeJpEShwRby-eZLsMDQe-9CBPeb2eQa-f0mGODTxyGrUyEvR5phs=w224-h298-k-no",
+        "publicId": "google-maps/abiha-s-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEN-t-DFYL8D695aCBUDz3fXb75QJxqdWBBiCTU8jGqZ-JtweQ6RRgu-nkGrqu3dK287krOlzGldXt1lSh796lTw6soUmqTa_ZmRm6ewYOk6P9TQNcC42xELYwE6PN70Ju6eZVZ1w=w224-h398-k-no",
+        "publicId": "google-maps/abiha-s-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFzdGqRywU3fVq4x4kZmuXVbp69a4oteajwDzBKlwQ_Fd8vkqSCk1mSWJIaBwEa-luWi29R_Qisil43jLElhNVGLkDxAdhjDT05wiDMTW3xMhQi8lGeLNE6kTu1mzsKyJW6H6E=w224-h298-k-no",
+        "publicId": "google-maps/abiha-s-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEfV7NjAi6HmbJOCtieeevlEe0gRiAXOz6ZljPd3HLmfIw6u-fHFx7xm1C3tMt17gHxg3qcDPGBCAGnc2fmTNr5BN33Y70VRN4dCimp6ZkludA1cKQTEuXKigfagg4A_PPm1xU-=w613-h298-k-no",
+        "publicId": "google-maps/abiha-s-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVc1brzBrSerI3IboAPpbt5gfkD4ajI5OLzKPnZlrbOpLJkivmp=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/abiha-s-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWv6ObLIYcM1-D6okKm6BV8Flm-GNVECWEcT1KuJyeku5gWsfKR=w36-h36-p-rp-mo-ba12-br100",
+        "publicId": "google-maps/abiha-s-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 336 1111109",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Building N",
+      "Karachi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Sir Syed Girls Hostel",
+    "description": "Sir Syed Girls Hostel is a girls hostel located in Plot/Survey # 336/2, Karachi.",
+    "city": "Karachi",
+    "area": "Plot/Survey # 336/2",
+    "address": "Plot/Survey # 336/2, Situated at Deh Dih, Near Sufaid Masjid, District, Allah Wala Town Sector H Korangi, Karachi, 74900, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAES5pA9zXarIbiO4O3xIGsH_vQIrfe2FI5L5i92IoyFZ1iL7JNa0q6qzWmTgucLgRP8o_vptc2VP0Op5QgTHr5sP_8sNl1gKJbMfTiuspgmtu_ERjPP9X701u1ZQPjDwUkrwhbQ=w408-h271-k-no",
+        "publicId": "google-maps/sir-syed-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAES5pA9zXarIbiO4O3xIGsH_vQIrfe2FI5L5i92IoyFZ1iL7JNa0q6qzWmTgucLgRP8o_vptc2VP0Op5QgTHr5sP_8sNl1gKJbMfTiuspgmtu_ERjPP9X701u1ZQPjDwUkrwhbQ=w447-h298-k-no",
+        "publicId": "google-maps/sir-syed-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEfjeOkGKanQaLwGoQMbcB4iuefd4elo925E4YYQbI2-DypOZxcWdWw6uwILivPUwlSH5EpAm17I-nvY5MNBuC_kMSnd42GS0ixGFJ8l-L2GULRF_-K_LRQAxa4lHEVgZzL6qso=w275-h298-k-no",
+        "publicId": "google-maps/sir-syed-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4sMA9LCDu2KXpiopfCroBD90tn7FcqOyLguFlamlND2hhqSHYuBp7AVkiasKeerzJgyEicwgtpnmfVTNulbVGtkNmUpvkxliLo3iVYA5U1J9cWc_cgCf3PxBSEml8tx59mMJ6pQ=w224-h510-k-no",
+        "publicId": "google-maps/sir-syed-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFp7PU0KjDW3MTQOxOUGsDx6Xvj76GXRK4wsi9ajPMkMwxS_xrAgzGhL47QU7JSXUdBbgiksDJzAYzD3u66bm-xlaWmbFIsjtIsIvZ0RfVsoTa9YYRkWR9uzSgQFmyuguFikiGPZg=w298-h298-k-no",
+        "publicId": "google-maps/sir-syed-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE1vUD7TivhN2H4dT0zY2zjrLMrZTg1Cwzo2_4qn9PzPCPemPYD3PVcvsX_g2EiznKuQ0bF9qzRJQ2_0iUrBXocDxTJCD1BX-LEAzBm_ZI-DDSEs97G050CPhBBslXc165hxVrcUg=w275-h298-k-no",
+        "publicId": "google-maps/sir-syed-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocJzCdswDFNVHutzPuJfKbDILPzPLCGmOmaVfp0u9iXI51MIqg=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/sir-syed-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVB23ZOwNzpbYB-wDfP2i63okGAjtPMiJpwqiX-KiJ4fmdEx31GGQ=w36-h36-p-rp-mo-ba12-br100",
+        "publicId": "google-maps/sir-syed-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 300 2179427",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "girls",
+      "Plot/Survey # 336/2",
+      "Karachi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "DUHS Boys Hostel",
+    "description": "DUHS Boys Hostel is a boys hostel located in Chand Bibi Rd, Karachi.",
+    "city": "Karachi",
+    "area": "Chand Bibi Rd",
+    "address": "Chand Bibi Rd, Deli Colony Ranchore Lane, Karachi, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGHu_Zxoe4VY7hm-XcZ44NDYm4WUfmmg2Gla1myk1LAiJEnX1gbLMIh6nUj_QzzP8fbgFGO0vCmlJJTj1hvXYH8576CAKuZIlL8qZLcmLjq8l6xGCLuNJIxWIBUUXw72DftbTKe=w408-h306-k-no",
+        "publicId": "google-maps/duhs-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGHu_Zxoe4VY7hm-XcZ44NDYm4WUfmmg2Gla1myk1LAiJEnX1gbLMIh6nUj_QzzP8fbgFGO0vCmlJJTj1hvXYH8576CAKuZIlL8qZLcmLjq8l6xGCLuNJIxWIBUUXw72DftbTKe=w397-h298-k-no",
+        "publicId": "google-maps/duhs-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGevTjSe3LJYMs_iaXpX5nOJx82Dw-DixGc4nW6wutCfJIGWgbf7-A2EMp8OaFMQjESE0U_HOAZEuqzbXh4pDq4qDmK9NY9V7xOWsPBVQ38JlqYqFG5f_oit1Eg_gdwFcoaWZ7v=w397-h298-k-no",
+        "publicId": "google-maps/duhs-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEcfW6lq2VPCxNQRd0E_6yZfs87TcR0JTwSUwW11NwCHzgaim7NpnDZcVc9UBEnkaE3iH0V6FKGazEA1ssj4I-GhzXI4VYxk9rz9odakMPs2UxuIpuAAs2WNd23rVfgNolVP1KwK0jQiWHw=w224-h398-k-no",
+        "publicId": "google-maps/duhs-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFZhDLYzFH8cSjXHvceYrgBg8RgYPlCC29iARa5iruMz8ygRcLtNLiTWUyo2qrxTBgHu7RaQ3G9K9wkyrsLegvTDCgfriSOjMZBpVtwVV8NZ5v1ZhFmv13ghDY7D0Qp5c5p0cqK=w224-h298-k-no",
+        "publicId": "google-maps/duhs-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVG4CwxlDGUbSosg69s8ubQ50lQ9n9TqTKanVqANQ8ZyBBZNsGQOQ=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/duhs-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWIjAoHEhVCM6sibfsnnEPt1igH0ZwIFcLDXpAmksgwQOxjG4bi=w36-h36-p-rp-mo-ba5-br100",
+        "publicId": "google-maps/duhs-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjW9DGLD6U3PzNkTacgxvVQpoSHgW2RmpLNRajDrKdtH2S3WqyY=w36-h36-p-rp-mo-ba3-br100",
+        "publicId": "google-maps/duhs-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 21 99232660",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Chand Bibi Rd",
+      "Karachi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Elite Boys Hostel",
+    "description": "Elite Boys Hostel is a boys hostel located in R28V+M4M, Karachi.",
+    "city": "Karachi",
+    "area": "R28V+M4M",
+    "address": "R28V+M4M, Zamzama Commercial Area Defence V Defence Housing Authority, Karachi, 75600, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHAjiq2KisCw695q6V9dx7XPg2y_xvUYW72mUz31rcSUSRH0BeXe2xXWPEmORnXqKY5Uix2oOFPCg89A8fh0TB8jM-6y8R9bbPQ1FsHMcJWOuukOEeLmzGHrzxkSGp_Om971W3QGM1EDmcz=w408-h544-k-no",
+        "publicId": "google-maps/elite-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHAjiq2KisCw695q6V9dx7XPg2y_xvUYW72mUz31rcSUSRH0BeXe2xXWPEmORnXqKY5Uix2oOFPCg89A8fh0TB8jM-6y8R9bbPQ1FsHMcJWOuukOEeLmzGHrzxkSGp_Om971W3QGM1EDmcz=w224-h298-k-no",
+        "publicId": "google-maps/elite-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGnqbCUrm9qn7capCgKG0WZ7Nk01dohA_mNjfuCiNrN-wgnHzWZdDRn-atJ0PaYCCun8oG4yAT3IwQjzHovSFf9oEB68_YzXeKikA-RF2Jj6b7zlCTtjdLykFjwdg70R6rkvjiflg=w224-h298-k-no",
+        "publicId": "google-maps/elite-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEAoz8f8NplrjMNY2pb2XBeLq9ikT34x7LtocyfEVKp2w3zCEbDqVKazTOqmPZHSQqqEHNvTYz6bg0yPrxQTnIjpmY7PV33exC6vPwDUhddp3PL1eltJhbtktBj8Ua-ulynUoK_ew=w224-h398-k-no",
+        "publicId": "google-maps/elite-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFLxm0dDRRYanVGOLEQbDsYKTEQTlBnhCCv0ivsELkh82aMfR609ENIwsimxHDvSVJTtBJErEkRgDDgjMqxf402ws6O21b2maqxPpbzWALeqxu5lFcyax6D_ZQ2QyFu4dx3gKxvBc-vS8h4=w224-h298-k-no",
+        "publicId": "google-maps/elite-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXiK2buOWTX43XQfrpfgVwAAu4ZLpFBnf3cFBrZLKGNgQ7bc-U=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/elite-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVHBlHMQsxBrj-_Hzgly9mKxLjdpdkWj88Tvv_AKD_C3lfYCOM=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/elite-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWrtpybwOF23KtLeNsFoqAfAZ-ctIFMipDf6lz_6p9VPVupXtm2=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/elite-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 345 3962564",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "R28V+M4M",
+      "Karachi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Harmain Boys Hostel",
+    "description": "Harmain Boys Hostel is a boys hostel located in FL-39, Karachi.",
+    "city": "Karachi",
+    "area": "FL-39",
+    "address": "FL-39, Block B Block D Gulshan e Jamal, Karachi, 75260, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEfKPHiIWdivOKbTOqCYl8vzG94fLLKn_mbxtKq2FDoquti5Li1umpz0VL2SOf0mlQjMg71dMZo91PaCe_fcZSyCHXtLWni-xQEtE1lylHNYlh1BkhwXgig7kBTHL_RAZtTXg8C=w408-h725-k-no",
+        "publicId": "google-maps/harmain-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEfKPHiIWdivOKbTOqCYl8vzG94fLLKn_mbxtKq2FDoquti5Li1umpz0VL2SOf0mlQjMg71dMZo91PaCe_fcZSyCHXtLWni-xQEtE1lylHNYlh1BkhwXgig7kBTHL_RAZtTXg8C=w224-h398-k-no",
+        "publicId": "google-maps/harmain-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFKE3l7wM2UtJXzf37X8hPIZQalRSV0OwksrzRrzgei3u5RHuspb2pXv5fAFXKDiCfGejoxw6G5C0asNBAhImKfw1WcDKgc-R-tBpj4GemunZjIRG8eSWVlMN6-bEjN_iwe-DCqhA=w404-h298-k-no",
+        "publicId": "google-maps/harmain-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEsLvVqUjayZtt9sX1ZgQKiJy26y0WZ7mO81Ec_4pKwOFVXLWiKmGC4toypY_uwmmtJGOzKf66VQBZjyI4Bbyu9Y5FD3A25tqMutw-XYZY1Zp9c90DTI5FuIGumtOv6CJOo9X6a=w533-h298-k-no",
+        "publicId": "google-maps/harmain-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEMf5JUL7O0RfwRRvD763RG92fV4JG86XPbWcePfRaaItHxMNpADLqbkzD6w0nbTh00GvHov2EwYXqTdranKl639FNsE2UrY988HqJSp_oKD6BeMWTYApWODTjImR3Alp3iLwAx=w224-h298-k-no",
+        "publicId": "google-maps/harmain-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEp9_8WD3qw61NVmAL3B61Vb_bTwIjX02qbut0FKhSDaUrIVAIcRiXVRusCdRDAVvKuEhV6SNSsW1kfiAwaHUn_KdNwklgvpYMoO5j9zU8D6Y3i0kqeiWG2YjLr2-RDtCAHisEdSQ=w224-h299-k-no",
+        "publicId": "google-maps/harmain-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHObCD2Nq-D_Vp6rbelh4VsUE08uSRA7JoXGdzK6tAJQxpJn8F9zeEufVvOqUN4MOvOr42YC49ILWrZE8xe17DVkJUi5V0GD_7UojW83eOomsYKcdt9d55C1cd1V5Wd4k_jE7hB=w406-h298-k-no",
+        "publicId": "google-maps/harmain-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUQrVFP96HV5j3QL00O1c5n3IkwB85OOLfWEoLujjgLVIEtXQs=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/harmain-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "Not available",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "FL-39",
+      "Karachi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Bilal Boys Hostel",
+    "description": "Bilal Boys Hostel is a boys hostel located in Plot A، 189 Street 11, Karachi.",
+    "city": "Karachi",
+    "area": "Plot A، 189 Street 11",
+    "address": "Plot A، 189 Street 11, Railway Colony Block C Gulshan e Jamal, Karachi, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFH1RAU89UV3SWA87IbexSoUakTJZTz1JUW2t6aB1vW88OAx_CqnavPb_iRYKJg-GZQM0SR5fXb-B1B88dtxibW_93gRrwWMI5JebWN2FBMqPaTS8dMP1ITYCOdjPEqTXQ94coT_A=w408-h306-k-no",
+        "publicId": "google-maps/bilal-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFH1RAU89UV3SWA87IbexSoUakTJZTz1JUW2t6aB1vW88OAx_CqnavPb_iRYKJg-GZQM0SR5fXb-B1B88dtxibW_93gRrwWMI5JebWN2FBMqPaTS8dMP1ITYCOdjPEqTXQ94coT_A=w397-h298-k-no",
+        "publicId": "google-maps/bilal-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHT-XEKSgdhX_IovMRR-liYZegL3GBifFdz6V5CPg2GCcD3lHHXsTLO7Qmd6PpF5i6jF4cXTsV6pxQ5WgEHvrMzP7CCLljvAprLSD-tTtoLOSEG57AFeDOPqYAgFKm6qjmO3GkGnZbLjEpc=w224-h298-k-no",
+        "publicId": "google-maps/bilal-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEMShGcvH_TFu1hfQ1OyBUerpMk6QOSuMQU4z1Wv325AchzmfA2auZNM6cxHsJNFPGLVf0IN--gLITzu8XGQ4ig_qPtpITAAPpORE0pZxXYqFlRtxO4NdYLhgHHwrSbVcDMR_Mj6g=w224-h398-k-no",
+        "publicId": "google-maps/bilal-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAECZmNHghVsIk70cvQYpps9VGxFanzbabQk9w-24F5j0OeY7wlLSi--x-i_FP0x9Lml-H--ZMmo2I7fcp7J86Cn4YWFH9HiHbp3u7pRLolL74X5OGsmOROqCm8dmztyO0-ABp0=w224-h298-k-no",
+        "publicId": "google-maps/bilal-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXziZdrW3-OBdaaYbEQa5JASwxsZmXtJHBhLXpUArh5ywaxnkdo=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/bilal-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjV9N8qzj4NIsZtS_v0dLCcE7pouXCoSK2c8WzV1NfSJxyhLiRF3rA=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/bilal-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocJC3PWO7s2kalAYyV3Ar16XDmvKylR5aHTFCHPuRplO_zFyiEA=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/bilal-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 304 0223293",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Plot A، 189 Street 11",
+      "Karachi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "IBA Boys Hostel",
+    "description": "IBA Boys Hostel is a boys hostel located in W4P6+956, Karachi.",
+    "city": "Karachi",
+    "area": "W4P6+956",
+    "address": "W4P6+956, KU Circular Rd, University Of Karachi, Karachi, 75270, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFeb4m4KM_fvqZnXwARv1jkE4Tg43ohsQEFpYgwtC9nFpe0k2hKKPQYTTYKGxfB7V1y-Sj8qqWIVPl8lLugVP10CRXu9Cy6VmTSCBbp1rVRsK60L1WXhaWZ_rVvqK2m41HNYmRhZA=w408-h544-k-no",
+        "publicId": "google-maps/iba-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFeb4m4KM_fvqZnXwARv1jkE4Tg43ohsQEFpYgwtC9nFpe0k2hKKPQYTTYKGxfB7V1y-Sj8qqWIVPl8lLugVP10CRXu9Cy6VmTSCBbp1rVRsK60L1WXhaWZ_rVvqK2m41HNYmRhZA=w224-h298-k-no",
+        "publicId": "google-maps/iba-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHKMZmM_Vp7c-UEwBDXZxjocw_3gb9ZJjmUFnj25-kzk635xTBCw68o96923l8dXg4cmx7Pfm8BBPJztmRQ9O_onC443vUiO7RjF8eEmCmwcmt8RRZWbfEojIZULgDdc42EZ_A7pVXoKD59=w224-h298-k-no",
+        "publicId": "google-maps/iba-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGxL8rdglckWRFGEyIG0PptKS_fYVLIhQFGo2P0-imPMVWR-VU8M-gnJeyjbwfR9A5YrLECt6xSvirQodj-MhRovijCGiCM7Lxgi2s0VGK2NBiOvMWXksA4cLJnHMuuYfKxd6NMhg=w529-h298-k-no",
+        "publicId": "google-maps/iba-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG2sP_eAr4C1DZ0I01yoRCjGTMLJMzAe1kdAr8GhNXoUtIsHuTnzlb-QzhMLxxPL2FatV_ISd2IWUlDB3oO7r5vQ_BeavM135kf0wg8iBgiqH-9SXBtv1T-7VYR9_KTJQItl6DqdQ=w224-h298-k-no",
+        "publicId": "google-maps/iba-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGooG_yAUKdk8IE38fWfPeY-dJapbF4Huhhuvf_hnDAm5i-EGaEvqJiNX5RDdoU5hgjueFu_rtODwsMOQeZ2APAHYAt4ewENEr6hoZsLp04eri39Gnho5H00I8FXCQzBUf9Lc37BA=w224-h399-k-no",
+        "publicId": "google-maps/iba-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFnM6lLhhBbWOCPm-B4cO4Zcu0dYlsaXmHgvIOzNCtr43BF6MefGfgp0YbjHbxbQwGeSNByYeLrCnjxOhDpapPkiLqQHCFwno6G3iSE8yiBhz-iyFPonN6Z9Q-Ivix0sD2RF8oP=w397-h298-k-no",
+        "publicId": "google-maps/iba-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGjk73ZAKs3NRk7jaJPTaCRLE3NwpMqLOxZdMsWmC2m7R5rCBczLEYO_yRJnCNxobYCf1-PpzL7tfSKQTWMa0IvcArWZWVrhpxQd9ceAk1ig5P3dK3ok5ABQI6CfXvj1zlxl2Ww=w224-h298-k-no",
+        "publicId": "google-maps/iba-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 300 2558330",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "W4P6+956",
+      "Karachi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "SS Boys Hostel",
+    "description": "SS Boys Hostel is a boys hostel located in House 98 Street 96, Islamabad.",
+    "city": "Islamabad",
+    "area": "House 98 Street 96",
+    "address": "House 98 Street 96, I-8/4 I 8/4 I-8, Islamabad, 44000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHjTRkF5g4SkRpCLOSII4aGBRGuFTmk1WzpX0mON-BSEjIFR65yskiSNjLXCBVZ8v6GJtJZZWTrzkekzaKQ5H2oOFOkJEUMxWtlQSEYMGKkxcu7NrznzeX4TxK9T3zzUA_GzJinIRq94647=w408-h254-k-no",
+        "publicId": "google-maps/ss-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHjTRkF5g4SkRpCLOSII4aGBRGuFTmk1WzpX0mON-BSEjIFR65yskiSNjLXCBVZ8v6GJtJZZWTrzkekzaKQ5H2oOFOkJEUMxWtlQSEYMGKkxcu7NrznzeX4TxK9T3zzUA_GzJinIRq94647=w477-h298-k-no",
+        "publicId": "google-maps/ss-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEOC63q68_OhlZITZRA2fOl8ZkWpZCFLuxvQkYHHtLnjYphz_yoITkk2DG9whN1eZFejIvKbZVlqiVQFuKN_QCzvCCMqya2fmyLm4mLG1Kuk-gAGCkbw4TtGmd3zc8187SXRABBT_kLMICb=w224-h298-k-no",
+        "publicId": "google-maps/ss-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF86_eKA0UE_UZlUMRrVxiVgkuIjhgVhyRsb7uRcRU6rgnY5rhB8XoKPjH_UyhyElAFfok8OBGc4Qao9GI4NcUXHmV_A0v4GU5v4B3t2A8r0zUCpsGzDuz4-KJ1FMe8Etj09twiGw=w224-h395-k-no",
+        "publicId": "google-maps/ss-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFgXnvz2MyqqP-NvmhpXXofP5Qho_RHQRNp3VIygcxDlzQocIVKOpJx4yHUhl3vE8mCftX4RDGxrlCiG52yXEuQni9toZehYImzaUjc8DWlcmjtU4wZXX2rSoWm-wudrptRwzWzB6YwITRd=w224-h398-k-no",
+        "publicId": "google-maps/ss-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHyqtsF1RTN0ZS_S2-xUdebfedzjXNQ7AmqsHRNg7xs5uCUZZzuVmfsvnhA1B9KmUU2PJ1P_VKwNJRJafnmuwVntyS4zJqi1khbiZTvka5Z0FFr5N2YyzxqHCfFpq_eE1jfg6VPefAnSyyF=w224-h298-k-no",
+        "publicId": "google-maps/ss-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG3mLcxbAHZvQh6XVzwiY3bNzC5WoJkRMwUByuT2f4EvOEUlnF_MK5p3L52461nVYz395a0rtTsLEfbs9Q3qQ6Ism7M4MTM9iuDUSEb7bekyFx0DAFlJX4tUfDdaOnGd2plRBBJSTT6yZWU=w397-h298-k-no",
+        "publicId": "google-maps/ss-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUYr2rBUsJ6YgvtE-z5hVNKaUqE6Ky_tUhyqnOj_hrsphXU4Jdc=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/ss-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 334 1437320",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "House 98 Street 96",
+      "Islamabad"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Life style Boys Hostel in Islamabad",
+    "description": "Life style Boys Hostel in Islamabad is a boys hostel located in Street 47, Islamabad.",
+    "city": "Islamabad",
+    "area": "Street 47",
+    "address": "Street 47, G-11/2 G 11/2 G-11, Islamabad, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXCUQ8wZXnMuLBJm7KPnqbKCcKPXursiAjdJZchfySXk8J_HXBq=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/life-style-boys-hostel-in-islamabad-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWoUE8JmjGSFhzm3X0Rpj4aDeuY3iRFCi0UkRuqSihB9KjHo6qG=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/life-style-boys-hostel-in-islamabad-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVZd4N92fvf22opNwSe_9Pmi7e9ubPRE8sDaO_-QgZYhtpHDgc=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/life-style-boys-hostel-in-islamabad-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHz1Fij38Bu0gyg38QDjwz79QFoA7ummMM6YCqbhGtxZqplbgKCWa1M0312K5Sp3VI8s9sTGOVohLwO4gZ1rlbEv51tUugl0G9jjpPsLHhhXtzG5---RarPMVZnaJ4iCyy8Rxg=w156-h114-p-k-no",
+        "publicId": "google-maps/life-style-boys-hostel-in-islamabad-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHGByhOYAnztdth8kMyIo6OFSvRwAf-77OoRnz4cUL1H3GUBPxMzKKyjZb0iCrQBWJPK5FozmpXv-o2cXt97yln8G2Xlyt4yzesj3LhYi6fKb-8-BGEuV8AcS_yUpHcFIvntgnO=w156-h114-p-k-no",
+        "publicId": "google-maps/life-style-boys-hostel-in-islamabad-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE2JZMxF2FY4talf8NFl3s6W-gX53A-Kb7XG1fqbk-oKpcYr0btyyM_DhZsfu9xNICKt9Ao6Hjww0obrsTUI8wizkemwx3MB-ouQRhkqzXD4XNqffQNuD7TSH5-b4Z6QEU7B9YpTQ=w156-h114-p-k-no",
+        "publicId": "google-maps/life-style-boys-hostel-in-islamabad-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE7-QnpAIY3q3KYKp3PnL_1E2Kr0HpjyVZiNmNNbWbGoGD_4n0O3d05ihr9ESfk_ee99egU1i5zP7O8CvYJ5rFti1EKdOjF6S2hn0A1u3nEnVQsPFQjL_A_mQI5oE5aTkhf7ugi=w156-h114-p-k-no",
+        "publicId": "google-maps/life-style-boys-hostel-in-islamabad-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEwNvSWLhQNDfDlhnwBe09P-QhGMxYPt4-dLGAOOrFzj_s89yc1BzQ-3iw1oNdHU0EB2ZuAmQk-pPyIOA2DoDf0YFBuEsG2IiIWibdJKcZKST6hDRcNhkhuxaKYGcPGbtbXwj9BWg=w156-h114-p-k-no",
+        "publicId": "google-maps/life-style-boys-hostel-in-islamabad-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 312 5344725",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Street 47",
+      "Islamabad"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Luxury living boys hostel",
+    "description": "Luxury living boys hostel is a boys hostel located in 181 Street 97, Islamabad.",
+    "city": "Islamabad",
+    "area": "181 Street 97",
+    "address": "181 Street 97, I-8/4 I 8/4 I-8, Islamabad, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGZBtSY9SRfnPzGNbfgxSCSDsAf0wuNynuDnEt9CohVN_k0-ZgdrKbm10ZwprCCVmvujKauFD3_I7ee1fuhVW4DpVahnC_ijYzStCO-Zih4wBLOUN24nBkSEAIys3cSeOrb157-W8RU2ZwF=w408-h544-k-no",
+        "publicId": "google-maps/luxury-living-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGZBtSY9SRfnPzGNbfgxSCSDsAf0wuNynuDnEt9CohVN_k0-ZgdrKbm10ZwprCCVmvujKauFD3_I7ee1fuhVW4DpVahnC_ijYzStCO-Zih4wBLOUN24nBkSEAIys3cSeOrb157-W8RU2ZwF=w224-h298-k-no",
+        "publicId": "google-maps/luxury-living-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFjFuz4_9pvnB3Yr28gGjdRAR2vWixiKod8YBlYMDugvoGizOzF-O_Szdg6VFiqMLPjBb8-VTTkJOucfVognkDfL0RGeYQ-xmuTNjnuqMFDI5siIBEd-6_1UdSfPZ3yrdnTD85DmA=w224-h298-k-no",
+        "publicId": "google-maps/luxury-living-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGyDYC6iuHCRaPw7_ad5T-4Da0Hw9IR7MnPN2M1nsTJJ2Rd11K_IOox6fE6nDYBFHQmu8-iitofjPoDE6esYj2zUzPUivJ04zJnm6Zf7DKBMQWKGKsJMHa2vXXfUa9D-1yDWrujEzxub3O-=w224-h398-k-no",
+        "publicId": "google-maps/luxury-living-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGOZy3d5b0WAv6YigDT2cQaFwPrmKRkkhQlyS_zFbWXGgU4y_wHTDjh6J0OiUJcA--N5lkVkC8ECOSuryy0n3ppNLG1SRBo0otda9WBOU51aef02-xyAy_Tznnr-2u5UOJTLPJD=w529-h298-k-no",
+        "publicId": "google-maps/luxury-living-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHlv4A7KtCaiVLkC9BOuJjxPVOXc8ct1mimt3Olk_TNMOGvh_Pgsp_puCYYPesHj9rRIAZcsj6Iln2PUxJlwP4H-b6BnfXK8lhZukIX9M_-wpPcJrZ_Qi_aCBPnwLbr1KtMySF0zw=w529-h298-k-no",
+        "publicId": "google-maps/luxury-living-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG79bIm3BH8W7ebmlueZ6jZy-OU3qZq3hfB0gALEg6OXe4xXnbRWqurOoG9LC0o2QtX5v21EoJPtTBs35lTUltKVylYW-LDBi5gBnlEibkfhsJe2CA0_1ZGVzQ0KIJjbM6CsCl8FwUP5p3y=w224-h298-k-no",
+        "publicId": "google-maps/luxury-living-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXxxV9-wOJD2D3mEIuCEWryNW1-Qksj3e2r_hv48sPXfLyqWhCz=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/luxury-living-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 342 9265002",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "181 Street 97",
+      "Islamabad"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Khan Boys Hostel",
+    "description": "Khan Boys Hostel is a boys hostel located in Potohar Rd, Islamabad.",
+    "city": "Islamabad",
+    "area": "Potohar Rd",
+    "address": "Potohar Rd, I-9 Markaz I 9 Markaz I-9, Islamabad, 44000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHFnNE8VS5qtk8Q8FtA1VvNBDLmGNPlUeXEUmBg_vjPomXXURIbU4YNJ_daiVYZyTgOYqqvj_3z907JYd09_vD2qOgNkNmIohQz5fuODecbw9Ni18GCY4droBwoyEUATASzR_0=w408-h544-k-no",
+        "publicId": "google-maps/khan-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4bZgFte7vHWT4dHUOxqo9n_u8O_oeSzHbnN7arHbyTiUeyreZLNX_c0w11LePj_iaMSvbL9USpbV0aBA0ZiQMVNNYHkNGoyGumU43arExQoCOJ05gHdajrpy-fyapoV0zJuWC=w156-h114-p-k-no",
+        "publicId": "google-maps/khan-boys-hostel-2"
+      },
+      {
+        "url": "https://lh4.googleusercontent.com/proxy/VKY4EIjINLtcrP_TLDoUoE8NqQyq-9fviBgEI0fd1avrYi36IYS53tv_YxLZOS4SG8K1CoiFS3spGRpOqRE2SO2HbX5R3wk3PKXhdfumBovGWUtAXpKxRXvbot33avx9_zbuV1VRYzV1wMxAKZPjR6-yhgRe3CA=w156-h114-p-k-no",
+        "publicId": "google-maps/khan-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHD5bHErF5L8C9sa3ZI6h5tmjJEZQ5NX7SAL6L2182v3Lxlqn5oHHJKz_5ceRW-lilF0MFbgUQhPWsAMQLkWiY_oXZK74zJg_-aKE7DJQPNXbYA9bffjJnyKMrc3zJn7zGRd0WU=w156-h114-p-k-no",
+        "publicId": "google-maps/khan-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEi3FHl5AdPMTuYjR_ArFnoH6Sno0RKUih1lonSzAYPVJdOCBtLgdU0pyfL_e3DR8IATmDzKCuBTO9tP3sHaT_5Y15kur4PQH6FRU0LPyuNDNp_Fk-0G4m7XnwZfZjEnE1wz-CBnnIHHcM=w156-h114-p-k-no",
+        "publicId": "google-maps/khan-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/proxy/EAdxWiucACT2q4kdnuogR2gZLabwIN7CjovVz4cUdIwfErtxll7cja5RBQ0q3IppqTu9p4-HvwvSWaPB1sQ93lSMICI1Dm_NaGIkkqFPqVIhjJsm7XVm81-piqoMVYpAdZwE_jsuZTHOy3QuiBLVlQkuKBlagQ=w156-h114-p-k-no",
+        "publicId": "google-maps/khan-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFd8acbVA7Os3AAvmPWKra1v71pz7QNc5Hrin45QdnIfZv6LqDGjhQBg_5ICJWMGKmibiWGF_yrlTTa1TJ75s3_Rl-WgELJPl7Oeb8Nq9ietkTjmXH7gyYZ-PKDofti4VFacL5S=w156-h114-p-k-no",
+        "publicId": "google-maps/khan-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF6jS51eS4d1tivg2QhchmlpORWwsZ_JzfmF-gpEm6SEC-4jJfYxcZ815R6e_mvQNJSup_EQoTX9U03ezoMmjHrVNqKzBIhBhNI8BOYRYxLCVSgb8lCk_LxxDltO4wwU0hOVHux=w156-h114-p-k-no",
+        "publicId": "google-maps/khan-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 300 5582402",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Potohar Rd",
+      "Islamabad"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Rising Star Boys Hostel",
+    "description": "Rising Star Boys Hostel is a boys hostel located in Flat#19, Islamabad.",
+    "city": "Islamabad",
+    "area": "Flat#19",
+    "address": "Flat#19, 3rd Floor, Shalimar Centre, Markaz, F-8 Markaz F 8 Markaz F-8, Islamabad, 44220, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEMduBuHTQXxqI5SdrGQ-QmxSXk1TmXOhGqDNNpTpnAYiFQ_mtniZYTBRIxpH4OGwaKL-CpsSLLaA1uL0n3w-coYYn3z5AU40aRQ9Snoy2bol1Ojc_x5RCZ6S0705264uGMsNpyX-A1zDs=w408-h272-k-no",
+        "publicId": "google-maps/rising-star-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEMduBuHTQXxqI5SdrGQ-QmxSXk1TmXOhGqDNNpTpnAYiFQ_mtniZYTBRIxpH4OGwaKL-CpsSLLaA1uL0n3w-coYYn3z5AU40aRQ9Snoy2bol1Ojc_x5RCZ6S0705264uGMsNpyX-A1zDs=w447-h298-k-no",
+        "publicId": "google-maps/rising-star-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEA-7r7Zby01jE6YMhc5cvgePGC01ZuG9r70BJ62q3oCrn-xYwQye5vCBO5V8PY0GzSFYkJTa9lD5LfKjLz773AtsDwN59I4Jv9QsRr0yaFdH6CMd_kDFrREuu-jRzQwG7oq2vd9oU9QnA=w224-h298-k-no",
+        "publicId": "google-maps/rising-star-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGknEDOndMgBzWFUh30VOyNNF2eR3H6IcFiuHuc3r9YB2ntE8GxwdnP9UtuRuTimRZjDlw0Jwo1qQ9d2Y4-LISjGAZrT9fev_b9amPAUcJ8gcTyWjVOnrpSFgwcoBgIr4c-AQNoAtiH1wOC=w224-h398-k-no",
+        "publicId": "google-maps/rising-star-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGGTT-U_C04oUYKkRjv66j3PMwVvfsRustl_uh2xqtx2MSeGlMI1raJNRtvJLwSmmumQ4CsueO8NTvpWOSCAmV3wgjfPrltrCfWzY0UmDdU3kAmQguADQvf_BMvf_G09qeayVB0vPzqflA=w397-h298-k-no",
+        "publicId": "google-maps/rising-star-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEbZKivLjBcZQX2nz8R530Kad1DWqvk37Y8W6-lHawCeuQBKCP4sJqAozggRXHlH3Yzns-GPk6mKOCxYkSpfgDR_cPeJhrZZUqS1jqnJIQX32Pscwbu-jeE0x7wFSg9Iu9dSVLXH31j42nb=w397-h298-k-no",
+        "publicId": "google-maps/rising-star-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocLTIl5JUlf2S-8K7LM2M52tzVkET0exC2hYeGR9NlCbHozSraDE=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/rising-star-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWW-3F5RymOQaGnZvPJe3PKzfK0tTJzeWNa8HFYmZpS2NdYk70FCQ=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/rising-star-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 312 5920479",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Flat#19",
+      "Islamabad"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Executive INN Boys Hostel",
+    "description": "Executive INN Boys Hostel is a boys hostel located in 2nd Floor Walayat Plaza adjacent to NADRA EXECUTIVE OFFICE REHMANABAD, Rawalpindi.",
+    "city": "Rawalpindi",
+    "area": "2nd Floor Walayat Plaza adjacent to NADRA EXECUTIVE OFFICE REHMANABAD",
+    "address": "2nd Floor Walayat Plaza adjacent to NADRA EXECUTIVE OFFICE REHMANABAD, Murree Rd, Block A Satellite Town, Rawalpindi, 46000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4FPdp1dWuHvsm7PdPieZdsHOor8yfpumYE1hN4v4S893M9NF62mXp5n9fx4pmhpMUPv0N7cZVlSWQGXTxbsFeuue1uRzgUiQ7_6Q-YJqvjm4OvC8w_YkGXm4TTCknLmDGNo5OiP68tsdc=w408-h544-k-no",
+        "publicId": "google-maps/executive-inn-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4FPdp1dWuHvsm7PdPieZdsHOor8yfpumYE1hN4v4S893M9NF62mXp5n9fx4pmhpMUPv0N7cZVlSWQGXTxbsFeuue1uRzgUiQ7_6Q-YJqvjm4OvC8w_YkGXm4TTCknLmDGNo5OiP68tsdc=w224-h298-k-no",
+        "publicId": "google-maps/executive-inn-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE9nzxx_u2JyyKksH3pvtzPYDImYfzRkSbYfdAuSvfY2w2QSFXr1LB1A8PTOkpCMpXzhf5g61Abda8Wlrnkd7wTDgwvR9gJMI6f1UmduQV4EMsro3FXnXUPHqtENPKIhXKXYM6vjQ=w224-h398-k-no",
+        "publicId": "google-maps/executive-inn-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocKgsUv-dfW5IfC-YZC1m6_m4VEMkn_Nu3Ret926CbhY_A7SRQ=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/executive-inn-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVT4F1cFb0mY-t7zcZTjJDE8DygM8hNQJlJeHVDo1UyzgvFzLY=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/executive-inn-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjW5k8DqPevfFkMK4ZSezBT_Tkc9VF1Q3p7G16FfHP2nINPF9DQB=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/executive-inn-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYjNHZHABza2X68P4CrB0lHmqbDJSGJmZjUJ3lBgEqJ6pWf5YOBaO4pktyWPKxZIxYMqaBcXB95u9zXMnenInkgs0Mo6z2UmJtGbD9rMzx_QyBjTjcBa6DJnR_WDXdEBb_22_u4vsXWW_2=w156-h114-p-k-no",
+        "publicId": "google-maps/executive-inn-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGxfn4B6_qgj7LPMupRW45bRrfjQvrHzzVl2kExghkn_w8wxMwCM1f_n-KFHegaRvYBJdbFxlEWdjdNAWbpawy8JAplFZmffoi3SXNIWzcNt1RvaUqgUNtTFbKPsAtPOJj2y-kLTw=w156-h114-p-k-no",
+        "publicId": "google-maps/executive-inn-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 322 9500095",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "2nd Floor Walayat Plaza adjacent to NADRA EXECUTIVE OFFICE REHMANABAD",
+      "Rawalpindi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Boys Hostel in Rawalpindi Hostel Rooms in RWP",
+    "description": "Boys Hostel in Rawalpindi Hostel Rooms in RWP is a boys hostel located in Shop # 235 Choti Market Rd, Rawalpindi.",
+    "city": "Rawalpindi",
+    "area": "Shop # 235 Choti Market Rd",
+    "address": "Shop # 235 Choti Market Rd, B-Block Block B Satellite Town, Rawalpindi, 46300, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGe6R2iIHboH47TigA2TLxWoptKQDP_abpUg685qBkOe5aYHibjHbPn2UFnNmmwRrL4y7EWezTiusTjeDvNK3qi6_Pj7Lg1LMu7nEdDNl1hJee9mqzECzzEOYXKUVCPYM--gBz2=w408-h544-k-no",
+        "publicId": "google-maps/boys-hostel-in-rawalpindi-hostel-rooms-in-rwp-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGe6R2iIHboH47TigA2TLxWoptKQDP_abpUg685qBkOe5aYHibjHbPn2UFnNmmwRrL4y7EWezTiusTjeDvNK3qi6_Pj7Lg1LMu7nEdDNl1hJee9mqzECzzEOYXKUVCPYM--gBz2=w224-h298-k-no",
+        "publicId": "google-maps/boys-hostel-in-rawalpindi-hostel-rooms-in-rwp-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF-su71Z4VgWEAmFCXmnpSghkSY6Xr_uGDpYRJV2LjiuVNjLN5tCxAe2HocyZ0ROZHyuNtOwJHEetjJ95tzzMXovXPjH7W37mqH1yF9qTjHIV7XvDDu0f9S2JtjdzFpu77NBo7w6w=w224-h298-k-no",
+        "publicId": "google-maps/boys-hostel-in-rawalpindi-hostel-rooms-in-rwp-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGQomjEANA36jVB0DVIexkWgb-1ONf8v4yob9zP9t6pDIJgiAHCnA428NlmkljIHuiKM6VFdxCrvOmVdF4tqAEc3dGf__6YmdjtOhgHQsAyicSwznPM4upNoUEXadIQx74VIoMY=w224-h398-k-no",
+        "publicId": "google-maps/boys-hostel-in-rawalpindi-hostel-rooms-in-rwp-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGDbHc80LqkN2g_fEHe3DJnkEfr8wuBbdQAzZfhUchMIf2kxPgHxTsKHgKGpktw3JIE3xb70N5DCbI4OmW-aUYN8s_I_3rwegxp7ZwYxspUONLHiRjeh-gkzJamEOzro-4N2AEXwQ=w298-h298-k-no",
+        "publicId": "google-maps/boys-hostel-in-rawalpindi-hostel-rooms-in-rwp-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUnmoFpO609-H_3lC4MZZCDDoU378vea3ItK688uERO4AAMBY0Z=w36-h36-p-rp-mo-ba3-br100",
+        "publicId": "google-maps/boys-hostel-in-rawalpindi-hostel-rooms-in-rwp-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjV_zoamtLT0n3g7mrloHCJAiCjLMdunzyaRJkSkQeG0nZW1vWhn=w36-h36-p-rp-mo-ba6-br100",
+        "publicId": "google-maps/boys-hostel-in-rawalpindi-hostel-rooms-in-rwp-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a/ACg8ocJUfUuKCLxKAnO9Fno9zgSYQd4c5UPiMkmVNnOSV4Fe2zYBLw=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/boys-hostel-in-rawalpindi-hostel-rooms-in-rwp-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 333 1332350",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Shop # 235 Choti Market Rd",
+      "Rawalpindi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Galaxy Boys Hostel",
+    "description": "Galaxy Boys Hostel is a boys hostel located in Mian Afzal St, Rawalpindi.",
+    "city": "Rawalpindi",
+    "area": "Mian Afzal St",
+    "address": "Mian Afzal St, Shamsabad, Rawalpindi, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF_5bxLOQD_kNjlNvv2Xd8YGUQqpgXGX_ETBB6gdpF5elLqCtQSoRp-U4Aib2q3du7S6cQTVQxFylAUlLFFBySXLeBXNdQMFQtcYt3LPgcm_gHS_IGE35V0JiL5sd9K9L76xGpKZA=w408-h306-k-no",
+        "publicId": "google-maps/galaxy-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF_5bxLOQD_kNjlNvv2Xd8YGUQqpgXGX_ETBB6gdpF5elLqCtQSoRp-U4Aib2q3du7S6cQTVQxFylAUlLFFBySXLeBXNdQMFQtcYt3LPgcm_gHS_IGE35V0JiL5sd9K9L76xGpKZA=w397-h298-k-no",
+        "publicId": "google-maps/galaxy-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHma2Z-70POdn3HikpX30P9dpJhqQnKfPN2nL3Y0NJ2VdDKYaSHoNQp00AUociWpHYMNEFVEU30VhPyQwLFrtru7Bvy5f8QTyYuqZHSqmYeolHiSfYdFpFvCILrok36ywU5LN2h=w224-h298-k-no",
+        "publicId": "google-maps/galaxy-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHWcp_j0wJj36_-oxVw5NY5aeY-casaR7FHVYepcqbXjZHim0m9k-ti-DNtLBgXffDvLKPGt7DaViWLIcxxYuKiOAax7T4Wst8qSwVsAMHgm9yJcnJ3QScBhOWzxWfO5IS6t7qhNQ=w224-h398-k-no",
+        "publicId": "google-maps/galaxy-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFjVXQbjn92FQeUFjom2glor3FrJ51FYTcqjmPk_wXjt2KvTKWDRt8A5cnVrbKQLv4xON_Z2vEL1aeoftPT65Yw2giQw0xN6TcX8tx2WaPSrLW4xvO6uGz5FCDDswj3wtmTa5Rjl0hg5tk=w224-h298-k-no",
+        "publicId": "google-maps/galaxy-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpp1etxRNovJj3zdOoLX1JL129VdNxbLdTKlgTZcCLsiwSFnrqryLjubM20Wc_s68sb_hKLZoU58L5PjPHbcWnifCJCIel8AmKrseeCLhjsWu2ZPkZdqrO0JGYC_xxHHon7OXYKQ=w224-h470-k-no",
+        "publicId": "google-maps/galaxy-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEjbTFqWl8pm7o-Uc5CmF99R-ec0baR73q0g2tXyPkJxdq5AYTV1xWJV-5VGJ8fN5iWLQDZ3ERb4zmDKX8vUXRwfby8Qb6wOpy1fFVywNfvAhyS1yYMZ_k1ZEjOf_FztQ7Z8lacaA=w224-h445-k-no",
+        "publicId": "google-maps/galaxy-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVmidfAYnVuCwWQUx71vS6lwFvkZ41Zyub55o8ry-K_-7y3zTzS=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/galaxy-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 344 5985362",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "Mian Afzal St",
+      "Rawalpindi"
+    ],
+    "verified": false
+  },
+  {
+    "name": "JAMSHED BOYS HOSTEL",
+    "description": "JAMSHED BOYS HOSTEL is a boys hostel located in B-87 Commercial Market Rd, Rawalpindi.",
+    "city": "Rawalpindi",
+    "area": "B-87 Commercial Market Rd",
+    "address": "B-87 Commercial Market Rd, B-Block Block B Satellite Town, Rawalpindi, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYjNHZHABza2X68P4CrB0lHmqbDJSGJmZjUJ3lBgEqJ6pWf5YOBaO4pktyWPKxZIxYMqaBcXB95u9zXMnenInkgs0Mo6z2UmJtGbD9rMzx_QyBjTjcBa6DJnR_WDXdEBb_22_u4vsXWW_2=w408-h725-k-no",
+        "publicId": "google-maps/jamshed-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEct_-RbyxQwXTpsxBevpMx4iP7V24needbxyqYp4Uy4BpO3OOOOICSy5xZhD0nsSKM9JIaDcBNZXLkWlV5dAKkPb9_j_JcpwqIFM3FomHUNwcxYoyYSIpOHLhsubl4vdfnwxub=w156-h114-p-k-no",
+        "publicId": "google-maps/jamshed-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEooyTq4X-cDfIeKDiA-bKH1UCHiXLHOdZV0ZQoJr-2-EiEgMf98HbbGVnFhek4ATJg3j3-ryjyNqbKm63qVVGF4ZUEwx3zyvMGjg7cu4vk4c99LGfBmfxLx8BO5DzWC-6GHuRi23Q3blC6=w156-h114-p-k-no",
+        "publicId": "google-maps/jamshed-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGCxcyjZGBig-zMkpvUw8gvi8nXdtqhCG4fWZ3MFy480iLHe2_Tgt9Hu8S2OKLIZD1WqvTFgGNF1hVdpsKLXd1tN3NLCkkqWT_jTuWQ-8dbwXES_Yybw0SOaCjmWFlngkZ_90syTQ=w156-h114-p-k-no",
+        "publicId": "google-maps/jamshed-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGxfn4B6_qgj7LPMupRW45bRrfjQvrHzzVl2kExghkn_w8wxMwCM1f_n-KFHegaRvYBJdbFxlEWdjdNAWbpawy8JAplFZmffoi3SXNIWzcNt1RvaUqgUNtTFbKPsAtPOJj2y-kLTw=w156-h114-p-k-no",
+        "publicId": "google-maps/jamshed-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAElPTw8IytqWSzbQz47PpDtXkdZ6_kd3B6w6FHPLMo7tPiZHFVTmzRR5ottc4V0rqWG-uYLJwsI9DdS1s8FrdCXk29KIZVYQvpdhpzwchGtraIa37wQ014V0vHMb-0S35eBUDOXRA=w156-h114-p-k-no",
+        "publicId": "google-maps/jamshed-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFo1HdKvefwqlBtYiAx_8QgkzzSCLYASyc-tu0uX-Z1wu4qnJR1wiYFNhTAsf6L-FNsr3UdSY9tvmYmYJw02x_usEIeEhkgNuAz7OhQ0V1Ee997qqwdJQkvM1pxVplAR5eC-IDI=w156-h114-p-k-no",
+        "publicId": "google-maps/jamshed-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYjNHZHABza2X68P4CrB0lHmqbDJSGJmZjUJ3lBgEqJ6pWf5YOBaO4pktyWPKxZIxYMqaBcXB95u9zXMnenInkgs0Mo6z2UmJtGbD9rMzx_QyBjTjcBa6DJnR_WDXdEBb_22_u4vsXWW_2=w224-h398-k-no",
+        "publicId": "google-maps/jamshed-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 333 3462324",
+    "capacity": [],
+    "nearbyUniversities": [],
+    "tags": [
+      "boys",
+      "B-87 Commercial Market Rd",
+      "Rawalpindi"
+    ],
+    "verified": false
+  }
+]

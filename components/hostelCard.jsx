@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Star, Heart, Trash } from "lucide-react";
+import { Star, Trash } from "lucide-react";
 import Image from "next/image";
 import { deleteHostel } from "@/utils/https";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
@@ -15,29 +15,15 @@ export default function HostelCard({ hostel, showDeleteButton }) {
             queryClient.invalidateQueries({ queryKey: ['my-hostels'] });
         },
     });
-    const renderTypeIcon = (type) => {
-        if (type === 'boys') {
-            return (
-                <span className="inline-flex items-center gap-1 font-bold bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full text-[10px] uppercase tracking-wider border border-blue-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><circle cx="10" cy="14" r="5" /><line x1="13.5" y1="10.5" x2="21" y2="3" /><line x1="16" y1="3" x2="21" y2="3" /><line x1="21" y1="3" x2="21" y2="8" /></svg>
-                    Boys
-                </span>
-            );
-        }
-        if (type === 'girls') {
-            return (
-                <span className="inline-flex items-center gap-1 font-bold bg-pink-50 text-pink-600 px-2 py-0.5 rounded-full text-[10px] uppercase tracking-wider border border-pink-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="10" r="5" /><line x1="12" y1="15" x2="12" y2="22" /><line x1="9" y1="19" x2="15" y2="19" /></svg>
-                    Girls
-                </span>
-            );
-        }
-        return (
-            <span className="inline-flex items-center gap-1 font-bold bg-purple-50 text-purple-600 px-2 py-0.5 rounded-full text-[10px] uppercase tracking-wider border border-purple-200">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                Co-ed
-            </span>
-        );
+    const getHostelTypeLabel = (type) => {
+        if (type === 'boys') return 'Boys';
+        if (type === 'girls') return 'Girls';
+        return 'Co-ed';
+    };
+    const getHostelTypeBadgeClass = (type) => {
+        if (type === 'boys') return 'bg-sky-50/95 text-sky-700 ring-sky-200/80';
+        if (type === 'girls') return 'bg-rose-50/95 text-rose-700 ring-rose-200/80';
+        return 'bg-white/95 text-slate-900 ring-black/5';
     };
 
     return (
@@ -77,25 +63,35 @@ export default function HostelCard({ hostel, showDeleteButton }) {
                         Verified
                     </div>
                 )}
+
+                <div className={`absolute bottom-3 left-3 rounded-full px-3 py-1 text-[12px] font-medium shadow-sm ring-1 backdrop-blur ${getHostelTypeBadgeClass(hostel.hostelType)}`}>
+                    {getHostelTypeLabel(hostel.hostelType)}
+                </div>
             </div>
 
             {/* Info Container */}
-            <div className="flex flex-col">
-                <div className="flex justify-between items-start">
-                    <h3 className="font-semibold text-slate-900 truncate text-[15px]">{hostel.name}</h3>
-                    <div className="flex items-center gap-1 text-[14px] shrink-0">
-                        <Star size={13} className="fill-slate-900 text-slate-900" />
+            <div className="flex flex-col gap-0.5">
+                <div className="flex items-start justify-between gap-3">
+                    <h3 className="min-w-0 flex-1 truncate text-[15px] font-medium leading-5 text-slate-950">
+                        {hostel.name}
+                    </h3>
+                    <div className="flex shrink-0 items-center gap-1 pt-0.5 text-[14px] leading-none text-slate-900">
+                        <Star size={12} className="fill-slate-900 text-slate-900" />
                         <span>4.9</span>
                     </div>
                 </div>
-                <div className="flex items-center gap-2 mt-0.5">
-                    {renderTypeIcon(hostel.hostelType)}
-                    <p className="text-slate-500 text-[14px] truncate">{hostel.area}, {hostel.city}</p>
-                </div>
-                <div className="mt-1 flex items-baseline gap-1">
-
-                    <span className="font-semibold text-slate-900 text-[15px]">Rs. {hostel.price?.toLocaleString()}</span>
-                    <span className="text-slate-900 text-[15px]">month</span>
+                <p className="truncate text-[14px] leading-5 text-slate-500">{hostel.area}, {hostel.city}</p>
+                <div className="mt-1 flex items-baseline gap-1.5">
+                    {hostel.price ? (
+                        <>
+                            <span className="text-[15px] font-semibold leading-5 text-slate-950">
+                                Rs. {hostel.price.toLocaleString()}
+                            </span>
+                            <span className="text-[13px] leading-5 text-slate-500">per month</span>
+                        </>
+                    ) : (
+                        <span className="text-[15px] font-semibold leading-5 text-slate-950">Contact for price</span>
+                    )}
                 </div>
             </div>
         </Link>

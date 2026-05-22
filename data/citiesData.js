@@ -98,7 +98,9 @@ export const citiesData = {
     'New Garden Town - Sher Shah Block',
     'New Garden Town - Tariq Block',
     'New Garden Town - Tipu Block',
-    'New Garden Town - Usman Block'
+    'New Garden Town - Usman Block',
+    'Garden Town',
+    'Quaid-i-Azam Campus'
   ].sort(),
   'Karachi': [
     'Clifton', 'DHA Phase 1', 'DHA Phase 2', 'DHA Phase 3', 'DHA Phase 4', 'DHA Phase 5',
@@ -110,7 +112,8 @@ export const citiesData = {
     'Jinnah Avenue', 'Shahra-e-Faisal', 'Tariq Road', 'Bahadurabad', 'KDA Scheme 1',
     'Defence View', 'Navy Housing Scheme', 'Mehmoodabad', 'Manzoor Colony', 'Akhtar Colony',
     'Azam Basti', 'Jacob Lines', 'Lines Area', 'Soldier Bazaar', 'Amil Colony',
-    'Bihar Colony', 'Baldia Town', 'Ittihad Town', 'Kemari', 'SITE Area', 'Manora'
+    'Bihar Colony', 'Baldia Town', 'Ittihad Town', 'Kemari', 'SITE Area', 'Manora',
+    'House B-63', 'Plot 254 D', 'Plot C', 'Building N', 'Plot/Survey # 336/2', 'Chand Bibi Rd', 'R28V+M4M', 'FL-39', 'Plot A، 189 Street 11', 'W4P6+956'
   ].sort(),
   'Islamabad': [
     'F-6', 'F-7', 'F-8', 'F-10', 'F-11', 'G-6', 'G-7', 'G-8', 'G-9', 'G-10', 'G-11',
@@ -122,7 +125,8 @@ export const citiesData = {
     'Gulberg Greens', 'Gulberg Residencia', 'Bani Gala', 'Bara Kahu', 'Soan Garden',
     'PWD Housing Society', 'Korang Town', 'Naval Anchorage', 'Pakistan Town',
     'Zaraj Housing Society', 'Multi Gardens (B-17)', 'CBR Town', 'Police Foundation',
-    'Swan Garden', 'River Garden', 'Judicial Town', 'Faisal Town'
+    'Swan Garden', 'River Garden', 'Judicial Town', 'Faisal Town',
+    'House 15', 'House#8-C Street No. 13', 'Lane 10', 'House no 588', 'Street 1', 'House 98 Street 96', 'Street 47', '181 Street 97', 'Potohar Rd', 'Flat#19'
   ].sort(),
   'Rawalpindi': [
     'Saddar', 'Bahria Town Phase 1-6', 'Bahria Town Phase 7-8', 'Satellite Town',
@@ -133,7 +137,8 @@ export const citiesData = {
     'Gulrez 4', 'Morgah', 'Lalazar', 'Tench Bhata', 'Shamsabad', 'Muslim Town',
     'Double Road', 'Committee Chowk', 'Raja Bazar', 'Commercial Market', 'Tulsa Road',
     'Range Road', 'Peshawar Road', '6th Road', 'Saidpur Road', 'Dhoke Hassu',
-    'Dhoke Khabba', 'Pirwadhai', 'Khayaban-e-Sir Syed', 'Gulshan-e-Abad', 'Kuri Road'
+    'Dhoke Khabba', 'Pirwadhai', 'Khayaban-e-Sir Syed', 'Gulshan-e-Abad', 'Kuri Road',
+    'Adyala', 'street 1', 'Dhok Paracha Block A Satellite Town', 'Office 201', '65-A', '2nd Floor Walayat Plaza adjacent to NADRA EXECUTIVE OFFICE REHMANABAD', 'Shop # 235 Choti Market Rd', 'Mian Afzal St', 'B-87 Commercial Market Rd'
   ].sort()
 };
 

@@ -5,6 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 import { MapPin, Users, Star, Loader2, Plus, Building2, CheckCircle2, Clock } from 'lucide-react';
 import Link from 'next/link';
 import HostelCard from './hostelCard';
+import CardSkeleton from './cardSkeleton';
 import { useAuth } from '@/context/AuthContext';
 
 export default function MyHostels({ ownerId }) {
@@ -23,9 +24,15 @@ export default function MyHostels({ ownerId }) {
 
     if (isLoading) {
         return (
-            <div className="bg-white rounded-2xl border border-slate-100 p-12 flex flex-col items-center justify-center">
-                <Loader2 className="animate-spin text-secondary mb-4" size={32} />
-                <p className="text-slate-500 font-medium">Loading your listings...</p>
+            <div className="space-y-4">
+                <div className="flex items-center justify-between px-2">
+                    <h3 className="text-lg font-bold text-slate-800">My Listings</h3>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    {[...Array(5)].map((_, i) => (
+                        <CardSkeleton key={i} />
+                    ))}
+                </div>
             </div>
         );
     }

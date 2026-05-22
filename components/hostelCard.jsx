@@ -6,6 +6,7 @@ import Image from "next/image";
 import { deleteHostel } from "@/utils/https";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
+
 export default function HostelCard({ hostel, showDeleteButton }) {
     const queryClient = useQueryClient();
     const deleteMutation = useMutation({

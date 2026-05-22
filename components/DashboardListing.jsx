@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { fetchHostels } from "@/utils/https";
 import { useAuth } from "@/context/AuthContext";
 import HostelCard from "./hostelCard";
+import CardSkeleton from "./cardSkeleton";
 
 export default function DashboardListing() {
     const { currentCity } = useAuth();
@@ -35,13 +36,20 @@ export default function DashboardListing() {
             <h1 className="font-bold text-2xl mb-6">
                 {currentCity ? `Popular Hostels in ${currentCity}` : "Popular Hostels"}
             </h1>
-            <div className="flex gap-4 overflow-x-auto scrollbar-hide">{
-                !loading && hostels?.map((hostel) => (
-                    <div key={hostel._id} className="w-[200px] sm:w-[250px] shrink-0">
-                        <HostelCard hostel={hostel} />
-                    </div>
-                ))
-            }
+            <div className="flex gap-4 overflow-x-auto scrollbar-hide">
+                {loading ? (
+                    [...Array(5)].map((_, i) => (
+                        <div key={i} className="w-[200px] sm:w-[250px] shrink-0">
+                            <CardSkeleton />
+                        </div>
+                    ))
+                ) : (
+                    hostels?.map((hostel) => (
+                        <div key={hostel._id} className="w-[200px] sm:w-[250px] shrink-0">
+                            <HostelCard hostel={hostel} />
+                        </div>
+                    ))
+                )}
             </div>
 
         </div>

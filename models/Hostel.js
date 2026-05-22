@@ -58,6 +58,26 @@ const hostelSchema = new mongoose.Schema({
     seater: { type: String },
     price: { type: Number }
   }],
+  latitude: {
+    type: Number,
+  },
+  longitude: {
+    type: Number,
+  },
+  location: {
+    type: {
+      type: String,
+      enum: ['Point'],
+    },
+    coordinates: {
+      type: [Number],
+    }
+  },
+  nearbyPlaces: [{
+    name: String,
+    type: { type: String }, // 'hospital', 'university', 'office', 'park', etc.
+    distanceKm: Number
+  }],
   nearbyUniversities: [{
     type: String,
   }],

@@ -101,6 +101,10 @@ export const citiesData = {
     'New Garden Town - Usman Block',
     'Garden Town',
     'Quaid-i-Azam Campus'
+  ,
+    '30-A', 'Street number 35', '1183', '1118', 'Gate 1 Defence Rd', 'C646+H3M', '1162 M Block LDA Ave 1', '498-3-C1 House # 498 Street 8', 'D1', 'Minhaj Rd', 'Revenue Employees Cooperative Housing Society'
+  ,
+    '428', 'Sector B-1 Block 12 Sector B 1 Lahore'
   ].sort(),
   'Karachi': [
     'Clifton', 'DHA Phase 1', 'DHA Phase 2', 'DHA Phase 3', 'DHA Phase 4', 'DHA Phase 5',

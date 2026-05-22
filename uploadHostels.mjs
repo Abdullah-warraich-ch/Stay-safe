@@ -38,6 +38,22 @@ async function uploadData() {
         newAreas[city].add(area);
       }
 
+      // Filter out Google Maps user avatar/review images (tiny 36x36 profile photos)
+      // These are identifiable by URL patterns like w36-h36, /a/ACg8oc, /a-/ALV-Uj, or p-rp-mo flag
+      const isAvatarImage = (url) => {
+        if (!url) return true;
+        return (
+          url.includes('w36-h36') ||
+          url.includes('p-rp-mo') ||
+          url.includes('/a/ACg8oc') ||
+          url.includes('/a-/ALV-Uj')
+        );
+      };
+      const filteredImages = (hostel.images || []).filter(img => !isAvatarImage(img.url));
+
+      // Extract nearby places names for tags
+      const nearbyTags = (hostel.nearbyPlaces || []).map(place => place.name);
+
       // B. SEO Optimizations
       // Generate rich tags for search index
       const seoTags = [
@@ -47,7 +63,8 @@ async function uploadData() {
         `${hostel.hostelType} hostel in ${area}`,
         `hostel near ${area}`,
         "affordable",
-        "student accommodation"
+        "student accommodation",
+        ...nearbyTags
       ];
 
       // Generate SEO friendly description if missing or short
@@ -72,6 +89,7 @@ async function uploadData() {
 
       return {
         ...hostel,
+        images: filteredImages,  // ✅ Use avatar-stripped images
         owner: OWNER_ID,
         description: description,
         tags: Array.from(new Set([...(hostel.tags || []), ...seoTags])), // Merge existing with new

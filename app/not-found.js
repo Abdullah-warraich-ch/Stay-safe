@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Button from "../components/ui/Button";
 
+export const metadata = {
+  title: 'Page Not Found',
+  description: 'The page you are looking for does not exist. Return to Stay Safe to find verified hostels in Pakistan.',
+};
+
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center px-6">

@@ -3,6 +3,43 @@ import Nav from '@/components/Nav';
 import { fetchHostels } from '@/utils/https';
 import HostelCard from '@/components/hostelCard';
 
+export async function generateMetadata({ searchParams }) {
+    const resolvedParams = await searchParams;
+    const city = resolvedParams.city || '';
+    const area = resolvedParams.area || '';
+    const hostelType = resolvedParams.hostelType || '';
+
+    // Build dynamic title parts
+    const typePart = hostelType ? `${hostelType.charAt(0).toUpperCase() + hostelType.slice(1)} ` : '';
+    const locationPart = area && city
+        ? `in ${area}, ${city}`
+        : city
+            ? `in ${city}`
+            : 'in Pakistan';
+
+    const title = `${typePart}Hostels ${locationPart}`;
+    const description = `Browse verified ${typePart.toLowerCase()}hostels ${locationPart}. Compare prices, amenities, and room types. Find affordable student accommodation with Stay Safe.`;
+
+    const keywords = [
+        'hostel', 'student accommodation', 'affordable hostel',
+        city && `${city} hostel`,
+        area && `${area} hostel`,
+        hostelType && `${hostelType} hostel`,
+        city && area && `hostel in ${area} ${city}`,
+    ].filter(Boolean);
+
+    return {
+        title,
+        description,
+        keywords,
+        openGraph: {
+            title: `${title} | Stay Safe`,
+            description,
+            type: 'website',
+        },
+    };
+}
+
 export default async function HostelsPage({ searchParams }) {
     const resolvedParams = await searchParams;
 

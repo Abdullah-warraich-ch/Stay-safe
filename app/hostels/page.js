@@ -1,7 +1,7 @@
-
 import Nav from '@/components/Nav';
-import { fetchHostels } from '@/utils/https';
 import HostelCard from '@/components/hostelCard';
+import connectDB from '@/lib/db';
+import Hostel from '@/models/Hostel';
 
 export async function generateMetadata({ searchParams }) {
     const resolvedParams = await searchParams;
@@ -43,24 +43,31 @@ export async function generateMetadata({ searchParams }) {
 export default async function HostelsPage({ searchParams }) {
     const resolvedParams = await searchParams;
 
-    const params = new URLSearchParams(resolvedParams);
-    const data = await fetchHostels(params.toString());
+    await connectDB();
+    const query = {};
+    if (resolvedParams.gender) query.hostelType = resolvedParams.gender;
+    if (resolvedParams.city) query.city = resolvedParams.city;
+    if (resolvedParams.area) query.area = resolvedParams.area;
+    if (resolvedParams.isVerified) query.isVerified = resolvedParams.isVerified;
+    if (resolvedParams.acType) query.acType = resolvedParams.acType;
+    if (resolvedParams.wifi) query.wifi = resolvedParams.wifi;
+    if (resolvedParams.backupLight) query.backupLight = resolvedParams.backupLight;
+    if (resolvedParams.attachedBath) query.attachedBath = resolvedParams.attachedBath;
+    if (resolvedParams.seater) {
+        query.capacity = { $elemMatch: { seater: resolvedParams.seater } };
+    }
 
-
-
-
+    const hostels = await Hostel.find(query).lean();
+    const plainHostels = JSON.parse(JSON.stringify(hostels));
 
     return (
-
         <>
             <Nav />
             <main className='px-40  py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-8'>
-                {data?.data?.map((hostel) => (
+                {plainHostels?.map((hostel) => (
                     <HostelCard key={hostel._id} hostel={hostel} />
                 ))}
             </main>
-
         </>
-
     );
 }

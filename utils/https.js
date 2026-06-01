@@ -1,5 +1,5 @@
 export const fetchHostels = async (params) => {
-    const res = await fetch(`http://localhost:3000/api/hostels?${params}`, {
+    const res = await fetch(`/api/hostels?${params}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -10,7 +10,7 @@ export const fetchHostels = async (params) => {
 }
 
 export const deleteHostel = async (id) => {
-    const res = await fetch(`http://localhost:3000/api/hostels/${id}`, {
+    const res = await fetch(`/api/hostels/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',
@@ -19,3 +19,4 @@ export const deleteHostel = async (id) => {
     const data = await res.json();
     return data;
 }
+

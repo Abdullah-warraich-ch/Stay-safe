@@ -4,7 +4,7 @@ import Hostel from './models/Hostel.js';
 import { citiesData } from './data/citiesData.js';
 
 // Configuration
-const MONGO_URI = "mongodb+srv://staysafefindahostel:%40bduII%40h%402%40%402@cluster0.8emy4xq.mongodb.net/stay-safe?appName=Cluster0";
+const MONGO_URI = process.env.MONGO_URI
 const OWNER_ID = '6a031918f05706bfbe410011';
 const CITIES_FILE_PATH = './data/citiesData.js';
 
@@ -24,14 +24,14 @@ async function uploadData() {
     // 2. Read Input Data
     const data = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
     console.log(`📦 Found ${data.length} records to process.`);
-    
+
     const newAreas = {};
-    
+
     // 3. Normalize Data & Prepare for SEO
     const normalizedData = data.map(hostel => {
       const city = hostel.city;
       const area = hostel.area;
-      
+
       // A. Track missing areas
       if (!citiesData[city] || !citiesData[city].includes(area)) {
         if (!newAreas[city]) newAreas[city] = new Set();
@@ -107,19 +107,19 @@ async function uploadData() {
     const citiesToUpdate = Object.keys(newAreas);
     if (citiesToUpdate.length > 0) {
       console.log(`🗺️  Found missing areas for: ${citiesToUpdate.join(', ')}. Updating citiesData.js...`);
-      
+
       let citiesFileContent = fs.readFileSync(CITIES_FILE_PATH, 'utf8');
-      
+
       for (const city of citiesToUpdate) {
         const addedAreas = Array.from(newAreas[city]);
-        
+
         // Build the string to inject: 'Area 1', 'Area 2'
         const areasString = addedAreas.map(a => `'${a}'`).join(', ');
 
         // Regex to find the end of the specific city array and inject new areas before ].sort()
         // It looks for the city name, then any content until it hits ].sort()
         const regex = new RegExp(`('${city}'|"${city}")\\s*:\\s*\\[([\\s\\S]*?)\\]\\.sort\\(\\)`);
-        
+
         citiesFileContent = citiesFileContent.replace(regex, (match, p1, p2) => {
           // If the array is not empty, ensure we add a comma before our new areas
           const separator = p2.trim().length > 0 && !p2.trim().endsWith(',') ? ',' : '';
@@ -146,7 +146,7 @@ async function uploadData() {
         }
       };
     });
-    
+
     const result = await Hostel.bulkWrite(bulkOps);
     console.log(`✅ Database synced successfully!`);
     console.log(`   - New Hostels Added: ${result.upsertedCount}`);

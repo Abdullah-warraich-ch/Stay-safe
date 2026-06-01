@@ -5,7 +5,7 @@ import CitySection from "../components/CitySection";
 import CTASection from "../components/CTASection";
 import Footer from "../components/Footer";
 import { GuestRoute } from "@/components/ProtectedRoute";
-import DashboardListing from "@/components/DashboardListing";
+import ParentDashboardListing from "@/components/ParentDashboardListing";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <Nav />
         <main>
           <Hero />
-          <DashboardListing />
+          <ParentDashboardListing />
           <CitySection />
           <CTASection />
         </main>

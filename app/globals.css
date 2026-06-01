@@ -121,3 +121,15 @@ body {
 .animate-slideInTop {
   animation: slideInTop 0.3s ease-out;
 }
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and old Edge */
+  scrollbar-width: none;
+  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+  }
+}

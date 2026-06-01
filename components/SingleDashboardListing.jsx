@@ -14,6 +14,7 @@ export default function SingleDashboardListing({ currentCity }) {
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(false);
     const scrollRef = useRef(null);
+    const targetScrollRef = useRef(0);
 
     const checkScroll = () => {
         if (scrollRef.current) {
@@ -21,6 +22,31 @@ export default function SingleDashboardListing({ currentCity }) {
             setCanScrollLeft(scrollLeft > 2);
             setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 2);
         }
+    };
+
+    const handleScrollClick = (direction) => {
+        if (!scrollRef.current) return;
+        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+        
+        // Reset targetScrollRef to current scroll position if user manually scrolled
+        if (Math.abs(targetScrollRef.current - scrollLeft) > 100) {
+            targetScrollRef.current = scrollLeft;
+        }
+
+        // Scroll by 85% of container's clientWidth for an elegant 'peek' overlap
+        const step = clientWidth * 0.85;
+        const maxScroll = scrollWidth - clientWidth;
+
+        if (direction === "left") {
+            targetScrollRef.current = Math.max(0, targetScrollRef.current - step);
+        } else {
+            targetScrollRef.current = Math.min(maxScroll, targetScrollRef.current + step);
+        }
+
+        scrollRef.current.scrollTo({
+            left: targetScrollRef.current,
+            behavior: "smooth"
+        });
     };
 
     useEffect(() => {
@@ -73,7 +99,7 @@ export default function SingleDashboardListing({ currentCity }) {
                 </Link>
                 <div className="flex gap-2">
                     <button
-                        onClick={() => scrollRef.current?.scrollTo({ left: 0, behavior: "smooth" })}
+                        onClick={() => handleScrollClick("left")}
                         disabled={!canScrollLeft}
                         className={`w-8 h-8 flex items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-200
                             ${canScrollLeft
@@ -85,11 +111,7 @@ export default function SingleDashboardListing({ currentCity }) {
                         <ChevronLeft size={16} />
                     </button>
                     <button
-                        onClick={() => {
-                            if (!scrollRef.current) return;
-                            const maxScrollLeft = scrollRef.current.scrollWidth - scrollRef.current.clientWidth;
-                            scrollRef.current.scrollTo({ left: maxScrollLeft, behavior: "smooth" });
-                        }}
+                        onClick={() => handleScrollClick("right")}
                         disabled={!canScrollRight}
                         className={`w-8 h-8 flex items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-all duration-200
                             ${canScrollRight
@@ -102,24 +124,24 @@ export default function SingleDashboardListing({ currentCity }) {
                     </button>
                 </div>
             </div>
-            <div className="flex gap-4 overflow-x-auto scrollbar-hide py-4 -my-4" ref={scrollRef}>
+            <div className="flex gap-4 overflow-x-auto scrollbar-hide py-4 -my-4 snap-x snap-mandatory" ref={scrollRef}>
                 {loading ? (
                     [...Array(5)].map((_, i) => (
-                        <div key={i} className="w-[200px] sm:w-[250px] shrink-0">
+                        <div key={i} className="w-[240px] sm:w-[calc(33.33vw-36px)] md:w-[calc(25vw-36px)] lg:w-[calc(20vw-36px)] xl:w-[calc(16.66vw-36px)] max-w-[280px] shrink-0 snap-start">
                             <CardSkeleton />
                         </div>
                     ))
                 ) : (
                     <>
                         {hostels?.slice(0, 10).map((hostel) => (
-                            <div key={hostel._id} className="w-[200px] sm:w-[200px] shrink-0 ">
+                            <div key={hostel._id} className="w-[240px] sm:w-[calc(33.33vw-36px)] md:w-[calc(25vw-36px)] lg:w-[calc(20vw-36px)] xl:w-[calc(16.66vw-36px)] max-w-[280px] shrink-0 snap-start">
                                 <HostelCard hostel={hostel} />
                             </div>
                         ))}
                         {hostels && hostels.length > 0 && (
                             <Link
                                 href={currentCity ? `/hostels?city=${currentCity}` : "/hostels"}
-                                className="group flex flex-col gap-3 cursor-pointer w-[200px] sm:w-[200px] shrink-0"
+                                className="group flex flex-col gap-3 cursor-pointer w-[240px] sm:w-[calc(33.33vw-36px)] md:w-[calc(25vw-36px)] lg:w-[calc(20vw-36px)] xl:w-[calc(16.66vw-36px)] max-w-[280px] shrink-0 snap-start"
                             >
                                 <div className="relative aspect-square overflow-hidden rounded-xl border border-slate-100 bg-white shadow-[0_0_12px_rgba(0,0,0,0.05)] group-hover:shadow-[0_0_20px_rgba(0,0,0,0.12)] group-hover:border-slate-200 transition-all duration-300 flex flex-col items-center justify-center gap-3">
                                     <div className="absolute top-3 right-3 text-slate-400 group-hover:text-slate-900 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">

@@ -137,13 +137,49 @@ export async function GET(req) {
     if (url.searchParams.get("seater")) query.capacity = { $elemMatch: { seater: url.searchParams.get("seater") } };
 
     console.log(query, "query");
-    const hostels = await Hostel.find(query);
-    return NextResponse.json(
-      { success: true, data: hostels },
-      { status: 200 }
-    );
+
+    // Pagination parameters
+    const pageParam = url.searchParams.get("page");
+    const limitParam = url.searchParams.get("limit");
+
+    let hostels;
+    let pagination = null;
+
+    if (pageParam || limitParam) {
+      let page = parseInt(pageParam || "1", 10);
+      let limit = parseInt(limitParam || "10", 10);
+
+      if (isNaN(page) || page < 1) page = 1;
+      if (isNaN(limit) || limit < 1) limit = 10;
+
+      const skip = (page - 1) * limit;
+      const total = await Hostel.countDocuments(query);
+
+      hostels = await Hostel.find(query)
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(limit);
+
+      pagination = {
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+        hasNextPage: page * limit < total,
+        hasPrevPage: page > 1,
+      };
+    } else {
+      hostels = await Hostel.find(query).sort({ createdAt: -1 });
+    }
+
+    const response = { success: true, data: hostels };
+    if (pagination) {
+      response.pagination = pagination;
+    }
+
+    return NextResponse.json(response, { status: 200 });
   } catch (error) {
-    console.error('Hostel creation error:', error);
+    console.error('Hostel fetch error:', error);
     return NextResponse.json(
       { success: false, error: error.message || 'Server error' },
       { status: 500 }

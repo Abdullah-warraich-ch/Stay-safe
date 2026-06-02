@@ -1,5 +1,5 @@
 import Nav from '@/components/Nav';
-import HostelCard from '@/components/hostelCard';
+import HostelsClientList from '@/components/HostelsClientList';
 import connectDB from '@/lib/db';
 import Hostel from '@/models/Hostel';
 
@@ -57,16 +57,21 @@ export default async function HostelsPage({ searchParams }) {
         query.capacity = { $elemMatch: { seater: resolvedParams.seater } };
     }
 
-    const hostels = await Hostel.find(query).lean();
+    const total = await Hostel.countDocuments(query);
+    const hostels = await Hostel.find(query).sort({ createdAt: -1 }).limit(25).lean();
     const plainHostels = JSON.parse(JSON.stringify(hostels));
+    const queryKey = JSON.stringify(resolvedParams);
 
     return (
         <>
             <Nav />
-            <main className='px-40  py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-8'>
-                {plainHostels?.map((hostel) => (
-                    <HostelCard key={hostel._id} hostel={hostel} />
-                ))}
+            <main className='px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40 py-6'>
+                <HostelsClientList 
+                    key={queryKey}
+                    initialHostels={plainHostels} 
+                    total={total} 
+                    searchParams={resolvedParams} 
+                />
             </main>
         </>
     );

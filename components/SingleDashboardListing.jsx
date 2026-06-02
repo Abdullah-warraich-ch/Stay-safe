@@ -27,7 +27,7 @@ export default function SingleDashboardListing({ currentCity }) {
     const handleScrollClick = (direction) => {
         if (!scrollRef.current) return;
         const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-        
+
         // Reset targetScrollRef to current scroll position if user manually scrolled
         if (Math.abs(targetScrollRef.current - scrollLeft) > 100) {
             targetScrollRef.current = scrollLeft;
@@ -76,8 +76,9 @@ export default function SingleDashboardListing({ currentCity }) {
 
             setLoading(true);
             try {
-                const data = await fetchHostels(currentCity ? `city=${currentCity}` : "");
+                const data = await fetchHostels(currentCity ? `city=${currentCity}&limit=8` : "");
                 setHostels(data.data);
+                console.log(data.data);
             } catch (error) {
                 console.error("Error fetching hostels:", error);
             } finally {
@@ -89,10 +90,10 @@ export default function SingleDashboardListing({ currentCity }) {
     }, [currentCity]);
 
     return (
-        <div className="px-12 py-5 bg-white">
+        <div className="px-4 sm:px-6 md:px-12 py-5 bg-white">
             <div className="flex gap-4 justify-between items-center mb-3">
                 <Link href={currentCity ? `/hostels?city=${currentCity}` : "/hostels"}>
-                    <h1 className="font-bold text-xl flex gap-4 group cursor-pointer items-center">
+                    <h1 className="font-bold text-lg sm:text-xl flex gap-2 sm:gap-4 group cursor-pointer items-center">
                         {currentCity ? `Popular Hostels in ${currentCity}` : "Popular Hostels"}
                         <ArrowRight size={18} className="group-hover:translate-x-1 transition-all" />
                     </h1>
@@ -133,7 +134,7 @@ export default function SingleDashboardListing({ currentCity }) {
                     ))
                 ) : (
                     <>
-                        {hostels?.slice(0, 10).map((hostel) => (
+                        {hostels?.map((hostel) => (
                             <div key={hostel._id} className="w-[240px] sm:w-[calc(33.33vw-36px)] md:w-[calc(25vw-36px)] lg:w-[calc(20vw-36px)] xl:w-[calc(16.66vw-36px)] max-w-[280px] shrink-0 snap-start">
                                 <HostelCard hostel={hostel} />
                             </div>

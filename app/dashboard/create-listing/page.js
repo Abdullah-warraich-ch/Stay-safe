@@ -181,23 +181,10 @@ function CreateListingContent() {
   const progress = ((currentStep - 1) / (STEPS.length - 1)) * 100;
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen pb-px bg-white">
       {/* ── Header ── */}
-      <div className="sticky top-0 z-30 bg-white/80 backdrop-blur-xl border-b border-slate-100">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <button onClick={() => currentStep === 1 ? router.back() : goBack()} className="p-2 rounded-xl hover:bg-slate-100 transition-colors cursor-pointer">
-              <ArrowLeft size={20} className="text-slate-600" />
-            </button>
-            <div>
-              <h1 className="text-lg font-bold text-slate-800 tracking-tight">List Your Hostel</h1>
-              <p className="text-[11px] text-slate-400 font-medium">Step {currentStep} of {STEPS.length}</p>
-            </div>
-          </div>
-          <div className="hidden sm:flex items-center gap-1 text-[12px] text-slate-400 font-semibold">
-            <span className="text-secondary font-bold">{Math.round(progress)}%</span> Complete
-          </div>
-        </div>
+      <div className="sticky top-0 z-30 bg-white px-15 py-5">
+        <h1 className="text-2xl font-semibold text-secondary"><span className="text-primary">Stay Safe</span><span className="text-secondary">.</span></h1>
       </div>
 
       {/* ── Stepper ── */}
@@ -223,16 +210,14 @@ function CreateListingContent() {
                 onClick={() => { if (isDone) setCurrentStep(step.id); }}
                 className={`flex flex-col items-center gap-1.5 transition-all duration-300 group ${isDone ? 'cursor-pointer' : 'cursor-default'}`}
               >
-                <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-500 ${
-                  isActive ? 'bg-secondary text-white shadow-lg shadow-secondary/25 scale-110'
+                <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-500 ${isActive ? 'bg-secondary text-white shadow-lg shadow-secondary/25 scale-110'
                   : isDone ? 'bg-secondary/10 text-secondary'
-                  : 'bg-slate-100 text-slate-400'
-                }`}>
+                    : 'bg-slate-100 text-slate-400'
+                  }`}>
                   {isDone ? <Check size={18} strokeWidth={3} /> : <Icon size={18} />}
                 </div>
-                <span className={`text-[10px] font-bold uppercase tracking-wider transition-colors hidden sm:block ${
-                  isActive ? 'text-secondary' : isDone ? 'text-secondary/60' : 'text-slate-400'
-                }`}>
+                <span className={`text-[10px] font-bold uppercase tracking-wider transition-colors hidden sm:block ${isActive ? 'text-secondary' : isDone ? 'text-secondary/60' : 'text-slate-400'
+                  }`}>
                   {step.title}
                 </span>
               </button>
@@ -324,6 +309,24 @@ function CreateListingContent() {
               )}
             </button>
           )}
+        </div>
+      </div>
+
+      {/* footer */}
+      <div className="sticky bottom-0 z-30 bg-white/80 backdrop-blur-xl border-b border-slate-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <button onClick={() => currentStep === 1 ? router.back() : goBack()} className="p-2 rounded-xl hover:bg-slate-200 text-lg font-bold text-slate-800 tracking-tight transition-colors cursor-pointer">
+              Back
+            </button>
+            <div>
+              <h1 className="text-lg font-bold text-slate-800 tracking-tight">List Your Hostel</h1>
+              <p className="text-[11px] text-slate-400 font-medium">Step {currentStep} of {STEPS.length}</p>
+            </div>
+          </div>
+          <div className="hidden sm:flex items-center gap-1 text-[12px] text-slate-400 font-semibold">
+            <span className="text-secondary font-bold">{Math.round(progress)}%</span> Complete
+          </div>
         </div>
       </div>
     </div>

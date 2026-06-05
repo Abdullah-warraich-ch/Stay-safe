@@ -22,6 +22,7 @@ export default function MyHostels({ ownerId }) {
     const { user } = useAuth();
     console.log(user.id, ownerId);
 
+
     if (isLoading) {
         return (
             <div className="space-y-4">
@@ -53,7 +54,7 @@ export default function MyHostels({ ownerId }) {
                 </div>
                 <h3 className="text-lg font-bold text-slate-800 mb-1">No Listings Yet</h3>
                 <p className="text-slate-500 text-sm max-w-xs mb-6">
-                    You haven't added any hostels yet. Start by creating your first listing.
+                    You haven&apos;t added any hostels yet. Start by creating your first listing.
                 </p>
                 <Link
                     href="/dashboard/create-listing"
@@ -77,6 +78,7 @@ export default function MyHostels({ ownerId }) {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 {data.map((hostel) => (
                     <HostelCard hostel={hostel} key={hostel._id} showDeleteButton={hostel.owner === user.id} />
+                    
                 ))}
             </div>
         </div>

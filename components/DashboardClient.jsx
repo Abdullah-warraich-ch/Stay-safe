@@ -20,7 +20,7 @@ export default function DashboardContent() {
                 <div className="flex justify-between items-center mb-8">
                     <div>
                         <h2 className="text-2xl font-extrabold text-slate-900 tracking-tight">Welcome, {user.name}!</h2>
-                        <p className="text-slate-500 text-sm mt-0.5">Here's what's happening with your account.</p>
+                        <p className="text-slate-500 text-sm mt-0.5">Here&apos;s what&apos;s happening with your account.</p>
                     </div>
                     <Link
                         href="/dashboard/create-listing"

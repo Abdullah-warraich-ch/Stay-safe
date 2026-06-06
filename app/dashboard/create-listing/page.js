@@ -213,14 +213,7 @@ function CreateListingContent() {
 
       {/* ── Step Content ── */}
       <div className="max-w-2xl mx-auto px-5 sm:px-6 pt-8 pb-28">
-        {/* Step Title */}
-        <div className="mb-8">
-          <p className="text-[13px] font-semibold text-slate-500 mb-3">Step {currentStep} of {STEPS.length}</p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-slate-950 tracking-tight">
-            {STEPS[currentStep - 1].title}
-          </h2>
-          <p className="text-slate-500 text-[15px] mt-2">{STEPS[currentStep - 1].subtitle}</p>
-        </div>
+
 
         {/* White Card */}
         <div className="bg-white">

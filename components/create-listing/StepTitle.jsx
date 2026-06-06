@@ -8,7 +8,7 @@ export default function StepTitle({ formData, handleChange, hostelType, setHoste
     <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
       <div className="space-y-6">
         <div>
-          <label className="block text-[15px] font-semibold text-slate-950 mb-3">
+          <label className="block text-[22px] font-semibold text-slate-950 mb-3">
             What is your hostel called?
           </label>
           <input
@@ -21,7 +21,7 @@ export default function StepTitle({ formData, handleChange, hostelType, setHoste
         </div>
 
         <div>
-          <label className="block text-[15px] font-semibold text-slate-950 mb-3">
+          <label className="block text-[18px] font-medium leading-snug tracking-tight text-slate-900 mb-3">
             Who can stay here?
           </label>
           <div className="grid grid-cols-2 gap-3">
@@ -33,21 +33,18 @@ export default function StepTitle({ formData, handleChange, hostelType, setHoste
                 key={key}
                 type="button"
                 onClick={() => setHostelType(key)}
-                className={`relative rounded-xl border p-5 transition-all duration-200 cursor-pointer group ${
-                  hostelType === key
-                    ? 'border-slate-950 bg-slate-50'
-                    : 'border-slate-300 bg-white hover:border-slate-950'
-                }`}
+                className={`relative rounded-xl border p-5 transition-all duration-200 cursor-pointer group ${hostelType === key
+                  ? 'border-slate-950 bg-slate-50'
+                  : 'border-slate-300 bg-white hover:border-slate-950'
+                  }`}
               >
                 <div className="flex items-center gap-3">
-                  <div className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-200 ${
-                    hostelType === key ? 'bg-slate-950 text-white' : 'bg-slate-100 text-slate-500 group-hover:bg-slate-200'
-                  }`}>
+                  <div className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-200 ${hostelType === key ? 'bg-slate-950 text-white' : 'bg-slate-100 text-slate-500 group-hover:bg-slate-200'
+                    }`}>
                     <Icon size={18} />
                   </div>
-                  <span className={`text-[15px] font-semibold ${
-                    hostelType === key ? 'text-slate-950' : 'text-slate-700'
-                  }`}>
+                  <span className={`text-[15px] font-semibold ${hostelType === key ? 'text-slate-950' : 'text-slate-700'
+                    }`}>
                     {label}
                   </span>
                 </div>

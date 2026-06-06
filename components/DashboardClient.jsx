@@ -2,8 +2,7 @@
 
 import React from 'react';
 import { useAuth } from '@/context/AuthContext';
-import { Layout, Plus, Building2, User, ShieldCheck, Heart, Settings } from 'lucide-react';
-import { ProtectedRoute } from '@/components/ProtectedRoute';
+import {  Plus, Building2,ShieldCheck, Heart, Settings } from 'lucide-react';
 import Nav from '@/components/Nav';
 import MyHostels from '@/components/MyHostels';
 import Link from 'next/link';

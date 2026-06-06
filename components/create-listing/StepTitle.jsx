@@ -8,7 +8,7 @@ export default function StepTitle({ formData, handleChange, hostelType, setHoste
     <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
       <div className="space-y-6">
         <div>
-          <label className="block text-[22px] font-semibold text-slate-950 mb-3">
+          <label className="block text-[18px] font-medium leading-snug tracking-tight text-slate-900 mb-3">
             What is your hostel called?
           </label>
           <input

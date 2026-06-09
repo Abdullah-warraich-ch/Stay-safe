@@ -4,7 +4,7 @@ import { Phone } from 'lucide-react';
 
 export default function StepContact({ formData, handleChange }) {
   return (
-    <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
+    <div className="space-y-8 ">
       <div className="space-y-6">
         <div>
           <label className="block text-[15px] font-semibold text-slate-950 mb-3">

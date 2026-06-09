@@ -10,6 +10,7 @@ import { cities, universitiesData, citiesData } from '@/data/citiesData';
 import {
   ArrowRight, Loader2, Home, MapPin, ImagePlus, Zap, Check, FileText, Phone, Bed, Utensils
 } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 import StepLocation from '@/components/create-listing/StepLocation';
 import StepMedia from '@/components/create-listing/StepMedia';
@@ -43,6 +44,22 @@ function CreateListingContent() {
   const { user } = useAuth();
   const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
+  const [direction, setDirection] = useState('next');
+
+  const slideVariants = {
+    enter: (dir) => ({
+      x: dir === 'next' ? 20 : -20,
+      opacity: 0,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+    },
+    exit: (dir) => ({
+      x: dir === 'next' ? -20 : 20,
+      opacity: 0,
+    }),
+  };
 
   // ── Form State ──
   const [formData, setFormData] = useState({
@@ -155,8 +172,16 @@ function CreateListingContent() {
     return true;
   };
 
-  const goNext = () => { if (validateStep(currentStep)) setCurrentStep(prev => Math.min(prev + 1, STEPS.length)); };
-  const goBack = () => setCurrentStep(prev => Math.max(prev - 1, 1));
+  const goNext = () => {
+    if (validateStep(currentStep)) {
+      setDirection('next');
+      setCurrentStep(prev => Math.min(prev + 1, STEPS.length));
+    }
+  };
+  const goBack = () => {
+    setDirection('back');
+    setCurrentStep(prev => Math.max(prev - 1, 1));
+  };
 
   // ── Submit ──
   const createMutation = useMutation({
@@ -192,6 +217,7 @@ function CreateListingContent() {
   const handleSubmit = () => {
     for (let step = 1; step < STEPS.length; step += 1) {
       if (!validateStep(step)) {
+        setDirection(step > currentStep ? 'next' : 'back');
         setCurrentStep(step);
         return;
       }
@@ -216,52 +242,67 @@ function CreateListingContent() {
 
 
         {/* White Card */}
-        <div className="bg-white">
-          {currentStep === 1 && (
-            <StepTitle
-              formData={formData} handleChange={handleChange}
-              hostelType={hostelType} setHostelType={setHostelType}
-            />
-          )}
-          {currentStep === 2 && (
-            <StepDescription formData={formData} handleChange={handleChange} />
-          )}
-          {currentStep === 3 && (
-            <StepContact formData={formData} handleChange={handleChange} />
-          )}
-          {currentStep === 4 && (
-            <StepRooms howManySeaters={howManySeaters} setHowManySeaters={setHowManySeaters} />
-          )}
-          {currentStep === 5 && (
-            <StepMess mess={mess} setMess={setMess} />
-          )}
-          {currentStep === 6 && (
-            <StepLocation
-              formData={formData} handleChange={handleChange}
-              allCities={allCities} availableAreas={availableAreas}
-              availableUniversities={availableUniversities}
-              selectedUniversities={selectedUniversities} toggleUniversity={toggleUniversity}
-            />
-          )}
-          {currentStep === 7 && (
-            <StepMedia
-              imageFiles={imageFiles} imagePreviews={imagePreviews}
-              handleImageSelect={handleImageSelect} removeImage={removeImage}
-              tags={tags} tagInput={tagInput} setTagInput={setTagInput}
-              handleAddTag={handleAddTag} handleRemoveTag={handleRemoveTag}
-              handleTagInputKeyDown={handleTagInputKeyDown} getSuggestedTags={getSuggestedTags}
-            />
-          )}
-          {currentStep === 8 && (
-            <StepAmenities
-              selectedAmenities={selectedAmenities} toggleAmenity={toggleAmenity}
-              formData={formData} hostelType={hostelType} howManySeaters={howManySeaters}
-              mess={mess} imageFiles={imageFiles} selectedUniversities={selectedUniversities} tags={tags}
-              backupLight={backupLight} setBackupLight={setBackupLight}
-              acType={acType} setAcType={setAcType}
-              attachedBath={attachedBath} setAttachedBath={setAttachedBath}
-            />
-          )}
+        <div className="bg-white  relative">
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={currentStep}
+              custom={direction}
+              variants={slideVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                x: { type: 'tween', duration: 0.25, ease: 'easeInOut' },
+                opacity: { duration: 0.2 },
+              }}
+            >
+              {currentStep === 1 && (
+                <StepTitle
+                  formData={formData} handleChange={handleChange}
+                  hostelType={hostelType} setHostelType={setHostelType}
+                />
+              )}
+              {currentStep === 2 && (
+                <StepDescription formData={formData} handleChange={handleChange} />
+              )}
+              {currentStep === 3 && (
+                <StepContact formData={formData} handleChange={handleChange} />
+              )}
+              {currentStep === 4 && (
+                <StepRooms howManySeaters={howManySeaters} setHowManySeaters={setHowManySeaters} />
+              )}
+              {currentStep === 5 && (
+                <StepMess mess={mess} setMess={setMess} />
+              )}
+              {currentStep === 6 && (
+                <StepLocation
+                  formData={formData} handleChange={handleChange}
+                  allCities={allCities} availableAreas={availableAreas}
+                  availableUniversities={availableUniversities}
+                  selectedUniversities={selectedUniversities} toggleUniversity={toggleUniversity}
+                />
+              )}
+              {currentStep === 7 && (
+                <StepMedia
+                  imageFiles={imageFiles} imagePreviews={imagePreviews}
+                  handleImageSelect={handleImageSelect} removeImage={removeImage}
+                  tags={tags} tagInput={tagInput} setTagInput={setTagInput}
+                  handleAddTag={handleAddTag} handleRemoveTag={handleRemoveTag}
+                  handleTagInputKeyDown={handleTagInputKeyDown} getSuggestedTags={getSuggestedTags}
+                />
+              )}
+              {currentStep === 8 && (
+                <StepAmenities
+                  selectedAmenities={selectedAmenities} toggleAmenity={toggleAmenity}
+                  formData={formData} hostelType={hostelType} howManySeaters={howManySeaters}
+                  mess={mess} imageFiles={imageFiles} selectedUniversities={selectedUniversities} tags={tags}
+                  backupLight={backupLight} setBackupLight={setBackupLight}
+                  acType={acType} setAcType={setAcType}
+                  attachedBath={attachedBath} setAttachedBath={setAttachedBath}
+                />
+              )}
+            </motion.div>
+          </AnimatePresence>
         </div>
 
 

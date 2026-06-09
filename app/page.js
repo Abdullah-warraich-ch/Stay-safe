@@ -10,7 +10,7 @@ import ParentDashboardListing from "@/components/ParentDashboardListing";
 export default function Home() {
   return (
     <GuestRoute>
-      <div className="font-poppins min-h-screen bg-slate-50">
+      <div className="min-h-screen bg-slate-50">
         <Nav />
         <main>
           <Hero />

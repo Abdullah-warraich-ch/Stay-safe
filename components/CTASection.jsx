@@ -13,12 +13,12 @@ const CTASection = () => {
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
         </div>
 
-        <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-          <h2 className="text-3xl md:text-4xl font-semibold text-white tracking-tight leading-tight">
+        <div className="relative z-10 max-w-3xl mx-auto space-y-5">
+          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-snug">
             Stop Paying Hidden Hostel Commissions.
           </h2>
 
-          <p className="text-base md:text-lg text-slate-400 font-normal leading-relaxed max-w-2xl mx-auto">
+          <p className="text-[15px] md:text-[17px] text-slate-400 font-normal leading-relaxed max-w-2xl mx-auto">
             Find your ideal student accommodation with verified listings and zero brokerage.
             Direct contact with owners, guaranteed.
           </p>

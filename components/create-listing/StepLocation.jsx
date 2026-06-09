@@ -5,7 +5,7 @@ import SearchableSelect from '@/components/SearchableSelect';
 
 export default function StepLocation({ formData, handleChange, allCities, availableAreas, availableUniversities, selectedUniversities, toggleUniversity }) {
   return (
-    <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
+    <div className="space-y-8 ">
 
       {/* ─── Location ─── */}
       <div className="space-y-6">
@@ -106,12 +106,12 @@ export default function StepLocation({ formData, handleChange, allCities, availa
                     className={`relative flex items-center text-left px-4 py-3 rounded-xl border text-[13px] transition-all duration-200 cursor-pointer ${isSelected
                       ? 'bg-slate-50 border-slate-950 text-slate-950 font-semibold'
                       : 'bg-white border-slate-300 text-slate-700 hover:border-slate-950'
-                    }`}
+                      }`}
                   >
                     {uni}
                     {isSelected && (
                       <div className="absolute top-1.5 right-1.5 w-4 h-4 bg-slate-950 rounded-full flex items-center justify-center">
-                        <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                        <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                       </div>
                     )}
                   </button>

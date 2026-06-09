@@ -18,7 +18,7 @@ export default function Footer() {
             <h1 className="text-2xl font-bold text-primary tracking-tight">
               Stay Safe<span className="text-secondary">.</span>
             </h1>
-            <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
+            <p className="text-slate-500 text-[13px] leading-relaxed max-w-xs">
               We provide verified, budget-friendly student accommodation with zero brokerage. Your safe home away from home.
             </p>
             <div className="flex gap-4">
@@ -32,8 +32,8 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-slate-900 mb-6">Popular Cities</h4>
-            <ul className="space-y-4 text-sm text-slate-500">
+            <h4 className="text-[14px] font-semibold text-slate-900 mb-6">Popular Cities</h4>
+            <ul className="space-y-4 text-[13px] text-slate-500">
               {["Lahore", "Islamabad", "Karachi", "Faisalabad"].map((city) => (
                 <li key={city} className="group w-fit">
                   <a href="#" className="relative pt-1 hover:text-secondary transition-colors">
@@ -47,8 +47,8 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-bold text-slate-900 mb-6">Company</h4>
-            <ul className="space-y-4 text-sm text-slate-500">
+            <h4 className="text-[14px] font-semibold text-slate-900 mb-6">Company</h4>
+            <ul className="space-y-4 text-[13px] text-slate-500">
               {["About Us", "Contact Us", "Terms of Service", "Privacy Policy", "List Your Hostel"].map((item) => (
                 <li key={item} className="group w-fit">
                   <a href="#" className="relative py-1 hover:text-secondary transition-colors">
@@ -62,8 +62,8 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-bold text-slate-900 mb-6">Get In Touch</h4>
-            <ul className="space-y-4 text-sm text-slate-500">
+            <h4 className="text-[14px] font-semibold text-slate-900 mb-6">Get In Touch</h4>
+            <ul className="space-y-4 text-[13px] text-slate-500">
               <li className="flex items-start gap-3">
                 <MapPin className="shrink-0 text-secondary" size={18} />
                 <span>Sector H-12, Islamabad, Pakistan</span>

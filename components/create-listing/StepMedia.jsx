@@ -10,7 +10,7 @@ export default function StepMedia({
   const fileInputRef = useRef(null);
 
   return (
-    <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
+    <div className="space-y-8 ">
 
       {/* ─── Photos ─── */}
       <div className="space-y-6">
@@ -132,7 +132,7 @@ export default function StepMedia({
                   key={suggestion}
                   type="button"
                   onClick={() => handleAddTag(suggestion)}
-                className="px-3 py-1.5 bg-white border border-slate-300 hover:border-slate-950 text-slate-700 hover:text-slate-950 rounded-lg text-[12px] font-semibold transition-all duration-200 cursor-pointer"
+                  className="px-3 py-1.5 bg-white border border-slate-300 hover:border-slate-950 text-slate-700 hover:text-slate-950 rounded-lg text-[12px] font-semibold transition-all duration-200 cursor-pointer"
                 >
                   + {suggestion}
                 </button>

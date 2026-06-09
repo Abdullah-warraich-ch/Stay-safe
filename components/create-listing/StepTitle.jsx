@@ -5,7 +5,7 @@ import { FaMale, FaFemale } from 'react-icons/fa';
 
 export default function StepTitle({ formData, handleChange, hostelType, setHostelType }) {
   return (
-    <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
+    <div className="space-y-8 ">
       <div className="space-y-6">
         <div>
           <label className="block text-[18px] font-medium leading-snug tracking-tight text-slate-900 mb-3">

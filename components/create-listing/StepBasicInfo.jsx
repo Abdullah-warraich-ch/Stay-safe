@@ -5,7 +5,7 @@ import { FaMale, FaFemale } from 'react-icons/fa';
 
 export default function StepBasicInfo({ formData, handleChange, hostelType, setHostelType, howManySeaters, setHowManySeaters, mess, setMess }) {
   return (
-    <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
+    <div className="space-y-8 ">
 
       {/* ─── Hostel Identity ─── */}
       <div className="space-y-5">
@@ -47,27 +47,24 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
                 key={key}
                 type="button"
                 onClick={() => setHostelType(key)}
-                className={`relative p-4 rounded-2xl border-2 transition-all duration-300 cursor-pointer group ${
-                  hostelType === key
-                    ? 'border-secondary bg-secondary/5 shadow-md shadow-secondary/10'
-                    : 'border-slate-100 bg-slate-50 hover:border-slate-200 hover:bg-white'
-                }`}
+                className={`relative p-4 rounded-2xl border-2 transition-all duration-300 cursor-pointer group ${hostelType === key
+                  ? 'border-secondary bg-secondary/5 shadow-md shadow-secondary/10'
+                  : 'border-slate-100 bg-slate-50 hover:border-slate-200 hover:bg-white'
+                  }`}
               >
                 <div className="flex items-center gap-3">
-                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 ${
-                    hostelType === key ? 'bg-secondary text-white' : 'bg-slate-100 text-slate-400 group-hover:bg-slate-200'
-                  }`}>
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 ${hostelType === key ? 'bg-secondary text-white' : 'bg-slate-100 text-slate-400 group-hover:bg-slate-200'
+                    }`}>
                     <Icon size={18} />
                   </div>
-                  <span className={`text-[14px] font-bold transition-colors ${
-                    hostelType === key ? 'text-secondary' : 'text-slate-600'
-                  }`}>
+                  <span className={`text-[14px] font-bold transition-colors ${hostelType === key ? 'text-secondary' : 'text-slate-600'
+                    }`}>
                     {label}
                   </span>
                 </div>
                 {hostelType === key && (
                   <div className="absolute top-2 right-2 w-5 h-5 bg-secondary rounded-full flex items-center justify-center animate-in zoom-in duration-200">
-                    <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </div>
                 )}
               </button>
@@ -135,16 +132,15 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
                 newSeaters[index].active = !newSeaters[index].active;
                 setHowManySeaters(newSeaters);
               }}
-              className={`relative py-3.5 px-3 rounded-2xl border-2 text-[13px] font-bold transition-all duration-300 cursor-pointer ${
-                item.active
-                  ? 'border-secondary bg-secondary/5 text-secondary shadow-md shadow-secondary/10'
-                  : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200 hover:bg-white'
-              }`}
+              className={`relative py-3.5 px-3 rounded-2xl border-2 text-[13px] font-bold transition-all duration-300 cursor-pointer ${item.active
+                ? 'border-secondary bg-secondary/5 text-secondary shadow-md shadow-secondary/10'
+                : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200 hover:bg-white'
+                }`}
             >
               {item.seater}
               {item.active && (
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full flex items-center justify-center animate-in zoom-in duration-200">
-                  <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </div>
               )}
             </button>
@@ -203,11 +199,10 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
         <button
           type="button"
           onClick={() => setMess(prev => ({ ...prev, available: !prev.available }))}
-          className={`w-full flex items-center justify-between p-5 rounded-2xl border-2 transition-all duration-300 cursor-pointer ${
-            mess.available
-              ? 'border-green-200 bg-green-50/50'
-              : 'border-slate-100 bg-slate-50 hover:bg-white hover:border-slate-200'
-          }`}
+          className={`w-full flex items-center justify-between p-5 rounded-2xl border-2 transition-all duration-300 cursor-pointer ${mess.available
+            ? 'border-green-200 bg-green-50/50'
+            : 'border-slate-100 bg-slate-50 hover:bg-white hover:border-slate-200'
+            }`}
         >
           <div className="text-left">
             <p className={`text-[14px] font-bold ${mess.available ? 'text-green-700' : 'text-slate-700'}`}>
@@ -252,11 +247,10 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
                     key={label}
                     type="button"
                     onClick={() => setMess(prev => ({ ...prev, compulsory: val }))}
-                    className={`py-3 rounded-2xl border-2 text-[13px] font-bold transition-all duration-300 cursor-pointer ${
-                      mess.compulsory === val
-                        ? 'border-secondary bg-secondary/5 text-secondary'
-                        : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200'
-                    }`}
+                    className={`py-3 rounded-2xl border-2 text-[13px] font-bold transition-all duration-300 cursor-pointer ${mess.compulsory === val
+                      ? 'border-secondary bg-secondary/5 text-secondary'
+                      : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200'
+                      }`}
                   >
                     {label}
                   </button>

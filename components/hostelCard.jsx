@@ -70,9 +70,9 @@ export default function HostelCard({ hostel, showDeleteButton }) {
             </div>
 
             {/* Info Container */}
-            <div className="flex flex-col gap-0">
+            <div className="flex flex-col gap-1">
                 <div className="flex items-start justify-between gap-3">
-                    <h3 className="min-w-0 flex-1 truncate text-[15px] font-medium leading-5 text-slate-950">
+                    <h3 className="min-w-0 flex-1 truncate text-[15px] font-semibold leading-snug text-slate-950">
                         {hostel.name}
                     </h3>
                     <div className="flex shrink-0 items-center gap-1 pt-0.5 text-[14px] leading-none text-slate-900">
@@ -80,17 +80,17 @@ export default function HostelCard({ hostel, showDeleteButton }) {
                         <span>4.9</span>
                     </div>
                 </div>
-                <p className="truncate text-[14px] leading-4 text-slate-500">{hostel.area}, {hostel.city}</p>
-                <div className="mt-1 flex items-baseline gap-1.5">
+                <p className="truncate text-[13px] leading-normal text-slate-500">{hostel.area}, {hostel.city}</p>
+                <div className="mt-0.5 flex items-baseline gap-1.5">
                     {hostel.price ? (
                         <>
-                            <span className="text-[15px] font-semibold leading-5 text-slate-950">
+                            <span className="text-[15px] font-semibold leading-snug text-slate-950">
                                 Rs. {hostel.price.toLocaleString()}
                             </span>
-                            <span className="text-[13px] leading-5 text-slate-500">per month</span>
+                            <span className="text-[13px] leading-snug text-slate-400">per month</span>
                         </>
                     ) : (
-                        <span className="text-[15px] font-semibold leading-5 text-slate-950">Contact for price</span>
+                        <span className="text-[15px] font-semibold leading-snug text-slate-950">Contact for price</span>
                     )}
                 </div>
             </div>

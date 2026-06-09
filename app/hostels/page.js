@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav';
 import HostelsClientList from '@/components/HostelsClientList';
+import FilterSidebar from '@/components/FilterSidebar';
 import connectDB from '@/lib/db';
 import Hostel from '@/models/Hostel';
 
@@ -63,16 +64,34 @@ export default async function HostelsPage({ searchParams }) {
     const queryKey = JSON.stringify(resolvedParams);
 
     return (
-        <>
+        <div className="bg-slate-50 min-h-screen">
             <Nav />
-            <main className='px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40 py-6'>
-                <HostelsClientList 
-                    key={queryKey}
-                    initialHostels={plainHostels} 
-                    total={total} 
-                    searchParams={resolvedParams} 
-                />
+            <main className='max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8'>
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+                    {/* Sidebar Filter */}
+                    <div className="hidden lg:block w-72 shrink-0">
+                        <FilterSidebar />
+                    </div>
+
+                    {/* Main Content */}
+                    <div className="flex-1">
+                        <div className="mb-6">
+                            <h1 className="text-2xl font-bold text-slate-900">
+                                {total} Property{total !== 1 ? 'ies' : ''} Found
+                            </h1>
+                            <p className="text-sm text-slate-500 mt-1">
+                                Showing verified hostels matching your preferences.
+                            </p>
+                        </div>
+                        <HostelsClientList 
+                            key={queryKey}
+                            initialHostels={plainHostels} 
+                            total={total} 
+                            searchParams={resolvedParams} 
+                        />
+                    </div>
+                </div>
             </main>
-        </>
+        </div>
     );
 }

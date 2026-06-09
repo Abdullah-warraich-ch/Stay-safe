@@ -36,7 +36,7 @@ export default function StepAmenities({
   const minPrice = activeSeaters.length > 0 ? Math.min(...activeSeaters.map(s => Number(s.price) || 0)) : 0;
 
   return (
-    <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
+    <div className="space-y-8 ">
 
       {/* ─── Amenities ─── */}
       <div className="space-y-5">
@@ -62,17 +62,16 @@ export default function StepAmenities({
                 className={`relative flex items-center gap-3 px-4 py-3.5 rounded-xl border text-[13px] font-semibold transition-all duration-200 cursor-pointer group ${isSelected
                   ? 'bg-slate-50 border-slate-950 text-slate-950'
                   : 'bg-white border-slate-300 text-slate-700 hover:border-slate-950'
-                }`}
+                  }`}
               >
-                <div className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 shrink-0 ${
-                  isSelected ? 'bg-slate-950 text-white' : 'bg-slate-100 text-slate-500 group-hover:bg-slate-200'
-                }`}>
+                <div className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 shrink-0 ${isSelected ? 'bg-slate-950 text-white' : 'bg-slate-100 text-slate-500 group-hover:bg-slate-200'
+                  }`}>
                   <Icon size={15} />
                 </div>
                 <span className="truncate">{label}</span>
                 {isSelected && (
                   <div className="absolute top-1.5 right-1.5 w-4 h-4 bg-slate-950 rounded-full flex items-center justify-center animate-in zoom-in duration-200">
-                    <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </div>
                 )}
               </button>
@@ -102,16 +101,15 @@ export default function StepAmenities({
               key={val}
               type="button"
               onClick={() => setBackupLight(val)}
-              className={`relative p-4 rounded-xl border font-semibold transition-all duration-200 cursor-pointer text-center text-[13px] ${
-                backupLight === val
+              className={`relative p-4 rounded-xl border font-semibold transition-all duration-200 cursor-pointer text-center text-[13px] ${backupLight === val
                   ? 'border-slate-950 bg-slate-50 text-slate-950'
                   : 'border-slate-300 bg-white text-slate-700 hover:border-slate-950'
-              }`}
+                }`}
             >
               {label}
               {backupLight === val && (
                 <div className="absolute top-2 right-2 w-5 h-5 bg-slate-950 rounded-full flex items-center justify-center animate-in zoom-in duration-200">
-                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </div>
               )}
             </button>
@@ -140,16 +138,15 @@ export default function StepAmenities({
               key={val}
               type="button"
               onClick={() => setAcType(val)}
-              className={`relative p-4 rounded-xl border font-semibold transition-all duration-200 cursor-pointer text-center text-[13px] ${
-                acType === val
+              className={`relative p-4 rounded-xl border font-semibold transition-all duration-200 cursor-pointer text-center text-[13px] ${acType === val
                   ? 'border-slate-950 bg-slate-50 text-slate-950'
                   : 'border-slate-300 bg-white text-slate-700 hover:border-slate-950'
-              }`}
+                }`}
             >
               {label}
               {acType === val && (
                 <div className="absolute top-2 right-2 w-5 h-5 bg-slate-950 rounded-full flex items-center justify-center animate-in zoom-in duration-200">
-                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </div>
               )}
             </button>
@@ -178,16 +175,15 @@ export default function StepAmenities({
               key={val}
               type="button"
               onClick={() => setAttachedBath(val)}
-              className={`relative p-4 rounded-xl border font-semibold transition-all duration-200 cursor-pointer text-center text-[13px] ${
-                attachedBath === val
+              className={`relative p-4 rounded-xl border font-semibold transition-all duration-200 cursor-pointer text-center text-[13px] ${attachedBath === val
                   ? 'border-slate-950 bg-slate-50 text-slate-950'
                   : 'border-slate-300 bg-white text-slate-700 hover:border-slate-950'
-              }`}
+                }`}
             >
               {label}
               {attachedBath === val && (
                 <div className="absolute top-2 right-2 w-5 h-5 bg-slate-950 rounded-full flex items-center justify-center animate-in zoom-in duration-200">
-                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </div>
               )}
             </button>

@@ -1,10 +1,9 @@
 'use client';
 
 import { Bed } from 'lucide-react';
-
 export default function StepRooms({ howManySeaters, setHowManySeaters }) {
   return (
-    <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
+    <div className="space-y-8 ">
       <div className="space-y-6">
         <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 flex items-start gap-3">
           <Bed size={18} className="text-slate-500 mt-0.5 shrink-0" />
@@ -23,16 +22,15 @@ export default function StepRooms({ howManySeaters, setHowManySeaters }) {
                 newSeaters[index].active = !newSeaters[index].active;
                 setHowManySeaters(newSeaters);
               }}
-              className={`relative rounded-xl border p-4 text-[15px] font-semibold transition-all duration-200 cursor-pointer ${
-                item.active
+              className={`relative rounded-xl border p-4 text-[15px] font-semibold transition-all duration-200 cursor-pointer ${item.active
                   ? 'border-slate-950 bg-slate-50 text-slate-950'
                   : 'border-slate-300 bg-white text-slate-700 hover:border-slate-950'
-              }`}
+                }`}
             >
               {item.seater}
               {item.active && (
                 <div className="absolute -top-1 -right-1 w-5 h-5 bg-slate-950 rounded-full flex items-center justify-center animate-in zoom-in duration-200">
-                  <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </div>
               )}
             </button>

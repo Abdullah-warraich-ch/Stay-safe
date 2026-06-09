@@ -4,7 +4,7 @@ import { Utensils } from 'lucide-react';
 
 export default function StepMess({ mess, setMess }) {
   return (
-    <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
+    <div className="space-y-8 ">
       <div className="space-y-6">
         <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 flex items-start gap-3">
           <Utensils size={18} className="text-slate-500 mt-0.5 shrink-0" />
@@ -16,11 +16,10 @@ export default function StepMess({ mess, setMess }) {
         <button
           type="button"
           onClick={() => setMess(prev => ({ ...prev, available: !prev.available }))}
-          className={`w-full flex items-center justify-between p-5 rounded-xl border transition-all duration-200 cursor-pointer ${
-            mess.available
+          className={`w-full flex items-center justify-between p-5 rounded-xl border transition-all duration-200 cursor-pointer ${mess.available
               ? 'border-slate-950 bg-slate-50'
               : 'border-slate-300 bg-white hover:border-slate-950'
-          }`}
+            }`}
         >
           <div className="text-left">
             <p className={`text-[15px] font-semibold ${mess.available ? 'text-slate-950' : 'text-slate-700'}`}>
@@ -64,11 +63,10 @@ export default function StepMess({ mess, setMess }) {
                     key={label}
                     type="button"
                     onClick={() => setMess(prev => ({ ...prev, compulsory: val }))}
-                    className={`py-4 rounded-xl border text-[14px] font-semibold transition-all duration-200 cursor-pointer ${
-                      mess.compulsory === val
+                    className={`py-4 rounded-xl border text-[14px] font-semibold transition-all duration-200 cursor-pointer ${mess.compulsory === val
                         ? 'border-slate-950 bg-slate-50 text-slate-950'
                         : 'border-slate-300 bg-white text-slate-700 hover:border-slate-950'
-                    }`}
+                      }`}
                   >
                     {label}
                   </button>

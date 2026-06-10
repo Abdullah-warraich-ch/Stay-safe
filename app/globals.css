@@ -2,8 +2,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #ed973c;
-  --color-secondary: #dc143c;
+  --color-primary: #dc143c;
+  --color-secondary: #ed973c;
   --color-background: #ffffff;
   --animate-sweep: sweep 2s linear infinite;
 
@@ -53,17 +53,35 @@ body {
 }
 
 /* ─── Heading Hierarchy ─── */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.25;
   letter-spacing: -0.025em;
   font-weight: 600;
   text-wrap: balance;
 }
 
-h1 { letter-spacing: -0.03em; }
-h2 { letter-spacing: -0.025em; }
-h3 { letter-spacing: -0.02em; }
-h4, h5, h6 { letter-spacing: -0.015em; }
+h1 {
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  letter-spacing: -0.02em;
+}
+
+h4,
+h5,
+h6 {
+  letter-spacing: -0.015em;
+}
 
 /* ─── Paragraph & Body Text ─── */
 p {

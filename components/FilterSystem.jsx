@@ -116,13 +116,13 @@ export default function FilterSystem() {
           <div className="flex items-center justify-between md:justify-start gap-4 px-6 py-4 border-b md:border-b-0 md:border-r border-slate-100">
             <div className="flex items-center gap-4">
               <span
-                className={`text-sm font-bold tracking-tight transition-colors duration-300 whitespace-nowrap ${isVerified ? "text-secondary" : "text-slate-500"}`}
+                className={`text-sm font-bold tracking-tight transition-colors duration-300 whitespace-nowrap ${isVerified ? "text-primary" : "text-slate-500"}`}
               >
                 Verified Only
               </span>
               <button
                 onClick={() => setIsVerified(!isVerified)}
-                className={`relative w-10 h-5.5 rounded-full transition-all duration-500 focus:outline-none cursor-pointer shadow-inner ${isVerified ? "bg-secondary" : "bg-slate-200"}`}
+                className={`relative w-10 h-5.5 rounded-full transition-all duration-500 focus:outline-none cursor-pointer shadow-inner ${isVerified ? "bg-primary" : "bg-slate-200"}`}
               >
                 <div
                   className={`absolute top-1 left-1 w-3.5 h-3.5 bg-white rounded-full transition-transform duration-500 shadow-sm ${isVerified ? "translate-x-4.5" : ""}`}
@@ -135,8 +135,8 @@ export default function FilterSystem() {
               <button
                 onClick={toggleFilter}
                 className={`p-3 rounded-full transition-all duration-300 cursor-pointer ${detailedFilterOpen
-                  ? "text-secondary bg-secondary/10"
-                  : "text-slate-500 hover:text-secondary hover:bg-secondary/5"
+                  ? "text-primary bg-primary/10"
+                  : "text-slate-500 hover:text-primary hover:bg-primary/5"
                   }`}
               >
                 <SlidersHorizontal size={20} />
@@ -149,8 +149,8 @@ export default function FilterSystem() {
             <button
               onClick={toggleFilter}
               className={`p-3 rounded-full transition-all duration-300 flex items-center gap-2 cursor-pointer group ${detailedFilterOpen
-                ? "text-secondary bg-secondary/10"
-                : "text-slate-500 hover:text-secondary hover:bg-secondary/5"
+                ? "text-primary bg-primary/10"
+                : "text-slate-500 hover:text-primary hover:bg-primary/5"
                 }`}
             >
               <SlidersHorizontal />
@@ -161,7 +161,7 @@ export default function FilterSystem() {
           <div className="p-2 md:p-0">
             <button
               onClick={handleSearch}
-              className="w-full md:w-auto bg-secondary hover:brightness-110 text-white p-4.5 rounded-2xl md:rounded-full shadow-lg shadow-secondary/25 transition-all duration-300 active:scale-95 cursor-pointer flex items-center justify-center gap-2 md:gap-0"
+              className="w-full md:w-auto bg-primary hover:brightness-110 text-white p-4.5 rounded-2xl md:rounded-full shadow-lg shadow-primary/25 transition-all duration-300 active:scale-95 cursor-pointer flex items-center justify-center gap-2 md:gap-0"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -195,15 +195,15 @@ export default function FilterSystem() {
             {/* Header */}
             <div className="flex items-center justify-between mb-5">
               <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0">
-                  <SlidersHorizontal size={13} className="text-secondary" />
+                <div className="w-7 h-7 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                  <SlidersHorizontal size={13} className="text-primary" />
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-slate-800 leading-tight">Advanced Filters</h3>
                   <p className="text-[11px] text-slate-400 leading-none mt-0.5">Refine your search results</p>
                 </div>
                 {activeFilterCount > 0 && (
-                  <span className="ml-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-secondary text-white shadow-sm shadow-secondary/30">
+                  <span className="ml-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-primary text-white shadow-sm shadow-primary/30">
                     {activeFilterCount} active
                   </span>
                 )}
@@ -213,7 +213,7 @@ export default function FilterSystem() {
                 onClick={() => { setSeater(""); setAttachedBath(""); setAcType(""); setWifi(""); setBackupLight(""); }}
                 disabled={activeFilterCount === 0}
                 className={`text-xs font-semibold transition-all duration-200 ${activeFilterCount > 0
-                  ? "text-secondary hover:text-secondary/70 cursor-pointer"
+                  ? "text-primary hover:text-primary/70 cursor-pointer"
                   : "text-slate-300 cursor-not-allowed"
                   }`}
               >
@@ -244,8 +244,8 @@ export default function FilterSystem() {
                       type="button"
                       onClick={() => setSeater(val)}
                       className={`px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all duration-200 ${seater === val
-                        ? "bg-secondary text-white border-secondary shadow-sm shadow-secondary/25 scale-105"
-                        : "bg-white text-slate-600 border-slate-200 hover:border-secondary/50 hover:text-secondary hover:bg-secondary/5"
+                        ? "bg-primary text-white border-primary shadow-sm shadow-primary/25 scale-105"
+                        : "bg-white text-slate-600 border-slate-200 hover:border-primary/50 hover:text-primary hover:bg-primary/5"
                         }`}
                     >
                       {label}
@@ -267,8 +267,8 @@ export default function FilterSystem() {
                       type="button"
                       onClick={() => setAttachedBath(val)}
                       className={`flex-1 py-1.5 rounded-xl text-xs font-semibold border transition-all duration-200 ${attachedBath === val
-                        ? "bg-secondary text-white border-secondary shadow-sm shadow-secondary/25 scale-105"
-                        : "bg-white text-slate-600 border-slate-200 hover:border-secondary/50 hover:text-secondary hover:bg-secondary/5"
+                        ? "bg-primary text-white border-primary shadow-sm shadow-primary/25 scale-105"
+                        : "bg-white text-slate-600 border-slate-200 hover:border-primary/50 hover:text-primary hover:bg-primary/5"
                         }`}
                     >
                       {label}
@@ -290,8 +290,8 @@ export default function FilterSystem() {
                       type="button"
                       onClick={() => setAcType(val)}
                       className={`flex-1 py-1.5 rounded-xl text-xs font-semibold border transition-all duration-200 ${acType === val
-                        ? "bg-secondary text-white border-secondary shadow-sm shadow-secondary/25 scale-105"
-                        : "bg-white text-slate-600 border-slate-200 hover:border-secondary/50 hover:text-secondary hover:bg-secondary/5"
+                        ? "bg-primary text-white border-primary shadow-sm shadow-primary/25 scale-105"
+                        : "bg-white text-slate-600 border-slate-200 hover:border-primary/50 hover:text-primary hover:bg-primary/5"
                         }`}
                     >
                       {label}
@@ -313,8 +313,8 @@ export default function FilterSystem() {
                       type="button"
                       onClick={() => setWifi(val)}
                       className={`flex-1 py-1.5 rounded-xl text-xs font-semibold border transition-all duration-200 ${wifi === val
-                        ? "bg-secondary text-white border-secondary shadow-sm shadow-secondary/25 scale-105"
-                        : "bg-white text-slate-600 border-slate-200 hover:border-secondary/50 hover:text-secondary hover:bg-secondary/5"
+                        ? "bg-primary text-white border-primary shadow-sm shadow-primary/25 scale-105"
+                        : "bg-white text-slate-600 border-slate-200 hover:border-primary/50 hover:text-primary hover:bg-primary/5"
                         }`}
                     >
                       {label}
@@ -336,8 +336,8 @@ export default function FilterSystem() {
                       type="button"
                       onClick={() => setBackupLight(val)}
                       className={`flex-1 py-1.5 rounded-xl text-xs font-semibold border transition-all duration-200 ${backupLight === val
-                        ? "bg-secondary text-white border-secondary shadow-sm shadow-secondary/25 scale-105"
-                        : "bg-white text-slate-600 border-slate-200 hover:border-secondary/50 hover:text-secondary hover:bg-secondary/5"
+                        ? "bg-primary text-white border-primary shadow-sm shadow-primary/25 scale-105"
+                        : "bg-white text-slate-600 border-slate-200 hover:border-primary/50 hover:text-primary hover:bg-primary/5"
                         }`}
                     >
                       {label}

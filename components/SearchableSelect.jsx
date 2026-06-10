@@ -44,7 +44,7 @@ export default function SearchableSelect({
     setSearchTerm("");
   };
 
-  const defaultInputClass = "w-full bg-white border border-slate-200 rounded-xl py-3 pl-11 pr-10 outline-none text-slate-800 text-[14px] placeholder:text-slate-400 focus:ring-2 focus:ring-secondary/20 focus:border-secondary/40 transition-all duration-200 cursor-pointer disabled:bg-slate-50 disabled:cursor-not-allowed";
+  const defaultInputClass = "w-full bg-white border border-slate-200 rounded-xl py-3 pl-11 pr-10 outline-none text-slate-800 text-[14px] placeholder:text-slate-400 focus:ring-2 focus:ring-primary/20 focus:border-primary/40 transition-all duration-200 cursor-pointer disabled:bg-slate-50 disabled:cursor-not-allowed";
   const labelClass = "text-[13px] font-semibold text-slate-600 ml-0.5 tracking-wide";
   const iconClass = "absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 transition-colors duration-200";
 
@@ -53,11 +53,11 @@ export default function SearchableSelect({
       {label && <label className={labelClass}>{label}</label>}
 
       <div className="relative group">
-        {Icon && <Icon className={`${iconClass} ${isOpen ? 'text-secondary' : ''}`} size={16} />}
+        {Icon && <Icon className={`${iconClass} ${isOpen ? 'text-primary' : ''}`} size={16} />}
 
         <div
           onClick={() => !disabled && setIsOpen(!isOpen)}
-          className={`${defaultInputClass} ${className} ${isOpen && !className.includes('border-none') ? 'ring-2 ring-secondary/20 border-secondary/40' : ''} flex items-center`}
+          className={`${defaultInputClass} ${className} ${isOpen && !className.includes('border-none') ? 'ring-2 ring-primary/20 border-primary/40' : ''} flex items-center`}
         >
           {value ? (
             <span className="text-slate-800">{value}</span>
@@ -71,7 +71,7 @@ export default function SearchableSelect({
 
           <ChevronDown
             size={16}
-            className={`absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180 text-secondary' : ''}`}
+            className={`absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180 text-primary' : ''}`}
           />
         </div>
 
@@ -87,7 +87,7 @@ export default function SearchableSelect({
                   type="text"
                   placeholder="Search..."
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full bg-white border border-slate-200 rounded-lg py-1.5 pl-8 pr-3 text-[13px] outline-none focus:border-secondary/40 transition-all"
+                  className="w-full bg-white border border-slate-200 rounded-lg py-1.5 pl-8 pr-3 text-[13px] outline-none focus:border-primary/40 transition-all"
                 />
               </div>
             </div>
@@ -102,8 +102,8 @@ export default function SearchableSelect({
                     onClick={() => handleSelect(option)}
                     className={`w-full text-left px-4 py-2.5 text-[13px] transition-colors flex items-center justify-between group
                       ${value === option
-                        ? 'bg-secondary/10 text-secondary font-semibold'
-                        : 'text-slate-700 hover:bg-secondary/5 hover:text-secondary'}`}
+                        ? 'bg-primary/10 text-primary font-semibold'
+                        : 'text-slate-700 hover:bg-primary/5 hover:text-primary'}`}
                   >
                     {option}
                     {value === option ? (

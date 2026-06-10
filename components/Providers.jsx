@@ -17,7 +17,7 @@ export default function Providers({ children }) {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <Toaster 
+        <Toaster
           position="top-center"
           reverseOrder={false}
           toastOptions={{
@@ -32,13 +32,13 @@ export default function Providers({ children }) {
             success: {
               iconTheme: {
                 primary: '#22c55e', // Green for success
-                secondary: '#fff',
+                primary: '#fff',
               },
             },
             error: {
               iconTheme: {
                 primary: '#ef4444',
-                secondary: '#fff',
+                primary: '#fff',
               },
             },
           }}

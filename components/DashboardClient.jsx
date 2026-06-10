@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useAuth } from '@/context/AuthContext';
-import {  Plus, Building2,ShieldCheck, Heart, Settings } from 'lucide-react';
+import { Plus, Building2, ShieldCheck, Heart, Settings } from 'lucide-react';
 import Nav from '@/components/Nav';
 import MyHostels from '@/components/MyHostels';
 import Link from 'next/link';
@@ -23,7 +23,7 @@ export default function DashboardContent() {
                     </div>
                     <Link
                         href="/dashboard/create-listing"
-                        className="hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-xl bg-secondary text-white text-[13px] font-bold hover:brightness-110 transition-all shadow-sm shadow-secondary/15 cursor-pointer"
+                        className="hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-white text-[13px] font-bold hover:brightness-110 transition-all shadow-sm shadow-primary/15 cursor-pointer"
                     >
                         <Plus size={16} /> New Listing
                     </Link>
@@ -57,9 +57,9 @@ export default function DashboardContent() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         <Link
                             href="/dashboard/create-listing"
-                            className="flex items-center gap-4 p-4 rounded-xl border border-slate-200 hover:border-secondary/30 hover:bg-secondary/5 transition-all group cursor-pointer"
+                            className="flex items-center gap-4 p-4 rounded-xl border border-slate-200 hover:border-primary/30 hover:bg-primary/5 transition-all group cursor-pointer"
                         >
-                            <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all">
+                            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
                                 <Plus size={20} />
                             </div>
                             <div>
@@ -78,9 +78,9 @@ export default function DashboardContent() {
                         </div>
                         <Link
                             href="/dashboard/favorites"
-                            className="flex items-center gap-4 p-4 rounded-xl border border-slate-200 hover:border-secondary/30 hover:bg-secondary/5 transition-all group cursor-pointer"
+                            className="flex items-center gap-4 p-4 rounded-xl border border-slate-200 hover:border-primary/30 hover:bg-primary/5 transition-all group cursor-pointer"
                         >
-                            <div className="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all">
+                            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
                                 <Heart size={20} />
                             </div>
                             <div>
@@ -106,7 +106,7 @@ export default function DashboardContent() {
                 {/* Mobile FAB */}
                 <Link
                     href="/dashboard/create-listing"
-                    className="sm:hidden fixed bottom-6 right-6 w-14 h-14 rounded-full bg-secondary text-white flex items-center justify-center shadow-lg shadow-secondary/30 z-50 hover:brightness-110 transition-all cursor-pointer"
+                    className="sm:hidden fixed bottom-6 right-6 w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center shadow-lg shadow-primary/30 z-50 hover:brightness-110 transition-all cursor-pointer"
                 >
                     <Plus size={24} />
                 </Link>

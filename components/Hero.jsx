@@ -19,7 +19,7 @@ export default function Hero() {
       {/* Headline: Hidden on mobile, visible on Tablet+ */}
       <h1 className="hidden md:block text-3xl lg:text-5xl font-bold tracking-tight leading-tight lg:leading-[1.15] text-slate-900 max-w-2xl lg:max-w-4xl text-center">
         Find Your Perfect Hostel,{" "}
-        <span className="text-secondary">Effortlessly</span>
+        <span className="text-primary">Effortlessly</span>
       </h1>
 
       {/* Description: Hidden on mobile, visible on Tablet+ */}
@@ -38,13 +38,13 @@ export default function Hero() {
       {/* Owner Link: Hidden on mobile, visible on Tablet+ */}
       <div className="hidden md:flex items-center gap-1 group text-sm text-slate-500">
         Are you an owner?
-        <span className="text-secondary font-medium cursor-pointer flex items-center justify-center ml-1">
+        <span className="text-primary font-medium cursor-pointer flex items-center justify-center ml-1">
           {" "}
           List Your Hostel Free
         </span>
         <ArrowRight
           size={17}
-          className="group-hover:translate-x-1 transition-transform duration-200 text-secondary"
+          className="group-hover:translate-x-1 transition-transform duration-200 text-primary"
         />
       </div>
     </div>

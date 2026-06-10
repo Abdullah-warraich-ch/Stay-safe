@@ -23,7 +23,7 @@ export default function Nav() {
             <nav className="relative py-4 px-6 md:px-10 lg:px-20 border-b border-slate-50 bg-white/80 backdrop-blur-md sticky top-0 z-[100]">
                 <div className="flex justify-between items-center">
                     <Link href="/" className="logo shrink-0">
-                        <h1 className="text-xl md:text-2xl font-bold text-primary tracking-tight">Stay Safe<span className="text-secondary">.</span></h1>
+                        <h1 className="text-xl md:text-2xl font-bold text-primary tracking-tight">Stay Safe<span className="text-primary">.</span></h1>
                     </Link>
 
                     {/* Desktop & Tablet Links */}
@@ -53,7 +53,7 @@ export default function Nav() {
                                 {/* Loved Hostels */}
                                 <Link
                                     href="/dashboard/favorites"
-                                    className="p-2.5 rounded-full text-slate-400 hover:text-secondary hover:bg-secondary/10 transition-all cursor-pointer relative"
+                                    className="p-2.5 rounded-full text-slate-400 hover:text-primary hover:bg-primary/10 transition-all cursor-pointer relative"
                                     title="Loved Hostels"
                                 >
                                     <Heart size={19} />
@@ -62,7 +62,7 @@ export default function Nav() {
                                 {/* Profile */}
                                 <Link href="/dashboard">
                                     <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 transition-colors cursor-pointer">
-                                        <div className="w-7 h-7 rounded-full bg-secondary flex items-center justify-center text-xs font-bold text-white">
+                                        <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-xs font-bold text-white">
                                             {user.name?.charAt(0).toUpperCase()}
                                         </div>
                                         <span className="text-sm font-semibold text-slate-700 max-w-[100px] truncate">{user.name?.split(' ')[0]}</span>
@@ -114,7 +114,7 @@ export default function Nav() {
                 <div className="flex flex-col h-full">
                     {/* Sidebar Header */}
                     <div className="flex justify-between items-center p-6 border-b border-slate-50">
-                        <h1 className="text-xl font-bold text-primary tracking-tight">Stay Safe<span className="text-secondary">.</span></h1>
+                        <h1 className="text-xl font-bold text-primary tracking-tight">Stay Safe<span className="text-primary">.</span></h1>
                         <button
                             onClick={() => setIsMenuOpen(false)}
                             className="p-2 text-slate-400 hover:text-primary transition-colors cursor-pointer"
@@ -136,7 +136,7 @@ export default function Nav() {
 
                         <div className="flex flex-col gap-3 mt-auto">
                             <Link href={user ? '/dashboard/create-listing' : '/signup'} onClick={() => setIsMenuOpen(false)}>
-                                <Button variant='secondary' className="w-full justify-center py-4 text-base">List Your Hostel</Button>
+                                <Button variant='primary' className="w-full justify-center py-4 text-base">List Your Hostel</Button>
                             </Link>
 
                             {user ? (

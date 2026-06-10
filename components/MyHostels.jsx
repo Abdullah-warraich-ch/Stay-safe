@@ -58,7 +58,7 @@ export default function MyHostels({ ownerId }) {
                 </p>
                 <Link
                     href="/dashboard/create-listing"
-                    className="flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary text-white text-[14px] font-bold hover:brightness-110 transition-all shadow-md shadow-secondary/15"
+                    className="flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-white text-[14px] font-bold hover:brightness-110 transition-all shadow-md shadow-primary/15"
                 >
                     <Plus size={18} /> Create First Listing
                 </Link>
@@ -70,7 +70,7 @@ export default function MyHostels({ ownerId }) {
         <div className="space-y-4">
             <div className="flex items-center justify-between px-2">
                 <h3 className="text-lg font-bold text-slate-800">My Listings ({data.length})</h3>
-                <Link href="/dashboard/create-listing" className="text-secondary text-[13px] font-bold hover:underline">
+                <Link href="/dashboard/create-listing" className="text-primary text-[13px] font-bold hover:underline">
                     Add New
                 </Link>
             </div>
@@ -78,7 +78,7 @@ export default function MyHostels({ ownerId }) {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 {data.map((hostel) => (
                     <HostelCard hostel={hostel} key={hostel._id} showDeleteButton={hostel.owner === user.id} />
-                    
+
                 ))}
             </div>
         </div>

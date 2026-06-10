@@ -59,7 +59,7 @@ export default function HostelCard({ hostel, showDeleteButton }) {
 
                 {/* Optional Tag (like Guest Favorite) */}
                 {hostel.verified && (
-                    <div className="absolute top-3 left-3 bg-secondary px-2 py-1 rounded-full shadow-md text-[13px] font-bold text-white shadow-black/10">
+                    <div className="absolute top-3 left-3 bg-primary px-2 py-1 rounded-full shadow-md text-[13px] font-bold text-white shadow-black/10">
                         Verified
                     </div>
                 )}

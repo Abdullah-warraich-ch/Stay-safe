@@ -232,7 +232,7 @@ function CreateListingContent() {
     <div className="min-h-dvh bg-white">
       {/* ── Header ── */}
       <div className="sticky top-0 z-30 bg-white px-15 py-5">
-        <h1 className="text-2xl font-semibold text-secondary"><span className="text-primary">Stay Safe</span><span className="text-secondary">.</span></h1>
+        <h1 className="text-2xl font-semibold text-primary"><span className="text-primary">Stay Safe</span><span className="text-primary">.</span></h1>
       </div>
 
 
@@ -310,8 +310,8 @@ function CreateListingContent() {
 
       {/* footer */}
       <div className="fixed inset-x-0 bottom-[-1px] z-30 bg-white">
-        <div className='absolute top-0 h-[4px] bg-secondary/10 w-full'></div>
-        <div className={` absolute top-0 h-[4px] bg-secondary rounded-r-lg transition-all duration-300 ease-in-out`} style={{ width: `${Math.ceil(progress)}%` }}></div>
+        <div className='absolute top-0 h-[4px] bg-primary/10 w-full'></div>
+        <div className={` absolute top-0 h-[4px] bg-primary rounded-r-lg transition-all duration-300 ease-in-out`} style={{ width: `${Math.ceil(progress)}%` }}></div>
         <div className="max-w-6xl mx-auto px-5 sm:px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <button onClick={() => currentStep === 1 ? router.back() : goBack()} className="px-2 py-2 rounded-lg hover:bg-slate-100 text-[15px] font-semibold text-slate-900 underline underline-offset-2 transition-colors cursor-pointer">

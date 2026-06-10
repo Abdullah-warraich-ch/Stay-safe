@@ -10,8 +10,8 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
       {/* ─── Hostel Identity ─── */}
       <div className="space-y-5">
         <div className="flex items-center gap-3 pb-2">
-          <div className="w-9 h-9 rounded-xl bg-secondary/10 flex items-center justify-center">
-            <Home size={18} className="text-secondary" />
+          <div className="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center">
+            <Home size={18} className="text-primary" />
           </div>
           <div>
             <h4 className="text-[15px] font-bold text-slate-900">Hostel Identity</h4>
@@ -28,7 +28,7 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
             name="name"
             value={formData.name}
             placeholder="e.g. Al-Noor Boys Hostel"
-            className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl py-3.5 px-5 outline-none text-slate-900 text-[15px] font-medium placeholder:text-slate-300 focus:bg-white focus:border-secondary/40 focus:shadow-lg focus:shadow-secondary/5 transition-all duration-300"
+            className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl py-3.5 px-5 outline-none text-slate-900 text-[15px] font-medium placeholder:text-slate-300 focus:bg-white focus:border-primary/40 focus:shadow-lg focus:shadow-primary/5 transition-all duration-300"
             onChange={handleChange}
           />
         </div>
@@ -48,22 +48,22 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
                 type="button"
                 onClick={() => setHostelType(key)}
                 className={`relative p-4 rounded-2xl border-2 transition-all duration-300 cursor-pointer group ${hostelType === key
-                  ? 'border-secondary bg-secondary/5 shadow-md shadow-secondary/10'
+                  ? 'border-primary bg-primary/5 shadow-md shadow-primary/10'
                   : 'border-slate-100 bg-slate-50 hover:border-slate-200 hover:bg-white'
                   }`}
               >
                 <div className="flex items-center gap-3">
-                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 ${hostelType === key ? 'bg-secondary text-white' : 'bg-slate-100 text-slate-400 group-hover:bg-slate-200'
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 ${hostelType === key ? 'bg-primary text-white' : 'bg-slate-100 text-slate-400 group-hover:bg-slate-200'
                     }`}>
                     <Icon size={18} />
                   </div>
-                  <span className={`text-[14px] font-bold transition-colors ${hostelType === key ? 'text-secondary' : 'text-slate-600'
+                  <span className={`text-[14px] font-bold transition-colors ${hostelType === key ? 'text-primary' : 'text-slate-600'
                     }`}>
                     {label}
                   </span>
                 </div>
                 {hostelType === key && (
-                  <div className="absolute top-2 right-2 w-5 h-5 bg-secondary rounded-full flex items-center justify-center animate-in zoom-in duration-200">
+                  <div className="absolute top-2 right-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center animate-in zoom-in duration-200">
                     <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </div>
                 )}
@@ -82,7 +82,7 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
             rows={4}
             value={formData.description}
             placeholder="Describe your hostel — rooms, environment, rules, neighborhood highlights..."
-            className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl py-3.5 px-5 outline-none text-slate-900 text-[15px] font-medium placeholder:text-slate-300 focus:bg-white focus:border-secondary/40 focus:shadow-lg focus:shadow-secondary/5 transition-all duration-300 resize-none leading-relaxed"
+            className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl py-3.5 px-5 outline-none text-slate-900 text-[15px] font-medium placeholder:text-slate-300 focus:bg-white focus:border-primary/40 focus:shadow-lg focus:shadow-primary/5 transition-all duration-300 resize-none leading-relaxed"
             onChange={handleChange}
           />
           <p className="text-[11px] text-slate-400 mt-1.5 pl-1">A detailed description helps students make confident decisions.</p>
@@ -102,7 +102,7 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
               type="tel"
               value={formData.phone}
               placeholder="+92 300 1234567"
-              className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl py-3.5 pl-14 pr-5 outline-none text-slate-900 text-[15px] font-medium placeholder:text-slate-300 focus:bg-white focus:border-secondary/40 focus:shadow-lg focus:shadow-secondary/5 transition-all duration-300"
+              className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl py-3.5 pl-14 pr-5 outline-none text-slate-900 text-[15px] font-medium placeholder:text-slate-300 focus:bg-white focus:border-primary/40 focus:shadow-lg focus:shadow-primary/5 transition-all duration-300"
               onChange={handleChange}
             />
           </div>
@@ -133,13 +133,13 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
                 setHowManySeaters(newSeaters);
               }}
               className={`relative py-3.5 px-3 rounded-2xl border-2 text-[13px] font-bold transition-all duration-300 cursor-pointer ${item.active
-                ? 'border-secondary bg-secondary/5 text-secondary shadow-md shadow-secondary/10'
+                ? 'border-primary bg-primary/5 text-primary shadow-md shadow-primary/10'
                 : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200 hover:bg-white'
                 }`}
             >
               {item.seater}
               {item.active && (
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full flex items-center justify-center animate-in zoom-in duration-200">
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-primary rounded-full flex items-center justify-center animate-in zoom-in duration-200">
                   <svg width="8" height="8" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </div>
               )}
@@ -167,7 +167,7 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
                       newSeaters[idx].price = e.target.value;
                       setHowManySeaters(newSeaters);
                     }}
-                    className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl py-3 pl-12 pr-5 outline-none text-slate-900 text-[15px] font-bold placeholder:text-slate-300 focus:bg-white focus:border-secondary/40 focus:shadow-lg focus:shadow-secondary/5 transition-all duration-300"
+                    className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl py-3 pl-12 pr-5 outline-none text-slate-900 text-[15px] font-bold placeholder:text-slate-300 focus:bg-white focus:border-primary/40 focus:shadow-lg focus:shadow-primary/5 transition-all duration-300"
                     required
                   />
                 </div>
@@ -229,7 +229,7 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
                   placeholder="4,000"
                   value={mess.price}
                   onChange={(e) => setMess(prev => ({ ...prev, price: e.target.value }))}
-                  className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl py-3 pl-12 pr-5 outline-none text-slate-900 text-[15px] font-bold placeholder:text-slate-300 focus:bg-white focus:border-secondary/40 transition-all duration-300"
+                  className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl py-3 pl-12 pr-5 outline-none text-slate-900 text-[15px] font-bold placeholder:text-slate-300 focus:bg-white focus:border-primary/40 transition-all duration-300"
                   required
                 />
               </div>
@@ -248,7 +248,7 @@ export default function StepBasicInfo({ formData, handleChange, hostelType, setH
                     type="button"
                     onClick={() => setMess(prev => ({ ...prev, compulsory: val }))}
                     className={`py-3 rounded-2xl border-2 text-[13px] font-bold transition-all duration-300 cursor-pointer ${mess.compulsory === val
-                      ? 'border-secondary bg-secondary/5 text-secondary'
+                      ? 'border-primary bg-primary/5 text-primary'
                       : 'border-slate-100 bg-slate-50 text-slate-500 hover:border-slate-200'
                       }`}
                   >

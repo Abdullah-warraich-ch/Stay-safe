@@ -127,7 +127,7 @@ export default function HostelsClientList({ initialHostels, total, searchParams 
             {hasMore && !error && (
                 <div ref={loaderRef} className="col-span-full flex justify-center py-6">
                     <div className="flex items-center gap-2 text-slate-400 text-xs font-semibold">
-                        <Loader2 className="animate-spin text-secondary" size={16} />
+                        <Loader2 className="animate-spin text-primary" size={16} />
                         <span>Loading more properties...</span>
                     </div>
                 </div>

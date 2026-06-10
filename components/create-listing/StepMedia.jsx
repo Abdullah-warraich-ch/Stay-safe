@@ -54,7 +54,7 @@ export default function StepMedia({
               onClick={() => fileInputRef.current?.click()}
               className="aspect-[4/3] rounded-xl border border-dashed border-slate-300 hover:border-slate-950 bg-white transition-all duration-200 flex flex-col items-center justify-center gap-2 cursor-pointer group"
             >
-              <div className="w-10 h-10 rounded-xl bg-white group-hover:bg-secondary/10 flex items-center justify-center transition-all shadow-sm">
+              <div className="w-10 h-10 rounded-xl bg-white group-hover:bg-primary/10 flex items-center justify-center transition-all shadow-sm">
                 <Upload size={18} className="text-slate-500 group-hover:text-slate-950 transition-colors" />
               </div>
               <span className="text-[12px] font-semibold text-slate-500 group-hover:text-slate-950 transition-colors">Add Photo</span>

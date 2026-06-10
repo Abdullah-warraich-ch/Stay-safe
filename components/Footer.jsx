@@ -16,14 +16,14 @@ export default function Footer() {
           {/* Logo and About */}
           <div className="space-y-6">
             <h1 className="text-2xl font-bold text-primary tracking-tight">
-              Stay Safe<span className="text-secondary">.</span>
+              Stay Safe<span className="text-primary">.</span>
             </h1>
             <p className="text-slate-500 text-[13px] leading-relaxed max-w-xs">
               We provide verified, budget-friendly student accommodation with zero brokerage. Your safe home away from home.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, idx) => (
-                <a key={idx} href={social.href} className="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-slate-100 text-slate-400 hover:text-secondary hover:border-secondary transition-all duration-300">
+                <a key={idx} href={social.href} className="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-slate-100 text-slate-400 hover:text-primary hover:border-primary transition-all duration-300">
                   <social.icon size={18} />
                 </a>
               ))}
@@ -36,9 +36,9 @@ export default function Footer() {
             <ul className="space-y-4 text-[13px] text-slate-500">
               {["Lahore", "Islamabad", "Karachi", "Faisalabad"].map((city) => (
                 <li key={city} className="group w-fit">
-                  <a href="#" className="relative pt-1 hover:text-secondary transition-colors">
+                  <a href="#" className="relative pt-1 hover:text-primary transition-colors">
                     {city}
-                    <span className="absolute left-0 -bottom-0.5 h-[1.5px] w-0 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute left-0 -bottom-0.5 h-[1.5px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
                   </a>
                 </li>
               ))}
@@ -51,9 +51,9 @@ export default function Footer() {
             <ul className="space-y-4 text-[13px] text-slate-500">
               {["About Us", "Contact Us", "Terms of Service", "Privacy Policy", "List Your Hostel"].map((item) => (
                 <li key={item} className="group w-fit">
-                  <a href="#" className="relative py-1 hover:text-secondary transition-colors">
+                  <a href="#" className="relative py-1 hover:text-primary transition-colors">
                     {item}
-                    <span className="absolute left-0 -bottom-0.5 h-[1.5px] w-0 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute left-0 -bottom-0.5 h-[1.5px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
                   </a>
                 </li>
               ))}
@@ -65,15 +65,15 @@ export default function Footer() {
             <h4 className="text-[14px] font-semibold text-slate-900 mb-6">Get In Touch</h4>
             <ul className="space-y-4 text-[13px] text-slate-500">
               <li className="flex items-start gap-3">
-                <MapPin className="shrink-0 text-secondary" size={18} />
+                <MapPin className="shrink-0 text-primary" size={18} />
                 <span>Sector H-12, Islamabad, Pakistan</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="shrink-0 text-secondary" size={18} />
+                <Phone className="shrink-0 text-primary" size={18} />
                 <span>+92 300 1234567</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="shrink-0 text-secondary" size={18} />
+                <Mail className="shrink-0 text-primary" size={18} />
                 <span>support@staysafe.pk</span>
               </li>
             </ul>
@@ -82,16 +82,16 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-400">
-            © {new Date().getFullYear()} <span className='text-primary'>Stay Safe</span><span className='text-secondary'>.</span> All rights reserved.
+            © {new Date().getFullYear()} <span className='text-primary'>Stay Safe</span><span className='text-primary'>.</span> All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-slate-400">
-            <a href="#" className="group relative py-1 hover:text-secondary transition-colors">
+            <a href="#" className="group relative py-1 hover:text-primary transition-colors">
               Privacy Policy
-              <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#" className="group relative py-1 hover:text-secondary transition-colors">
+            <a href="#" className="group relative py-1 hover:text-primary transition-colors">
               Terms of Service
-              <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
           </div>
         </div>

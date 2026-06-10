@@ -102,8 +102,8 @@ export default function StepAmenities({
               type="button"
               onClick={() => setBackupLight(val)}
               className={`relative p-4 rounded-xl border font-semibold transition-all duration-200 cursor-pointer text-center text-[13px] ${backupLight === val
-                  ? 'border-slate-950 bg-slate-50 text-slate-950'
-                  : 'border-slate-300 bg-white text-slate-700 hover:border-slate-950'
+                ? 'border-slate-950 bg-slate-50 text-slate-950'
+                : 'border-slate-300 bg-white text-slate-700 hover:border-slate-950'
                 }`}
             >
               {label}
@@ -139,8 +139,8 @@ export default function StepAmenities({
               type="button"
               onClick={() => setAcType(val)}
               className={`relative p-4 rounded-xl border font-semibold transition-all duration-200 cursor-pointer text-center text-[13px] ${acType === val
-                  ? 'border-slate-950 bg-slate-50 text-slate-950'
-                  : 'border-slate-300 bg-white text-slate-700 hover:border-slate-950'
+                ? 'border-slate-950 bg-slate-50 text-slate-950'
+                : 'border-slate-300 bg-white text-slate-700 hover:border-slate-950'
                 }`}
             >
               {label}
@@ -176,8 +176,8 @@ export default function StepAmenities({
               type="button"
               onClick={() => setAttachedBath(val)}
               className={`relative p-4 rounded-xl border font-semibold transition-all duration-200 cursor-pointer text-center text-[13px] ${attachedBath === val
-                  ? 'border-slate-950 bg-slate-50 text-slate-950'
-                  : 'border-slate-300 bg-white text-slate-700 hover:border-slate-950'
+                ? 'border-slate-950 bg-slate-50 text-slate-950'
+                : 'border-slate-300 bg-white text-slate-700 hover:border-slate-950'
                 }`}
             >
               {label}
@@ -231,7 +231,7 @@ export default function StepAmenities({
             {[
               { label: 'Rooms', value: activeSeaters.length, color: 'text-amber-500' },
               { label: 'Photos', value: imageFiles.length, color: 'text-blue-500' },
-              { label: 'Amenities', value: selectedAmenities.length, color: 'text-secondary' },
+              { label: 'Amenities', value: selectedAmenities.length, color: 'text-primary' },
               { label: 'Tags', value: tags.length, color: 'text-orange-500' },
             ].map(({ label, value, color }) => (
               <div key={label} className="p-3 text-center">
@@ -285,7 +285,7 @@ export default function StepAmenities({
             {tags.length > 0 && (
               <div className="flex flex-wrap gap-1.5 pt-1">
                 {tags.map((tag, i) => (
-                  <span key={i} className="px-2 py-0.5 bg-secondary/10 text-secondary rounded-lg text-[10px] font-bold">
+                  <span key={i} className="px-2 py-0.5 bg-primary/10 text-primary rounded-lg text-[10px] font-bold">
                     #{tag}
                   </span>
                 ))}

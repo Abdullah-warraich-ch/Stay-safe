@@ -20,7 +20,7 @@ export function ProtectedRoute({ children }) {
   if (loading || !user) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <Loader2 className="animate-spin text-secondary" size={40} />
+        <Loader2 className="animate-spin text-primary" size={40} />
       </div>
     );
   }
@@ -43,7 +43,7 @@ export function GuestRoute({ children }) {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <Loader2 className="animate-spin text-secondary" size={40} />
+        <Loader2 className="animate-spin text-primary" size={40} />
       </div>
     );
   }

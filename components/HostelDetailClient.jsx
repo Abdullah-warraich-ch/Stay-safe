@@ -6,400 +6,399 @@ import { useQuery } from '@tanstack/react-query';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import {
-  MapPin, Phone, Users, ShieldCheck, Wifi, Car, Wind, Tv,
+  MapPin, Phone, ShieldCheck, Wifi, Car, Wind, Tv,
   WashingMachine, Dumbbell, CookingPot, Utensils, Droplets,
   Zap, BookOpen, Lock, Cigarette, PawPrint, Bed, Footprints,
-  ShowerHead, Heart, Share2, Loader2,
-  BadgeCheck, Building2, Star
+  ShowerHead, Share2, ChevronLeft, ChevronRight,
+  BadgeCheck, Building2, Star, X, CheckCircle2
 } from 'lucide-react';
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from 'react-icons/fa';
 
-const AMENITY_ICONS = {
-  wifi: Wifi,
-  parking: Car,
-  ac: Wind,
-  tv: Tv,
-  laundry: WashingMachine,
-  gym: Dumbbell,
-  kitchen: CookingPot,
-  meals: Utensils,
-  geyser: Droplets,
-  electricity: Zap,
-  security: ShieldCheck,
-  study_room: BookOpen,
-  attached_bath: ShowerHead,
-  furnished: Bed,
-  locker: Lock,
-  no_smoking: Cigarette,
-  pets_allowed: PawPrint,
-  terrace: Footprints,
+const AMENITY_MAP = {
+  wifi: { icon: Wifi, label: 'Wi-Fi' },
+  parking: { icon: Car, label: 'Parking' },
+  ac: { icon: Wind, label: 'Air Conditioning' },
+  tv: { icon: Tv, label: 'TV' },
+  laundry: { icon: WashingMachine, label: 'Laundry' },
+  gym: { icon: Dumbbell, label: 'Gym' },
+  kitchen: { icon: CookingPot, label: 'Kitchen' },
+  meals: { icon: Utensils, label: 'Meals Included' },
+  geyser: { icon: Droplets, label: 'Geyser' },
+  electricity: { icon: Zap, label: '24/7 Electricity' },
+  security: { icon: ShieldCheck, label: 'Security Guard' },
+  study_room: { icon: BookOpen, label: 'Study Room' },
+  attached_bath: { icon: ShowerHead, label: 'Attached Bathroom' },
+  furnished: { icon: Bed, label: 'Furnished Rooms' },
+  locker: { icon: Lock, label: 'Lockers' },
+  no_smoking: { icon: Cigarette, label: 'No Smoking' },
+  pets_allowed: { icon: PawPrint, label: 'Pets Allowed' },
+  terrace: { icon: Footprints, label: 'Terrace' },
 };
 
+/* ─── Skeleton ─── */
+function Skeleton({ className }) {
+  return <div className={`bg-slate-100 animate-pulse rounded-lg ${className}`} />;
+}
+
+function HostelDetailSkeleton() {
+  return (
+    <div className="min-h-screen bg-white">
+      <Nav />
+      <main className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-10 pt-6 pb-20">
+        {/* Title */}
+        <div className="mb-6 space-y-2.5">
+          <Skeleton className="h-9 w-2/3" />
+          <div className="flex gap-3">
+            <Skeleton className="h-4 w-20" />
+            <Skeleton className="h-4 w-32" />
+            <Skeleton className="h-4 w-16" />
+          </div>
+        </div>
+        {/* Photo grid */}
+        <div className="grid grid-cols-4 grid-rows-2 gap-2 h-[420px] rounded-2xl overflow-hidden mb-10">
+          <div className="col-span-2 row-span-2 bg-slate-100 animate-pulse" />
+          {[0, 1, 2, 3].map(i => <div key={i} className="bg-slate-100 animate-pulse" />)}
+        </div>
+        {/* Body */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12">
+          <div>
+            <div className="flex justify-between items-center pb-7 border-b border-slate-100">
+              <div className="space-y-2"><Skeleton className="h-6 w-52" /><Skeleton className="h-4 w-36" /></div>
+              <Skeleton className="w-14 h-14 rounded-full" />
+            </div>
+            <div className="py-7 border-b border-slate-100 grid grid-cols-3 gap-4">
+              {[0, 1, 2].map(i => <div key={i} className="p-4 rounded-2xl border border-slate-100 space-y-2"><Skeleton className="h-6 w-6 rounded-full" /><Skeleton className="h-4 w-24" /><Skeleton className="h-3 w-32" /></div>)}
+            </div>
+            <div className="py-7 border-b border-slate-100 space-y-3">
+              <Skeleton className="h-6 w-40" />
+              {[85, 70, 90, 60].map((w, i) => <Skeleton key={i} className="h-3.5" style={{ width: `${w}%` }} />)}
+            </div>
+            <div className="py-7 border-b border-slate-100 space-y-4">
+              <Skeleton className="h-6 w-44" />
+              <div className="grid grid-cols-2 gap-3">
+                {[...Array(6)].map((_, i) => <div key={i} className="flex gap-3 items-center"><Skeleton className="w-10 h-10 rounded-xl shrink-0" /><Skeleton className="h-4 w-28" /></div>)}
+              </div>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="rounded-2xl border border-slate-200 p-6 space-y-4 shadow-lg">
+              <Skeleton className="h-8 w-40" />
+              <Skeleton className="h-4 w-28" />
+              <Skeleton className="h-12 w-full rounded-xl" />
+              <Skeleton className="h-12 w-full rounded-xl" />
+              <div className="pt-2 space-y-3">
+                {[0, 1, 2].map(i => <div key={i} className="flex justify-between"><Skeleton className="h-3 w-1/3" /><Skeleton className="h-3 w-1/4" /></div>)}
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+/* ─── Main ─── */
 export default function HostelDetailClient() {
   const { id } = useParams();
   const router = useRouter();
-  const [activeImage, setActiveImage] = useState(0);
+  const [lightboxIdx, setLightboxIdx] = useState(null);
 
   const { data: hostel, isLoading, error } = useQuery({
     queryKey: ['hostel', id],
     queryFn: async () => {
       const res = await fetch(`/api/hostels/${id}`);
-      const result = await res.json();
-      if (!result.success) throw new Error(result.error);
-      return result.data;
+      const r = await res.json();
+      if (!r.success) throw new Error(r.error);
+      return r.data;
     }
   });
 
-  const [isCtaVisible, setIsCtaVisible] = useState(false);
   const ctaRef = React.useRef(null);
-
+  const [ctaVisible, setCtaVisible] = React.useState(false);
   React.useEffect(() => {
     if (!hostel) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsCtaVisible(entry.isIntersecting);
-      },
-      {
-        root: null,
-        threshold: 0.05,
-      }
-    );
-
-    const currentRef = ctaRef.current;
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
-
-    return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
-    };
+    const obs = new IntersectionObserver(([e]) => setCtaVisible(e.isIntersecting), { threshold: 0.05 });
+    if (ctaRef.current) obs.observe(ctaRef.current);
+    return () => obs.disconnect();
   }, [hostel]);
 
-  if (isLoading) return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50">
-      <Loader2 className="animate-spin text-slate-400" size={32} />
-    </div>
-  );
-
+  if (isLoading) return <HostelDetailSkeleton />;
   if (error) return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50 px-6 text-center">
-      <div className="max-w-md p-8 bg-white border border-slate-100 rounded-2xl shadow-sm">
-        <h2 className="text-xl font-semibold text-slate-900 mb-2">Error Loading Property</h2>
-        <p className="text-slate-505 text-sm mb-6">{error.message}</p>
-        <button onClick={() => router.back()} className="px-6 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-sm font-semibold transition-all">Go Back</button>
+    <div className="min-h-screen flex items-center justify-center bg-white">
+      <div className="text-center p-10 max-w-sm">
+        <h2 className="text-xl font-bold text-slate-900 mb-2">Failed to load</h2>
+        <p className="text-sm text-slate-500 mb-6">{error.message}</p>
+        <button onClick={() => router.back()} className="px-6 py-3 bg-slate-900 text-white rounded-xl text-sm font-semibold cursor-pointer">← Go Back</button>
       </div>
     </div>
   );
 
+  const images = hostel.images || [];
+  const typeLabel = hostel.hostelType === 'boys' ? 'Boys Only' : hostel.hostelType === 'girls' ? 'Girls Only' : 'Co-ed';
+  const typeBg = hostel.hostelType === 'boys' ? 'bg-sky-50 text-sky-700 border-sky-200' : hostel.hostelType === 'girls' ? 'bg-rose-50 text-rose-700 border-rose-200' : 'bg-purple-50 text-purple-700 border-purple-200';
+
+  const highlights = [
+    hostel.verified && { icon: BadgeCheck, title: 'Verified Property', desc: 'Reviewed and verified by our safety team.' },
+    { icon: MapPin, title: `Located in ${hostel.area}`, desc: `${hostel.city} — Near universities & transport.` },
+    hostel.mess?.available && { icon: Utensils, title: 'Mess Service Available', desc: `${hostel.mess.compulsory ? 'Compulsory' : 'Optional'} — Rs. ${hostel.mess.price?.toLocaleString()}/month.` },
+    hostel.amenities?.includes('security') && { icon: ShieldCheck, title: '24/7 Security', desc: 'Round-the-clock security for residents.' },
+  ].filter(Boolean);
+
   return (
-    <div className="min-h-screen bg-slate-50/50">
+    <div className="min-h-screen bg-white">
       <Nav />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      {/* Lightbox */}
+      {lightboxIdx !== null && (
+        <div className="fixed inset-0 z-[200] bg-black/95 flex items-center justify-center" onClick={() => setLightboxIdx(null)}>
+          <button className="absolute top-5 right-5 text-white/70 hover:text-white p-2.5 rounded-full bg-white/10 cursor-pointer" onClick={() => setLightboxIdx(null)}><X size={20} /></button>
+          <button className="absolute left-4 top-1/2 -translate-y-1/2 text-white p-3 rounded-full bg-white/10 hover:bg-white/20 cursor-pointer" onClick={e => { e.stopPropagation(); setLightboxIdx(i => Math.max(0, i - 1)); }}><ChevronLeft size={26} /></button>
+          <img src={images[lightboxIdx]?.url} alt="" className="max-h-[88vh] max-w-[88vw] object-contain rounded-xl" onClick={e => e.stopPropagation()} />
+          <button className="absolute right-4 top-1/2 -translate-y-1/2 text-white p-3 rounded-full bg-white/10 hover:bg-white/20 cursor-pointer" onClick={e => { e.stopPropagation(); setLightboxIdx(i => Math.min(images.length - 1, i + 1)); }}><ChevronRight size={26} /></button>
+          <p className="absolute bottom-5 text-white/50 text-sm">{lightboxIdx + 1} / {images.length}</p>
+        </div>
+      )}
 
-          {/* Mobile Floating CTA Bar */}
-          <div 
-            className={`lg:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-100 px-4 z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 ease-in-out ${
-              isCtaVisible ? 'translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'
-            }`}
-            style={{ paddingBottom: 'calc(1rem + env(safe-area-inset-bottom, 0px))', paddingTop: '1rem' }}
-          >
-            <div className="flex gap-2 max-w-lg mx-auto w-full">
-              <a 
-                href={`tel:${hostel.phone}`} 
-                className="flex-1 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer"
-              >
-                <Phone size={14} /> Call Owner
-              </a>
-              <a 
-                href={`https://wa.me/${hostel.phone.replace(/[^0-9]/g, '')}`} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex-1 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 text-xs font-semibold flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.98] cursor-pointer"
-              >
-                <FaWhatsapp size={15} className="text-emerald-500" /> WhatsApp Owner
-              </a>
-            </div>
+      {/* Mobile bottom CTA */}
+      <div className={`lg:hidden fixed bottom-0 inset-x-0 z-50 bg-white border-t border-slate-100 px-4 pt-3 shadow-[0_-4px_24px_rgba(0,0,0,0.08)] transition-all duration-300 ${ctaVisible ? 'translate-y-full' : 'translate-y-0'}`} style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom,0px))' }}>
+        <div className="flex gap-3 max-w-sm mx-auto">
+          <a href={`tel:${hostel.phone}`} className="flex-1 py-3.5 rounded-xl bg-primary text-white text-sm font-bold flex items-center justify-center gap-2 cursor-pointer"><Phone size={15} /> Call</a>
+          <a href={`https://wa.me/${hostel.phone?.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="flex-1 py-3.5 rounded-xl bg-emerald-500 text-white text-sm font-bold flex items-center justify-center gap-2 cursor-pointer"><FaWhatsapp size={16} /> WhatsApp</a>
+        </div>
+      </div>
+
+      <main className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-10 pt-6 pb-28 lg:pb-16">
+
+        {/* ── Title bar ── */}
+        <div className="mb-5">
+          <div className="flex items-start justify-between gap-4">
+            <h1 className="text-2xl sm:text-[28px] font-bold text-slate-900 leading-tight flex items-center gap-2 flex-wrap">
+              {hostel.name}
+              {hostel.verified && <BadgeCheck className="fill-blue-500 text-white w-6 h-6 shrink-0" />}
+            </h1>
+            <button className="shrink-0 flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-slate-900 border border-slate-200 rounded-xl px-3.5 py-2 hover:bg-slate-50 transition-all cursor-pointer mt-0.5">
+              <Share2 size={14} /> Share
+            </button>
           </div>
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mt-2 text-sm text-slate-500">
+            <span className="flex items-center gap-1 font-semibold text-slate-800">
+              <Star size={13} className="fill-slate-800 text-slate-800" /> 4.9 <span className="font-normal text-slate-400">· 42 reviews</span>
+            </span>
+            <span className="text-slate-300">·</span>
+            <span className="underline underline-offset-2 text-slate-700">{hostel.area}, {hostel.city}</span>
+            <span className="text-slate-300">·</span>
+            <span className={`px-2.5 py-0.5 rounded-full text-xs font-semibold border ${typeBg}`}>{typeLabel}</span>
+          </div>
+        </div>
 
-          {/* ─── LEFT COLUMN: Gallery & Info ─── */}
-          <div className="lg:col-span-8 space-y-8">
+        {/* ── Photo Grid ── */}
+        <div className="relative mb-10">
+          <div className="grid grid-cols-4 grid-rows-2 gap-2 h-[300px] sm:h-[380px] md:h-[440px] rounded-2xl overflow-hidden">
+            <button className="col-span-2 row-span-2 relative overflow-hidden group cursor-pointer" onClick={() => setLightboxIdx(0)}>
+              {images[0] ? <img src={images[0].url} alt={hostel.name} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" /> : <div className="w-full h-full bg-slate-100 flex items-center justify-center"><Building2 size={48} className="text-slate-300" /></div>}
+            </button>
+            {[1, 2, 3, 4].map(i => (
+              <button key={i} className="relative overflow-hidden group cursor-pointer bg-slate-100" onClick={() => setLightboxIdx(i)}>
+                {images[i] ? <img src={images[i].url} alt="" className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-500" /> : <div className="w-full h-full bg-slate-100" />}
+              </button>
+            ))}
+          </div>
+          {images.length > 5 && (
+            <button onClick={() => setLightboxIdx(0)} className="absolute bottom-4 right-4 bg-white border border-slate-300 text-slate-800 text-sm font-semibold px-4 py-2 rounded-xl shadow-sm flex items-center gap-2 hover:bg-slate-50 cursor-pointer">
+              <span className="grid grid-cols-2 gap-[2px] w-3 h-3">{[...Array(4)].map((_, i) => <span key={i} className="bg-slate-800 rounded-[1px]" />)}</span>
+              Show all {images.length}
+            </button>
+          )}
+        </div>
 
-            {/* Gallery */}
-            <div className="space-y-4">
-              <div className="relative aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/60 shadow-sm group">
-                <img
-                  src={hostel.images[activeImage]?.url}
-                  alt={hostel.name}
-                  className="w-full h-full object-cover transition-transform duration-750 group-hover:scale-[1.01]"
-                />
+        {/* ── Body grid ── */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-10 lg:gap-16">
 
-                {/* Floating Type Badge */}
-                <div className="absolute top-4 left-4 flex gap-2">
-                  <div className="px-3 py-1.5 bg-slate-900/90 backdrop-blur-md rounded-lg text-white text-[10px] font-semibold uppercase tracking-wider shadow-sm">
-                    {hostel.hostelType} Only
-                  </div>
-                </div>
+          {/* Left column */}
+          <div>
+            {/* Sentinel for mobile CTA visibility */}
+            <div ref={ctaRef} className="absolute top-0 h-px w-px opacity-0 pointer-events-none" />
 
-                <div className="absolute top-4 right-4">
-                  <button className="p-2.5 rounded-full bg-white/95 backdrop-blur-md text-slate-400 hover:text-rose-500 hover:bg-white shadow-sm hover:shadow transition-all cursor-pointer">
-                    <Heart size={18} />
-                  </button>
-                </div>
-              </div>
-
-              {/* Thumbnails Row */}
-              {hostel.images.length > 1 && (
-                <div className="flex gap-2 overflow-x-auto pb-2 custom-scrollbar">
-                  {hostel.images.map((img, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setActiveImage(idx)}
-                      className={`relative w-16 h-16 shrink-0 rounded-xl overflow-hidden border-2 transition-all duration-200 ${activeImage === idx
-                        ? 'border-slate-800 scale-95 shadow-sm'
-                        : 'border-transparent opacity-60 hover:opacity-100 hover:scale-95'
-                        }`}
-                    >
-                      <img src={img.url} className="w-full h-full object-cover" />
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Basic Info */}
-            <div className="bg-white rounded-2xl border border-slate-100 p-6 sm:p-8 space-y-6">
-              <div className="space-y-4">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="space-y-2 flex-1">
-                    <div className="flex items-center flex-wrap gap-2">
-                      <h1 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-tight">
-                        {hostel.name}
-                      </h1>
-                      {hostel.verified && (
-                        <BadgeCheck className="text-white fill-[#1877F2] w-6 h-6 shrink-0 align-middle" title="Verified Property" />
-                      )}
-                    </div>
-
-                    <div className="flex items-center gap-1.5 text-slate-500 text-sm">
-                      <MapPin size={15} className="text-slate-400 shrink-0" />
-                      <span>{hostel.area}, {hostel.city}</span>
-                    </div>
-                  </div>
-
-                  <button className="p-2.5 rounded-xl border border-slate-200 text-slate-500 hover:text-slate-900 hover:bg-slate-50 transition-all flex items-center gap-2 text-xs font-semibold cursor-pointer">
-                    <Share2 size={15} />
-                    <span className="hidden sm:inline">Share</span>
-                  </button>
-                </div>
-
-                {/* Universities tags */}
-                {hostel.nearbyUniversities && hostel.nearbyUniversities.length > 0 && (
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    {hostel.nearbyUniversities.map((uni, idx) => (
-                      <span key={idx} className="px-2.5 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-[11px] font-medium rounded-lg">
-                        Near {uni.split('(')[0].trim()}
-                      </span>
-                    ))}
-                  </div>
-                )}
-
-                {/* Tags list */}
-                {hostel.tags && hostel.tags.length > 0 && (
-                  <div className="flex flex-wrap gap-2 pt-1">
-                    {hostel.tags.map((tag, idx) => (
-                      <span key={idx} className="text-xs text-slate-400 font-medium">
-                        #{tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Description */}
-              <div className="space-y-3 pt-6 border-t border-slate-100">
-                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest">About this space</h3>
-                <p className="text-slate-600 leading-relaxed text-sm whitespace-pre-wrap font-normal">
-                  {hostel.description}
+            {/* Host row */}
+            <div className="flex items-center justify-between pb-8 border-b border-slate-100">
+              <div>
+                <h2 className="text-[22px] font-bold text-slate-900">Hosted by {hostel.owner?.name || 'Property Owner'}</h2>
+                <p className="text-slate-500 mt-1 text-sm">
+                  {[
+                    hostel.capacity?.length > 0 && `${hostel.capacity.length} room type${hostel.capacity.length > 1 ? 's' : ''}`,
+                    hostel.amenities?.length > 0 && `${hostel.amenities.length} amenities`,
+                    hostel.verified && 'Verified'
+                  ].filter(Boolean).join(' · ')}
                 </p>
               </div>
+              <div className="w-14 h-14 rounded-full bg-slate-900 text-white text-2xl font-bold flex items-center justify-center shrink-0 select-none shadow-lg">
+                {hostel.owner?.name?.charAt(0)?.toUpperCase() || 'H'}
+              </div>
             </div>
 
-            {/* Room Options */}
-            <div className="bg-white rounded-2xl border border-slate-100 p-6 sm:p-8 space-y-6">
-              <div className="flex items-center justify-between pb-3 border-b border-slate-100">
-                <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Available Room Types</h3>
-                <span className="text-xs font-semibold text-slate-400">{hostel.capacity?.length} Seater Options</span>
-              </div>
-
-              <div className="divide-y divide-slate-100">
-                {hostel.capacity?.map((item, idx) => (
-                  <div key={idx} className="py-4 first:pt-0 last:pb-0 flex items-center justify-between group">
-                    <div className="flex items-center gap-3">
-                      <div className="w-9 h-9 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-slate-100 transition-colors">
-                        <Bed size={16} />
-                      </div>
-                      <div>
-                        <span className="font-semibold text-slate-800 text-sm">{item.seater}</span>
-                        <p className="text-[11px] text-slate-400 font-medium">Monthly occupancy rent</p>
-                      </div>
+            {/* Highlights */}
+            {highlights.length > 0 && (
+              <div className="py-8 border-b border-slate-100 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+                {highlights.map(({ icon: Icon, title, desc }, i) => (
+                  <div key={i} className="flex gap-4 items-start p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-slate-200 transition-colors">
+                    <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center shrink-0 shadow-sm">
+                      <Icon size={18} className="text-slate-700" />
                     </div>
-                    <div className="text-right">
-                      <span className="font-bold text-slate-900 text-sm sm:text-base">Rs. {item.price?.toLocaleString()}</span>
-                      <p className="text-[9px] text-slate-400 font-bold uppercase tracking-tight">Per Month</p>
+                    <div>
+                      <p className="font-semibold text-slate-900 text-sm">{title}</p>
+                      <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">{desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
-            </div>
+            )}
 
-            {/* Amenities List */}
-            <div className="bg-white rounded-2xl border border-slate-100 p-6 sm:p-8 space-y-6">
-              <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider pb-3 border-b border-slate-100">Amenities & Facilities</h3>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-6">
-                {hostel.amenities?.map((id) => {
-                  const Icon = AMENITY_ICONS[id] || Building2;
-                  const label = id.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-                  return (
-                    <div key={id} className="flex items-center gap-3 py-0.5">
-                      <div className="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center text-slate-500">
-                        <Icon size={15} />
-                      </div>
-                      <span className="text-sm font-medium text-slate-600">{label}</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Mess Section */}
-            {hostel.mess?.available && (
-              <div className="bg-white rounded-2xl border border-slate-100 p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-600">
-                    <Utensils size={20} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-900 text-sm">Monthly Mess Service</h4>
-                    <p className="text-xs text-slate-500 max-w-md leading-relaxed mt-0.5">
-                      Freshly prepared meals served daily. {hostel.mess.compulsory ? 'Compulsory requirement for all residents.' : 'Optional/opt-in service.'}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 shrink-0 self-stretch sm:self-auto justify-between sm:justify-start">
-                  <span className="text-xs font-semibold text-slate-400">
-                    {hostel.mess.compulsory ? 'Compulsory' : 'Optional'}
-                  </span>
-                  <div className="px-3.5 py-1.5 rounded-xl bg-slate-900 text-white text-xs font-bold shadow-sm">
-                    Rs. {hostel.mess.price?.toLocaleString()}/mo
-                  </div>
-                </div>
+            {/* Description */}
+            {hostel.description && (
+              <div className="py-8 border-b border-slate-100">
+                <h3 className="text-[18px] font-bold text-slate-900 mb-4">About this property</h3>
+                <p className="text-slate-600 leading-[1.8] text-[15px] whitespace-pre-wrap">{hostel.description}</p>
               </div>
             )}
-          </div>
 
-          {/* ─── RIGHT COLUMN: Sticky Sidebar ─── */}
-          <div className="lg:col-span-4 relative">
-            <div className="sticky top-28 space-y-6">
-
-              {/* Price & Contact Card */}
-              <div className=" bg-white rounded-2xl border border-slate-100 shadow-sm p-6 space-y-6">
-                <div>
-                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Starting From</p>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-                    Rs. {hostel.price?.toLocaleString()} <span className="text-xs text-slate-400 font-semibold tracking-normal">/mo</span>
-                  </h3>
-                </div>
-
-                <div className="pt-5 border-t border-slate-100 space-y-4">
-                  {/* Host info */}
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-slate-50 border border-slate-200/50 flex items-center justify-center text-slate-600 text-sm font-semibold select-none">
-                      {hostel.owner?.name?.charAt(0).toUpperCase()}
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-slate-900 leading-none">{hostel.owner?.name}</p>
-                      <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">Property Host</p>
-                    </div>
-                  </div>
-
-                  {/* Highlights Grid */}
-                  <div className="grid grid-cols-2 gap-2 pt-2">
-                    <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex flex-col items-center justify-center text-center gap-1">
-                      <Users size={14} className="text-slate-500" />
-                      <span className="text-[10px] font-semibold text-slate-600">{hostel.capacity?.length} Types</span>
-                    </div>
-                    <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex flex-col items-center justify-center text-center gap-1">
-                      <Star size={14} className="text-amber-500 fill-amber-500" />
-                      <span className="text-[10px] font-semibold text-slate-600">4.8 Rating</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Call & WhatsApp CTA Buttons */}
-                <div ref={ctaRef} className="flex gap-2 pt-2">
-                  <a
-                    href={`tel:${hostel.phone}`}
-                    className="flex-1 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer"
-                  >
-                    <Phone size={14} /> Call Owner
-                  </a>
-                  <a
-                    href={`https://wa.me/${hostel.phone.replace(/[^0-9]/g, '')}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 text-xs font-semibold flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.98] cursor-pointer"
-                  >
-                    <FaWhatsapp size={15} className="text-emerald-500" /> WhatsApp Owner
-                  </a>
-                </div>
-
-                <div className="text-center pt-2">
-                  <p className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Listing ID: {hostel._id?.slice(-8).toUpperCase()}</p>
-                </div>
-              </div>
-
-              {/* Safety Tips Card */}
-              <div className="bg-amber-50/40 border border-amber-100/60 rounded-2xl p-6 space-y-4 relative overflow-hidden">
-                <div className="flex items-center gap-2">
-                  <ShieldCheck size={18} className="text-amber-600" />
-                  <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Stay Safe Tips</h4>
-                </div>
-
-                <div className="space-y-3">
-                  {[
-                    { title: "Visit Personally", desc: "Never pay advance rent before visiting the hostel." },
-                    { title: "Verify Facilities", desc: "Check if all promised amenities are actually available." },
-                    { title: "Payment Proof", desc: "Always take a receipt for every payment." }
-                  ].map((tip, i) => (
-                    <div key={i} className="flex gap-2">
-                      <div className="text-amber-600/80 font-bold text-xs">0{i + 1}</div>
-                      <div>
-                        <h5 className="text-xs font-semibold text-slate-800 mb-0.5">{tip.title}</h5>
-                        <p className="text-[11px] text-slate-500 leading-relaxed font-normal">{tip.desc}</p>
+            {/* Room Types */}
+            {hostel.capacity?.length > 0 && (
+              <div className="py-8 border-b border-slate-100">
+                <h3 className="text-[18px] font-bold text-slate-900 mb-5">Available room types</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {hostel.capacity.map((item, i) => (
+                    <div key={i} className="group relative rounded-2xl border border-slate-200 bg-white p-5 hover:border-primary hover:shadow-md hover:shadow-primary/5 transition-all duration-200">
+                      <div className="flex items-start justify-between">
+                        <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center mb-3">
+                          <Bed size={18} className="text-slate-600" />
+                        </div>
+                        <CheckCircle2 size={16} className="text-slate-200 group-hover:text-primary transition-colors mt-1" />
                       </div>
+                      <p className="font-bold text-slate-900 text-[15px]">{item.seater}</p>
+                      <p className="text-xs text-slate-400 mt-0.5 mb-3">Monthly occupancy</p>
+                      <p className="text-xl font-bold text-slate-900">Rs. {item.price?.toLocaleString()}<span className="text-sm text-slate-400 font-normal ml-1">/ mo</span></p>
                     </div>
                   ))}
                 </div>
+              </div>
+            )}
 
-                <div className="pt-3 border-t border-amber-200/30">
-                  <p className="text-[10px] text-slate-400 font-medium">
-                    Report listing if suspicious. <span className="text-rose-500 font-semibold cursor-pointer hover:underline">Report Now</span>
-                  </p>
+            {/* Amenities */}
+            {hostel.amenities?.length > 0 && (
+              <div className="py-8 border-b border-slate-100">
+                <h3 className="text-[18px] font-bold text-slate-900 mb-6">What this place offers</h3>
+                <div className="grid grid-cols-3 sm:grid-cols-3 gap-y-5 gap-x-8">
+                  {hostel.amenities.map(key => {
+                    const a = AMENITY_MAP[key];
+                    const Icon = a?.icon || Building2;
+                    const label = a?.label || key.split('_').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+                    return (
+                      <div key={key} className="flex items-center gap-3.5">
+                        <Icon size={20} className="text-slate-600 shrink-0" />
+                        <span className="text-[15px] text-slate-700">{label}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Nearby Unis */}
+            {hostel.nearbyUniversities?.length > 0 && (
+              <div className="py-8">
+                <h3 className="text-[18px] font-bold text-slate-900 mb-4">Nearby universities</h3>
+                <div className="flex flex-wrap gap-2">
+                  {hostel.nearbyUniversities.map((u, i) => (
+                    <span key={i} className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 hover:border-slate-300 transition-colors">
+                      <Building2 size={13} className="text-slate-400" />
+                      {u.split('(')[0].trim()}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+          </div>
+
+          {/* Right sticky sidebar */}
+          <div className="hidden lg:block self-start">
+            <div className="sticky top-[5.5rem] rounded-2xl border border-slate-200 shadow-xl shadow-slate-900/8 overflow-hidden">
+
+              {/* Price header */}
+              <div className="px-6 pt-6 pb-5 border-b border-slate-100">
+                <p className="text-[26px] font-bold text-slate-900 leading-none">
+                  Rs. {hostel.price?.toLocaleString()}
+                  <span className="text-sm font-normal text-slate-400 ml-1.5">/ month</span>
+                </p>
+                <div className="flex items-center gap-1.5 mt-2">
+                  <Star size={13} className="fill-amber-400 text-amber-400" />
+                  <span className="text-sm font-semibold text-slate-800">4.9</span>
+                  <span className="text-sm text-slate-400">· 42 reviews</span>
                 </div>
               </div>
 
+              {/* CTAs */}
+              <div className="px-6 py-5 space-y-3 border-b border-slate-100">
+                <a href={`tel:${hostel.phone}`} className="w-full py-3.5 rounded-xl bg-primary hover:brightness-95 text-white text-sm font-bold flex items-center justify-center gap-2.5 transition-all shadow-md shadow-primary/25 cursor-pointer">
+                  <Phone size={16} /> Call Owner
+                </a>
+                <a href={`https://wa.me/${hostel.phone?.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-bold flex items-center justify-center gap-2.5 transition-all shadow-md shadow-emerald-500/25 cursor-pointer">
+                  <FaWhatsapp size={17} /> WhatsApp Owner
+                </a>
+              </div>
+
+              {/* Price details */}
+              {(hostel.capacity?.length > 0 || hostel.mess?.available) && (
+                <div className="px-6 py-5 space-y-3 border-b border-slate-100">
+                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Price Breakdown</p>
+                  {hostel.capacity?.map((item, i) => (
+                    <div key={i} className="flex justify-between items-center">
+                      <span className="text-sm text-slate-600">{item.seater}</span>
+                      <span className="text-sm font-bold text-slate-900">Rs. {item.price?.toLocaleString()}<span className="text-xs font-normal text-slate-400">/mo</span></span>
+                    </div>
+                  ))}
+                  {hostel.mess?.available && (
+                    <div className="flex justify-between items-center pt-2 border-t border-slate-100">
+                      <span className="text-sm text-slate-600">Mess ({hostel.mess.compulsory ? 'Compulsory' : 'Optional'})</span>
+                      <span className="text-sm font-bold text-slate-900">Rs. {hostel.mess.price?.toLocaleString()}<span className="text-xs font-normal text-slate-400">/mo</span></span>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Listing ID */}
+              <div className="px-6 py-4 bg-slate-50 text-center">
+                <p className="text-[11px] text-slate-400 font-medium">Listing #{hostel._id?.slice(-8).toUpperCase()}</p>
+              </div>
+            </div>
+
+            {/* Safety tips */}
+            <div className="mt-5 hidden  rounded-2xl bg-amber-50 border border-amber-100 p-5">
+              <div className="flex items-center gap-2 mb-4">
+                <ShieldCheck size={16} className="text-amber-600" />
+                <p className="text-xs font-bold text-slate-800 uppercase tracking-wider">Stay Safe Tips</p>
+              </div>
+              <div className="space-y-3.5">
+                {[
+                  ['Visit before paying', 'Never pay advance rent before physically visiting.'],
+                  ['Verify all amenities', 'Check that all advertised facilities are actually provided.'],
+                  ['Always get receipts', 'Keep proof of every payment made to the owner.'],
+                ].map(([title, desc], i) => (
+                  <div key={i} className="flex gap-3">
+                    <span className="w-5 h-5 rounded-full bg-amber-200 text-amber-700 text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">{i + 1}</span>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-800">{title}</p>
+                      <p className="text-[11px] text-slate-500 leading-relaxed mt-0.5">{desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <p className="text-[11px] text-slate-400 mt-4 pt-3.5 border-t border-amber-200">Something suspicious? <span className="text-rose-500 font-semibold cursor-pointer hover:underline">Report listing</span></p>
             </div>
           </div>
+
         </div>
       </main>
-
       <Footer />
     </div>
   );

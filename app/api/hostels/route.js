@@ -62,8 +62,8 @@ export async function POST(req) {
             folder: 'stay-safe/hostels',
             resource_type: 'image',
             transformation: [
-              { width: 1200, height: 800, crop: 'limit', quality: 'auto', fetch_format: 'auto' },
-              { overlay: { font_family: "Roboto", font_size: 100, font_weight: "bold", text: "Stay Safe" }, color: "white", opacity: 20, gravity: "center" }
+              { width: 1200, height: 800, crop: 'fill', quality: 'auto', fetch_format: 'auto' },
+              { overlay: 'text:Arial_100_bold:Stay%20Safe', color: "white", opacity: 20, gravity: "center" }
             ]
           },
           (error, result) => {

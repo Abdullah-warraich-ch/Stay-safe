@@ -29,7 +29,7 @@ export default function MyHostels({ ownerId }) {
                 <div className="flex items-center justify-between px-2">
                     <h3 className="text-lg font-bold text-slate-800">My Listings</h3>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                     {[...Array(5)].map((_, i) => (
                         <CardSkeleton key={i} />
                     ))}
@@ -75,7 +75,7 @@ export default function MyHostels({ ownerId }) {
                 </Link>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                 {data.map((hostel) => (
                     <HostelCard hostel={hostel} key={hostel._id} showDeleteButton={hostel.owner === user.id} />
 

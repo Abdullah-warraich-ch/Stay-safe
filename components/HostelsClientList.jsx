@@ -93,7 +93,7 @@ export default function HostelsClientList({ initialHostels, total, searchParams 
     return (
         <div className="space-y-12">
             {/* Grid display */}
-            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6 md:gap-8">
                 {hostels.map((hostel) => (
                     <div key={hostel._id} className="fade-in duration-300">
                         <HostelCard hostel={hostel} />

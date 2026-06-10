@@ -128,21 +128,21 @@ export default function SingleDashboardListing({ currentCity }) {
             <div className="flex gap-4 overflow-x-auto scrollbar-hide py-4 -my-4 snap-x snap-mandatory" ref={scrollRef}>
                 {loading ? (
                     [...Array(5)].map((_, i) => (
-                        <div key={i} className="w-[240px] sm:w-[calc(33.33vw-36px)] md:w-[calc(25vw-36px)] lg:w-[calc(20vw-36px)] xl:w-[calc(16.66vw-36px)] max-w-[280px] shrink-0 snap-start">
+                        <div key={i} className="w-[260px] sm:w-[calc(50vw-36px)] md:w-[calc(33.33vw-36px)] lg:w-[calc(25vw-36px)] xl:w-[calc(20vw-36px)] max-w-[300px] shrink-0 snap-start">
                             <CardSkeleton />
                         </div>
                     ))
                 ) : (
                     <>
                         {hostels?.map((hostel) => (
-                            <div key={hostel._id} className="w-[240px] sm:w-[calc(33.33vw-36px)] md:w-[calc(25vw-36px)] lg:w-[calc(20vw-36px)] xl:w-[calc(16.66vw-36px)] max-w-[280px] shrink-0 snap-start">
+                            <div key={hostel._id} className="w-[260px] sm:w-[calc(50vw-36px)] md:w-[calc(33.33vw-36px)] lg:w-[calc(25vw-36px)] xl:w-[calc(20vw-36px)] max-w-[300px] shrink-0 snap-start">
                                 <HostelCard hostel={hostel} />
                             </div>
                         ))}
                         {hostels && hostels.length > 0 && (
                             <Link
                                 href={currentCity ? `/hostels?city=${currentCity}` : "/hostels"}
-                                className="group flex flex-col gap-3 cursor-pointer w-[240px] sm:w-[calc(33.33vw-36px)] md:w-[calc(25vw-36px)] lg:w-[calc(20vw-36px)] xl:w-[calc(16.66vw-36px)] max-w-[280px] shrink-0 snap-start"
+                                className="group flex flex-col gap-3 cursor-pointer w-[260px] sm:w-[calc(50vw-36px)] md:w-[calc(33.33vw-36px)] lg:w-[calc(25vw-36px)] xl:w-[calc(20vw-36px)] max-w-[300px] shrink-0 snap-start"
                             >
                                 <div className="relative aspect-square overflow-hidden rounded-xl border border-slate-100 bg-white shadow-[0_0_12px_rgba(0,0,0,0.05)] group-hover:shadow-[0_0_20px_rgba(0,0,0,0.12)] group-hover:border-slate-200 transition-all duration-300 flex flex-col items-center justify-center gap-3">
                                     <div className="absolute top-3 right-3 text-slate-400 group-hover:text-slate-900 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">

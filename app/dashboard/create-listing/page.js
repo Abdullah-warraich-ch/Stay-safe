@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useMutation } from '@tanstack/react-query';
 import { ProtectedRoute } from '@/components/ProtectedRoute';
 import toast from 'react-hot-toast';
@@ -35,7 +35,9 @@ const STEPS = [
 export default function CreateListingPage() {
   return (
     <ProtectedRoute>
-      <CreateListingContent />
+      <React.Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div></div>}>
+        <CreateListingContent />
+      </React.Suspense>
     </ProtectedRoute>
   );
 }
@@ -43,6 +45,8 @@ export default function CreateListingPage() {
 function CreateListingContent() {
   const { user } = useAuth();
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const id = searchParams.get('id');
   const [currentStep, setCurrentStep] = useState(1);
   const [direction, setDirection] = useState('next');
 
@@ -86,6 +90,36 @@ function CreateListingContent() {
   const [backupLight, setBackupLight] = useState('No');
   const [acType, setAcType] = useState('Non-AC');
   const [attachedBath, setAttachedBath] = useState('No');
+
+  React.useEffect(() => {
+    if (id) {
+      fetch(`/api/hostels/${id}`).then(res => res.json()).then(res => {
+        if (res.success) {
+          const h = res.data;
+          setFormData({ name: h.name, description: h.description, city: h.city, area: h.area, address: h.address, phone: h.phone });
+          setHostelType(h.hostelType);
+          setAvailableAreas(citiesData[h.city] || []);
+          setAvailableUniversities(universitiesData[h.city] || []);
+          setMess(h.mess || { available: false, price: '', compulsory: false });
+          setSelectedAmenities(h.amenities || []);
+          setSelectedUniversities(h.nearbyUniversities || []);
+          setTags(h.tags || []);
+          setBackupLight(h.backupLight || 'No');
+          setAcType(h.acType || 'Non-AC');
+          setAttachedBath(h.attachedBath || 'No');
+          if (h.capacity) {
+            setHowManySeaters(prev => prev.map(p => {
+               const found = h.capacity.find(c => c.seater === p.seater);
+               return found ? { ...p, active: true, price: found.price } : p;
+            }));
+          }
+          if (h.images) {
+            setImagePreviews(h.images.map(img => img.url));
+          }
+        }
+      });
+    }
+  }, [id]);
 
   // ── Handlers ──
   const handleChange = (e) => {
@@ -167,7 +201,7 @@ function CreateListingContent() {
       if (!formData.address.trim()) { toast.error('Enter full address'); return false; }
     }
     if (step === 7) {
-      if (imageFiles.length < 2) { toast.error('Upload at least 2 photos'); return false; }
+      if (!id && imageFiles.length < 2) { toast.error('Upload at least 2 photos'); return false; }
     }
     return true;
   };
@@ -205,12 +239,14 @@ function CreateListingContent() {
       data.append('acType', acType);
       data.append('attachedBath', attachedBath);
       imageFiles.forEach(f => data.append('images', f));
-      const res = await fetch('/api/hostels', { method: 'POST', body: data });
+      const url = id ? `/api/hostels/${id}` : '/api/hostels';
+      const method = id ? 'PUT' : 'POST';
+      const res = await fetch(url, { method, body: data });
       const result = await res.json();
-      if (!res.ok) throw new Error(result.error || 'Failed to create listing');
+      if (!res.ok) throw new Error(result.error || `Failed to ${id ? 'update' : 'create'} listing`);
       return result;
     },
-    onSuccess: () => { toast.success('Hostel listed successfully!'); router.push('/dashboard'); },
+    onSuccess: () => { toast.success(`Hostel ${id ? 'updated' : 'listed'} successfully!`); router.push('/dashboard'); },
     onError: (err) => { toast.error(err.message); },
   });
 
@@ -342,9 +378,9 @@ function CreateListingContent() {
                 className="px-8 py-3.5 rounded-lg font-semibold text-white bg-slate-950 hover:bg-slate-800 transition-all duration-200 active:scale-[0.98] flex items-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed text-[15px] cursor-pointer"
               >
                 {createMutation.isPending ? (
-                  <><Loader2 className="animate-spin" size={18} /> Publishing...</>
+                  <><div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div> {id ? 'Updating...' : 'Publishing...'}</>
                 ) : (
-                  <><Check size={18} /> Publish Listing</>
+                  <><Check size={18} /> {id ? 'Update Listing' : 'Publish Listing'}</>
                 )}
               </button>
             )}

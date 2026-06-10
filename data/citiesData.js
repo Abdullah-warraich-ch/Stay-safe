@@ -37,7 +37,7 @@ export const citiesData = {
     'Super Town', 'Rehman Garden', 'Punjab Society Near Dha', 'Sui Gas Society',
     'State Life Society', 'DHA 1', 'DHA 2', 'DHA 3', 'DHA 4', 'DHA 5',
     'DHA 6', 'DHA 7', 'DHA 8', 'Lidhar', 'Chachowali', 'Gohawa', 'Airport Road',
-    'Cantt', 'Askrai Villa 1', 'Askrai Villa 2', 'Askrai Villa 3', 'Askrai Villa 4',
+    'Cantt', 'Pir Mansoor Colony', 'Askrai Villa 1', 'Askrai Villa 2', 'Askrai Villa 3', 'Askrai Villa 4',
     'Askrai Villa 5', 'Askrai Villa 6', 'Askrai Villa 7', 'Askrai Villa 8',
     'Askrai Villa 9', 'Askrai Villa 10', 'Askrai Villa', 'Army Housing Society',
     'Eden Avenue', 'Eden View', 'Barki Road', 'Paragon City', 'LUMS', 'Rang Mehal',
@@ -101,9 +101,9 @@ export const citiesData = {
     'New Garden Town - Usman Block',
     'Garden Town',
     'Quaid-i-Azam Campus'
-  ,
+    ,
     '30-A', 'Street number 35', '1183', '1118', 'Gate 1 Defence Rd', 'C646+H3M', '1162 M Block LDA Ave 1', '498-3-C1 House # 498 Street 8', 'D1', 'Minhaj Rd', 'Revenue Employees Cooperative Housing Society'
-  ,
+    ,
     '428', 'Sector B-1 Block 12 Sector B 1 Lahore'
   ].sort(),
   'Karachi': [

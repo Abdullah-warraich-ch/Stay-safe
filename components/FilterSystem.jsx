@@ -5,7 +5,7 @@ import { useAuth } from "../context/AuthContext";
 import { cities, citiesData } from "../data/citiesData";
 import { SlidersHorizontal, BedDouble, Bath, Wind, Wifi, Zap, Building2, MapPin } from "lucide-react";
 import SearchableSelect from "./SearchableSelect";
-
+import { motion } from 'framer-motion';
 export default function FilterSystem() {
   const { currentCity } = useAuth();
   const router = useRouter();
@@ -67,17 +67,33 @@ export default function FilterSystem() {
   return (
     <div className="flex flex-col items-center w-full max-w-4xl px-4 md:px-0">
       {/* Gender Switcher */}
-      <div className="flex items-center gap-2 mt-6 bg-white/80 p-1.5 rounded-full shadow-sm border border-slate-100">
+      <motion.div
+        className="flex items-center gap-2 mt-6 bg-white/80 p-1.5 rounded-full shadow-sm border border-slate-100 relative"
+      >
         {["Boys", "Girls", "All"].map((item) => (
-          <button
+          <motion.button
             key={item}
             onClick={() => setGender(item)}
-            className={`px-6 md:px-10 py-2.5 md:py-3 text-xs md:text-sm font-semibold tracking-wide text-black rounded-full transition-all duration-300 cursor-pointer ${gender === item ? "bg-black text-white shadow-lg" : "hover:bg-slate-50"}`}
+            className="relative px-6 md:px-10 py-2.5 md:py-3 text-xs md:text-sm font-semibold tracking-wide text-black rounded-full cursor-pointer"
+            style={{ position: "relative" }}
           >
-            {item}
-          </button>
+            {gender === item && (
+              <motion.div
+                layoutId="gender-indicator"
+                className="absolute inset-0 bg-black rounded-full z-0"
+                transition={{ type: "spring", stiffness: 500, damping: 30 }}
+              />
+            )}
+
+            <span
+              className={`relative z-10 ${gender === item ? "text-white" : "text-black"
+                }`}
+            >
+              {item}
+            </span>
+          </motion.button>
         ))}
-      </div>
+      </motion.div>
 
       {/* search div */}
       <div

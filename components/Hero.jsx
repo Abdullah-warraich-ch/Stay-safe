@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="min-h-[80vh] md:min-h-screen px-6 md:px-12 lg:px-32 py-12 md:py-25 flex flex-col justify-center gap-8 md:gap-7 items-center">
+    <div className="min-h-[25vh] sm:min-h-[40vh] md:min-h-screen px-4 sm:px-6 md:px-12 lg:px-32 py-6 sm:py-12 md:py-25 flex flex-col justify-center gap-6 md:gap-7 items-center">
       {/* Stats: Hidden on mobile, visible on Tablet+ */}
       <div className="hidden md:flex justify-center items-center font-medium text-slate-400 text-sm tracking-wide">
         <div className="px-6 lg:px-10 border-r-2 border-slate-200">

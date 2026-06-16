@@ -69,9 +69,7 @@ export default async function HostelsPage({ searchParams }) {
             <main className='max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8'>
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
                     {/* Sidebar Filter */}
-                    <div className="hidden lg:block w-72 shrink-0">
-                        <FilterSidebar />
-                    </div>
+                    <FilterSidebar />
 
                     {/* Main Content */}
                     <div className="flex-1">

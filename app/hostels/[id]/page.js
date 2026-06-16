@@ -1,13 +1,16 @@
 import connectDB from '@/lib/db';
 import Hostel from '@/models/Hostel';
 import HostelDetailClient from '@/components/HostelDetailClient';
+import mongoose from 'mongoose';
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
 
   try {
     await connectDB();
-    const hostel = await Hostel.findById(id).select('name city area hostelType description price amenities tags images').lean();
+    const isObjectId = mongoose.Types.ObjectId.isValid(id);
+    const query = isObjectId ? { _id: id } : { slug: id };
+    const hostel = await Hostel.findOne(query).select('name city area hostelType description price amenities tags images').lean();
 
     if (!hostel) {
       return {

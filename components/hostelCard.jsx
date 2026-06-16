@@ -29,7 +29,7 @@ export default function HostelCard({ hostel, showDeleteButton }) {
     };
 
     return (
-        <Link href={`/hostels/${hostel._id}`} className="group flex flex-col gap-3 cursor-pointer h-full">
+        <Link href={`/hostels/${hostel.slug || hostel._id}`} className="group flex flex-col gap-3 cursor-pointer h-full">
             {/* Image Container */}
             <div className="relative aspect-square shrink-0 overflow-hidden rounded-xl bg-slate-200 border-b-2 border-primary shadow-xl shadow-black/10">
                 <Image

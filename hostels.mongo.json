@@ -1,10 +1,10 @@
 [
   {
-    "name": "Boys Hostel",
-    "description": "Boys Hostel is a boys hostel located in Township, Lahore.",
+    "name": "Elite Boys Hostel",
+    "description": "Elite Boys Hostel is a boys hostel located in Garden Town, Lahore.",
     "city": "Lahore",
-    "area": "Township",
-    "address": "Plot 145, Township Block 3 Sector A 2 Lahore, Pakistan",
+    "area": "Garden Town",
+    "address": "Garden, Plot 137, Block, Jevan Hana Ali Block Garden Town, Lahore, 54000, Pakistan",
     "price": 10000,
     "mess": {
       "available": false,
@@ -15,421 +15,129 @@
     "amenities": [],
     "images": [
       {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHwD77z5DGoFd9sp-zC9P9bK10KMgqEHXghtykbIeftrvUbLiXHl10IXKecgAVjXHLiJ6HHNeptQBSbr7MFfSSyhRvxzjd48DgJsbltxflR5vf3OnGNc6-0YnhxnM6M34pWsA-FBw=w408-h726-k-no",
-        "publicId": "google-maps/boys-hostel-1"
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHJmW6lQKYS_Q6s3RCDA13eukkjlWH0n7D7ufOSfyqXXlV7Se3ZH67dv2eB_MKxIT4yMfhrZcbDmmY2HxpoRIsEz2GZonkJc1fjwKABaiHCGE-ezJmV7u4YfCzBPBCsLhCl-3QAtB24WU0=w408-h544-k-no",
+        "publicId": "google-maps/elite-boys-hostel-1"
       },
       {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHwD77z5DGoFd9sp-zC9P9bK10KMgqEHXghtykbIeftrvUbLiXHl10IXKecgAVjXHLiJ6HHNeptQBSbr7MFfSSyhRvxzjd48DgJsbltxflR5vf3OnGNc6-0YnhxnM6M34pWsA-FBw=w224-h398-k-no",
-        "publicId": "google-maps/boys-hostel-2"
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHJmW6lQKYS_Q6s3RCDA13eukkjlWH0n7D7ufOSfyqXXlV7Se3ZH67dv2eB_MKxIT4yMfhrZcbDmmY2HxpoRIsEz2GZonkJc1fjwKABaiHCGE-ezJmV7u4YfCzBPBCsLhCl-3QAtB24WU0=w224-h298-k-no",
+        "publicId": "google-maps/elite-boys-hostel-2"
       },
       {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH2ZJIlG9FD4qYUtNd8LZaETjSnIYXE9EJx86kd80Y4uU0Ds-l8sF5rI4bBiGu-RDFUQLr2xIoA-TbJ-Oh2jJti5n-bh6PvV-7OaeUhqiRmuu6in0K2lUOtp4k_J9oFMYoodlTv=w224-h403-k-no",
-        "publicId": "google-maps/boys-hostel-3"
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFzEwbtkdW3g3H-dcOiIUZ5P2HTmJwgYArrKVBPeUDRlGlP3a0DE9OA45L1-bWs8tQhL6chyeSziMRAf1fkHTMxu7hGqEe32-FBMBTC-_XsdQd3cUFD2HKsng3BsyJSmvJU7I6wVghzLb3n=w397-h298-k-no",
+        "publicId": "google-maps/elite-boys-hostel-3"
       },
       {
-        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVMTadXV_T38f2_7ttrwqSGYR34MehnGESq3o-KEw_1QdenxI58=w36-h36-p-rp-mo-br100",
-        "publicId": "google-maps/boys-hostel-4"
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHkoFVryFqFAkWsnIBHuM66xb1We_ubHLTNYOqxPr9MVSFbqgTxjXd7LEC8E29zK5HPmdU3Uu2D2rQiIdNv10IRd_3DFW04LmGBs1hE4ebx5TMDFoODPfK6GIfhZu1H2XeoiDHfOZjXoio=w224-h298-k-no",
+        "publicId": "google-maps/elite-boys-hostel-4"
       },
       {
-        "url": "https://lh3.googleusercontent.com/a-/ALV-UjValaMnBOXUWU1Qfo41hr6HvFhHvuNUJ7qklMsvAn22aLY9Lmn6=w36-h36-p-rp-mo-br100",
-        "publicId": "google-maps/boys-hostel-5"
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGp1d8g4_q9p_io_uXRER7iF8dLSYDFm4SVx91YR7n2TK8kifPn8glEpYvC3WCTpT6_U0tTiNQqYy7F10mlr9STfGuSp5dnOMCFgwSm3sKlZX_rMt3fh-MPxL0i5pRIpUU2XupksW32f2dn=w661-h298-k-no",
+        "publicId": "google-maps/elite-boys-hostel-5"
       },
       {
-        "url": "https://lh3.googleusercontent.com/a/ACg8ocIzP3aYeD1tfZehwVY4nf5Lm94EyBT9RG-ZEvg3l48yJ0HfcQ=w36-h36-p-rp-mo-br100",
-        "publicId": "google-maps/boys-hostel-6"
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEZ94OWAljJOZ35d1ILbSYq2VI-6PkvDEVNXUoILCg2B9uZxkjZefnuPheuuXAVFNYpUYYQlHCxgYvovXEV1QbvBrw7Plsx6O9hFVL-QAq1fzbSKwI46CW-DcYy1glEOPNUsOFnc0oeRB2y=w224-h298-k-no",
+        "publicId": "google-maps/elite-boys-hostel-6"
       },
       {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFikCnVxsfhoL1_F8zLgoLCHc3epAtDdDhET1CMfTgMwajO6qkh8ozQZAH6oc8lZIjR3Xgtu9At383E9inSqjk778hmbvD-7wtKiqBkI22VHGHcf-VxewDtAm6bXw1tsbydL_EVfkbpAwc=w156-h114-p-k-no",
-        "publicId": "google-maps/boys-hostel-7"
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUfwPxfXHd5bOiOm5-Fru3Rhry7Ac2Z6aQ9aLbCsSLOGCsJ-7Rk=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/elite-boys-hostel-7"
       },
       {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGmHzTHjjMCF0rHVHrWnxHluRNJrgDc06Ku_QUjo09Ef3ek4zY0cxZ9pYNtkD-vbg2aDLJcZ67qhOf-zfwLIGfEBXwGKt3YvrhdD0qj5IOX2nhNIWZGvU6vKdTjCJxqhoK6LgE=w156-h114-p-k-no",
-        "publicId": "google-maps/boys-hostel-8"
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXiz9j7IRF5JYBlgCGWvtrAPPm37RIs5sIeYtf84rdRzhj_B540zw=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/elite-boys-hostel-8"
       }
     ],
     "owner": "",
-    "phone": "+92 305 4820019",
-    "latitude": 31.4512525,
-    "longitude": 74.3152832,
+    "phone": "Not available",
+    "latitude": 31.50478,
+    "longitude": 74.3216344,
     "location": {
       "type": "Point",
       "coordinates": [
-        74.3152832,
-        31.4512525
+        74.3216344,
+        31.50478
       ]
     },
     "capacity": [],
     "nearbyUniversities": [
-      "Minhaj University Lahore",
-      "University of Management and Technology",
-      "FAST NUCES Lahore",
-      "University of Central Punjab"
+      "University of the Punjab",
+      "FAST NUCES Lahore"
     ],
     "nearbyPlaces": [
       {
-        "name": "Minhaj University Lahore",
-        "type": "university",
-        "distanceKm": 0.48
-      },
-      {
-        "name": "University of Management and Technology",
-        "type": "university",
-        "distanceKm": 2.28
-      },
-      {
-        "name": "FAST NUCES Lahore",
-        "type": "university",
-        "distanceKm": 3.58
-      },
-      {
-        "name": "Arfa Software Technology Park",
-        "type": "office",
-        "distanceKm": 3.68
-      },
-      {
-        "name": "Model Town Park",
-        "type": "park",
-        "distanceKm": 3.85
-      },
-      {
-        "name": "Jinnah Hospital Lahore",
-        "type": "hospital",
-        "distanceKm": 3.94
-      },
-      {
-        "name": "Shaukat Khanum Memorial Cancer Hospital",
-        "type": "hospital",
-        "distanceKm": 3.99
-      },
-      {
-        "name": "Packages Mall",
-        "type": "office",
-        "distanceKm": 4.07
-      },
-      {
-        "name": "University of Central Punjab",
-        "type": "university",
-        "distanceKm": 4.54
-      }
-    ],
-    "tags": [
-      "boys",
-      "Township",
-      "Lahore",
-      "Minhaj University Lahore",
-      "University of Management and Technology",
-      "FAST NUCES Lahore",
-      "Arfa Software Technology Park",
-      "Model Town Park",
-      "Jinnah Hospital Lahore",
-      "Shaukat Khanum Memorial Cancer Hospital",
-      "Packages Mall",
-      "University of Central Punjab",
-      "university",
-      "office",
-      "park",
-      "hospital"
-    ],
-    "verified": false
-  },
-  {
-    "name": "Uzair Boys Hostel",
-    "description": "Uzair Boys Hostel is a boys hostel located in Township, Lahore.",
-    "city": "Lahore",
-    "area": "Township",
-    "address": "Plot 435, Township Block 5 Sector D1 Lahore, Pakistan",
-    "price": 10000,
-    "mess": {
-      "available": false,
-      "price": 0,
-      "compulsory": false
-    },
-    "hostelType": "boys",
-    "amenities": [],
-    "images": [
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHN124kXvcgVftMrG1Z-dwHdiWw8D8DU48R9JNAKZeWdULHNbx5b00QFdCIk8kAOMcCO0QZX9ZnF3kKGJQ6Dnldnqcz2r910ul_ZDG4q9PviBoar3bzgFt6PDh0jXNKr0Ex8yGU=w408-h544-k-no",
-        "publicId": "google-maps/uzair-boys-hostel-1"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHN124kXvcgVftMrG1Z-dwHdiWw8D8DU48R9JNAKZeWdULHNbx5b00QFdCIk8kAOMcCO0QZX9ZnF3kKGJQ6Dnldnqcz2r910ul_ZDG4q9PviBoar3bzgFt6PDh0jXNKr0Ex8yGU=w224-h298-k-no",
-        "publicId": "google-maps/uzair-boys-hostel-2"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFIaTgQW1sFnNFavAGSRD7iEyzObb8U9X4d9tHu5_CXMtIRprPGZqzgCYWfXBvztzNvwI9tk63W7yYPZn3IPGQKybT-NRp2KcgOqsKfZY-W7YFWjy58KXS5kumpPQ9qMMlumtis=w224-h298-k-no",
-        "publicId": "google-maps/uzair-boys-hostel-3"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG61DuyaA6L7rlMflvcWTNeZJNyicuPpgusH6Lgt-x238Rrzx1lE5tvH7qWIIBPvcL99NOT6bFPOwbDilvchyu7T_t8AOjx1VBnyfQv2Wa9VsIk7PYwID66QAvHgBnngeD-FotbS1nsWPdr=w224-h398-k-no",
-        "publicId": "google-maps/uzair-boys-hostel-4"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGTiMd8oXlv2AG_R-SSM5OlPdI-jmZwZ-gikBpf266Bgwf038QFa5N1Rw7HCSquN-kovZSiMmUyE49H0QKzPaXZVbMu4FOltcYBY0BL6ps3ts_8oloTrqcU286H7bik0LUHj3yi=w224-h398-k-no",
-        "publicId": "google-maps/uzair-boys-hostel-5"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEZmXqwgf3SYNbPnDo11-mLqC57w4tY-9z_4EaE7dZ5RTTVUaMLjFYVri8XQbLd0OsYLQIgX3RO39aT1ve3N0mMSgxxZ0CCOUpKOJQL3-Y94oVgP-H2nkBwKGIphTPTfKocxI21=w397-h298-k-no",
-        "publicId": "google-maps/uzair-boys-hostel-6"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/a-/ALV-UjX8iS_sSnDlCURLu4AoZ3diakzM03f7umUgfYU5BSgTyfvFm14=w36-h36-p-rp-mo-br100",
-        "publicId": "google-maps/uzair-boys-hostel-7"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/a/ACg8ocJbtpQrYXdCXo8Q7REg9EcYfcgdlUbfleeDZiOilI2U782zrA=w36-h36-p-rp-mo-br100",
-        "publicId": "google-maps/uzair-boys-hostel-8"
-      }
-    ],
-    "owner": "",
-    "phone": "+92 309 5611611",
-    "latitude": 31.4435608,
-    "longitude": 74.3140219,
-    "location": {
-      "type": "Point",
-      "coordinates": [
-        74.3140219,
-        31.4435608
-      ]
-    },
-    "capacity": [],
-    "nearbyUniversities": [
-      "Minhaj University Lahore",
-      "University of Management and Technology",
-      "FAST NUCES Lahore",
-      "University of Central Punjab"
-    ],
-    "nearbyPlaces": [
-      {
-        "name": "Minhaj University Lahore",
-        "type": "university",
-        "distanceKm": 0.77
-      },
-      {
-        "name": "University of Management and Technology",
-        "type": "university",
-        "distanceKm": 2.28
-      },
-      {
-        "name": "Shaukat Khanum Memorial Cancer Hospital",
-        "type": "hospital",
-        "distanceKm": 3.95
-      },
-      {
-        "name": "FAST NUCES Lahore",
-        "type": "university",
-        "distanceKm": 4.37
-      },
-      {
-        "name": "Arfa Software Technology Park",
-        "type": "office",
-        "distanceKm": 4.42
-      },
-      {
-        "name": "University of Central Punjab",
-        "type": "university",
-        "distanceKm": 4.43
-      },
-      {
-        "name": "Jinnah Hospital Lahore",
-        "type": "hospital",
-        "distanceKm": 4.67
-      },
-      {
-        "name": "Packages Mall",
-        "type": "office",
-        "distanceKm": 4.68
-      },
-      {
-        "name": "Model Town Park",
-        "type": "park",
-        "distanceKm": 4.7
-      }
-    ],
-    "tags": [
-      "boys",
-      "Township",
-      "Lahore",
-      "Minhaj University Lahore",
-      "University of Management and Technology",
-      "Shaukat Khanum Memorial Cancer Hospital",
-      "FAST NUCES Lahore",
-      "Arfa Software Technology Park",
-      "University of Central Punjab",
-      "Jinnah Hospital Lahore",
-      "Packages Mall",
-      "Model Town Park",
-      "university",
-      "hospital",
-      "office",
-      "park"
-    ],
-    "verified": false
-  },
-  {
-    "name": "Nasir Gujjar Boy's Hostel",
-    "description": "Nasir Gujjar Boy's Hostel is a boys hostel located in Township, Lahore.",
-    "city": "Lahore",
-    "area": "Township",
-    "address": "3 Sarkar School Rd, Township Block 2 Sector B 2 Lahore, 54000, Pakistan",
-    "price": 10000,
-    "mess": {
-      "available": false,
-      "price": 0,
-      "compulsory": false
-    },
-    "hostelType": "boys",
-    "amenities": [],
-    "images": [
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHZwm0-DxWlPvg1Z0ehjGcXxx6V49vaEzrAYrcupi01aN8zRYJMp4rex1hOYo_5x0xdUYRkk1JLxVZxtLCk0Hq7GwIYEOrp2e0HTjGy0Mu-vClxe7Ff4WB0e2q6rC33bKPp8vjd=w426-h240-k-no",
-        "publicId": "google-maps/nasir-gujjar-boy-s-hostel-1"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHZwm0-DxWlPvg1Z0ehjGcXxx6V49vaEzrAYrcupi01aN8zRYJMp4rex1hOYo_5x0xdUYRkk1JLxVZxtLCk0Hq7GwIYEOrp2e0HTjGy0Mu-vClxe7Ff4WB0e2q6rC33bKPp8vjd=w529-h298-k-no",
-        "publicId": "google-maps/nasir-gujjar-boy-s-hostel-2"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH0rKwc17aXKlRzw06xdQz_f_vjFLXOdNEXFpwa01uAQw_1vyG_SwOLBy4Rf1229jtX0FLbWw68rEhE1vTojY4GEGKv-4RDfAffgmOJzRSktWyCwsZUUADVGx7OKLz8HbbUIkw=w596-h298-k-no",
-        "publicId": "google-maps/nasir-gujjar-boy-s-hostel-3"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHL3RlnLMOAXGcw8_NfROLbgPs3ILEy87bzFtNM146ybMn1UOkAcnkRDT1M-mlC02STmJWIB8iaOxxH3XCQ1rGSRVuEurk5xgQFAr9j8OOUrG2UeTLGiH3BhUS5UQp6BykCUpY=w529-h298-k-no",
-        "publicId": "google-maps/nasir-gujjar-boy-s-hostel-4"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF9bPC8hO92pp3JFeB_8jEoXgof-8iBeNWHp1iPb3zX2QGXCiZ7vut41aopweGb_LKx-cHbXWu6DJHRAWWXF9Dgqlh5BYFXvhXRxcGaJK7A5i6_iqU9G3MqAPazl1t2DxtISyaQ=w224-h398-k-no",
-        "publicId": "google-maps/nasir-gujjar-boy-s-hostel-5"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEyfP2kzAPC6ugKMu77Gm8GxOTNppxltZOsUU9P57ND1giXFG0WAUCPRx_LV_WakOU4yx5yPXhUm1s6rFjkdAywtnpxQ0oWoTpoP-Va4DJYWfxSTpprErUqsxuokH-VLMHzL8V5_g=w596-h298-k-no",
-        "publicId": "google-maps/nasir-gujjar-boy-s-hostel-6"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG8Pa1x4fozzoWi5jaqFlE6LButyk8U7Rn9ul_YGzp1v0eT73A6qdexcaLD0i_IUQSpKwpwg-Jv7z0tmiN87Yv3ksLeA7NBPHHrxQNhArgbHWoYMh4Zunan1sWdT2Kpuslcw-tTcA=w224-h448-k-no",
-        "publicId": "google-maps/nasir-gujjar-boy-s-hostel-7"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWx6xRYq22qQbncPsnuHMDCRoI1cPcj5T3jhjD6cKwIfwTHQgSW=w36-h36-p-rp-mo-br100",
-        "publicId": "google-maps/nasir-gujjar-boy-s-hostel-8"
-      }
-    ],
-    "owner": "",
-    "phone": "+92 335 4065873",
-    "latitude": 31.4554056,
-    "longitude": 74.3051518,
-    "location": {
-      "type": "Point",
-      "coordinates": [
-        74.3051518,
-        31.4554056
-      ]
-    },
-    "capacity": [],
-    "nearbyUniversities": [
-      "Minhaj University Lahore",
-      "University of Management and Technology",
-      "FAST NUCES Lahore",
-      "University of Central Punjab",
-      "University of Lahore",
-      "University of the Punjab"
-    ],
-    "nearbyPlaces": [
-      {
-        "name": "Minhaj University Lahore",
-        "type": "university",
-        "distanceKm": 0.8
-      },
-      {
-        "name": "University of Management and Technology",
-        "type": "university",
-        "distanceKm": 1.43
-      },
-      {
-        "name": "FAST NUCES Lahore",
-        "type": "university",
-        "distanceKm": 2.93
-      },
-      {
-        "name": "Shaukat Khanum Memorial Cancer Hospital",
-        "type": "hospital",
-        "distanceKm": 3.08
-      },
-      {
-        "name": "Jinnah Hospital Lahore",
-        "type": "hospital",
-        "distanceKm": 3.15
-      },
-      {
-        "name": "University of Central Punjab",
-        "type": "university",
-        "distanceKm": 3.67
-      },
-      {
-        "name": "Model Town Park",
-        "type": "park",
-        "distanceKm": 3.82
-      },
-      {
-        "name": "Emporium Mall",
-        "type": "office",
-        "distanceKm": 3.94
-      },
-      {
-        "name": "Arfa Software Technology Park",
-        "type": "office",
-        "distanceKm": 4.12
-      },
-      {
-        "name": "Expo Centre Lahore",
-        "type": "office",
-        "distanceKm": 4.13
-      },
-      {
-        "name": "Packages Mall",
-        "type": "office",
-        "distanceKm": 4.71
-      },
-      {
-        "name": "University of Lahore",
-        "type": "university",
-        "distanceKm": 4.78
+        "name": "Barkat Market",
+        "type": "market",
+        "distanceKm": 0.41
       },
       {
         "name": "University of the Punjab",
         "type": "university",
-        "distanceKm": 5
+        "distanceKm": 1.46
+      },
+      {
+        "name": "Forman Christian College",
+        "type": "college",
+        "distanceKm": 2.1
+      },
+      {
+        "name": "Model Town Park",
+        "type": "park",
+        "distanceKm": 2.3
+      },
+      {
+        "name": "FAST NUCES Lahore",
+        "type": "university",
+        "distanceKm": 3.12
+      },
+      {
+        "name": "Jinnah Hospital Lahore",
+        "type": "hospital",
+        "distanceKm": 3.5
+      },
+      {
+        "name": "Arfa Software Technology Park",
+        "type": "office",
+        "distanceKm": 3.76
+      },
+      {
+        "name": "Kinnaird College for Women",
+        "type": "college",
+        "distanceKm": 4.42
+      },
+      {
+        "name": "Packages Mall",
+        "type": "office",
+        "distanceKm": 4.67
       }
     ],
     "tags": [
       "boys",
-      "Township",
+      "Garden Town",
       "Lahore",
-      "Minhaj University Lahore",
-      "University of Management and Technology",
-      "FAST NUCES Lahore",
-      "Shaukat Khanum Memorial Cancer Hospital",
-      "Jinnah Hospital Lahore",
-      "University of Central Punjab",
-      "Model Town Park",
-      "Emporium Mall",
-      "Arfa Software Technology Park",
-      "Expo Centre Lahore",
-      "Packages Mall",
-      "University of Lahore",
+      "Barkat Market",
       "University of the Punjab",
+      "Forman Christian College",
+      "Model Town Park",
+      "FAST NUCES Lahore",
+      "Jinnah Hospital Lahore",
+      "Arfa Software Technology Park",
+      "Kinnaird College for Women",
+      "Packages Mall",
+      "market",
       "university",
-      "hospital",
+      "college",
       "park",
+      "hospital",
       "office"
     ],
     "verified": false
   },
   {
-    "name": "JK boys hostel Branch 3 Township",
-    "description": "JK boys hostel Branch 3 Township is a boys hostel located in 428, Lahore.",
+    "name": "Decent group of Boys Hostel",
+    "description": "Decent group of Boys Hostel is a boys hostel located in Garden Town, Lahore.",
     "city": "Lahore",
-    "area": "428",
-    "address": "428, Sector D1 - Block 5 Block 5 Sector D1 Green Town, Lahore, Pakistan",
+    "area": "Garden Town",
+    "address": "G83F+C2G, Jevan Hana Ali Block Garden Town, Lahore, Pakistan",
     "price": 10000,
     "mess": {
       "available": false,
@@ -440,279 +148,1178 @@
     "amenities": [],
     "images": [
       {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHEA3WjfkFaltX76ogl2bAcFxVoLUaIa1aid5vSAeo7UTij0QorcFnO8eZWNBnaKtW_LVMTRp2c7AGZ6uIrSL3QTg6d3NBt3n-DOda6FTzftVtAs3mN6aQpgvYoEqoomZPDzWZoeTk07BLB=w408-h725-k-no",
-        "publicId": "google-maps/jk-boys-hostel-branch-3-township-1"
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGo2CMIONA_SyWPtFe54nMYjqcAMFCt2N-wSi81XNtHzj2hsZzjBoe6scFr_XgOuNmEFmP31KshPwBnTajBKgEEsNqKt5iTNDBwqc5K86S1xefOkf8_GTdR2iXRqfPx_a4fo6ts=w408-h544-k-no",
+        "publicId": "google-maps/decent-group-of-boys-hostel-1"
       },
       {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHEA3WjfkFaltX76ogl2bAcFxVoLUaIa1aid5vSAeo7UTij0QorcFnO8eZWNBnaKtW_LVMTRp2c7AGZ6uIrSL3QTg6d3NBt3n-DOda6FTzftVtAs3mN6aQpgvYoEqoomZPDzWZoeTk07BLB=w224-h398-k-no",
-        "publicId": "google-maps/jk-boys-hostel-branch-3-township-2"
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGo2CMIONA_SyWPtFe54nMYjqcAMFCt2N-wSi81XNtHzj2hsZzjBoe6scFr_XgOuNmEFmP31KshPwBnTajBKgEEsNqKt5iTNDBwqc5K86S1xefOkf8_GTdR2iXRqfPx_a4fo6ts=w224-h298-k-no",
+        "publicId": "google-maps/decent-group-of-boys-hostel-2"
       },
       {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFVSBKPFhjdHWjZy0OXrcPvnT6fjNL7soq6GWlAod2TTCchr_txNz3c8Tj3OrftIZKe_1NzB--tboMtwBM-vBZZi3JmV1xiB6DGa9nZTiH6G6UBwv5v19nRtLbAOa_rpMbdDOs3s5idEM8p=w224-h398-k-no",
-        "publicId": "google-maps/jk-boys-hostel-branch-3-township-3"
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEBUzt4RKYzB-UcJatnOxkPhr_qA8XGBmHKSwfUZOQuNk-22OrMnSdyGSUPdJ484rffJidP6sW7FXkB9LBu5NSyS67uRzG40ijNsbYqSTNvTjRKSmkDBcGmYCI7-ZDk9oCniS8=w224-h298-k-no",
+        "publicId": "google-maps/decent-group-of-boys-hostel-3"
       },
       {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEcmHhpwbCmz3VwV9AIyBRqDF7Wt6cviu-vOo8HbrNanAms9m6lA-Yi7ZhS10Ke8rDkuXODvxA1bvz-WHCJl5T5bZ3evzj5PA0eDp_gOv5e1aLbhy0ijdxZ-egc_oDi9Kq9yQ2LH9eHgDA=w224-h401-k-no",
-        "publicId": "google-maps/jk-boys-hostel-branch-3-township-4"
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFyAHZbsa2P4zj5tcdnvH55FBOQBO0D-_yNbLwZJNni2WFFPrWHl5FM8j61hNxDeEzQ0DnYiyX3yDGPKvXetnq5I6aOBAOFGC0b86tUaKLWYY1_xqJmG-BIvbTJHKk5A--YYMY5iA=w224-h298-k-no",
+        "publicId": "google-maps/decent-group-of-boys-hostel-4"
       },
       {
-        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXyqe1qsq4s_xTo_VhN4JWuwgQsEYugHFg2BY3GSQZ9YgJwRe08lw=w36-h36-p-rp-mo-ba4-br100",
-        "publicId": "google-maps/jk-boys-hostel-branch-3-township-5"
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjW2lR451g_XUbfifee6kvuUCQYJfC4aCkM_ux1vQ7G2VwTarNa5FA=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/decent-group-of-boys-hostel-5"
       },
       {
-        "url": "https://lh3.googleusercontent.com/a/ACg8ocLEMfzXzkeQUVAcA-FPBwOHXjTypATjjj-XYCKSKxl9484o=w36-h36-p-rp-mo-br100",
-        "publicId": "google-maps/jk-boys-hostel-branch-3-township-6"
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjU8GLvs5jYAWYDWSXiDxwhd9FaO8qcy6kmDKU_VpSrQgZ59KfqI=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/decent-group-of-boys-hostel-6"
       },
       {
-        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUIAEzDV9CNNdgcm--tqE7Ra2c6WzR2moSntMvCeQG1mThnAT8L=w36-h36-p-rp-mo-br100",
-        "publicId": "google-maps/jk-boys-hostel-branch-3-township-7"
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjX6qcxl8gNZHG7WpfQ8Q0Wsgc291kCgihBy8KfUSk8TPaT9y2JZJA=w36-h36-p-rp-mo-ba12-br100",
+        "publicId": "google-maps/decent-group-of-boys-hostel-7"
       },
       {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHN124kXvcgVftMrG1Z-dwHdiWw8D8DU48R9JNAKZeWdULHNbx5b00QFdCIk8kAOMcCO0QZX9ZnF3kKGJQ6Dnldnqcz2r910ul_ZDG4q9PviBoar3bzgFt6PDh0jXNKr0Ex8yGU=w156-h114-p-k-no",
-        "publicId": "google-maps/jk-boys-hostel-branch-3-township-8"
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE1A2tjqZEcDtmdua0CoB5WtcUbHvFOA58QYHjhpH-SGu1u1bpmqqvANwZ5G4QIBM08AIe57U_X1sAnWj0fYDkh-DcwWWqf7_ULXI9MaXjt9wNN76oYydb1-ifDiDa08ZmVbgP5yw=w156-h114-p-k-no",
+        "publicId": "google-maps/decent-group-of-boys-hostel-8"
       }
     ],
     "owner": "",
-    "phone": "+92 300 7052901",
-    "latitude": 31.4420745,
-    "longitude": 74.3166374,
+    "phone": "+92 307 8612082",
+    "latitude": 31.5035625,
+    "longitude": 74.3225625,
     "location": {
       "type": "Point",
       "coordinates": [
-        74.3166374,
-        31.4420745
+        74.3225625,
+        31.5035625
       ]
     },
     "capacity": [],
     "nearbyUniversities": [
-      "Minhaj University Lahore",
-      "University of Management and Technology",
-      "FAST NUCES Lahore",
-      "University of Central Punjab"
+      "University of the Punjab",
+      "FAST NUCES Lahore"
     ],
     "nearbyPlaces": [
       {
-        "name": "Minhaj University Lahore",
-        "type": "university",
-        "distanceKm": 1.04
-      },
-      {
-        "name": "University of Management and Technology",
-        "type": "university",
-        "distanceKm": 2.57
-      },
-      {
-        "name": "Shaukat Khanum Memorial Cancer Hospital",
-        "type": "hospital",
-        "distanceKm": 4.22
-      },
-      {
-        "name": "Arfa Software Technology Park",
-        "type": "office",
-        "distanceKm": 4.42
-      },
-      {
-        "name": "FAST NUCES Lahore",
-        "type": "university",
-        "distanceKm": 4.59
-      },
-      {
-        "name": "Packages Mall",
-        "type": "office",
-        "distanceKm": 4.61
-      },
-      {
-        "name": "University of Central Punjab",
-        "type": "university",
-        "distanceKm": 4.69
-      },
-      {
-        "name": "Model Town Park",
-        "type": "park",
-        "distanceKm": 4.81
-      },
-      {
-        "name": "Jinnah Hospital Lahore",
-        "type": "hospital",
-        "distanceKm": 4.92
-      }
-    ],
-    "tags": [
-      "boys",
-      "428",
-      "Lahore",
-      "Minhaj University Lahore",
-      "University of Management and Technology",
-      "Shaukat Khanum Memorial Cancer Hospital",
-      "Arfa Software Technology Park",
-      "FAST NUCES Lahore",
-      "Packages Mall",
-      "University of Central Punjab",
-      "Model Town Park",
-      "Jinnah Hospital Lahore",
-      "university",
-      "hospital",
-      "office",
-      "park"
-    ],
-    "verified": false
-  },
-  {
-    "name": "Rostel Boys Hostel",
-    "description": "Rostel Boys Hostel is a boys hostel located in Sector B-1 Block 12 Sector B 1 Lahore, Lahore.",
-    "city": "Lahore",
-    "area": "Sector B-1 Block 12 Sector B 1 Lahore",
-    "address": "Sector B-1 Block 12 Sector B 1 Lahore, 54770, Pakistan",
-    "price": 10000,
-    "mess": {
-      "available": false,
-      "price": 0,
-      "compulsory": false
-    },
-    "hostelType": "boys",
-    "amenities": [],
-    "images": [
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEjg1E0n-fnb3caiVZ2CYWy-gFLOM0N4ISe49pBwsw8tud1A7rtHsx1r5mNQhoXBzvWtjaCPS8LSaW9bZX9tqm07A8l5OYVE11mIxsScAVctJd4IQWpjETn062Y905PBqntJ2s=w408-h725-k-no",
-        "publicId": "google-maps/rostel-boys-hostel-1"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEjg1E0n-fnb3caiVZ2CYWy-gFLOM0N4ISe49pBwsw8tud1A7rtHsx1r5mNQhoXBzvWtjaCPS8LSaW9bZX9tqm07A8l5OYVE11mIxsScAVctJd4IQWpjETn062Y905PBqntJ2s=w224-h398-k-no",
-        "publicId": "google-maps/rostel-boys-hostel-2"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHXqp-X7UtO0a19y-Z3chgV3qdEQRHJwTgZcjm97ei74VDrVs_6tb89IagxEfn2hXlGWljgja_x5SgfG0cNiEj5yZbp0jaW7jJwHSBM_4zFjFBesX_AWN_RzVA_MHDnHYLPtQcPUg=w224-h398-k-no",
-        "publicId": "google-maps/rostel-boys-hostel-3"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG4IALyI5LLpDp3MIaXvlL9TTvyK4mK9AeaG_9rUPdotA2B14w30cXf_fwWEelHaQMOjV0U8MP1rNXf-O29G-WpaynmG0Y3ThAdiTg6-EHNcY1ZEBpsx9-asnYUzJ6nrLQ8i_ae=w224-h398-k-no",
-        "publicId": "google-maps/rostel-boys-hostel-4"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFcPftt2biv23sA1jZyqW58OzE2HKbbk8LU4kQsRGaNfRQCXMvEmL6QzDJkJGhOGu0FF1q9EoTR4Nuq2O4kK37DqjwGBVkPeKcq72RtIg7lDgZgWWruggr1mBrQ-yc83r3ofjOJ=w224-h398-k-no",
-        "publicId": "google-maps/rostel-boys-hostel-5"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/a-/ALV-UjW-nedJVa1suI2a7JPiPFWP-T241IYvG_pBcSulPUXWCgf4RJE=w36-h36-p-rp-mo-br100",
-        "publicId": "google-maps/rostel-boys-hostel-6"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXSfEr0A2_y4qdYdomhF1G_w2TdU6ih4jK_d-CWdCY7om0tKgs2=w36-h36-p-rp-mo-br100",
-        "publicId": "google-maps/rostel-boys-hostel-7"
-      },
-      {
-        "url": "https://lh3.googleusercontent.com/a-/ALV-UjVKeV2EBo9ZB1StSE2e8kI-D_fiIUzzVwmk5_f_oBDM527bv3xX=w36-h36-p-rp-mo-ba4-br100",
-        "publicId": "google-maps/rostel-boys-hostel-8"
-      }
-    ],
-    "owner": "",
-    "phone": "Not available",
-    "latitude": 31.4611875,
-    "longitude": 74.3089375,
-    "location": {
-      "type": "Point",
-      "coordinates": [
-        74.3089375,
-        31.4611875
-      ]
-    },
-    "capacity": [],
-    "nearbyUniversities": [
-      "Minhaj University Lahore",
-      "University of Management and Technology",
-      "FAST NUCES Lahore",
-      "University of Central Punjab",
-      "University of the Punjab"
-    ],
-    "nearbyPlaces": [
-      {
-        "name": "Minhaj University Lahore",
-        "type": "university",
-        "distanceKm": 1.27
-      },
-      {
-        "name": "University of Management and Technology",
-        "type": "university",
-        "distanceKm": 2.07
-      },
-      {
-        "name": "FAST NUCES Lahore",
-        "type": "university",
-        "distanceKm": 2.35
-      },
-      {
-        "name": "Jinnah Hospital Lahore",
-        "type": "hospital",
-        "distanceKm": 2.69
-      },
-      {
-        "name": "Model Town Park",
-        "type": "park",
-        "distanceKm": 3.08
-      },
-      {
-        "name": "Arfa Software Technology Park",
-        "type": "office",
-        "distanceKm": 3.49
-      },
-      {
-        "name": "Shaukat Khanum Memorial Cancer Hospital",
-        "type": "hospital",
-        "distanceKm": 3.6
-      },
-      {
-        "name": "Emporium Mall",
-        "type": "office",
-        "distanceKm": 4.13
-      },
-      {
-        "name": "Packages Mall",
-        "type": "office",
-        "distanceKm": 4.16
-      },
-      {
-        "name": "University of Central Punjab",
-        "type": "university",
-        "distanceKm": 4.2
-      },
-      {
-        "name": "Expo Centre Lahore",
-        "type": "office",
-        "distanceKm": 4.32
+        "name": "Barkat Market",
+        "type": "market",
+        "distanceKm": 0.25
       },
       {
         "name": "University of the Punjab",
         "type": "university",
-        "distanceKm": 4.35
+        "distanceKm": 1.5
       },
       {
-        "name": "Barkat Market",
-        "type": "market",
-        "distanceKm": 4.69
+        "name": "Model Town Park",
+        "type": "park",
+        "distanceKm": 2.15
+      },
+      {
+        "name": "Forman Christian College",
+        "type": "college",
+        "distanceKm": 2.17
+      },
+      {
+        "name": "FAST NUCES Lahore",
+        "type": "university",
+        "distanceKm": 3.06
+      },
+      {
+        "name": "Jinnah Hospital Lahore",
+        "type": "hospital",
+        "distanceKm": 3.47
+      },
+      {
+        "name": "Arfa Software Technology Park",
+        "type": "office",
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Packages Mall",
+        "type": "office",
+        "distanceKm": 4.51
+      },
+      {
+        "name": "Kinnaird College for Women",
+        "type": "college",
+        "distanceKm": 4.54
       }
     ],
     "tags": [
       "boys",
-      "Sector B-1 Block 12 Sector B 1 Lahore",
+      "Garden Town",
       "Lahore",
-      "Minhaj University Lahore",
-      "University of Management and Technology",
+      "Barkat Market",
+      "University of the Punjab",
+      "Model Town Park",
+      "Forman Christian College",
       "FAST NUCES Lahore",
       "Jinnah Hospital Lahore",
-      "Model Town Park",
       "Arfa Software Technology Park",
-      "Shaukat Khanum Memorial Cancer Hospital",
-      "Emporium Mall",
       "Packages Mall",
-      "University of Central Punjab",
-      "Expo Centre Lahore",
-      "University of the Punjab",
-      "Barkat Market",
+      "Kinnaird College for Women",
+      "market",
       "university",
+      "park",
+      "college",
       "hospital",
+      "office"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Ahmad Boys Hostel Garden Town Lahore",
+    "description": "Ahmad Boys Hostel Garden Town Lahore is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "G83F+MVC, Ali Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEbIskudVVDm8ixxfx9P5h2DOrDi4h2B6RDzjTld9LUBvM1OiaQX8HU-F-t9wRXJsWOjdQ2CaYKx-K1zDiKKxHF0SEcrvCIbpuzPIWTaTd77rnFBGo05381dahXgkcsxQwKTpLyww=w408-h725-k-no",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEbIskudVVDm8ixxfx9P5h2DOrDi4h2B6RDzjTld9LUBvM1OiaQX8HU-F-t9wRXJsWOjdQ2CaYKx-K1zDiKKxHF0SEcrvCIbpuzPIWTaTd77rnFBGo05381dahXgkcsxQwKTpLyww=w224-h398-k-no",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHVWcmvbaXGUSJo3goihmt0fED1ZqJNtE7o5OVILiv180XUBPZTH3IwBGRWEFXlhXUgyFxsBUaCUR3uhsQ5LVAQwhToeF3y-J1XtvRrMWPIZrSNLgeqMwsHVR7oRw6HkLAEZsXm=w224-h398-k-no",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUjZkgYJbaWq4AWsL4kZMCoberSacK9GJ2AVgO_XSjXEPZqNxzn=w36-h36-p-rp-mo-ba12-br100",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWjtdyW0f6BJigf3XLUFE9OiicKL6YELvzsaj_CEPG48rvFJVK4=w36-h36-p-rp-mo-ba12-br100",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXm0c9SSxzkeOfdptXIfJmG5z-XSpAs7n-wBnsg6Ik_BTmbH0vh=w36-h36-p-rp-mo-ba12-br100",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE1A2tjqZEcDtmdua0CoB5WtcUbHvFOA58QYHjhpH-SGu1u1bpmqqvANwZ5G4QIBM08AIe57U_X1sAnWj0fYDkh-DcwWWqf7_ULXI9MaXjt9wNN76oYydb1-ifDiDa08ZmVbgP5yw=w156-h114-p-k-no",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGH-Uv_RtPzrDZrWVEdlTs5VOWEynZLPprWzC6TI58XiPHEI5SbCil6bywIl58_2ZbefYcJveUIZWYd6c8W1yPld_XFxW_J3LFtK_wuodPpkB9HBIpQfaM8eZvQbdYhF-nfjYN2Hw=w156-h114-p-k-no",
+        "publicId": "google-maps/ahmad-boys-hostel-garden-town-lahore-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 325 8049602",
+    "latitude": 31.5041916,
+    "longitude": 74.3246445,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        74.3246445,
+        31.5041916
+      ]
+    },
+    "capacity": [],
+    "nearbyUniversities": [
+      "University of the Punjab",
+      "FAST NUCES Lahore"
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Barkat Market",
+        "type": "market",
+        "distanceKm": 0.32
+      },
+      {
+        "name": "University of the Punjab",
+        "type": "university",
+        "distanceKm": 1.71
+      },
+      {
+        "name": "Forman Christian College",
+        "type": "college",
+        "distanceKm": 2.02
+      },
+      {
+        "name": "Model Town Park",
+        "type": "park",
+        "distanceKm": 2.2
+      },
+      {
+        "name": "FAST NUCES Lahore",
+        "type": "university",
+        "distanceKm": 3.24
+      },
+      {
+        "name": "Arfa Software Technology Park",
+        "type": "office",
+        "distanceKm": 3.56
+      },
+      {
+        "name": "Jinnah Hospital Lahore",
+        "type": "hospital",
+        "distanceKm": 3.66
+      },
+      {
+        "name": "Kinnaird College for Women",
+        "type": "college",
+        "distanceKm": 4.45
+      },
+      {
+        "name": "Packages Mall",
+        "type": "office",
+        "distanceKm": 4.45
+      }
+    ],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore",
+      "Barkat Market",
+      "University of the Punjab",
+      "Forman Christian College",
+      "Model Town Park",
+      "FAST NUCES Lahore",
+      "Arfa Software Technology Park",
+      "Jinnah Hospital Lahore",
+      "Kinnaird College for Women",
+      "Packages Mall",
+      "market",
+      "university",
+      "college",
       "park",
       "office",
-      "market"
+      "hospital"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Brothers Boys Hostel",
+    "description": "Brothers Boys Hostel is a boys hostel located in Ali Block, Lahore.",
+    "city": "Lahore",
+    "area": "Ali Block",
+    "address": "Garden, St 1 Jewankhana Ali, Block, Ali Block Town, Lahore, 54000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHy5-oGpzI_u2TCwiEpAmODsCOF6961PliVh0CBNXtZOeMIEITd0dSpwb1k7P6TJ_XUFIN9Ij6CxjV652zmasNC7kYIbpO6n2FJU_DMvHCVy5KdPj2i6jvhfQYKWPkMuFiC03TcM12oLVj5=w408-h612-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHy5-oGpzI_u2TCwiEpAmODsCOF6961PliVh0CBNXtZOeMIEITd0dSpwb1k7P6TJ_XUFIN9Ij6CxjV652zmasNC7kYIbpO6n2FJU_DMvHCVy5KdPj2i6jvhfQYKWPkMuFiC03TcM12oLVj5=w224-h336-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH9lni-SaJ4RxRGSbWm_u5SDplK2bEOI_J-3f0zMlDdHdAGwqtroK9KN86eQWJXVYwhCV8BUQvJpfNzD0jwzZCiGsmOpAOZlZXhAXh3CDFmL7qGHF_e87ZvJTnxzro6VJHBE5928g=w224-h298-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHu_izYFWEN3pPql4N4uwMGm1NYarWT52gMpxq2jAVBWTK38EZrdtu7qOUQyTuG7t2dx0X3E0uWTVLWxTzf49hUHArvhBHegGqJ7akkq630uvRHHOLGrGL4IHW4XiX_HwYv5Isi=w224-h501-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE68EoKKk1dZCE1CmdnoOoTRv-z5dgFV_JFdsQR-9RA_kRb-F5UCjnUxeaHgPtk_Z98uTCQRl50WLOJI6lsAxTZ_kP0zacLX-AULuJOHn9Z8oFp-oAr0j-wKR1xxD7jhjIUEG9h=w224-h298-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFnv1BuIxM4yF_beMA58AkYp8J4K5GPVC2TMTuZLWWB-rAZPAdaOgyG1I9HJ5Hk8rsBrjVU5ASqOjfA8iQlVB5kJ7ddf-Zvd5PuRBQ6x3grUZs61Qw2OsdQO0ISbQ-YHtS0FKNpbA=w224-h298-k-no",
+        "publicId": "google-maps/brothers-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUvRJM_78a9CTdRY7Vz2XsY0VV0v1gX5eeSNYTjVOgeZ46QkDOL=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/brothers-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjWDFTZPdSz5POtZObqaEA1rxLFvtKY0C0PQ2RE9pA-18Q-L3VE=w36-h36-p-rp-mo-ba12-br100",
+        "publicId": "google-maps/brothers-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 332 9759496",
+    "latitude": 31.5046961,
+    "longitude": 74.3229242,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        74.3229242,
+        31.5046961
+      ]
+    },
+    "capacity": [],
+    "nearbyUniversities": [
+      "University of the Punjab",
+      "FAST NUCES Lahore"
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Barkat Market",
+        "type": "market",
+        "distanceKm": 0.36
+      },
+      {
+        "name": "University of the Punjab",
+        "type": "university",
+        "distanceKm": 1.57
+      },
+      {
+        "name": "Forman Christian College",
+        "type": "college",
+        "distanceKm": 2.05
+      },
+      {
+        "name": "Model Town Park",
+        "type": "park",
+        "distanceKm": 2.27
+      },
+      {
+        "name": "FAST NUCES Lahore",
+        "type": "university",
+        "distanceKm": 3.18
+      },
+      {
+        "name": "Jinnah Hospital Lahore",
+        "type": "hospital",
+        "distanceKm": 3.58
+      },
+      {
+        "name": "Arfa Software Technology Park",
+        "type": "office",
+        "distanceKm": 3.69
+      },
+      {
+        "name": "Kinnaird College for Women",
+        "type": "college",
+        "distanceKm": 4.41
+      },
+      {
+        "name": "Packages Mall",
+        "type": "office",
+        "distanceKm": 4.59
+      }
+    ],
+    "tags": [
+      "boys",
+      "Ali Block",
+      "Lahore",
+      "Barkat Market",
+      "University of the Punjab",
+      "Forman Christian College",
+      "Model Town Park",
+      "FAST NUCES Lahore",
+      "Jinnah Hospital Lahore",
+      "Arfa Software Technology Park",
+      "Kinnaird College for Women",
+      "Packages Mall",
+      "market",
+      "university",
+      "college",
+      "park",
+      "hospital",
+      "office"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Reyan Boys Hostels",
+    "description": "Reyan Boys Hostels is a boys hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "G83C+XM3, Jevan Hana Garden Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "boys",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHNKSsW-Cfow2GTNBYuRv82I82uHf4eG4kVyT1HQoWcznelj-KxCG3xTvCra5tpennKGHXrF1C4TSa6DRdzZO1HfYReVgrckGcdjlVgBEL7EwtH619s5wUwmJWpHZpVZGj_MOljhuzIqlHs=w408-h408-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHNKSsW-Cfow2GTNBYuRv82I82uHf4eG4kVyT1HQoWcznelj-KxCG3xTvCra5tpennKGHXrF1C4TSa6DRdzZO1HfYReVgrckGcdjlVgBEL7EwtH619s5wUwmJWpHZpVZGj_MOljhuzIqlHs=w298-h298-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEFsU5nct3nagNL644Juod2xKq_DNVXUN-dPry1Vch4XrSeK99ZznjaGCeqLikzKkgb0V4RlWfhf66jwnKGpYCMgAwj8PCtvWFTMmCLGF6Fd5zaOyDzCUwgJhNk8gfp9n1wW2Su=w224-h497-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEMFxcJihhfMNXXPY8x0YNAlBoX0PQ_LCnV6wd0lk82-i8zPK2OwYcBdsK-1yoiMe294hVUXDCT_tTgqcS5UDjQKkU24JGOwUHvPfsmYO0Fni1hYLmNVixP8_GgL8lc76azPrZr7iaVssb5=w224-h395-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGr2UY93MldtRHtOHsUqj7ye8soRYBFn9LuKuaB72YzWgd1EfjP6lPQ8rdO906Z3fl47YT3xnCbkuU72cPNP721_IHSLLo_p3vwQjV5Fy93_-H8Emg2Ozqw9wnY72EIkIdR-B0piFvwTBce=w224-h298-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG3m9X-b1gI-Qt4q_1noZXD0XrOqrRnTNHlAXo0LK8cAQZct2gZQwz7TZq_aoqJeeOx34wKl7mEMn1zuZGypIwVrPRIEWnz3PijOGgiGNCLjIHF3b6bLpWjtKk8CBhaHZ3HaKyz=w529-h298-k-no",
+        "publicId": "google-maps/reyan-boys-hostels-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjXjP5vR9NLeWpS0pbs93Q9vI6nf6DrmnmL2mVlghqBcAu3lf6An=w36-h36-p-rp-mo-br100",
+        "publicId": "google-maps/reyan-boys-hostels-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/a-/ALV-UjUImAc4pyXGzRyGjicpmK6rA8aB_YFU3j1t7Tk92foCo_lu3rlkPQ=w36-h36-p-rp-mo-ba12-br100",
+        "publicId": "google-maps/reyan-boys-hostels-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 313 0302030",
+    "latitude": 31.5048931,
+    "longitude": 74.3216706,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        74.3216706,
+        31.5048931
+      ]
+    },
+    "capacity": [],
+    "nearbyUniversities": [
+      "University of the Punjab",
+      "FAST NUCES Lahore"
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Barkat Market",
+        "type": "market",
+        "distanceKm": 0.42
+      },
+      {
+        "name": "University of the Punjab",
+        "type": "university",
+        "distanceKm": 1.46
+      },
+      {
+        "name": "Forman Christian College",
+        "type": "college",
+        "distanceKm": 2.09
+      },
+      {
+        "name": "Model Town Park",
+        "type": "park",
+        "distanceKm": 2.31
+      },
+      {
+        "name": "FAST NUCES Lahore",
+        "type": "university",
+        "distanceKm": 3.13
+      },
+      {
+        "name": "Jinnah Hospital Lahore",
+        "type": "hospital",
+        "distanceKm": 3.51
+      },
+      {
+        "name": "Arfa Software Technology Park",
+        "type": "office",
+        "distanceKm": 3.77
+      },
+      {
+        "name": "Kinnaird College for Women",
+        "type": "college",
+        "distanceKm": 4.41
+      },
+      {
+        "name": "Packages Mall",
+        "type": "office",
+        "distanceKm": 4.68
+      }
+    ],
+    "tags": [
+      "boys",
+      "Garden Town",
+      "Lahore",
+      "Barkat Market",
+      "University of the Punjab",
+      "Forman Christian College",
+      "Model Town Park",
+      "FAST NUCES Lahore",
+      "Jinnah Hospital Lahore",
+      "Arfa Software Technology Park",
+      "Kinnaird College for Women",
+      "Packages Mall",
+      "market",
+      "university",
+      "college",
+      "park",
+      "hospital",
+      "office"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Green Girls Hostel",
+    "description": "Green Girls Hostel is a girls hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "House # 141, New, Ali Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGKl6dFlwqhM3dVmWGJXd8_bZJr4rJXGCXLsZRB5RcpYTbpgkRfcCYHCmA0Mo6z-KB_XMMM4r5-F_OyVqFPNLaXVZYw-t1lyzlq6LtCuDlM3QwZuCZCtgifovHqO0AdD0Z87Ho0=w408-h306-k-no",
+        "publicId": "google-maps/green-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGKl6dFlwqhM3dVmWGJXd8_bZJr4rJXGCXLsZRB5RcpYTbpgkRfcCYHCmA0Mo6z-KB_XMMM4r5-F_OyVqFPNLaXVZYw-t1lyzlq6LtCuDlM3QwZuCZCtgifovHqO0AdD0Z87Ho0=w397-h298-k-no",
+        "publicId": "google-maps/green-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEynSEP9JC4IJoRc2FwIlQGCbbTG-yhSf7QYK_dRG4hrz_4D8mfQ3NW4Ik6FcCFKKUem-sqA2NayFoeLde310IRkrRCuL8fyGvDROmHILDAPNn9hW9ntI8i020gfFoVo2mOaRg0zA=w224-h397-k-no",
+        "publicId": "google-maps/green-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFcJ9h1kw1rEZNNajibHpBwqtls4u5Wd1wF93W7v-WKBkIzvQ-xMLfhtXUFh9pxUjrhK0Ye8n9Xpnn5sQbsgpGFwXF3YVlBN0WSsi9MMXzZE50hg-6-RZRbZEpvjjDJafAwR2VHz1BE1RUJ=w224-h398-k-no",
+        "publicId": "google-maps/green-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF2Y8tv2UA6eTCnCCofbVRbRm66Ifp4vHFtC22BQtU5l59hdfhViF_dhizRxUb0jkrjRO_uc-bKXUcIobor7wiwD_L27_f2x-sTijyT0syL4yCGjDUGqamyYtEAKWfeCgKtJ9O7bRf2RcL2=w224-h298-k-no",
+        "publicId": "google-maps/green-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEfADf5vDZze8MF2EG7e5s4wyYJlis63z2IDGGU2ORR7Eo0eBFeRmUbHYbBwDKOVyr1WJWQcsuhjeK3imN34-9mbl4d4pWElqyQuuK97IUKWEEoaeDcld_8s66Wbwz4K3y5avuT8w=w224-h298-k-no",
+        "publicId": "google-maps/green-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG4SyOtJmc2lykwlVWK_4p3CNTko23Dfaguoan0unlO6z1CTajgfxhYA2picten0X4rUf0xB1UCd1nWAprZjxBswuPtGW6ihAcbKTO1DBhF7YcOtiGvSuJikoJeD9o6ANoqSW74WlUxY6kd=w224-h298-k-no",
+        "publicId": "google-maps/green-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEFvOXu03EsF2PAJNsP1AP02b534pq0bfC6togYxtBxbpUR_mSwX11TVXdCz7_GFw1HlYJ7zrN2xuSek0C8UMOnS4idBPpWxq0SFct1UgChub9kWZ5pcm8SMW8tOcBD2_o6av8K3saej3bF=w156-h114-p-k-no",
+        "publicId": "google-maps/green-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 300 8828186",
+    "latitude": 31.5040552,
+    "longitude": 74.3246869,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        74.3246869,
+        31.5040552
+      ]
+    },
+    "capacity": [],
+    "nearbyUniversities": [
+      "University of the Punjab",
+      "FAST NUCES Lahore"
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Barkat Market",
+        "type": "market",
+        "distanceKm": 0.3
+      },
+      {
+        "name": "University of the Punjab",
+        "type": "university",
+        "distanceKm": 1.71
+      },
+      {
+        "name": "Forman Christian College",
+        "type": "college",
+        "distanceKm": 2.03
+      },
+      {
+        "name": "Model Town Park",
+        "type": "park",
+        "distanceKm": 2.18
+      },
+      {
+        "name": "FAST NUCES Lahore",
+        "type": "university",
+        "distanceKm": 3.23
+      },
+      {
+        "name": "Arfa Software Technology Park",
+        "type": "office",
+        "distanceKm": 3.55
+      },
+      {
+        "name": "Jinnah Hospital Lahore",
+        "type": "hospital",
+        "distanceKm": 3.65
+      },
+      {
+        "name": "Packages Mall",
+        "type": "office",
+        "distanceKm": 4.43
+      },
+      {
+        "name": "Kinnaird College for Women",
+        "type": "college",
+        "distanceKm": 4.47
+      }
+    ],
+    "tags": [
+      "girls",
+      "Garden Town",
+      "Lahore",
+      "Barkat Market",
+      "University of the Punjab",
+      "Forman Christian College",
+      "Model Town Park",
+      "FAST NUCES Lahore",
+      "Arfa Software Technology Park",
+      "Jinnah Hospital Lahore",
+      "Packages Mall",
+      "Kinnaird College for Women",
+      "market",
+      "university",
+      "college",
+      "park",
+      "office",
+      "hospital"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Rafay Girls Hostel",
+    "description": "Rafay Girls Hostel is a girls hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "Plot 138-A, Jevan Hana Garden Block New garden Town, Lahore, 54000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEeoNtAJJ-YYOy7Kwx4EGaDV0FeCFj2Wi0TyWIl_UoKGX6WrqVEBZHbe2tsh3N5BjbgWnbcZG7pesJtepToF8csQ_MIG5DGq4WQ4gam6hoz_U0lmt3-NNbw2XTz6q5KM-XfagkV=w533-h240-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEeoNtAJJ-YYOy7Kwx4EGaDV0FeCFj2Wi0TyWIl_UoKGX6WrqVEBZHbe2tsh3N5BjbgWnbcZG7pesJtepToF8csQ_MIG5DGq4WQ4gam6hoz_U0lmt3-NNbw2XTz6q5KM-XfagkV=w662-h298-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE2oaAJpVt1OATy1iO5vtxGPwLFMUcJU2C1JZMclZ2dgccwbPIs3HuftQ76T9nFfT_Ay8lBnpaLh7iOO4bXsi9DUriwiujfzgL6CGlLlW5Y90VLLMbeQBkfR5-IQ3w0wREItSENKQ=w400-h298-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHvoievZuS8_RWAKfojBi80dgP0aHhH2-3_97xgEfeQ1BfSHz2jllXl3iOrPNLb65nv5kJxNfKSNDWabmKZQ5k2n9hnrl99vGW7YW5CKNwj2lpC2kikKq5S8xHIETtlYomn4pgDG59JSf4=w224-h298-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHm5pewGfbNKn4mBr5_hlHtl26gxj5-g52Ts4hc_po7L5JAkJKoId2QVsS696pxtNMJEiyg1_rnBDEz72I0zX5FjBLT5omj-pCmTZC0uwUY9X5IwBEIKcgeoc_5p3cNqkPa_SSB=w224-h497-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGKl6dFlwqhM3dVmWGJXd8_bZJr4rJXGCXLsZRB5RcpYTbpgkRfcCYHCmA0Mo6z-KB_XMMM4r5-F_OyVqFPNLaXVZYw-t1lyzlq6LtCuDlM3QwZuCZCtgifovHqO0AdD0Z87Ho0=w156-h114-p-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHBcgEh6sG2oZEt_psnPSR89wrpcMppZUJL6oU8LnqGBhWQ_lffJuHgiqFG-OFq2ui2hh7EdybLydV6GKIywuUQur7TXXCbT6rXWGmwa3_OzhWQ_GoaLRiGCnpNDst0YBgNIaX-=w156-h114-p-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEtIeSk1oy72yotVQQMkiypxTlaisTOUsn-2gUee_1VH75cUZh0O8_gaiffr_9PtEbm5O4nVs9TcVdGa0EG4Nj_vQKJUTZyaZqDR5VZHYcsLKIOBmxqV3PTiijBOYkbDDTEe8uEiQ=w156-h114-p-k-no",
+        "publicId": "google-maps/rafay-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 301 4639910",
+    "latitude": 31.5046711,
+    "longitude": 74.3214911,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        74.3214911,
+        31.5046711
+      ]
+    },
+    "capacity": [],
+    "nearbyUniversities": [
+      "University of the Punjab",
+      "FAST NUCES Lahore"
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Barkat Market",
+        "type": "market",
+        "distanceKm": 0.41
+      },
+      {
+        "name": "University of the Punjab",
+        "type": "university",
+        "distanceKm": 1.44
+      },
+      {
+        "name": "Forman Christian College",
+        "type": "college",
+        "distanceKm": 2.12
+      },
+      {
+        "name": "Model Town Park",
+        "type": "park",
+        "distanceKm": 2.29
+      },
+      {
+        "name": "FAST NUCES Lahore",
+        "type": "university",
+        "distanceKm": 3.1
+      },
+      {
+        "name": "Jinnah Hospital Lahore",
+        "type": "hospital",
+        "distanceKm": 3.48
+      },
+      {
+        "name": "Arfa Software Technology Park",
+        "type": "office",
+        "distanceKm": 3.75
+      },
+      {
+        "name": "Kinnaird College for Women",
+        "type": "college",
+        "distanceKm": 4.44
+      },
+      {
+        "name": "Packages Mall",
+        "type": "office",
+        "distanceKm": 4.67
+      }
+    ],
+    "tags": [
+      "girls",
+      "Garden Town",
+      "Lahore",
+      "Barkat Market",
+      "University of the Punjab",
+      "Forman Christian College",
+      "Model Town Park",
+      "FAST NUCES Lahore",
+      "Jinnah Hospital Lahore",
+      "Arfa Software Technology Park",
+      "Kinnaird College for Women",
+      "Packages Mall",
+      "market",
+      "university",
+      "college",
+      "park",
+      "hospital",
+      "office"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Aashiana Girls Hostel",
+    "description": "Aashiana Girls Hostel is a girls hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "147, Ali Block Garden Town, Lahore, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGU7jVZS72KBk1T0L4OnYm7tchHrPdr8DQ2ommGSeVyzxjzNBKpb_L4sv104EuXUTymAJaVPERmIztliM6kNutGZRUG1FbrVZRtdKn--Z2sdjhBe4x4SGFzqpHsDsqPEBqoedlwy8hgB3-1=w408-h544-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGU7jVZS72KBk1T0L4OnYm7tchHrPdr8DQ2ommGSeVyzxjzNBKpb_L4sv104EuXUTymAJaVPERmIztliM6kNutGZRUG1FbrVZRtdKn--Z2sdjhBe4x4SGFzqpHsDsqPEBqoedlwy8hgB3-1=w224-h298-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAElP3JQabHHQy3ZWM9I42PuEUGwe_aa4PnlIcQLhizm3-3Kp_ld6bVuBNoe9r4WET74cNjBKrniI1KT7VXLyYjnDYv_g5hJvu4r2N2XVsj61PGYDWRKg7ZRJmPHNJ-6MMCG61dd2Q=w529-h298-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHhZE_QCPCmN-fPjdd_nAmLF_wAA6BLXaa2zmrg3KwijoKgVMayXHFQdL_cgMCUC4UL9hy2Ru9k8SVkR0Trt-a-tVAfbB3O5MND5xPMUvGmvIOXQzka4Q_6fCqs-QDq-02RY4eYzqgtVr4=w224-h298-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHl0ssPNqsFRcMszYbbZjSIADAo74eOLmdZrk_dQ_Vg0A5DEWskFjvbO4MHy2E6MtTznBz3MkEO4lMuYyFUAK9XeqdO0QjBoOlio-kw7mocdJ6bRspbLmJb7zm9_4SZFeB-nhTtLQ=w224-h298-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGKl6dFlwqhM3dVmWGJXd8_bZJr4rJXGCXLsZRB5RcpYTbpgkRfcCYHCmA0Mo6z-KB_XMMM4r5-F_OyVqFPNLaXVZYw-t1lyzlq6LtCuDlM3QwZuCZCtgifovHqO0AdD0Z87Ho0=w156-h114-p-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEeoNtAJJ-YYOy7Kwx4EGaDV0FeCFj2Wi0TyWIl_UoKGX6WrqVEBZHbe2tsh3N5BjbgWnbcZG7pesJtepToF8csQ_MIG5DGq4WQ4gam6hoz_U0lmt3-NNbw2XTz6q5KM-XfagkV=w156-h114-p-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEqoqwkbtp3KVaDEp6hGSJKYmj6HSpJ8n8x8X8jJ0RLDZBerfynxdkOC8vV1PtDcEbgk7cdnJNICZliWoSVPL6sJd98sk2uk3RCDSB3NUXBqGkSC3PiG5Yfz0K-77H-j9qavwHB=w156-h114-p-k-no",
+        "publicId": "google-maps/aashiana-girls-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 300 8467089",
+    "latitude": 31.5044012,
+    "longitude": 74.3242236,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        74.3242236,
+        31.5044012
+      ]
+    },
+    "capacity": [],
+    "nearbyUniversities": [
+      "University of the Punjab",
+      "FAST NUCES Lahore"
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Barkat Market",
+        "type": "market",
+        "distanceKm": 0.33
+      },
+      {
+        "name": "University of the Punjab",
+        "type": "university",
+        "distanceKm": 1.68
+      },
+      {
+        "name": "Forman Christian College",
+        "type": "college",
+        "distanceKm": 2.02
+      },
+      {
+        "name": "Model Town Park",
+        "type": "park",
+        "distanceKm": 2.22
+      },
+      {
+        "name": "FAST NUCES Lahore",
+        "type": "university",
+        "distanceKm": 3.23
+      },
+      {
+        "name": "Arfa Software Technology Park",
+        "type": "office",
+        "distanceKm": 3.6
+      },
+      {
+        "name": "Jinnah Hospital Lahore",
+        "type": "hospital",
+        "distanceKm": 3.65
+      },
+      {
+        "name": "Kinnaird College for Women",
+        "type": "college",
+        "distanceKm": 4.43
+      },
+      {
+        "name": "Packages Mall",
+        "type": "office",
+        "distanceKm": 4.49
+      }
+    ],
+    "tags": [
+      "girls",
+      "Garden Town",
+      "Lahore",
+      "Barkat Market",
+      "University of the Punjab",
+      "Forman Christian College",
+      "Model Town Park",
+      "FAST NUCES Lahore",
+      "Arfa Software Technology Park",
+      "Jinnah Hospital Lahore",
+      "Kinnaird College for Women",
+      "Packages Mall",
+      "market",
+      "university",
+      "college",
+      "park",
+      "office",
+      "hospital"
+    ],
+    "verified": false
+  },
+  {
+    "name": "NOOR GROUP OF GIRLS AND BOYS HOSTEL",
+    "description": "NOOR GROUP OF GIRLS AND BOYS HOSTEL is a girls hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "see breeze home, s 6B, Shershah Block Garden Town, Lahore, 40050, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEFvOXu03EsF2PAJNsP1AP02b534pq0bfC6togYxtBxbpUR_mSwX11TVXdCz7_GFw1HlYJ7zrN2xuSek0C8UMOnS4idBPpWxq0SFct1UgChub9kWZ5pcm8SMW8tOcBD2_o6av8K3saej3bF=w408-h544-k-no",
+        "publicId": "google-maps/noor-group-of-girls-and-boys-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEFvOXu03EsF2PAJNsP1AP02b534pq0bfC6togYxtBxbpUR_mSwX11TVXdCz7_GFw1HlYJ7zrN2xuSek0C8UMOnS4idBPpWxq0SFct1UgChub9kWZ5pcm8SMW8tOcBD2_o6av8K3saej3bF=w224-h298-k-no",
+        "publicId": "google-maps/noor-group-of-girls-and-boys-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFPgKLoPBvtTsIb9h95oP2tmbLyKP9XGB7FIck7jirjLUffYKuz4-Bml5fJl9DcIjo_l23MIRbxDDS0Ha1CyftPegPYrhDHBGgvQ36Opv-lxDPyORFJty4itsCV6D6mu_fY56T_gSoi-yBB=w397-h298-k-no",
+        "publicId": "google-maps/noor-group-of-girls-and-boys-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGTl0Dk-Fu_-oftNtirR_RdbtcOuRIOqL-oD-d0r3KZMdWkz8HKhE35rUD3dOZ_3-5GauRmppQIOFPpies0NWLqv4PkZUI_G-A816Tw_jaHQ0926vB_-ftphRrremZUj6Qfe5RF1g=w397-h298-k-no",
+        "publicId": "google-maps/noor-group-of-girls-and-boys-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFgEtoQuTGHxZjKFmZ87uhtqJelKRi6iIZooiBmHukQGJpZSIXOm2sX3czzID7HXR9C9kJtCMT9H9l3XLl8U8nY5uQYG0BItIE13lWdHbm1mA8hESq1wAKm8zaFuRe0C8O55L7mIASmIdOC=w224-h298-k-no",
+        "publicId": "google-maps/noor-group-of-girls-and-boys-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHRYa-ufI6BO1LH87Wbva9FSReNav9CV6FOVbXgbWNljwXu8kxuc1S8Ue_gHZo6RKdMfs60r1JcXg7S6V7vB75Tn9aQeJC4pY43fydkD7z2Jp-0zYtue3I1TPVaBNfGUSeD5JAA=w397-h298-k-no",
+        "publicId": "google-maps/noor-group-of-girls-and-boys-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGKl6dFlwqhM3dVmWGJXd8_bZJr4rJXGCXLsZRB5RcpYTbpgkRfcCYHCmA0Mo6z-KB_XMMM4r5-F_OyVqFPNLaXVZYw-t1lyzlq6LtCuDlM3QwZuCZCtgifovHqO0AdD0Z87Ho0=w156-h114-p-k-no",
+        "publicId": "google-maps/noor-group-of-girls-and-boys-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHBcgEh6sG2oZEt_psnPSR89wrpcMppZUJL6oU8LnqGBhWQ_lffJuHgiqFG-OFq2ui2hh7EdybLydV6GKIywuUQur7TXXCbT6rXWGmwa3_OzhWQ_GoaLRiGCnpNDst0YBgNIaX-=w156-h114-p-k-no",
+        "publicId": "google-maps/noor-group-of-girls-and-boys-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 304 3332828",
+    "latitude": 31.4982446,
+    "longitude": 74.3228919,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        74.3228919,
+        31.4982446
+      ]
+    },
+    "capacity": [],
+    "nearbyUniversities": [
+      "University of the Punjab",
+      "FAST NUCES Lahore"
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Barkat Market",
+        "type": "market",
+        "distanceKm": 0.37
+      },
+      {
+        "name": "University of the Punjab",
+        "type": "university",
+        "distanceKm": 1.51
+      },
+      {
+        "name": "Model Town Park",
+        "type": "park",
+        "distanceKm": 1.57
+      },
+      {
+        "name": "FAST NUCES Lahore",
+        "type": "university",
+        "distanceKm": 2.63
+      },
+      {
+        "name": "Forman Christian College",
+        "type": "college",
+        "distanceKm": 2.69
+      },
+      {
+        "name": "Arfa Software Technology Park",
+        "type": "office",
+        "distanceKm": 3.08
+      },
+      {
+        "name": "Jinnah Hospital Lahore",
+        "type": "hospital",
+        "distanceKm": 3.12
+      },
+      {
+        "name": "Packages Mall",
+        "type": "office",
+        "distanceKm": 4.03
+      }
+    ],
+    "tags": [
+      "girls",
+      "Garden Town",
+      "Lahore",
+      "Barkat Market",
+      "University of the Punjab",
+      "Model Town Park",
+      "FAST NUCES Lahore",
+      "Forman Christian College",
+      "Arfa Software Technology Park",
+      "Jinnah Hospital Lahore",
+      "Packages Mall",
+      "market",
+      "university",
+      "park",
+      "college",
+      "office",
+      "hospital"
+    ],
+    "verified": false
+  },
+  {
+    "name": "Shes Hostel",
+    "description": "Shes Hostel is a girls hostel located in Garden Town, Lahore.",
+    "city": "Lahore",
+    "area": "Garden Town",
+    "address": "35 New, Ahmed Block Ali Block Garden Town, Lahore, 54000, Pakistan",
+    "price": 10000,
+    "mess": {
+      "available": false,
+      "price": 0,
+      "compulsory": false
+    },
+    "hostelType": "girls",
+    "amenities": [],
+    "images": [
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEqoqwkbtp3KVaDEp6hGSJKYmj6HSpJ8n8x8X8jJ0RLDZBerfynxdkOC8vV1PtDcEbgk7cdnJNICZliWoSVPL6sJd98sk2uk3RCDSB3NUXBqGkSC3PiG5Yfz0K-77H-j9qavwHB=w408-h544-k-no",
+        "publicId": "google-maps/shes-hostel-1"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEWEHvIPir0TuxYHoF7W1Q25QK_y5cqEddZRu13E0VTOjqqd8mTJ4UpiywQtca3mpN7Xrx4-_XJJeXkyJmKRzMt2769rsI2gECg7oaVIcXVDdS-SGxcgvsDLFUsVvq2We4EvOU=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-2"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFBj-_u93ZYfzeX9eV2ba6jlvU0ojTN7Dx0H6jno2P8YY3NSwrPue9fnUZoJvf1WkkQL0Xl0BSQEzra5zlRvnz-V2Q6sSjQ3Bx2AWi4d6eXvdYhpvMWd7r9o3UOKj0IcKoCUQ2iTA=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-3"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH5FiEC7TjbcNFKVY-SzRAJEI8523G1sfUT-Iixiux56MjAsu9UPSV4aM_ZItPajsdp5R1OAWHmIm5Z1wRc4VkVYG-ZaD6_sGIFYg3LIT42ogy8RSmGgJkDf1bvRfhMeWhyDyyuNS_pPwM=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-4"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEJ3wR5_q5Qjy0DZMjoy3tJ0mivY69sifoz_aARjRDF06humaXA_3pVWG2eIyjxibWmYGIzjhxNxvkcVjc-7E4216eehjLCYsA3Ajl6lBh3I54-hhOiqJLScT7A2RY8z91RxiAxXA=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-5"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE3a2B8X_gXIkIgDgwS9AnJfabhWlyk7n8pybvyQKVahD1DsMkG19TqNvedK2dPa60N6owx5Ds5g86lgAzuunKSvcxKS0oAWgpWTccwPqPXc9AhEAD-YpDv5CFwROtfURqRIF2-=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-6"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFp9qWJRDIQ--62jJBwO1-SymBETUeYIRclAx_hLSxuZsugtKtArmgFRicWSCId803dgzPKdtbFjavsIpqFjyFIENH_uhROF1loGviNQQe1YVNG6GrC-zZKXmhycSB808EO1zsV=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-7"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHZDf9fQdPSLi5qYuMTMMVG4d1E1mhe1dmqZ8QMxB2L-DsVQj7e1jy0q7jN4jUpgg5Bl_bmYRKDmKBBd8yCOSMFToBBThF4AwdxnnjK1CT-k3ZzJPSiCQj-wMZDBgdc9_l9MZ45GA=w156-h114-p-k-no",
+        "publicId": "google-maps/shes-hostel-8"
+      }
+    ],
+    "owner": "",
+    "phone": "+92 304 0000009",
+    "latitude": 31.5041976,
+    "longitude": 74.3195302,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        74.3195302,
+        31.5041976
+      ]
+    },
+    "capacity": [],
+    "nearbyUniversities": [
+      "University of the Punjab",
+      "FAST NUCES Lahore"
+    ],
+    "nearbyPlaces": [
+      {
+        "name": "Barkat Market",
+        "type": "market",
+        "distanceKm": 0.49
+      },
+      {
+        "name": "University of the Punjab",
+        "type": "university",
+        "distanceKm": 1.25
+      },
+      {
+        "name": "Forman Christian College",
+        "type": "college",
+        "distanceKm": 2.27
+      },
+      {
+        "name": "Model Town Park",
+        "type": "park",
+        "distanceKm": 2.29
+      },
+      {
+        "name": "FAST NUCES Lahore",
+        "type": "university",
+        "distanceKm": 2.95
+      },
+      {
+        "name": "Jinnah Hospital Lahore",
+        "type": "hospital",
+        "distanceKm": 3.31
+      },
+      {
+        "name": "Arfa Software Technology Park",
+        "type": "office",
+        "distanceKm": 3.81
+      },
+      {
+        "name": "Kinnaird College for Women",
+        "type": "college",
+        "distanceKm": 4.53
+      },
+      {
+        "name": "Packages Mall",
+        "type": "office",
+        "distanceKm": 4.74
+      }
+    ],
+    "tags": [
+      "girls",
+      "Garden Town",
+      "Lahore",
+      "Barkat Market",
+      "University of the Punjab",
+      "Forman Christian College",
+      "Model Town Park",
+      "FAST NUCES Lahore",
+      "Jinnah Hospital Lahore",
+      "Arfa Software Technology Park",
+      "Kinnaird College for Women",
+      "Packages Mall",
+      "market",
+      "university",
+      "college",
+      "park",
+      "hospital",
+      "office"
     ],
     "verified": false
   }

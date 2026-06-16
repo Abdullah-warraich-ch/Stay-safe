@@ -1,7 +1,9 @@
 import fs from 'fs';
 import mongoose from 'mongoose';
+try { process.loadEnvFile('.env'); } catch(e) {}
 import Hostel from './models/Hostel.js';
 import { citiesData } from './data/citiesData.js';
+import slugify from 'slugify';
 
 // Configuration
 const MONGO_URI = process.env.MONGO_URI
@@ -136,12 +138,22 @@ async function uploadData() {
     // 5. Insert or Update into MongoDB
     console.log("💾 Saving data to MongoDB...");
     const bulkOps = normalizedData.map(hostel => {
-      // Remove any _id that might have come from the JSON to avoid immutable field errors on update
-      const { _id, ...hostelData } = hostel;
+      // Stringify _id if it exists to preserve original id and prevent immutable field errors
+      let { _id, ...hostelData } = hostel;
+      let idStr;
+      if (_id) {
+        idStr = typeof _id === 'object' && _id.$oid ? _id.$oid : String(_id);
+      }
+
+      hostelData.slug = slugify(`${hostel.name} ${hostel.area} ${hostel.city}`, { lower: true, strict: true });
+
       return {
         updateOne: {
           filter: { name: hostel.name, city: hostel.city, area: hostel.area },
-          update: { $set: hostelData },
+          update: { 
+            $set: hostelData,
+            ...(idStr && { $setOnInsert: { _id: idStr } })
+          },
           upsert: true
         }
       };

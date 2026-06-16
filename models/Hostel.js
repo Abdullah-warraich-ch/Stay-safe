@@ -6,6 +6,11 @@ const hostelSchema = new mongoose.Schema({
     required: [true, 'Hostel name is required'],
     trim: true,
   },
+  slug: {
+    type: String,
+    unique: true,
+    sparse: true,
+  },
   description: {
     type: String,
     required: [true, 'Description is required'],

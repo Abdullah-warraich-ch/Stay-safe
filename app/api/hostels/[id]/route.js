@@ -2,13 +2,17 @@ import { NextResponse } from 'next/server';
 import connectDB from '@/lib/db';
 import Hostel from '@/models/Hostel';
 import User from '@/models/User';
+import mongoose from 'mongoose';
 
 export async function GET(req, { params }) {
   try {
     await connectDB();
     const { id } = await params;
 
-    const hostel = await Hostel.findById(id).populate('owner', 'name email phone');
+    const isObjectId = mongoose.Types.ObjectId.isValid(id);
+    const query = isObjectId ? { _id: id } : { slug: id };
+
+    const hostel = await Hostel.findOne(query).populate('owner', 'name email phone');
 
     if (!hostel) {
       return NextResponse.json(

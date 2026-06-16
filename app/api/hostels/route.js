@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import connectDB from '@/lib/db';
 import Hostel from '@/models/Hostel';
 import cloudinary from '@/lib/cloudinary';
+import slugify from 'slugify';
 
 // @desc    Create a new hostel listing
 // @route   POST /api/hostels
@@ -85,9 +86,18 @@ export async function POST(req) {
       ? Math.min(...capacity.map(c => c.price))
       : (Number(price) || 0);
 
+    let baseSlug = slugify(`${name} ${area} ${city}`, { lower: true, strict: true });
+    let slug = baseSlug;
+    let counter = 1;
+    while (await Hostel.findOne({ slug })) {
+      slug = `${baseSlug}-${counter}`;
+      counter++;
+    }
+
     // Create hostel
     const hostel = await Hostel.create({
       name,
+      slug,
       description,
       city,
       area,

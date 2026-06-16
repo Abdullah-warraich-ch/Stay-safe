@@ -23,9 +23,9 @@ export default function HostelCard({ hostel, showDeleteButton }) {
         return 'Co-ed';
     };
     const getHostelTypeBadgeClass = (type) => {
-        if (type === 'boys') return 'bg-sky-50/95 text-sky-700 ring-sky-200/80';
-        if (type === 'girls') return 'bg-rose-50/95 text-rose-700 ring-rose-200/80';
-        return 'bg-white/95 text-slate-900 ring-black/5';
+        if (type === 'boys') return 'bg-white text-sky-700 border-0 ring-0';
+        if (type === 'girls') return 'bg-white text-rose-700 border-0 ring-0';
+        return 'bg-white text-slate-900 border-0 ring-0';
     };
 
     return (
@@ -74,7 +74,7 @@ export default function HostelCard({ hostel, showDeleteButton }) {
                     </div>
                 )}
 
-                <div className={`absolute bottom-3 left-3 rounded-full px-4 py-1.5 text-[14px] font-bold shadow-sm ring-1 backdrop-blur ${getHostelTypeBadgeClass(hostel.hostelType)}`}>
+                <div className={`absolute bottom-3 left-0 rounded-tr-full rounded-br-full px-3 py-1 text-[14px] font-bold shadow-sm  ${getHostelTypeBadgeClass(hostel.hostelType)}`}>
                     {getHostelTypeLabel(hostel.hostelType)}
                 </div>
             </div>

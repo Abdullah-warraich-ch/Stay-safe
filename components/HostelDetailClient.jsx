@@ -160,10 +160,16 @@ export default function HostelDetailClient() {
       )}
 
       {/* Mobile bottom CTA */}
-      <div className={`lg:hidden fixed bottom-0 inset-x-0 z-50 bg-white border-t border-slate-100 px-4 pt-3 shadow-[0_-4px_24px_rgba(0,0,0,0.08)] transition-all duration-300 ${ctaVisible ? 'translate-y-full' : 'translate-y-0'}`} style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom,0px))' }}>
-        <div className="flex gap-3 max-w-sm mx-auto">
-          <a href={`tel:${hostel.phone}`} className="flex-1 py-3.5 rounded-xl bg-primary text-white text-sm font-bold flex items-center justify-center gap-2 cursor-pointer"><Phone size={15} /> Call</a>
-          <a href={`https://wa.me/${hostel.phone?.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="flex-1 py-3.5 rounded-xl bg-emerald-500 text-white text-sm font-bold flex items-center justify-center gap-2 cursor-pointer"><FaWhatsapp size={16} /> WhatsApp</a>
+      <div className={`lg:hidden fixed bottom-0 inset-x-0 z-50 bg-white/85 backdrop-blur-xl border-t border-slate-200/50 px-4 pt-3 shadow-[0_-8px_30px_rgba(0,0,0,0.08)] transition-all duration-300 ${ctaVisible ? 'translate-y-full opacity-0' : 'translate-y-0 opacity-100'}`} style={{ paddingBottom: 'calc(1rem + env(safe-area-inset-bottom,0px))' }}>
+        <div className="flex gap-3 max-w-md mx-auto">
+          <a href={`tel:${hostel.phone}`} className="relative flex-1 py-3.5 rounded-xl bg-gradient-to-r from-primary to-[#ff6b6b] text-white text-[15px] font-bold flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-primary/30 active:scale-[0.98] transition-transform overflow-hidden group">
+            <div className="absolute inset-0 bg-white/20 translate-y-full group-active:translate-y-0 transition-transform duration-300 ease-in-out" />
+            <Phone size={18} className="relative z-10" /> <span className="relative z-10">Call</span>
+          </a>
+          <a href={`https://wa.me/${hostel.phone?.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="relative flex-1 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-[15px] font-bold flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-emerald-500/30 active:scale-[0.98] transition-transform overflow-hidden group">
+            <div className="absolute inset-0 bg-white/20 translate-y-full group-active:translate-y-0 transition-transform duration-300 ease-in-out" />
+            <FaWhatsapp size={20} className="relative z-10" /> <span className="relative z-10">WhatsApp</span>
+          </a>
         </div>
       </div>
 
@@ -193,12 +199,12 @@ export default function HostelDetailClient() {
 
         {/* ── Photo Grid ── */}
         <div className="relative mb-10">
-          <div className="grid grid-cols-4 grid-rows-2 gap-2 h-[300px] sm:h-[380px] md:h-[440px] rounded-2xl overflow-hidden">
-            <button className="col-span-2 row-span-2 relative overflow-hidden group cursor-pointer" onClick={() => setLightboxIdx(0)}>
+          <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-2 h-[260px] sm:h-[380px] md:h-[440px] rounded-2xl overflow-hidden">
+            <button className="md:col-span-2 md:row-span-2 relative overflow-hidden group cursor-pointer w-full h-full" onClick={() => setLightboxIdx(0)}>
               {images[0] ? <img src={images[0].url} alt={hostel.name} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" /> : <div className="w-full h-full bg-slate-100 flex items-center justify-center"><Building2 size={48} className="text-slate-300" /></div>}
             </button>
             {[1, 2, 3, 4].map(i => (
-              <button key={i} className="relative overflow-hidden group cursor-pointer bg-slate-100" onClick={() => setLightboxIdx(i)}>
+              <button key={i} className="hidden md:block relative overflow-hidden group cursor-pointer bg-slate-100" onClick={() => setLightboxIdx(i)}>
                 {images[i] ? <img src={images[i].url} alt="" className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-500" /> : <div className="w-full h-full bg-slate-100" />}
               </button>
             ))}
@@ -257,7 +263,7 @@ export default function HostelDetailClient() {
             {hostel.description && (
               <div className="py-8 border-b border-slate-100">
                 <h3 className="text-[18px] font-bold text-slate-900 mb-4">About this property</h3>
-                <p className="text-slate-600 leading-[1.8] text-[15px] whitespace-pre-wrap">{hostel.description}</p>
+                <p className="text-slate-600 leading-[1.8] text-[15px] whitespace-pre-wrap break-words">{hostel.description}</p>
               </div>
             )}
 
@@ -287,7 +293,7 @@ export default function HostelDetailClient() {
             {hostel.amenities?.length > 0 && (
               <div className="py-8 border-b border-slate-100">
                 <h3 className="text-[18px] font-bold text-slate-900 mb-6">What this place offers</h3>
-                <div className="grid grid-cols-3 sm:grid-cols-3 gap-y-5 gap-x-8">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-5 gap-x-8">
                   {hostel.amenities.map(key => {
                     const a = AMENITY_MAP[key];
                     const Icon = a?.icon || Building2;
@@ -339,11 +345,13 @@ export default function HostelDetailClient() {
 
               {/* CTAs */}
               <div className="px-6 py-5 space-y-3 border-b border-slate-100">
-                <a href={`tel:${hostel.phone}`} className="w-full py-3.5 rounded-xl bg-primary hover:brightness-95 text-white text-sm font-bold flex items-center justify-center gap-2.5 transition-all shadow-md shadow-primary/25 cursor-pointer">
-                  <Phone size={16} /> Call Owner
+                <a href={`tel:${hostel.phone}`} className="relative w-full py-3.5 rounded-xl bg-gradient-to-r from-primary to-[#ff6b6b] hover:from-[#ff6b6b] hover:to-primary text-white text-[15px] font-bold flex items-center justify-center gap-2.5 transition-all duration-300 shadow-lg shadow-primary/30 hover:shadow-primary/40 cursor-pointer overflow-hidden group">
+                  <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
+                  <Phone size={18} className="relative z-10" /> <span className="relative z-10">Call Owner</span>
                 </a>
-                <a href={`https://wa.me/${hostel.phone?.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-bold flex items-center justify-center gap-2.5 transition-all shadow-md shadow-emerald-500/25 cursor-pointer">
-                  <FaWhatsapp size={17} /> WhatsApp Owner
+                <a href={`https://wa.me/${hostel.phone?.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="relative w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-teal-500 hover:to-emerald-500 text-white text-[15px] font-bold flex items-center justify-center gap-2.5 transition-all duration-300 shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/40 cursor-pointer overflow-hidden group">
+                  <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
+                  <FaWhatsapp size={20} className="relative z-10" /> <span className="relative z-10">WhatsApp Owner</span>
                 </a>
               </div>
 

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
 
     const lowestPrice = hostel.price ? `Rs. ${hostel.price.toLocaleString()}/mo` : '';
     const amenitiesList = (hostel.amenities || []).slice(0, 5).join(', ');
-    const description = `${hostel.name} is a verified ${type.toLowerCase()} hostel in ${hostel.area}, ${hostel.city}. ${lowestPrice ? `Starting from ${lowestPrice}.` : ''} ${amenitiesList ? `Amenities: ${amenitiesList}.` : ''} Book safely with Stay Safe.`;
+    const description = `${hostel.name} is a verified ${type.toLowerCase()} hostel in ${hostel.area}, ${hostel.city}. ${lowestPrice ? `Starting from ${lowestPrice}.` : ''} ${amenitiesList ? `Amenities: ${amenitiesList}.` : ''} Book safely with Rehloo.`;
 
     const keywords = [
       hostel.name,
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }) {
       description,
       keywords,
       openGraph: {
-        title: `${title} | Stay Safe`,
+        title: `${title} | Rehloo`,
         description,
         type: 'article',
         ...(ogImage && {
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }) {
   } catch (error) {
     return {
       title: 'Hostel Details',
-      description: 'View hostel details on Stay Safe.',
+      description: 'View hostel details on Rehloo.',
     };
   }
 }

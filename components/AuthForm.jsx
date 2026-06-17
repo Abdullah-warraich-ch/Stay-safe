@@ -122,7 +122,7 @@ export default function AuthForm({ mode = 'signup' }) {
         {/* Sticky Header */}
         <div className="sticky top-0 z-20 bg-white/80 backdrop-blur-md border-b border-slate-100 px-6 sm:px-10 lg:px-14 py-4">
           <Link href="/" className="inline-block">
-            <h2 className="text-xl font-bold text-slate-800 tracking-tight">Stay Safe<span className="text-primary">.</span></h2>
+            <h2 className="text-xl font-bold text-slate-800 tracking-tight">Rehloo<span className="text-primary">.</span></h2>
           </Link>
         </div>
 
@@ -392,7 +392,7 @@ export default function AuthForm({ mode = 'signup' }) {
             <p className="text-white/90 text-[15px] leading-relaxed font-medium mb-5">
               {isLogin
                 ? "Manage your listings and connect with boarders more efficiently than ever before."
-                : "I found the perfect hostel in just 2 days after joining Stay Safe. The verification badge made all the difference."}
+                : "I found the perfect hostel in just 2 days after joining Rehloo. The verification badge made all the difference."}
             </p>
 
             <div className="flex items-center gap-3">

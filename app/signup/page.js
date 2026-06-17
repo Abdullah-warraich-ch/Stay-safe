@@ -3,7 +3,7 @@ import { GuestRoute } from "@/components/ProtectedRoute";
 
 export const metadata = {
   title: 'Sign Up',
-  description: 'Create a free Stay Safe account to list your hostel, save favorites, and find verified student accommodation in Pakistan.',
+  description: 'Create a free Rehloo account to list your hostel, save favorites, and find verified student accommodation in Pakistan.',
 };
 
 export default function SignUpPage() {

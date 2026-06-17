@@ -384,7 +384,7 @@ export default function HostelDetailClient() {
             <div className="mt-5 hidden  rounded-2xl bg-amber-50 border border-amber-100 p-5">
               <div className="flex items-center gap-2 mb-4">
                 <ShieldCheck size={16} className="text-amber-600" />
-                <p className="text-xs font-bold text-slate-800 uppercase tracking-wider">Stay Safe Tips</p>
+                <p className="text-xs font-bold text-slate-800 uppercase tracking-wider">Rehloo Tips</p>
               </div>
               <div className="space-y-3.5">
                 {[

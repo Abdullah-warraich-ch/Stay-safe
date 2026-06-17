@@ -19,7 +19,7 @@ export async function generateMetadata({ searchParams }) {
             : 'in Pakistan';
 
     const title = `${typePart}Hostels ${locationPart}`;
-    const description = `Browse verified ${typePart.toLowerCase()}hostels ${locationPart}. Compare prices, amenities, and room types. Find affordable student accommodation with Stay Safe.`;
+    const description = `Browse verified ${typePart.toLowerCase()}hostels ${locationPart}. Compare prices, amenities, and room types. Find affordable student accommodation with Rehloo.`;
 
     const keywords = [
         'hostel', 'student accommodation', 'affordable hostel',
@@ -34,7 +34,7 @@ export async function generateMetadata({ searchParams }) {
         description,
         keywords,
         openGraph: {
-            title: `${title} | Stay Safe`,
+            title: `${title} | Rehloo`,
             description,
             type: 'website',
         },

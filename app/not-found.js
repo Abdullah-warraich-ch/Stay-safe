@@ -3,7 +3,7 @@ import Button from "../components/ui/Button";
 
 export const metadata = {
   title: 'Page Not Found',
-  description: 'The page you are looking for does not exist. Return to Stay Safe to find verified hostels in Pakistan.',
+  description: 'The page you are looking for does not exist. Return to Rehloo to find verified hostels in Pakistan.',
 };
 
 export default function NotFound() {

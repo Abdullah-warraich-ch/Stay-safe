@@ -16,7 +16,7 @@ export default function Footer() {
           {/* Logo and About */}
           <div className="space-y-6">
             <h1 className="text-2xl font-bold text-primary tracking-tight">
-              Stay Safe<span className="text-primary">.</span>
+              Rehloo<span className="text-primary">.</span>
             </h1>
             <p className="text-slate-500 text-[13px] leading-relaxed max-w-xs">
               We provide verified, budget-friendly student accommodation with zero brokerage. Your safe home away from home.
@@ -82,7 +82,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-400">
-            © {new Date().getFullYear()} <span className='text-primary'>Stay Safe</span><span className='text-primary'>.</span> All rights reserved.
+            © {new Date().getFullYear()} <span className='text-primary'>Rehloo</span><span className='text-primary'>.</span> All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-slate-400">
             <a href="#" className="group relative py-1 hover:text-primary transition-colors">

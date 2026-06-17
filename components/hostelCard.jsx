@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Star, Trash, Edit } from "lucide-react";
+import { Star, Trash, Edit, Building } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { deleteHostel } from "@/utils/https";
@@ -42,14 +42,22 @@ export default function HostelCard({ hostel, showDeleteButton }) {
 
             <Link href={`/hostels/${hostel.slug || hostel._id}`} className="group flex flex-col gap-3 cursor-pointer h-full">
                 {/* Image Container */}
-                <div className="relative aspect-square shrink-0 overflow-hidden rounded-xl bg-slate-200 border-b-2 border-primary shadow-xl shadow-black/10">
-                    <Image
-                        src={hostel.images?.[0]?.url || 'https://via.placeholder.com/400x400?text=No+Image'}
-                        alt={hostel.name}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                    />
+                <div className="relative aspect-square shrink-0 overflow-hidden rounded-xl bg-slate-100 border-b-2 border-primary shadow-xl shadow-black/10 flex flex-col items-center justify-center">
+                    {hostel.images?.[0]?.url ? (
+                        <Image
+                            src={hostel.images[0].url}
+                            alt={hostel.name}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                        />
+                    ) : (
+                        <div className="flex flex-col items-center justify-center text-slate-400 opacity-60 px-4 text-center">
+                            <Building size={42} strokeWidth={1.5} className="mb-2" />
+                            <span className="text-[13px] font-semibold text-slate-500">No Image Available</span>
+                            <span className="text-[11px] mt-1 leading-tight">But you can still contact the owner.</span>
+                        </div>
+                    )}
 
                     {/* Edit & Heart/Delete Buttons */}
                     {showDeleteButton ? (

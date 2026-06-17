@@ -105,6 +105,8 @@ export const citiesData = {
     '30-A', 'Street number 35', '1183', '1118', 'Gate 1 Defence Rd', 'C646+H3M', '1162 M Block LDA Ave 1', '498-3-C1 House # 498 Street 8', 'D1', 'Minhaj Rd', 'Revenue Employees Cooperative Housing Society'
     ,
     '428', 'Sector B-1 Block 12 Sector B 1 Lahore'
+  ,
+    'f330 doce bakery bukhari market', '51', 'Building No.91', 'Wahdat Road', 'Wahdat Rd'
   ].sort(),
   'Karachi': [
     'Clifton', 'DHA Phase 1', 'DHA Phase 2', 'DHA Phase 3', 'DHA Phase 4', 'DHA Phase 5',
@@ -118,6 +120,10 @@ export const citiesData = {
     'Azam Basti', 'Jacob Lines', 'Lines Area', 'Soldier Bazaar', 'Amil Colony',
     'Bihar Colony', 'Baldia Town', 'Ittihad Town', 'Kemari', 'SITE Area', 'Manora',
     'House B-63', 'Plot 254 D', 'Plot C', 'Building N', 'Plot/Survey # 336/2', 'Chand Bibi Rd', 'R28V+M4M', 'FL-39', 'Plot A، 189 Street 11', 'W4P6+956'
+  ,
+    'Moulvi Tamizuddin Khan Rd', 'V255+HVP', 'Plot A 19 A', 'B-191', '20C 23rd Commercial St', 'Defence phase 1', 'Dow Univeristy', 'V368+WFG', 'F 193', 'house # C-8/1 street 1', 'W4WG+6HH', 'KU', 'Plot CS 67', 'Banglow # C', 'V3RQ+Q5G', 'Bungalow No.G-22/B', 'Downtown Motors and Water Filter Shop', 'W2RM+4M3 11e', 'V3VG+H54', 'Kk-11 TCF School Rd، near iqra university', 'Plot 674 C', 'W4M5+VMG', 'Flat no# 202'
+  ,
+    'House# R', 'W4CP+7XQ Scheme 36 Block 11 Gulistan-e-Johar', 'Khan', 'ONE restaurant، near A Muhammad Ali Jinnah Rd، opposite NJV school'
   ].sort(),
   'Islamabad': [
     'F-6', 'F-7', 'F-8', 'F-10', 'F-11', 'G-6', 'G-7', 'G-8', 'G-9', 'G-10', 'G-11',
@@ -131,6 +137,8 @@ export const citiesData = {
     'Zaraj Housing Society', 'Multi Gardens (B-17)', 'CBR Town', 'Police Foundation',
     'Swan Garden', 'River Garden', 'Judicial Town', 'Faisal Town',
     'House 15', 'House#8-C Street No. 13', 'Lane 10', 'House no 588', 'Street 1', 'House 98 Street 96', 'Street 47', '181 Street 97', 'Potohar Rd', 'Flat#19'
+  ,
+    'H', '24 Street 136', 'House 715 Street 22', 'Street Street No. 20', 'Royal Avenue', 'House 28', 'House 27A F-8/1 44000', 'vip hostel city', 'House 1895 Street 27', '1G 67', 'House 855 Street 78', 'House 23، 2 Street 25', 'House no', 'House 129 Street 60', 'House No', 'Main Warsak Rd', '280 Street 38', 'House 9B Street No. 18', 'MX9R+PG6'
   ].sort(),
   'Rawalpindi': [
     'Saddar', 'Bahria Town Phase 1-6', 'Bahria Town Phase 7-8', 'Satellite Town',
@@ -143,6 +151,8 @@ export const citiesData = {
     'Range Road', 'Peshawar Road', '6th Road', 'Saidpur Road', 'Dhoke Hassu',
     'Dhoke Khabba', 'Pirwadhai', 'Khayaban-e-Sir Syed', 'Gulshan-e-Abad', 'Kuri Road',
     'Adyala', 'street 1', 'Dhok Paracha Block A Satellite Town', 'Office 201', '65-A', '2nd Floor Walayat Plaza adjacent to NADRA EXECUTIVE OFFICE REHMANABAD', 'Shop # 235 Choti Market Rd', 'Mian Afzal St', 'B-87 Commercial Market Rd'
+  ,
+    '14 Tipu Rd', 'D-831', 'A2', 'MALL', 'Gulzar e Quaid', 'D 326 Fifth Rd', 'Lane 5', '574B', 'J258+543', 'min walk from Woman uni', 'House # 368 7th Rd', '314 Street 5A', 'Address: House No. 429-na Seventh Road', 'Bangash Clinic، lane no 5 near', 'Chishtiabad', '3rd floor', 'J3VH+6VW', 'Street No 2', 'J3VG+Q2G', 'H', 'house no A-1', 'B-Block Block B Satellite Town', '7th Rd', 'H37F+763', 'Dar st', '188 Tipu Rd', 'F-770', 'J3MC+3JF', 'Street No. 5', '182-D', 'C 46', 'J3RF+MH9', 'Punjab College for Women', '2 Rose Ln', 'House number 374', 'Street 23', '114 St 4', 'E، 67/8', 'H3G7+MJ8'
   ].sort()
 };
 

@@ -32,13 +32,13 @@ export default function Providers({ children }) {
             success: {
               iconTheme: {
                 primary: '#22c55e', // Green for success
-                primary: '#fff',
+                secondary: '#fff',
               },
             },
             error: {
               iconTheme: {
                 primary: '#ef4444',
-                primary: '#fff',
+                secondary: '#fff',
               },
             },
           }}

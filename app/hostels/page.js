@@ -1,6 +1,6 @@
-import Nav from '@/components/Nav';
-import HostelsClientList from '@/components/HostelsClientList';
-import FilterSidebar from '@/components/FilterSidebar';
+import Nav from '@/components/layout/Nav';
+import HostelsClientList from '@/components/hostels/HostelsClientList';
+import FilterSidebar from '@/components/hostels/FilterSidebar';
 import connectDB from '@/lib/db';
 import Hostel from '@/models/Hostel';
 

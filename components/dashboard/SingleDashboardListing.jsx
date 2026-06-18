@@ -3,8 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import { fetchHostels } from "@/utils/https";
 import { useAuth } from "@/context/AuthContext";
-import HostelCard from "./hostelCard";
-import CardSkeleton from "./cardSkeleton";
+import HostelCard from "../hostels/HostelCard";
+import CardSkeleton from "../hostels/CardSkeleton";
 import { ArrowRight, ChevronRight, ChevronLeft, Compass, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
@@ -88,6 +88,8 @@ export default function SingleDashboardListing({ currentCity }) {
 
         getHostels();
     }, [currentCity]);
+
+
 
     return (
         <div className="px-4 sm:px-6 md:px-12 py-5 bg-white">

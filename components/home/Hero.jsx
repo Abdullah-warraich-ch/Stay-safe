@@ -1,5 +1,5 @@
 
-import FilterSystem from "./FilterSystem";
+import FilterSystem from "../hostels/FilterSystem";
 import { ArrowRight } from "lucide-react";
 
 export default function Hero() {

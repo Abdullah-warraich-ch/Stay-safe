@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from 'next/navigation';
-import { cities, citiesData } from "../data/citiesData";
+import { cities, citiesData } from "@/data/citiesData";
 import SearchableSelect from "./SearchableSelect";
 import { SlidersHorizontal, BedDouble, Bath, Wind, Wifi, Zap, Building2, MapPin, CheckCircle2, X } from "lucide-react";
 

@@ -1,8 +1,8 @@
 'use client';
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from 'next/navigation';
-import { useAuth } from "../context/AuthContext";
-import { cities, citiesData } from "../data/citiesData";
+import { useAuth } from "@/context/AuthContext";
+import { cities, citiesData } from "@/data/citiesData";
 import { SlidersHorizontal, BedDouble, Bath, Wind, Wifi, Zap, Building2, MapPin } from "lucide-react";
 import SearchableSelect from "./SearchableSelect";
 import { motion } from 'framer-motion';

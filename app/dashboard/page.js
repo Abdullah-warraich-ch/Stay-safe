@@ -1,5 +1,5 @@
-import { ProtectedRoute } from '@/components/ProtectedRoute';
-import DashboardContent from '@/components/DashboardClient';
+import { ProtectedRoute } from '@/components/layout/ProtectedRoute';
+import DashboardContent from '@/components/dashboard/DashboardClient';
 
 export const metadata = {
     title: 'Dashboard',

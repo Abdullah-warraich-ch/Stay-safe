@@ -1,7 +1,7 @@
 'use client';
 
 import { MapPin, Building2, X, Navigation } from 'lucide-react';
-import SearchableSelect from '@/components/SearchableSelect';
+import SearchableSelect from '@/components/hostels/SearchableSelect';
 
 export default function StepLocation({ formData, handleChange, allCities, availableAreas, availableUniversities, selectedUniversities, toggleUniversity }) {
   return (

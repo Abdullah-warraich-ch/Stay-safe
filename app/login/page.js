@@ -1,5 +1,5 @@
-import AuthForm from "@/components/AuthForm";
-import { GuestRoute } from "@/components/ProtectedRoute";
+import AuthForm from "@/components/auth/AuthForm";
+import { GuestRoute } from "@/components/layout/ProtectedRoute";
 
 export const metadata = {
   title: 'Log In',

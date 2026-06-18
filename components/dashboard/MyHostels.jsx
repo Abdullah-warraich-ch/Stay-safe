@@ -4,8 +4,8 @@ import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { MapPin, Users, Star, Loader2, Plus, Building2, CheckCircle2, Clock } from 'lucide-react';
 import Link from 'next/link';
-import HostelCard from './hostelCard';
-import CardSkeleton from './cardSkeleton';
+import HostelCard from '../hostels/HostelCard';
+import CardSkeleton from '../hostels/CardSkeleton';
 import { useAuth } from '@/context/AuthContext';
 
 export default function MyHostels({ ownerId }) {

@@ -6,10 +6,10 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { deleteHostel } from "@/utils/https";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import ModalComponent from "./CofirmPopup";
+import ModalComponent from "../ui/ConfirmPopup";
 import { useState } from 'react'
 import toast from 'react-hot-toast';
-import PropertyTypeLoader from "./PropertyTypeLoader";
+import PropertyTypeLoader from "../ui/PropertyTypeLoader";
 
 
 export default function HostelCard({ hostel, showDeleteButton }) {

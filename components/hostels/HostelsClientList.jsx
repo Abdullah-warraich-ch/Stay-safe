@@ -1,11 +1,11 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import HostelCard from './hostelCard';
-import CardSkeleton from './cardSkeleton';
+import HostelCard from './HostelCard';
+import CardSkeleton from './CardSkeleton';
 import { fetchHostels } from '@/utils/https';
 import { CheckCircle2, RefreshCw } from 'lucide-react';
-import PropertyTypeLoader from './PropertyTypeLoader';
+import PropertyTypeLoader from '../ui/PropertyTypeLoader';
 
 export default function HostelsClientList({ initialHostels, total, searchParams }) {
     const [hostels, setHostels] = useState(initialHostels);

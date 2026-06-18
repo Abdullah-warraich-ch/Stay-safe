@@ -3,8 +3,8 @@
 import React from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { Plus, Building2, ShieldCheck, Heart, Settings } from 'lucide-react';
-import Nav from '@/components/Nav';
-import MyHostels from '@/components/MyHostels';
+import Nav from '@/components/layout/Nav';
+import MyHostels from '@/components/dashboard/MyHostels';
 import Link from 'next/link';
 
 export default function DashboardContent() {

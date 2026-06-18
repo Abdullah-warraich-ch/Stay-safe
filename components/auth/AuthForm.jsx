@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { X, User, Mail, Phone, Lock, Eye, EyeOff, ShieldCheck, Star, Loader2, ArrowRight, MapPin, School, CheckCircle2 } from 'lucide-react';
-import SearchableSelect from './SearchableSelect';
+import SearchableSelect from '../hostels/SearchableSelect';
 import { useRouter } from 'next/navigation';
 import { useMutation } from '@tanstack/react-query';
 import Link from 'next/link';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { featuredCities } from '../data/featuredCities';
+import { featuredCities } from '../../data/featuredCities';
 import { ArrowRight } from 'lucide-react';
 
 const CitySection = () => {

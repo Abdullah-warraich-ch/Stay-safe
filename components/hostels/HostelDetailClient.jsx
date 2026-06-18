@@ -3,8 +3,8 @@
 import React, { useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useQuery } from '@tanstack/react-query';
-import Nav from '@/components/Nav';
-import Footer from '@/components/Footer';
+import Nav from '@/components/layout/Nav';
+import Footer from '@/components/layout/Footer';
 import {useAuth } from '@/context/AuthContext'
 import {
   MapPin, Phone, ShieldCheck, Wifi, Car, Wind, Tv,

@@ -1,6 +1,6 @@
 import connectDB from '@/lib/db';
 import Hostel from '@/models/Hostel';
-import HostelDetailClient from '@/components/HostelDetailClient';
+import HostelDetailClient from '@/components/hostels/HostelDetailClient';
 import mongoose from 'mongoose';
 
 export async function generateMetadata({ params }) {

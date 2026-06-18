@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useMutation } from '@tanstack/react-query';
-import { ProtectedRoute } from '@/components/ProtectedRoute';
+import { ProtectedRoute } from '@/components/layout/ProtectedRoute';
 import toast from 'react-hot-toast';
 import { cities, universitiesData, citiesData } from '@/data/citiesData';
 import {
@@ -12,14 +12,14 @@ import {
 } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-import StepLocation from '@/components/create-listing/StepLocation';
-import StepMedia from '@/components/create-listing/StepMedia';
-import StepAmenities from '@/components/create-listing/StepAmenities';
-import StepTitle from '@/components/create-listing/StepTitle';
-import StepDescription from '@/components/create-listing/StepDescription';
-import StepContact from '@/components/create-listing/StepContact';
-import StepRooms from '@/components/create-listing/StepRooms';
-import StepMess from '@/components/create-listing/StepMess';
+import StepLocation from '@/components/dashboard/create-listing/StepLocation';
+import StepMedia from '@/components/dashboard/create-listing/StepMedia';
+import StepAmenities from '@/components/dashboard/create-listing/StepAmenities';
+import StepTitle from '@/components/dashboard/create-listing/StepTitle';
+import StepDescription from '@/components/dashboard/create-listing/StepDescription';
+import StepContact from '@/components/dashboard/create-listing/StepContact';
+import StepRooms from '@/components/dashboard/create-listing/StepRooms';
+import StepMess from '@/components/dashboard/create-listing/StepMess';
 
 const STEPS = [
   { id: 1, title: 'Hostel Name', subtitle: 'Name and hostel type', icon: Home },

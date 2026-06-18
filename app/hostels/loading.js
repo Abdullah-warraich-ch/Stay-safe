@@ -1,5 +1,5 @@
-import Nav from '@/components/Nav';
-import CardSkeleton from '@/components/cardSkeleton';
+import Nav from '@/components/layout/Nav';
+import CardSkeleton from '@/components/hostels/CardSkeleton';
 
 export default function Loading() {
     return (

@@ -90,7 +90,7 @@ export async function POST(req) {
     let slug = baseSlug;
     let counter = 1;
     while (await Hostel.findOne({ slug })) {
-      slug = `${baseSlug}-${counter}`;
+      slug = `${baseSlug}-${coutoastnter}`;
       counter++;
     }
 

@@ -59,7 +59,7 @@ export default async function HostelsPage({ searchParams }) {
     }
 
     const total = await Hostel.countDocuments(query);
-    const hostels = await Hostel.find(query).sort({ createdAt: -1 }).limit(25).lean();
+    const hostels = await Hostel.find(query).sort({ createdAt: -1 }).limit(24).lean();
     const plainHostels = JSON.parse(JSON.stringify(hostels));
     const queryKey = JSON.stringify(resolvedParams);
 
@@ -81,11 +81,11 @@ export default async function HostelsPage({ searchParams }) {
                                 Showing verified hostels matching your preferences.
                             </p>
                         </div>
-                        <HostelsClientList 
+                        <HostelsClientList
                             key={queryKey}
-                            initialHostels={plainHostels} 
-                            total={total} 
-                            searchParams={resolvedParams} 
+                            initialHostels={plainHostels}
+                            total={total}
+                            searchParams={resolvedParams}
                         />
                     </div>
                 </div>

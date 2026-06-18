@@ -9,10 +9,12 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import ModalComponent from "./CofirmPopup";
 import { useState } from 'react'
 import toast from 'react-hot-toast';
+import PropertyTypeLoader from "./PropertyTypeLoader";
 
 
 export default function HostelCard({ hostel, showDeleteButton }) {
     const [isOpen, setIsOpen] = useState(false);
+    const [imgLoading, setImgLoading] = useState(true);
     const router = useRouter();
     const queryClient = useQueryClient();
     const deleteMutation = useMutation({
@@ -44,13 +46,21 @@ export default function HostelCard({ hostel, showDeleteButton }) {
                 {/* Image Container */}
                 <div className="relative aspect-square shrink-0 overflow-hidden rounded-xl bg-slate-100 border-b-2 border-primary shadow-xl shadow-black/10 flex flex-col items-center justify-center">
                     {hostel.images?.[0]?.url ? (
-                        <Image
-                            src={hostel.images[0].url}
-                            alt={hostel.name}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                        />
+                        <>
+                            {imgLoading && (
+                                <div className="absolute inset-0 flex items-center justify-center bg-slate-50 z-[5]">
+                                    <PropertyTypeLoader iconSize={28} />
+                                </div>
+                            )}
+                            <Image
+                                src={hostel.images[0].url}
+                                alt={hostel.name}
+                                fill
+                                className={`object-cover transition-opacity duration-300 ${imgLoading ? 'opacity-0' : 'opacity-100'}`}
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                onLoad={() => setImgLoading(false)}
+                            />
+                        </>
                     ) : (
                         <div className="flex flex-col items-center justify-center text-slate-400 opacity-60 px-4 text-center">
                             <Building size={42} strokeWidth={1.5} className="mb-2" />

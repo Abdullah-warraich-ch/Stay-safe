@@ -4,7 +4,8 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import HostelCard from './hostelCard';
 import CardSkeleton from './cardSkeleton';
 import { fetchHostels } from '@/utils/https';
-import { Loader2, CheckCircle2, RefreshCw } from 'lucide-react';
+import { CheckCircle2, RefreshCw } from 'lucide-react';
+import PropertyTypeLoader from './PropertyTypeLoader';
 
 export default function HostelsClientList({ initialHostels, total, searchParams }) {
     const [hostels, setHostels] = useState(initialHostels);
@@ -28,7 +29,7 @@ export default function HostelsClientList({ initialHostels, total, searchParams 
         try {
             const queryParams = new URLSearchParams(searchParams);
             queryParams.set('page', nextPage.toString());
-            queryParams.set('limit', '25');
+            queryParams.set('limit', '24');
 
             const response = await fetchHostels(queryParams.toString());
 
@@ -80,7 +81,7 @@ export default function HostelsClientList({ initialHostels, total, searchParams 
         return (
             <div className="col-span-full py-20 flex flex-col items-center justify-center text-center px-4">
                 <div className="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 mb-4">
-                    <Loader2 size={24} className="animate-pulse" />
+                    <PropertyTypeLoader iconSize={26} />
                 </div>
                 <h3 className="text-lg font-bold text-slate-800">No Hostels Found</h3>
                 <p className="text-sm text-slate-500 mt-1 max-w-sm">
@@ -103,7 +104,7 @@ export default function HostelsClientList({ initialHostels, total, searchParams 
                 {/* Skeletons to show when fetching more records */}
                 {loading && (
                     <>
-                        {[...Array(5)].map((_, i) => (
+                        {[...Array(12)].map((_, i) => (
                             <CardSkeleton key={`skeleton-${i}`} />
                         ))}
                     </>
@@ -127,7 +128,7 @@ export default function HostelsClientList({ initialHostels, total, searchParams 
             {hasMore && !error && (
                 <div ref={loaderRef} className="col-span-full flex justify-center py-6">
                     <div className="flex items-center gap-2 text-slate-400 text-xs font-semibold">
-                        <Loader2 className="animate-spin text-primary" size={16} />
+                        <PropertyTypeLoader iconSize={12} variant="mini" cycleInterval={800} />
                         <span>Loading more properties...</span>
                     </div>
                 </div>

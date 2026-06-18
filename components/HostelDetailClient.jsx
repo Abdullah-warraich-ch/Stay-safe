@@ -5,12 +5,13 @@ import { useParams, useRouter } from 'next/navigation';
 import { useQuery } from '@tanstack/react-query';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import {useAuth } from '@/context/AuthContext'
 import {
   MapPin, Phone, ShieldCheck, Wifi, Car, Wind, Tv,
   WashingMachine, Dumbbell, CookingPot, Utensils, Droplets,
   Zap, BookOpen, Lock, Cigarette, PawPrint, Bed, Footprints,
   ShowerHead, Share2, ChevronLeft, ChevronRight,
-  BadgeCheck, Building2, Star, X, CheckCircle2
+  BadgeCheck, Building2, Star, X, CheckCircle2, PenIcon
 } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -99,6 +100,7 @@ function HostelDetailSkeleton() {
 
 /* ─── Main ─── */
 export default function HostelDetailClient() {
+  const { user } = useAuth();
   const { id } = useParams();
   const router = useRouter();
   const [lightboxIdx, setLightboxIdx] = useState(null);
@@ -182,9 +184,13 @@ export default function HostelDetailClient() {
               {hostel.name}
               {hostel.verified && <BadgeCheck className="fill-blue-500 text-white w-6 h-6 shrink-0" />}
             </h1>
-            <button className="shrink-0 flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-slate-900 border border-slate-200 rounded-xl px-3.5 py-2 hover:bg-slate-50 transition-all cursor-pointer mt-0.5">
-              <Share2 size={14} /> Share
-            </button>
+            <div>
+              {user?.id === hostel._id ? (<button className="shrink-0 flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-slate-900 border border-slate-200 rounded-xl px-3.5 py-2 hover:bg-slate-50 transition-all cursor-pointer mt-0.5">
+                <Share2 size={14} /> Share
+              </button>) : <button onClick={(e) => { e.preventDefault(); router.push(`/dashboard/create-listing?id=${hostel._id}`); }} className="shrink-0 flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-slate-900 border border-slate-200 rounded-xl px-3.5 py-2 hover:bg-slate-50 transition-all cursor-pointer mt-0.5">
+                <PenIcon size={14} /> Edit
+              </button>}
+            </div>
           </div>
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mt-2 text-sm text-slate-500">
             <span className="flex items-center gap-1 font-semibold text-slate-800">

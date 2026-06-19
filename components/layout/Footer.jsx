@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Logo and About */}
           <div className="space-y-6">
-            <h1 className="text-2xl font-bold text-primary tracking-tight">
+            <h1 className="text-2xl  font-bold text-slate-800 tracking-tight">
               Rehloo<span className="text-primary">.</span>
             </h1>
             <p className="text-slate-500 text-[13px] leading-relaxed max-w-xs">

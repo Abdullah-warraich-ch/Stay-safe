@@ -23,7 +23,7 @@ export default function Nav() {
             <nav className="relative py-4 px-6 md:px-10 lg:px-20 border-b border-slate-50 bg-white/80 backdrop-blur-md sticky top-0 z-[100]">
                 <div className="flex justify-between items-center">
                     <Link href="/" className="logo shrink-0">
-                        <h1 className="text-xl md:text-2xl font-bold text-primary tracking-tight">Rehloo<span className="text-primary">.</span></h1>
+                        <h1 className="text-xl md:text-2xl font-bold text-slate-800 tracking-tight">Rehloo<span className="text-primary">.</span></h1>
                     </Link>
 
                     {/* Desktop & Tablet Links */}
@@ -113,7 +113,7 @@ export default function Nav() {
             <div className={`fixed top-0 right-0 h-full w-[85vw] max-w-[340px] bg-white z-[1000] shadow-2xl lg:hidden transform transition-transform duration-300 ease-out rounded-l-3xl flex flex-col ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 {/* Sidebar Header */}
                 <div className="flex justify-between items-center p-6 border-b border-slate-100 bg-slate-50/50 rounded-tl-3xl shrink-0">
-                    <h1 className="text-2xl font-bold text-primary tracking-tight">Rehloo<span className="text-primary">.</span></h1>
+                    <h1 className="text-2xl font-bold text-slate-800 tracking-tight">Rehloo<span className="text-primary">.</span></h1>
                     <button
                         onClick={() => setIsMenuOpen(false)}
                         className="p-2 bg-white rounded-full text-slate-400 hover:text-slate-700 shadow-sm transition-colors cursor-pointer"

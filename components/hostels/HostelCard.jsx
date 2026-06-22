@@ -49,7 +49,7 @@ export default function HostelCard({ hostel, showDeleteButton }) {
                         <>
                             {imgLoading && (
                                 <div className="absolute inset-0 flex items-center justify-center bg-slate-50 z-[5]">
-                                    <PropertyTypeLoader iconSize={28} />
+                                    <PropertyTypeLoader />
                                 </div>
                             )}
                             <Image

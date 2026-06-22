@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function SingleDashboardListing({ currentCity }) {
     const [hostels, setHostels] = useState([]);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(false);
     const scrollRef = useRef(null);
@@ -91,6 +91,25 @@ export default function SingleDashboardListing({ currentCity }) {
 
 
 
+    if (loading) {
+        return (
+            <div className="px-4 sm:px-6 md:px-12 py-5 bg-white">
+                <div className="flex gap-4 justify-between items-center mb-3">
+                    <h1 className="font-bold rounded-lg bg-slate-200 text-transparent text-lg sm:text-xl flex gap-2 sm:gap-4 items-center">
+                        Popular Hostels
+                    </h1>
+                </div>
+                <div className="flex gap-4 overflow-x-auto scrollbar-hide py-4 -my-4 snap-x snap-mandatory">
+                    {[...Array(5)].map((_, i) => (
+                        <div key={i} className="w-[260px] sm:w-[calc(50vw-36px)] md:w-[calc(33.33vw-36px)] lg:w-[calc(25vw-36px)] xl:w-[calc(20vw-36px)] max-w-[300px] shrink-0 snap-start">
+                            <CardSkeleton />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div className="px-4 sm:px-6 md:px-12 py-5 bg-white">
             <div className="flex gap-4 justify-between items-center mb-3">
@@ -128,47 +147,37 @@ export default function SingleDashboardListing({ currentCity }) {
                 </div>
             </div>
             <div className="flex gap-4 overflow-x-auto scrollbar-hide py-4 -my-4 snap-x snap-mandatory" ref={scrollRef}>
-                {loading ? (
-                    [...Array(5)].map((_, i) => (
-                        <div key={i} className="w-[260px] sm:w-[calc(50vw-36px)] md:w-[calc(33.33vw-36px)] lg:w-[calc(25vw-36px)] xl:w-[calc(20vw-36px)] max-w-[300px] shrink-0 snap-start">
-                            <CardSkeleton />
-                        </div>
-                    ))
-                ) : (
-                    <>
-                        {hostels?.map((hostel) => (
-                            <div key={hostel._id} className="w-[260px] sm:w-[calc(50vw-36px)] md:w-[calc(33.33vw-36px)] lg:w-[calc(25vw-36px)] xl:w-[calc(20vw-36px)] max-w-[300px] shrink-0 snap-start">
-                                <HostelCard hostel={hostel} />
+                {hostels?.map((hostel) => (
+                    <div key={hostel._id} className="w-[260px] sm:w-[calc(50vw-36px)] md:w-[calc(33.33vw-36px)] lg:w-[calc(25vw-36px)] xl:w-[calc(20vw-36px)] max-w-[300px] shrink-0 snap-start">
+                        <HostelCard hostel={hostel} />
+                    </div>
+                ))}
+                {hostels && hostels.length > 0 && (
+                    <Link
+                        href={currentCity ? `/hostels?city=${currentCity}` : "/hostels"}
+                        className="group flex flex-col gap-3 cursor-pointer w-[260px] sm:w-[calc(50vw-36px)] md:w-[calc(33.33vw-36px)] lg:w-[calc(25vw-36px)] xl:w-[calc(20vw-36px)] max-w-[300px] shrink-0 snap-start"
+                    >
+                        <div className="relative aspect-square overflow-hidden rounded-xl border border-slate-100 bg-white shadow-[0_0_12px_rgba(0,0,0,0.05)] group-hover:shadow-[0_0_20px_rgba(0,0,0,0.12)] group-hover:border-slate-200 transition-all duration-300 flex flex-col items-center justify-center gap-3">
+                            <div className="absolute top-3 right-3 text-slate-400 group-hover:text-slate-900 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">
+                                <ArrowUpRight size={18} />
                             </div>
-                        ))}
-                        {hostels && hostels.length > 0 && (
-                            <Link
-                                href={currentCity ? `/hostels?city=${currentCity}` : "/hostels"}
-                                className="group flex flex-col gap-3 cursor-pointer w-[260px] sm:w-[calc(50vw-36px)] md:w-[calc(33.33vw-36px)] lg:w-[calc(25vw-36px)] xl:w-[calc(20vw-36px)] max-w-[300px] shrink-0 snap-start"
-                            >
-                                <div className="relative aspect-square overflow-hidden rounded-xl border border-slate-100 bg-white shadow-[0_0_12px_rgba(0,0,0,0.05)] group-hover:shadow-[0_0_20px_rgba(0,0,0,0.12)] group-hover:border-slate-200 transition-all duration-300 flex flex-col items-center justify-center gap-3">
-                                    <div className="absolute top-3 right-3 text-slate-400 group-hover:text-slate-900 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">
-                                        <ArrowUpRight size={18} />
-                                    </div>
-                                    <div className="w-12 h-12 rounded-full bg-white shadow-sm group-hover:shadow-md text-slate-600 group-hover:text-slate-900 group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
-                                        <Compass size={24} className="group-hover:rotate-45 transition-transform duration-500" />
-                                    </div>
-                                    <span className="font-semibold text-sm text-slate-700 group-hover:text-slate-950 transition-colors">
-                                        See All Hostels
-                                    </span>
-                                </div>
+                            <div className="w-12 h-12 rounded-full bg-white shadow-sm group-hover:shadow-md text-slate-600 group-hover:text-slate-900 group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                                <Compass size={24} className="group-hover:rotate-45 transition-transform duration-500" />
+                            </div>
+                            <span className="font-semibold text-sm text-slate-700 group-hover:text-slate-950 transition-colors">
+                                See All Hostels
+                            </span>
+                        </div>
 
-                                <div className="flex flex-col gap-0.5">
-                                    <h3 className="text-[15px] hidden font-semibold leading-5 text-slate-800 group-hover:text-slate-950 transition-colors truncate">
-                                        Explore {hostels.length > 10 ? `${hostels.length}+` : hostels.length} Listings
-                                    </h3>
-                                    <p className="text-[14px] hidden leading-5 text-slate-500 truncate">
-                                        Find the best place in {currentCity || "your city"}
-                                    </p>
-                                </div>
-                            </Link>
-                        )}
-                    </>
+                        <div className="flex flex-col gap-0.5">
+                            <h3 className="text-[15px] hidden font-semibold leading-5 text-slate-800 group-hover:text-slate-950 transition-colors truncate">
+                                Explore {hostels.length > 10 ? `${hostels.length}+` : hostels.length} Listings
+                            </h3>
+                            <p className="text-[14px] hidden leading-5 text-slate-500 truncate">
+                                Find the best place in {currentCity || "your city"}
+                            </p>
+                        </div>
+                    </Link>
                 )}
             </div>
 

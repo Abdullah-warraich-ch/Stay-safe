@@ -81,7 +81,7 @@ export default function HostelsClientList({ initialHostels, total, searchParams 
         return (
             <div className="col-span-full py-20 flex flex-col items-center justify-center text-center px-4">
                 <div className="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 mb-4">
-                    <PropertyTypeLoader iconSize={26} />
+                    <PropertyTypeLoader />
                 </div>
                 <h3 className="text-lg font-bold text-slate-800">No Hostels Found</h3>
                 <p className="text-sm text-slate-500 mt-1 max-w-sm">
@@ -128,7 +128,7 @@ export default function HostelsClientList({ initialHostels, total, searchParams 
             {hasMore && !error && (
                 <div ref={loaderRef} className="col-span-full flex justify-center py-6">
                     <div className="flex items-center gap-2 text-slate-400 text-xs font-semibold">
-                        <PropertyTypeLoader iconSize={12} variant="mini" cycleInterval={800} />
+                        <PropertyTypeLoader />
                         <span>Loading more properties...</span>
                     </div>
                 </div>

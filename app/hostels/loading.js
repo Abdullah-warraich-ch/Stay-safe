@@ -51,7 +51,7 @@ export default function Loading() {
                     </div>
 
                     {/* Main Content */}
-                    <div className="flex-1 bg-slate-50">
+                    <div className="flex-1 ">
                         <div className="mb-6">
                             <h1 className="rounded-lg text-2xl font-bold text-transparent bg-slate-100">
                                 Total Property Fonud 11
@@ -62,7 +62,7 @@ export default function Loading() {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6 md:gap-8">
                             {[...Array(24)].map((_, i) => (
-                                <CardSkeleton key = { i } />
+                                <CardSkeleton key={i} />
                             ))}
                         </div>
                     </div>

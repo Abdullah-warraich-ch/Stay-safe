@@ -146,12 +146,15 @@ function CreateListingContent() {
     if (imageFiles.length + files.length > 8) { toast.error('Maximum 8 images allowed'); return; }
     setImageFiles(prev => [...prev, ...files]);
     setImagePreviews(prev => [...prev, ...files.map(f => URL.createObjectURL(f))]);
+    console.log("HandleImage",imageFiles);
+    
   };
 
   const removeImage = (index) => {
     URL.revokeObjectURL(imagePreviews[index]);
     setImageFiles(prev => prev.filter((_, i) => i !== index));
     setImagePreviews(prev => prev.filter((_, i) => i !== index));
+    console.log("RemoveImage",imageFiles);
   };
 
   const handleAddTag = (text) => {

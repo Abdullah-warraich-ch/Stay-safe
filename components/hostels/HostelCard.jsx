@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Star, Trash, Edit, Building } from "lucide-react";
+import { Star, Trash, Edit, Building, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { deleteHostel } from "@/utils/https";
@@ -32,19 +32,21 @@ export default function HostelCard({ hostel, showDeleteButton }) {
         if (type === 'girls') return 'Girls';
         return 'Co-ed';
     };
-    const getHostelTypeBadgeClass = (type) => {
-        if (type === 'boys') return 'bg-white text-sky-700 border-none outline-none ring-0';
-        if (type === 'girls') return 'bg-white text-rose-700 border-none outline-none ring-0';
-        return 'bg-white text-slate-900 border-none outline-none ring-0';
+
+    const getHostelTypeColor = (type) => {
+        if (type === 'boys') return 'bg-sky-500';
+        if (type === 'girls') return 'bg-rose-500';
+        return 'bg-violet-500';
     };
 
     return (
         <>
             <ModalComponent isOpen={isOpen} setIsOpen={setIsOpen} action={() => deleteMutation.mutate(hostel._id)} title="Are you sure you want to delete this Hostel?" desc="This action is permanent and cannot be undone. Once deleted, the item will be removed from your account." />
 
-            <Link href={`/hostels/${hostel.slug || hostel._id}`} className="group flex flex-col gap-3 cursor-pointer h-full">
-                {/* Image Container */}
-                <div className="relative aspect-square shrink-0 overflow-hidden rounded-xl bg-slate-100 border-b-2 border-primary shadow-xl shadow-black/10 flex flex-col items-center justify-center">
+            <Link href={`/hostels/${hostel.slug || hostel._id}`} className="hostel-card group block cursor-pointer h-full">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-white shadow-md shadow-slate-200/60 border border-slate-100/80">
+
+                    {/* Full-bleed Image */}
                     {hostel.images?.[0]?.url ? (
                         <>
                             {imgLoading && (
@@ -62,80 +64,92 @@ export default function HostelCard({ hostel, showDeleteButton }) {
                             />
                         </>
                     ) : (
-                        <div className="flex flex-col items-center justify-center text-slate-400 opacity-60 px-4 text-center">
+                        <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400 px-4 text-center bg-slate-50">
                             <Building size={42} strokeWidth={1.5} className="mb-2" />
                             <span className="text-[13px] font-semibold text-slate-500">No Image Available</span>
-                            <span className="text-[11px] mt-1 leading-tight">But you can still contact the owner.</span>
+                            <span className="text-[11px] mt-1 leading-tight text-slate-400">But you can still contact the owner.</span>
                         </div>
                     )}
 
-                    {/* Edit & Heart/Delete Buttons */}
-                    {showDeleteButton ? (
-                        <div className="absolute top-3 right-3 flex items-center gap-2 z-10">
+                    {/* Gradient for text readability */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/25 z-[1]" />
+
+                    {/* ─── Top Row: Avatar + Rating ─── */}
+                    <div className="absolute top-0 left-0 right-0 z-10 flex items-start justify-between p-3">
+                        {/* Avatar + Name */}
+                        <div className="flex items-center gap-2">
+                            <div className={`w-7 h-7 rounded-full flex items-center justify-center text-white text-[10px] font-bold shadow-md ring-2 ring-white/25 ${getHostelTypeColor(hostel.hostelType)}`}>
+                                {hostel.name?.charAt(0)?.toUpperCase() || 'H'}
+                            </div>
+                            <div className="flex flex-col">
+                                <span className="text-white text-[11px] font-semibold leading-tight drop-shadow-lg truncate max-w-[110px]">
+                                    {hostel.name}
+                                </span>
+                                <span className="text-white/65 text-[9px] font-medium leading-tight">
+                                    {getHostelTypeLabel(hostel.hostelType)}
+                                </span>
+                            </div>
+                        </div>
+
+                        {/* Rating */}
+                        <div className="flex items-center gap-1 bg-emerald-400 text-slate-900 px-2 py-0.5 rounded-full shadow-md">
+                            <Star size={10} className="fill-slate-900 text-slate-900" />
+                            <span className="text-[10px] font-bold leading-none">4.9</span>
+                        </div>
+                    </div>
+
+                    {/* ─── Edit & Delete (Dashboard) ─── */}
+                    {showDeleteButton && (
+                        <div className="absolute top-12 right-3 flex flex-col items-center gap-1.5 z-10">
                             <button
-                                className="transition-all active:scale-90 bg-white/90 hover:bg-emerald-500 hover:text-white text-emerald-500 p-1.5 rounded-full backdrop-blur-md shadow-sm border border-black/5"
+                                className="transition-all active:scale-90 bg-white/80 hover:bg-emerald-500 hover:text-white text-emerald-600 p-1.5 rounded-full backdrop-blur-md shadow-sm"
                                 onClick={(e) => { e.preventDefault(); router.push(`/dashboard/create-listing?id=${hostel._id}`); }}
                             >
-                                <Edit size={18} strokeWidth={2.5} />
+                                <Edit size={14} strokeWidth={2.5} />
                             </button>
                             <button
-                                className="transition-all active:scale-90 bg-white/90 hover:bg-red-500 hover:text-white text-red-500 p-1.5 rounded-full backdrop-blur-md shadow-sm border border-black/5"
-                                // onClick={(e) => { e.preventDefault(); deleteMutation.mutate(hostel._id); }}
+                                className="transition-all active:scale-90 bg-white/80 hover:bg-red-500 hover:text-white text-red-500 p-1.5 rounded-full backdrop-blur-md shadow-sm"
                                 onClick={(e) => {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     setIsOpen(true);
                                 }}
                             >
-                                <Trash size={18} strokeWidth={2.5} />
+                                <Trash size={14} strokeWidth={2.5} />
                             </button>
                         </div>
-                    ) : (
-                        <button
-                            className="absolute top-3 right-3 transition-transform active:scale-90 z-10"
-                            onClick={(e) => { e.preventDefault(); }}
-                        >
-                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'rgba(0, 0, 0, 0.5)', height: '26px', width: '26px', stroke: 'var(--linaria-theme_palette-bg-primary)', strokeWidth: '2', overflow: 'visible' }}><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-6.94c-2.87 0-5.4 1.5-6.69 3.86l-.31.57-.31-.57A7.4 7.4 0 0 0 9 4.06 6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>
-                        </button>
                     )}
 
-
-
-                    {/* Optional Tag (like Guest Favorite) */}
+                    {/* ─── Verified Badge ─── */}
                     {hostel.verified && (
-                        <div className="absolute top-3 left-3 bg-primary px-3 py-1.5 rounded-full shadow-md text-[14px] font-bold text-white shadow-black/10">
+                        <div className="absolute top-12 left-3 z-10 bg-primary/90 backdrop-blur-sm px-2 py-0.5 rounded-full text-[9px] font-bold text-white shadow-md uppercase tracking-wider">
                             Verified
                         </div>
                     )}
 
-                    <div className={`absolute bottom-3 left-0 rounded-tr-full rounded-br-full px-3 py-1 text-[14px] font-bold shadow-none ${getHostelTypeBadgeClass(hostel.hostelType)}`}>
-                        {getHostelTypeLabel(hostel.hostelType)}
-                    </div>
-                </div>
+                    {/* ─── Floating Bottom White Bar ─── */}
+                    <div className="absolute bottom-3 left-3 right-3 z-10">
+                        <div className="flex items-center justify-between gap-3 bg-white rounded-xl px-4 py-2.5 shadow-lg">
+                            {/* Price */}
+                            <div className="flex items-baseline gap-1 min-w-0">
+                                {hostel.price ? (
+                                    <>
+                                        <span className="text-slate-900 text-[15px] font-bold leading-none tracking-tight">
+                                            Rs.{hostel.price.toLocaleString()}
+                                        </span>
+                                        <span className="text-slate-400 text-[11px] font-medium leading-none">/mo</span>
+                                    </>
+                                ) : (
+                                    <span className="text-slate-800 text-[13px] font-semibold leading-none">Contact for price</span>
+                                )}
+                            </div>
 
-                {/* Info Container */}
-                <div className="flex flex-col gap-0.5 px-1 mt-1">
-                    <div className="flex items-center justify-between gap-2">
-                        <h3 className="min-w-0 flex-1 truncate text-[15px] font-semibold leading-snug text-slate-950" style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                            {hostel.name}
-                        </h3>
-                        <div className="flex shrink-0 items-center gap-0.5 text-[13px] leading-none text-slate-900 font-medium">
-                            <Star size={12} className="fill-slate-900 text-slate-900" />
-                            <span>4.9</span>
+                            {/* View Button */}
+                            <div className="flex items-center gap-1 bg-slate-900 text-white px-3.5 py-2 rounded-full transition-all duration-300 group-hover:bg-primary shrink-0">
+                                <span className="text-[11px] font-semibold leading-none">View</span>
+                                <ArrowUpRight size={11} strokeWidth={2.5} />
+                            </div>
                         </div>
-                    </div>
-                    <p className="truncate text-[13px] leading-normal text-slate-500" style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{hostel.area}, {hostel.city}</p>
-                    <div className="flex items-baseline gap-1 mt-0.5">
-                        {hostel.price ? (
-                            <>
-                                <span className="text-[15px] font-semibold leading-snug text-slate-950">
-                                    Rs. {hostel.price.toLocaleString()}
-                                </span>
-                                <span className="text-[12px] leading-snug text-slate-400">/ month</span>
-                            </>
-                        ) : (
-                            <span className="text-[14px] font-semibold leading-snug text-slate-950">Contact for price</span>
-                        )}
                     </div>
                 </div>
             </Link>

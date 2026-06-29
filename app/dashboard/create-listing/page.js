@@ -157,6 +157,8 @@ function CreateListingContent() {
     console.log("RemoveImage",imageFiles);
   };
 
+  
+
   const handleAddTag = (text) => {
     const t = text.trim();
     if (t && !tags.includes(t)) {

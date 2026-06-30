@@ -48,8 +48,9 @@ export default async function HostelsPage({ searchParams }) {
     await connectDB();
     const query = {};
     if (resolvedParams.gender) query.hostelType = resolvedParams.gender;
-    if (resolvedParams.city) query.city = resolvedParams.city;
-    if (resolvedParams.area) query.area = resolvedParams.area;
+    if (resolvedParams.city) query.city = { $regex: resolvedParams.city, $options: 'i' };
+    if (resolvedParams.area) query.area = { $regex: resolvedParams.area, $options: 'i' };
+    
     if (resolvedParams.isVerified === 'true') query.verified = true;
     if (resolvedParams.acType) query.acType = resolvedParams.acType;
     if (resolvedParams.wifi) query.wifi = resolvedParams.wifi;

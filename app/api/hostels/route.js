@@ -147,8 +147,9 @@ export async function GET(req) {
     const query = {}
     const url = new URL(req.url);
     if (url.searchParams.get("gender")) query.hostelType = url.searchParams.get("gender");
-    if (url.searchParams.get("city")) query.city = url.searchParams.get("city");
-    if (url.searchParams.get("area")) query.area = url.searchParams.get("area");
+    if (url.searchParams.get("city")) query.city = { $regex: url.searchParams.get("city"), $options: 'i' };
+    if (url.searchParams.get("area")) query.area = { $regex: url.searchParams.get("area"), $options: 'i' };
+    
     if (url.searchParams.get("isVerified") === 'true') query.verified = true;
     if (url.searchParams.get("acType")) query.acType = url.searchParams.get("acType");
     if (url.searchParams.get("wifi")) query.wifi = url.searchParams.get("wifi");

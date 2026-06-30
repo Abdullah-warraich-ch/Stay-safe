@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { cookies } from 'next/headers';
 import connectDB from '@/lib/db';
 import Hostel from '@/models/Hostel';
 import cloudinary from '@/lib/cloudinary';
@@ -21,7 +22,16 @@ export async function POST(req) {
     const hostelType = formData.get('hostelType');
     const phone = formData.get('phone');
     const capacity = JSON.parse(formData.get('capacity') || '[]');
-    const ownerId = formData.get('ownerId');
+    
+    // Securely get ownerId from cookie
+    const cookieStore = await cookies();
+    const userCookie = cookieStore.get('user');
+    if (!userCookie) {
+      return NextResponse.json({ success: false, error: 'Unauthorized. Please log in.' }, { status: 401 });
+    }
+    const user = JSON.parse(userCookie.value);
+    const ownerId = user.id || user._id;
+    
     const amenities = JSON.parse(formData.get('amenities') || '[]');
     const nearbyUniversities = JSON.parse(formData.get('nearbyUniversities') || '[]');
     const mess = JSON.parse(formData.get('mess') || '{"available":false,"price":0,"compulsory":false}');
@@ -90,7 +100,7 @@ export async function POST(req) {
     let slug = baseSlug;
     let counter = 1;
     while (await Hostel.findOne({ slug })) {
-      slug = `${baseSlug}-${coutoastnter}`;
+      slug = `${baseSlug}-${counter}`;
       counter++;
     }
 
@@ -139,7 +149,7 @@ export async function GET(req) {
     if (url.searchParams.get("gender")) query.hostelType = url.searchParams.get("gender");
     if (url.searchParams.get("city")) query.city = url.searchParams.get("city");
     if (url.searchParams.get("area")) query.area = url.searchParams.get("area");
-    if (url.searchParams.get("isVerified")) query.isVerified = url.searchParams.get("isVerified");
+    if (url.searchParams.get("isVerified") === 'true') query.verified = true;
     if (url.searchParams.get("acType")) query.acType = url.searchParams.get("acType");
     if (url.searchParams.get("wifi")) query.wifi = url.searchParams.get("wifi");
     if (url.searchParams.get("backupLight")) query.backupLight = url.searchParams.get("backupLight");

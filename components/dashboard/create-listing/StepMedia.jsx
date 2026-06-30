@@ -4,7 +4,8 @@ import { useRef } from 'react';
 import { Upload, X, Sparkles } from 'lucide-react';
 
 export default function StepMedia({
-  imageFiles, imagePreviews, handleImageSelect, removeImage,
+  imageFiles, imagePreviews, existingImages = [],
+  handleImageSelect, removeImage,
   tags, tagInput, setTagInput, handleAddTag, handleRemoveTag, handleTagInputKeyDown, getSuggestedTags
 }) {
   const fileInputRef = useRef(null);
@@ -20,8 +21,8 @@ export default function StepMedia({
             <p className="text-[13px] text-slate-500 mt-1">Upload clear, well-lit images.</p>
           </div>
           <div className="px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200">
-            <span className={`text-[12px] font-semibold ${imageFiles.length >= 2 ? 'text-slate-950' : 'text-slate-500'}`}>
-              {imageFiles.length}/8
+            <span className={`text-[12px] font-semibold ${(existingImages.length + imageFiles.length) >= 2 ? 'text-slate-950' : 'text-slate-500'}`}>
+              {existingImages.length + imageFiles.length}/8
             </span>
             <span className="text-[11px] text-slate-500 ml-1">Min 2</span>
           </div>
@@ -48,7 +49,7 @@ export default function StepMedia({
             </div>
           ))}
 
-          {imageFiles.length < 8 && (
+          {(existingImages.length + imageFiles.length) < 8 && (
             <button
               type="button"
               onClick={() => fileInputRef.current?.click()}

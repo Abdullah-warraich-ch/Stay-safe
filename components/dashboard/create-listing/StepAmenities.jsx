@@ -29,7 +29,7 @@ const AMENITIES = [
 
 export default function StepAmenities({
   selectedAmenities, toggleAmenity,
-  formData, hostelType, howManySeaters, mess, imageFiles, selectedUniversities, tags,
+  formData, hostelType, howManySeaters, mess, imageFiles, existingImages = [], selectedUniversities, tags,
   backupLight, setBackupLight, acType, setAcType, attachedBath, setAttachedBath
 }) {
   const activeSeaters = howManySeaters.filter(s => s.active);
@@ -230,7 +230,7 @@ export default function StepAmenities({
           <div className="grid grid-cols-4 divide-x divide-slate-100 bg-white">
             {[
               { label: 'Rooms', value: activeSeaters.length, color: 'text-amber-500' },
-              { label: 'Photos', value: imageFiles.length, color: 'text-blue-500' },
+              { label: 'Photos', value: existingImages.length + imageFiles.length, color: 'text-blue-500' },
               { label: 'Amenities', value: selectedAmenities.length, color: 'text-primary' },
               { label: 'Tags', value: tags.length, color: 'text-orange-500' },
             ].map(({ label, value, color }) => (

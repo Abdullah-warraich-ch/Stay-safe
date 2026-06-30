@@ -74,6 +74,7 @@ function CreateListingContent() {
   const [selectedUniversities, setSelectedUniversities] = useState([]);
   const [imageFiles, setImageFiles] = useState([]);
   const [imagePreviews, setImagePreviews] = useState([]);
+  const [existingImages, setExistingImages] = useState([]);
   const [allCities] = useState(cities);
   const [availableAreas, setAvailableAreas] = useState([]);
   const [availableUniversities, setAvailableUniversities] = useState([]);
@@ -114,6 +115,7 @@ function CreateListingContent() {
             }));
           }
           if (h.images) {
+            setExistingImages(h.images);
             setImagePreviews(h.images.map(img => img.url));
           }
         }
@@ -143,18 +145,25 @@ function CreateListingContent() {
 
   const handleImageSelect = (e) => {
     const files = Array.from(e.target.files);
-    if (imageFiles.length + files.length > 8) { toast.error('Maximum 8 images allowed'); return; }
+    const totalCurrent = existingImages.length + imageFiles.length;
+    if (totalCurrent + files.length > 8) { toast.error('Maximum 8 images allowed'); return; }
     setImageFiles(prev => [...prev, ...files]);
     setImagePreviews(prev => [...prev, ...files.map(f => URL.createObjectURL(f))]);
-    console.log("HandleImage",imageFiles);
-    
   };
 
   const removeImage = (index) => {
-    URL.revokeObjectURL(imagePreviews[index]);
-    setImageFiles(prev => prev.filter((_, i) => i !== index));
-    setImagePreviews(prev => prev.filter((_, i) => i !== index));
-    console.log("RemoveImage",imageFiles);
+    const existingCount = existingImages.length;
+    if (index < existingCount) {
+      // Removing a server-side existing image
+      setExistingImages(prev => prev.filter((_, i) => i !== index));
+      setImagePreviews(prev => prev.filter((_, i) => i !== index));
+    } else {
+      // Removing a newly added image
+      const newIndex = index - existingCount;
+      URL.revokeObjectURL(imagePreviews[index]);
+      setImageFiles(prev => prev.filter((_, i) => i !== newIndex));
+      setImagePreviews(prev => prev.filter((_, i) => i !== index));
+    }
   };
 
   
@@ -206,7 +215,8 @@ function CreateListingContent() {
       if (!formData.address.trim()) { toast.error('Enter full address'); return false; }
     }
     if (step === 7) {
-      if (!id && imageFiles.length < 2) { toast.error('Upload at least 2 photos'); return false; }
+      const totalImages = existingImages.length + imageFiles.length;
+      if (totalImages < 2) { toast.error('Upload at least 2 photos'); return false; }
     }
     return true;
   };
@@ -243,6 +253,9 @@ function CreateListingContent() {
       data.append('wifi', selectedAmenities.includes('wifi') ? 'Yes' : 'No');
       data.append('acType', acType);
       data.append('attachedBath', attachedBath);
+      if (id) {
+        data.append('existingImages', JSON.stringify(existingImages));
+      }
       imageFiles.forEach(f => data.append('images', f));
       const url = id ? `/api/hostels/${id}` : '/api/hostels';
       const method = id ? 'PUT' : 'POST';
@@ -326,6 +339,7 @@ function CreateListingContent() {
               {currentStep === 7 && (
                 <StepMedia
                   imageFiles={imageFiles} imagePreviews={imagePreviews}
+                  existingImages={existingImages}
                   handleImageSelect={handleImageSelect} removeImage={removeImage}
                   tags={tags} tagInput={tagInput} setTagInput={setTagInput}
                   handleAddTag={handleAddTag} handleRemoveTag={handleRemoveTag}
@@ -335,7 +349,7 @@ function CreateListingContent() {
               {currentStep === 8 && (
                 <StepAmenities
                   selectedAmenities={selectedAmenities} toggleAmenity={toggleAmenity}
-                  formData={formData} hostelType={hostelType} howManySeaters={howManySeaters}
+                  formData={formData} hostelType={hostelType} howManySeaters={howManySeaters} existingImages={existingImages}
                   mess={mess} imageFiles={imageFiles} selectedUniversities={selectedUniversities} tags={tags}
                   backupLight={backupLight} setBackupLight={setBackupLight}
                   acType={acType} setAcType={setAcType}

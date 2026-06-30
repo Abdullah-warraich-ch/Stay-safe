@@ -39,10 +39,17 @@ export default function HostelsClientList({ initialHostels, total, searchParams 
                     // Prevent duplicate listings
                     const existingIds = new Set(prev.map(h => h._id));
                     const uniqueNewHostels = newHostels.filter(h => !existingIds.has(h._id));
-                    return [...prev, ...uniqueNewHostels];
+                    const updated = [...prev, ...uniqueNewHostels];
+
+                    // Compute hasMore using the updated total length
+                    const hasNextPage = response.pagination
+                        ? response.pagination.hasNextPage
+                        : updated.length < total;
+                    setHasMore(hasNextPage);
+
+                    return updated;
                 });
                 setPage(nextPage);
-                setHasMore(response.pagination ? response.pagination.hasNextPage : (hostels.length + newHostels.length < total));
             } else {
                 throw new Error(response.error || 'Failed to fetch hostels');
             }
@@ -52,7 +59,7 @@ export default function HostelsClientList({ initialHostels, total, searchParams 
         } finally {
             setLoading(false);
         }
-    }, [page, loading, hasMore, searchParams, total, hostels.length]);
+    }, [page, loading, hasMore, searchParams, total]);
 
     // Intersection Observer to trigger loading next page
     useEffect(() => {

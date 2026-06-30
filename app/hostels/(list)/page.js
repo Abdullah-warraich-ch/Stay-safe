@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import Nav from '@/components/layout/Nav';
 import HostelsClientList from '@/components/hostels/HostelsClientList';
 import FilterSidebar from '@/components/hostels/FilterSidebar';
@@ -8,7 +9,7 @@ export async function generateMetadata({ searchParams }) {
     const resolvedParams = await searchParams;
     const city = resolvedParams.city || '';
     const area = resolvedParams.area || '';
-    const hostelType = resolvedParams.hostelType || '';
+    const hostelType = resolvedParams.gender || '';
 
     // Build dynamic title parts
     const typePart = hostelType ? `${hostelType.charAt(0).toUpperCase() + hostelType.slice(1)} ` : '';
@@ -49,7 +50,7 @@ export default async function HostelsPage({ searchParams }) {
     if (resolvedParams.gender) query.hostelType = resolvedParams.gender;
     if (resolvedParams.city) query.city = resolvedParams.city;
     if (resolvedParams.area) query.area = resolvedParams.area;
-    if (resolvedParams.isVerified) query.isVerified = resolvedParams.isVerified;
+    if (resolvedParams.isVerified === 'true') query.verified = true;
     if (resolvedParams.acType) query.acType = resolvedParams.acType;
     if (resolvedParams.wifi) query.wifi = resolvedParams.wifi;
     if (resolvedParams.backupLight) query.backupLight = resolvedParams.backupLight;
@@ -69,7 +70,9 @@ export default async function HostelsPage({ searchParams }) {
             <main className='max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8'>
                 <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
                     {/* Sidebar Filter */}
-                    <FilterSidebar />
+                    <Suspense fallback={null}>
+                        <FilterSidebar />
+                    </Suspense>
 
                     {/* Main Content */}
                     <div className="flex-1">

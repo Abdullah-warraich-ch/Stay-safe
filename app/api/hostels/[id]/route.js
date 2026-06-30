@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server';
+import { cookies } from 'next/headers';
 import connectDB from '@/lib/db';
 import Hostel from '@/models/Hostel';
 import User from '@/models/User';
+import cloudinary from '@/lib/cloudinary';
 import mongoose from 'mongoose';
 
 export async function GET(req, { params }) {
@@ -36,7 +38,15 @@ export async function DELETE(req, { params }) {
     await connectDB();
     const { id } = await params;
 
-    const hostel = await Hostel.findByIdAndDelete(id);
+    const cookieStore = await cookies();
+    const userCookie = cookieStore.get('user');
+    if (!userCookie) {
+      return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 });
+    }
+    const user = JSON.parse(userCookie.value);
+    const userId = user.id || user._id;
+
+    const hostel = await Hostel.findById(id);
 
     if (!hostel) {
       return NextResponse.json(
@@ -44,6 +54,12 @@ export async function DELETE(req, { params }) {
         { status: 404 }
       );
     }
+
+    if (hostel.owner.toString() !== userId) {
+      return NextResponse.json({ success: false, error: 'Forbidden. You do not own this listing.' }, { status: 403 });
+    }
+
+    await Hostel.findByIdAndDelete(id);
 
     return NextResponse.json({
       success: true,
@@ -63,9 +79,24 @@ export async function PUT(req, { params }) {
   try {
     await connectDB();
     const { id } = await params;
+
+    const cookieStore = await cookies();
+    const userCookie = cookieStore.get('user');
+    if (!userCookie) {
+      return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 });
+    }
+    const user = JSON.parse(userCookie.value);
+    const userId = user.id || user._id;
+
+    const existingHostel = await Hostel.findById(id);
+    if (!existingHostel) {
+      return NextResponse.json({ success: false, error: 'Hostel not found' }, { status: 404 });
+    }
+
+    if (existingHostel.owner.toString() !== userId) {
+      return NextResponse.json({ success: false, error: 'Forbidden. You do not own this listing.' }, { status: 403 });
+    }
     
-    // For minimum code and easier form handling, we can accept JSON instead of FormData for updates if we are not updating images,
-    // OR we can just use the same FormData. Since CreateListing uses FormData, let's parse it.
     const formData = await req.formData();
     
     const updateData = {};
@@ -89,6 +120,51 @@ export async function PUT(req, { params }) {
     
     if (updateData.capacity && updateData.capacity.length > 0) {
       updateData.price = Math.min(...updateData.capacity.map(c => c.price));
+    }
+
+    // ── Handle images ──
+    // existingImages = JSON array of { url, publicId } objects the user chose to keep
+    const existingImages = formData.has('existingImages')
+      ? JSON.parse(formData.get('existingImages'))
+      : null;
+
+    // New image files uploaded by the user
+    const newImageFiles = formData.getAll('images').filter(f => f && typeof f !== 'string' && f.size > 0);
+
+    if (existingImages !== null || newImageFiles.length > 0) {
+      const keptImages = existingImages || [];
+
+      // Upload new images to Cloudinary
+      const uploadedImages = [];
+      for (const file of newImageFiles) {
+        const bytes = await file.arrayBuffer();
+        const buffer = Buffer.from(bytes);
+
+        const result = await new Promise((resolve, reject) => {
+          const uploadStream = cloudinary.uploader.upload_stream(
+            {
+              folder: 'stay-safe/hostels',
+              resource_type: 'image',
+              transformation: [
+                { width: 1200, height: 800, crop: 'fill', quality: 'auto', fetch_format: 'auto' },
+                { overlay: 'text:Arial_100_bold:Stay%20Safe', color: "white", opacity: 20, gravity: "center" }
+              ]
+            },
+            (error, result) => {
+              if (error) reject(error);
+              else resolve(result);
+            }
+          );
+          uploadStream.end(buffer);
+        });
+
+        uploadedImages.push({
+          url: result.secure_url,
+          publicId: result.public_id,
+        });
+      }
+
+      updateData.images = [...keptImages, ...uploadedImages];
     }
 
     const hostel = await Hostel.findByIdAndUpdate(id, updateData, { new: true });

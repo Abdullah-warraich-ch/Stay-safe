@@ -5,12 +5,14 @@ import { useParams, useRouter } from 'next/navigation';
 import { useQuery } from '@tanstack/react-query';
 import Nav from '@/components/layout/Nav';
 import Footer from '@/components/layout/Footer';
-import {useAuth } from '@/context/AuthContext'
+import { useAuth } from '@/context/AuthContext';
+import toast from 'react-hot-toast';
+import { useFavorites } from '@/utils/useFavorites';
 import {
   MapPin, Phone, ShieldCheck, Wifi, Car, Wind, Tv,
   WashingMachine, Dumbbell, CookingPot, Utensils, Droplets,
   Zap, BookOpen, Lock, Cigarette, PawPrint, Bed, Footprints,
-  ShowerHead, Share2, ChevronLeft, ChevronRight,
+  ShowerHead, Share2, ChevronLeft, ChevronRight, Heart,
   BadgeCheck, Building2, Star, X, CheckCircle2, PenIcon
 } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
@@ -104,6 +106,7 @@ export default function HostelDetailClient() {
   const { id } = useParams();
   const router = useRouter();
   const [lightboxIdx, setLightboxIdx] = useState(null);
+  const { isFavorite, toggle } = useFavorites();
 
   const { data: hostel, isLoading, error } = useQuery({
     queryKey: ['hostel', id],
@@ -184,22 +187,50 @@ export default function HostelDetailClient() {
               {hostel.name}
               {hostel.verified && <BadgeCheck className="fill-blue-500 text-white w-6 h-6 shrink-0" />}
             </h1>
-            <div>
-              {/* Show Edit if the logged-in user owns this listing, Share otherwise */}
+            <div className="flex items-center gap-2 mt-0.5">
               {(user?._id ?? user?.id) === hostel.owner?._id ? (
+                /* Owner → Edit button */
                 <button
                   onClick={(e) => { e.preventDefault(); router.push(`/dashboard/create-listing?id=${hostel._id}`); }}
-                  className="shrink-0 flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-slate-900 border border-slate-200 rounded-xl px-3.5 py-2 hover:bg-slate-50 transition-all cursor-pointer mt-0.5"
+                  className="shrink-0 flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-slate-900 border border-slate-200 rounded-xl px-3.5 py-2 hover:bg-slate-50 transition-all cursor-pointer"
                 >
                   <PenIcon size={14} /> Edit
                 </button>
               ) : (
-                <button
-                  onClick={() => { if (navigator.share) { navigator.share({ title: hostel.name, url: window.location.href }); } else { navigator.clipboard.writeText(window.location.href); } }}
-                  className="shrink-0 flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-slate-900 border border-slate-200 rounded-xl px-3.5 py-2 hover:bg-slate-50 transition-all cursor-pointer mt-0.5"
-                >
-                  <Share2 size={14} /> Share
-                </button>
+                /* Visitor → Share + Heart */
+                <>
+                  <button
+                    onClick={() => {
+                      if (navigator.share) { navigator.share({ title: hostel.name, url: window.location.href }); }
+                      else { navigator.clipboard.writeText(window.location.href); toast.success('Link copied!'); }
+                    }}
+                    className="shrink-0 flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-slate-900 border border-slate-200 rounded-xl px-3.5 py-2 hover:bg-slate-50 transition-all cursor-pointer"
+                  >
+                    <Share2 size={14} /> Share
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      toggle(hostel);
+                      if (!isFavorite(hostel._id)) {
+                        toast.success('Added to Loved Hostels ❤️', { duration: 1800 });
+                      } else {
+                        toast('Removed from Loved Hostels', { icon: '💔', duration: 1800 });
+                      }
+                    }}
+                    title={isFavorite(hostel._id) ? 'Remove from favourites' : 'Save to favourites'}
+                    className={`shrink-0 flex items-center gap-1.5 text-sm font-semibold border rounded-xl px-3.5 py-2 transition-all duration-200 cursor-pointer
+                      ${ isFavorite(hostel._id)
+                          ? 'bg-rose-50 border-rose-200 text-rose-500 hover:bg-rose-100'
+                          : 'border-slate-200 text-slate-500 hover:text-rose-500 hover:border-rose-200 hover:bg-rose-50'
+                      }`}
+                  >
+                    <Heart
+                      size={14}
+                      className={`transition-all duration-200 ${isFavorite(hostel._id) ? 'fill-rose-500' : ''}`}
+                    />
+                  </button>
+                </>
               )}
             </div>
           </div>

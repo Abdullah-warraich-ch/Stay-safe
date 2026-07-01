@@ -1,15 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { Star, Trash, Edit, Building, ArrowUpRight } from "lucide-react";
+import { Star, Trash, Edit, Building, ArrowUpRight, Heart } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { deleteHostel } from "@/utils/https";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import ModalComponent from "../ui/ConfirmPopup";
-import { useState } from 'react'
+import { useState } from 'react';
 import toast from 'react-hot-toast';
 import PropertyTypeLoader from "../ui/PropertyTypeLoader";
+import { useFavorites } from "@/utils/useFavorites";
 
 
 export default function HostelCard({ hostel, showDeleteButton }) {
@@ -17,16 +18,21 @@ export default function HostelCard({ hostel, showDeleteButton }) {
     const [imgLoading, setImgLoading] = useState(true);
     const router = useRouter();
     const queryClient = useQueryClient();
+    const { isFavorite, toggle } = useFavorites();
+
+    const liked = isFavorite(hostel._id);
+
     const deleteMutation = useMutation({
         mutationFn: (id) => deleteHostel(id),
         onSuccess: () => {
             queryClient.invalidateQueries({ queryKey: ['my-hostels'] });
             toast.success('Hostel deleted successfully!');
         },
-        onError: (error) => {
+        onError: () => {
             toast.error('Failed to delete hostel');
         }
     });
+
     const getHostelTypeLabel = (type) => {
         if (type === 'boys') return 'Boys';
         if (type === 'girls') return 'Girls';
@@ -39,9 +45,26 @@ export default function HostelCard({ hostel, showDeleteButton }) {
         return 'bg-violet-500';
     };
 
+    const handleHeartClick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggle(hostel);
+        if (!liked) {
+            toast.success('Added to Loved Hostels ❤️', { duration: 1800 });
+        } else {
+            toast('Removed from Loved Hostels', { icon: '💔', duration: 1800 });
+        }
+    };
+
     return (
         <>
-            <ModalComponent isOpen={isOpen} setIsOpen={setIsOpen} action={() => deleteMutation.mutate(hostel._id)} title="Are you sure you want to delete this Hostel?" desc="This action is permanent and cannot be undone. Once deleted, the item will be removed from your account." />
+            <ModalComponent
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                action={() => deleteMutation.mutate(hostel._id)}
+                title="Are you sure you want to delete this Hostel?"
+                desc="This action is permanent and cannot be undone. Once deleted, the item will be removed from your account."
+            />
 
             <Link href={`/hostels/${hostel.slug || hostel._id}`} className="hostel-card group block cursor-pointer h-full">
                 <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-white shadow-md shadow-slate-200/60 border border-slate-100/80">
@@ -98,27 +121,45 @@ export default function HostelCard({ hostel, showDeleteButton }) {
                         </div>
                     </div>
 
-                    {/* ─── Edit & Delete (Dashboard) ─── */}
-                    {showDeleteButton && (
-                        <div className="absolute top-12 right-3 flex flex-col items-center gap-1.5 z-10">
+                    {/* ─── Owner controls (Edit + Delete) OR Heart button ─── */}
+                    <div className="absolute top-12 right-3 flex flex-col items-center gap-1.5 z-10">
+                        {showDeleteButton ? (
+                            /* Owner: Edit + Delete */
+                            <>
+                                <button
+                                    className="transition-all active:scale-90 bg-white/80 hover:bg-emerald-500 hover:text-white text-emerald-600 p-1.5 rounded-full backdrop-blur-md shadow-sm cursor-pointer"
+                                    onClick={(e) => { e.preventDefault(); router.push(`/dashboard/create-listing?id=${hostel._id}`); }}
+                                    title="Edit listing"
+                                >
+                                    <Edit size={14} strokeWidth={2.5} />
+                                </button>
+                                <button
+                                    className="transition-all active:scale-90 bg-white/80 hover:bg-red-500 hover:text-white text-red-500 p-1.5 rounded-full backdrop-blur-md shadow-sm cursor-pointer"
+                                    onClick={(e) => { e.preventDefault(); e.stopPropagation(); setIsOpen(true); }}
+                                    title="Delete listing"
+                                >
+                                    <Trash size={14} strokeWidth={2.5} />
+                                </button>
+                            </>
+                        ) : (
+                            /* Visitor: Heart / Favourite button */
                             <button
-                                className="transition-all active:scale-90 bg-white/80 hover:bg-emerald-500 hover:text-white text-emerald-600 p-1.5 rounded-full backdrop-blur-md shadow-sm"
-                                onClick={(e) => { e.preventDefault(); router.push(`/dashboard/create-listing?id=${hostel._id}`); }}
+                                onClick={handleHeartClick}
+                                title={liked ? 'Remove from favourites' : 'Save to favourites'}
+                                className={`transition-all duration-200 active:scale-90 p-1.5 rounded-full backdrop-blur-md shadow-sm cursor-pointer
+                                    ${liked
+                                        ? 'bg-rose-500 text-white scale-110'
+                                        : 'bg-white/80 text-slate-400 hover:bg-rose-50 hover:text-rose-500'
+                                    }`}
                             >
-                                <Edit size={14} strokeWidth={2.5} />
+                                <Heart
+                                    size={14}
+                                    strokeWidth={2.5}
+                                    className={`transition-all duration-200 ${liked ? 'fill-white' : ''}`}
+                                />
                             </button>
-                            <button
-                                className="transition-all active:scale-90 bg-white/80 hover:bg-red-500 hover:text-white text-red-500 p-1.5 rounded-full backdrop-blur-md shadow-sm"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-                                    setIsOpen(true);
-                                }}
-                            >
-                                <Trash size={14} strokeWidth={2.5} />
-                            </button>
-                        </div>
-                    )}
+                        )}
+                    </div>
 
                     {/* ─── Verified Badge ─── */}
                     {hostel.verified && (
@@ -154,6 +195,5 @@ export default function HostelCard({ hostel, showDeleteButton }) {
                 </div>
             </Link>
         </>
-
-    )
+    );
 }

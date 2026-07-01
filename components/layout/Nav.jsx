@@ -5,10 +5,12 @@ import Button from '../ui/Button';
 import { Menu, X, User, LogOut, Heart } from 'lucide-react';
 import Link from 'next/link';
 import { useAuth } from '@/context/AuthContext';
+import { useFavorites } from '@/utils/useFavorites';
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { user, logout } = useAuth();
+    const { favorites } = useFavorites();
 
     useEffect(() => {
         if (isMenuOpen) {
@@ -53,10 +55,13 @@ export default function Nav() {
                                 {/* Loved Hostels */}
                                 <Link
                                     href="/dashboard/favorites"
-                                    className="p-2.5 rounded-full text-slate-400 hover:text-primary hover:bg-primary/10 transition-all cursor-pointer relative"
+                                    className="p-2.5 rounded-full text-slate-400 hover:text-rose-500 hover:bg-rose-50 transition-all cursor-pointer relative"
                                     title="Loved Hostels"
                                 >
                                     <Heart size={19} />
+                                    {favorites.length > 0 && (
+                                        <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-rose-500 ring-2 ring-white" />
+                                    )}
                                 </Link>
 
                                 {/* Profile */}

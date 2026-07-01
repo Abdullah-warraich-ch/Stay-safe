@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Star, Trash, Edit, Building, ArrowUpRight, Heart } from "lucide-react";
+import { Trash, Edit, Building, ArrowUpRight, Heart } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { deleteHostel } from "@/utils/https";
@@ -114,20 +114,11 @@ export default function HostelCard({ hostel, showDeleteButton }) {
                             </div>
                         </div>
 
-                        {/* Rating */}
-                        <div className="flex items-center gap-1 bg-emerald-400 text-slate-900 px-2 py-0.5 rounded-full shadow-md">
-                            <Star size={10} className="fill-slate-900 text-slate-900" />
-                            <span className="text-[10px] font-bold leading-none">4.9</span>
-                        </div>
-                    </div>
-
-                    {/* ─── Owner controls (Edit + Delete) OR Heart button ─── */}
-                    <div className="absolute top-12 right-3 flex flex-col items-center gap-1.5 z-10">
+                        {/* ─── Top-right: Heart (visitor) or Edit+Delete (owner) ─── */}
                         {showDeleteButton ? (
-                            /* Owner: Edit + Delete */
-                            <>
+                            <div className="flex flex-col items-center gap-1.5">
                                 <button
-                                    className="transition-all active:scale-90 bg-white/80 hover:bg-emerald-500 hover:text-white text-emerald-600 p-1.5 rounded-full backdrop-blur-md shadow-sm cursor-pointer"
+                                    className="transition-all active:scale-90 bg-white/80 hover:bg-emerald-500 hover:text-white text-emerald-600 p-1.5 rounded-full backdrop-blur-md shadow-md cursor-pointer"
                                     onClick={(e) => { e.preventDefault(); router.push(`/dashboard/create-listing?id=${hostel._id}`); }}
                                     title="Edit listing"
                                 >
@@ -140,16 +131,15 @@ export default function HostelCard({ hostel, showDeleteButton }) {
                                 >
                                     <Trash size={14} strokeWidth={2.5} />
                                 </button>
-                            </>
+                            </div>
                         ) : (
-                            /* Visitor: Heart / Favourite button */
                             <button
                                 onClick={handleHeartClick}
                                 title={liked ? 'Remove from favourites' : 'Save to favourites'}
-                                className={`transition-all duration-200 active:scale-90 p-1.5 rounded-full backdrop-blur-md shadow-sm cursor-pointer
+                                className={`transition-all duration-200 active:scale-90 p-1.5 rounded-full backdrop-blur-md shadow-md cursor-pointer
                                     ${liked
-                                        ? 'bg-rose-500 text-white scale-110'
-                                        : 'bg-white/80 text-slate-400 hover:bg-rose-50 hover:text-rose-500'
+                                        ? 'bg-rose-500 text-white'
+                                        : 'bg-white/80 text-slate-300 hover:text-rose-500'
                                     }`}
                             >
                                 <Heart
